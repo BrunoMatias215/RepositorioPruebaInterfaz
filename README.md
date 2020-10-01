@@ -1,0 +1,2 @@
+# RepositorioPruebaInterfaz
+Interfaz gráfica
