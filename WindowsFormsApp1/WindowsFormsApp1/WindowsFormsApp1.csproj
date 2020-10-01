@@ -46,16 +46,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="FormularioPedidos\SubSeccionCrearPedido.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FormularioPedidos\SubSeccionCrearPedido.Designer.cs">
+      <DependentUpon>SubSeccionCrearPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IntefazGeneral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IntefazGeneral.Designer.cs">
+      <DependentUpon>IntefazGeneral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioPedidos\FormularioPedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioPedidos\FormularioPedidos.Designer.cs">
+      <DependentUpon>FormularioPedidos.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="IntefazGeneral.resx">
+      <DependentUpon>IntefazGeneral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioPedidos\FormularioPedidos.resx">
+      <DependentUpon>FormularioPedidos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
