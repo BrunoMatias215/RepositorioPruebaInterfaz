@@ -105,16 +105,17 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(73, 36);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(28, 13);
+            this.label1.Size = new System.Drawing.Size(34, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Yoel";
+            this.label1.Text = "Yoel2";
             // 
             // PanelInterfaz
             // 
-            this.PanelInterfaz.Location = new System.Drawing.Point(193, 22);
+            this.PanelInterfaz.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanelInterfaz.Location = new System.Drawing.Point(183, 0);
             this.PanelInterfaz.Margin = new System.Windows.Forms.Padding(0);
             this.PanelInterfaz.Name = "PanelInterfaz";
-            this.PanelInterfaz.Size = new System.Drawing.Size(1148, 707);
+            this.PanelInterfaz.Size = new System.Drawing.Size(1167, 729);
             this.PanelInterfaz.TabIndex = 2;
             // 
             // InterfazGeneral
