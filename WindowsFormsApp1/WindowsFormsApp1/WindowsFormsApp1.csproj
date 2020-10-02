@@ -46,22 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormularioPedidos\SubSeccionCrearPedido.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormularioPedidos\SubSeccionCrearPedido.Designer.cs">
-      <DependentUpon>SubSeccionCrearPedido.cs</DependentUpon>
-    </Compile>
     <Compile Include="IntefazGeneral.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="IntefazGeneral.Designer.cs">
       <DependentUpon>IntefazGeneral.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormularioPedidos\FormularioPedidos.cs">
+    <Compile Include="SeccionPedidos\FormularioPedidos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormularioPedidos\FormularioPedidos.Designer.cs">
+    <Compile Include="SeccionPedidos\FormularioPedidos.Designer.cs">
       <DependentUpon>FormularioPedidos.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -69,7 +63,7 @@
     <EmbeddedResource Include="IntefazGeneral.resx">
       <DependentUpon>IntefazGeneral.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormularioPedidos\FormularioPedidos.resx">
+    <EmbeddedResource Include="SeccionPedidos\FormularioPedidos.resx">
       <DependentUpon>FormularioPedidos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -93,6 +87,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SeccionesFormularios\SeccionesFormularios.csproj">
+      <Project>{a0ad50d0-5d4e-44f9-80db-49a838e3a51d}</Project>
+      <Name>SeccionesFormularios</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
