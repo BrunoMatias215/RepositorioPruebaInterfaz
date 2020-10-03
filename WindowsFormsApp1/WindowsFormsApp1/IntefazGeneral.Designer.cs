@@ -107,7 +107,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(34, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Yoel2";
+            this.label1.Text = "Yoel3";
             // 
             // PanelInterfaz
             // 
