@@ -30,8 +30,35 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.button16 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.button26 = new System.Windows.Forms.Button();
+            this.button25 = new System.Windows.Forms.Button();
+            this.button24 = new System.Windows.Forms.Button();
+            this.button23 = new System.Windows.Forms.Button();
+            this.button22 = new System.Windows.Forms.Button();
+            this.button21 = new System.Windows.Forms.Button();
+            this.button20 = new System.Windows.Forms.Button();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.button33 = new System.Windows.Forms.Button();
+            this.button32 = new System.Windows.Forms.Button();
+            this.button31 = new System.Windows.Forms.Button();
+            this.button30 = new System.Windows.Forms.Button();
+            this.button29 = new System.Windows.Forms.Button();
+            this.button28 = new System.Windows.Forms.Button();
+            this.button27 = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -47,33 +74,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
-            this.button20 = new System.Windows.Forms.Button();
-            this.button21 = new System.Windows.Forms.Button();
-            this.button22 = new System.Windows.Forms.Button();
-            this.button23 = new System.Windows.Forms.Button();
-            this.button24 = new System.Windows.Forms.Button();
-            this.button25 = new System.Windows.Forms.Button();
-            this.button26 = new System.Windows.Forms.Button();
-            this.button27 = new System.Windows.Forms.Button();
-            this.button28 = new System.Windows.Forms.Button();
-            this.button29 = new System.Windows.Forms.Button();
-            this.button30 = new System.Windows.Forms.Button();
-            this.button31 = new System.Windows.Forms.Button();
-            this.button32 = new System.Windows.Forms.Button();
-            this.button33 = new System.Windows.Forms.Button();
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tabControl1.SuspendLayout();
@@ -114,6 +114,69 @@
             this.tabPage1.Text = "Entradas y Minutas";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(54, 44);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(89, 82);
+            this.button10.TabIndex = 7;
+            this.button10.Text = "Entradas";
+            this.button10.UseVisualStyleBackColor = true;
+            // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(54, 220);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(89, 82);
+            this.button9.TabIndex = 6;
+            this.button9.Text = "Guarnición";
+            this.button9.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(149, 44);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(89, 82);
+            this.button8.TabIndex = 5;
+            this.button8.Text = "Omelettes";
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(244, 44);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(89, 82);
+            this.button7.TabIndex = 4;
+            this.button7.Text = "Tortillas";
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(244, 132);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(89, 82);
+            this.button6.TabIndex = 3;
+            this.button6.Text = "Matambre";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(149, 132);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(89, 82);
+            this.button5.TabIndex = 2;
+            this.button5.Text = "Supremas";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(54, 132);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(89, 82);
+            this.button4.TabIndex = 1;
+            this.button4.Text = "Milanesas";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.button16);
@@ -128,6 +191,51 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Carnes y Ensaladas";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // button16
+            // 
+            this.button16.Location = new System.Drawing.Point(149, 139);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(89, 82);
+            this.button16.TabIndex = 4;
+            this.button16.Text = "Ensalada Esp.";
+            this.button16.UseVisualStyleBackColor = true;
+            // 
+            // button15
+            // 
+            this.button15.Location = new System.Drawing.Point(54, 139);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(89, 82);
+            this.button15.TabIndex = 3;
+            this.button15.Text = "Ensaladas";
+            this.button15.UseVisualStyleBackColor = true;
+            // 
+            // button14
+            // 
+            this.button14.Location = new System.Drawing.Point(244, 51);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(89, 82);
+            this.button14.TabIndex = 2;
+            this.button14.Text = "Pescados";
+            this.button14.UseVisualStyleBackColor = true;
+            // 
+            // button13
+            // 
+            this.button13.Location = new System.Drawing.Point(149, 51);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(89, 82);
+            this.button13.TabIndex = 1;
+            this.button13.Text = "Parillas";
+            this.button13.UseVisualStyleBackColor = true;
+            // 
+            // button12
+            // 
+            this.button12.Location = new System.Drawing.Point(54, 51);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(89, 82);
+            this.button12.TabIndex = 0;
+            this.button12.Text = "Pollos";
+            this.button12.UseVisualStyleBackColor = true;
             // 
             // tabPage3
             // 
@@ -144,6 +252,148 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Pizzas";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // button26
+            // 
+            this.button26.Location = new System.Drawing.Point(229, 137);
+            this.button26.Name = "button26";
+            this.button26.Size = new System.Drawing.Size(78, 75);
+            this.button26.TabIndex = 14;
+            this.button26.Text = "Especialidades en Calzones";
+            this.button26.UseVisualStyleBackColor = true;
+            // 
+            // button25
+            // 
+            this.button25.Location = new System.Drawing.Point(61, 218);
+            this.button25.Name = "button25";
+            this.button25.Size = new System.Drawing.Size(78, 75);
+            this.button25.TabIndex = 13;
+            this.button25.Text = "Otras Especiales";
+            this.button25.UseVisualStyleBackColor = true;
+            // 
+            // button24
+            // 
+            this.button24.Location = new System.Drawing.Point(145, 137);
+            this.button24.Name = "button24";
+            this.button24.Size = new System.Drawing.Size(78, 75);
+            this.button24.TabIndex = 12;
+            this.button24.Text = "Especiales en Fugazzeta";
+            this.button24.UseVisualStyleBackColor = true;
+            // 
+            // button23
+            // 
+            this.button23.Location = new System.Drawing.Point(61, 137);
+            this.button23.Name = "button23";
+            this.button23.Size = new System.Drawing.Size(78, 75);
+            this.button23.TabIndex = 11;
+            this.button23.Text = "Especiales en Fugazza";
+            this.button23.UseVisualStyleBackColor = true;
+            // 
+            // button22
+            // 
+            this.button22.Location = new System.Drawing.Point(229, 56);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(78, 75);
+            this.button22.TabIndex = 10;
+            this.button22.Text = "Especiales II";
+            this.button22.UseVisualStyleBackColor = true;
+            // 
+            // button21
+            // 
+            this.button21.Location = new System.Drawing.Point(145, 56);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(78, 75);
+            this.button21.TabIndex = 9;
+            this.button21.Text = "Especiales I";
+            this.button21.UseVisualStyleBackColor = true;
+            // 
+            // button20
+            // 
+            this.button20.Location = new System.Drawing.Point(61, 56);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(78, 75);
+            this.button20.TabIndex = 8;
+            this.button20.Text = "Tradicionales";
+            this.button20.UseVisualStyleBackColor = true;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.button33);
+            this.tabPage4.Controls.Add(this.button32);
+            this.tabPage4.Controls.Add(this.button31);
+            this.tabPage4.Controls.Add(this.button30);
+            this.tabPage4.Controls.Add(this.button29);
+            this.tabPage4.Controls.Add(this.button28);
+            this.tabPage4.Controls.Add(this.button27);
+            this.tabPage4.Location = new System.Drawing.Point(4, 27);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(392, 376);
+            this.tabPage4.TabIndex = 8;
+            this.tabPage4.Text = "Otros";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // button33
+            // 
+            this.button33.Location = new System.Drawing.Point(50, 218);
+            this.button33.Name = "button33";
+            this.button33.Size = new System.Drawing.Size(78, 75);
+            this.button33.TabIndex = 21;
+            this.button33.Text = "Promos";
+            this.button33.UseVisualStyleBackColor = true;
+            // 
+            // button32
+            // 
+            this.button32.Location = new System.Drawing.Point(218, 137);
+            this.button32.Name = "button32";
+            this.button32.Size = new System.Drawing.Size(78, 75);
+            this.button32.TabIndex = 20;
+            this.button32.Text = "Menús";
+            this.button32.UseVisualStyleBackColor = true;
+            // 
+            // button31
+            // 
+            this.button31.Location = new System.Drawing.Point(134, 137);
+            this.button31.Name = "button31";
+            this.button31.Size = new System.Drawing.Size(78, 75);
+            this.button31.TabIndex = 19;
+            this.button31.Text = "Postres";
+            this.button31.UseVisualStyleBackColor = true;
+            // 
+            // button30
+            // 
+            this.button30.Location = new System.Drawing.Point(50, 137);
+            this.button30.Name = "button30";
+            this.button30.Size = new System.Drawing.Size(78, 75);
+            this.button30.TabIndex = 18;
+            this.button30.Text = "Bebidas";
+            this.button30.UseVisualStyleBackColor = true;
+            // 
+            // button29
+            // 
+            this.button29.Location = new System.Drawing.Point(218, 56);
+            this.button29.Name = "button29";
+            this.button29.Size = new System.Drawing.Size(78, 75);
+            this.button29.TabIndex = 17;
+            this.button29.Text = "Pastas";
+            this.button29.UseVisualStyleBackColor = true;
+            // 
+            // button28
+            // 
+            this.button28.Location = new System.Drawing.Point(134, 56);
+            this.button28.Name = "button28";
+            this.button28.Size = new System.Drawing.Size(78, 75);
+            this.button28.TabIndex = 16;
+            this.button28.Text = "Sandwiches";
+            this.button28.UseVisualStyleBackColor = true;
+            // 
+            // button27
+            // 
+            this.button27.Location = new System.Drawing.Point(50, 56);
+            this.button27.Name = "button27";
+            this.button27.Size = new System.Drawing.Size(78, 75);
+            this.button27.TabIndex = 15;
+            this.button27.Text = "Empanadas";
+            this.button27.UseVisualStyleBackColor = true;
             // 
             // listBox1
             // 
@@ -200,7 +450,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(222, 505);
+            this.label4.Location = new System.Drawing.Point(227, 505);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(46, 13);
             this.label4.TabIndex = 8;
@@ -277,256 +527,6 @@
             this.button3.Text = "Borrar Producto";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(54, 132);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(89, 82);
-            this.button4.TabIndex = 1;
-            this.button4.Text = "Milanesas";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(149, 132);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(89, 82);
-            this.button5.TabIndex = 2;
-            this.button5.Text = "Supremas";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(244, 132);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(89, 82);
-            this.button6.TabIndex = 3;
-            this.button6.Text = "Matambre";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(244, 44);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(89, 82);
-            this.button7.TabIndex = 4;
-            this.button7.Text = "Tortillas";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(149, 44);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(89, 82);
-            this.button8.TabIndex = 5;
-            this.button8.Text = "Omelettes";
-            this.button8.UseVisualStyleBackColor = true;
-            // 
-            // button9
-            // 
-            this.button9.Location = new System.Drawing.Point(54, 220);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(89, 82);
-            this.button9.TabIndex = 6;
-            this.button9.Text = "Guarnición";
-            this.button9.UseVisualStyleBackColor = true;
-            // 
-            // button10
-            // 
-            this.button10.Location = new System.Drawing.Point(54, 44);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(89, 82);
-            this.button10.TabIndex = 7;
-            this.button10.Text = "Entradas";
-            this.button10.UseVisualStyleBackColor = true;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.button33);
-            this.tabPage4.Controls.Add(this.button32);
-            this.tabPage4.Controls.Add(this.button31);
-            this.tabPage4.Controls.Add(this.button30);
-            this.tabPage4.Controls.Add(this.button29);
-            this.tabPage4.Controls.Add(this.button28);
-            this.tabPage4.Controls.Add(this.button27);
-            this.tabPage4.Location = new System.Drawing.Point(4, 27);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(392, 376);
-            this.tabPage4.TabIndex = 8;
-            this.tabPage4.Text = "Otros";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // button12
-            // 
-            this.button12.Location = new System.Drawing.Point(54, 51);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(89, 82);
-            this.button12.TabIndex = 0;
-            this.button12.Text = "Pollos";
-            this.button12.UseVisualStyleBackColor = true;
-            // 
-            // button13
-            // 
-            this.button13.Location = new System.Drawing.Point(149, 51);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(89, 82);
-            this.button13.TabIndex = 1;
-            this.button13.Text = "Parillas";
-            this.button13.UseVisualStyleBackColor = true;
-            // 
-            // button14
-            // 
-            this.button14.Location = new System.Drawing.Point(244, 51);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(89, 82);
-            this.button14.TabIndex = 2;
-            this.button14.Text = "Pescados";
-            this.button14.UseVisualStyleBackColor = true;
-            // 
-            // button15
-            // 
-            this.button15.Location = new System.Drawing.Point(54, 139);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(89, 82);
-            this.button15.TabIndex = 3;
-            this.button15.Text = "Ensaladas";
-            this.button15.UseVisualStyleBackColor = true;
-            // 
-            // button16
-            // 
-            this.button16.Location = new System.Drawing.Point(149, 139);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(89, 82);
-            this.button16.TabIndex = 4;
-            this.button16.Text = "Ensalada Esp.";
-            this.button16.UseVisualStyleBackColor = true;
-            // 
-            // button20
-            // 
-            this.button20.Location = new System.Drawing.Point(61, 56);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(78, 75);
-            this.button20.TabIndex = 8;
-            this.button20.Text = "Tradicionales";
-            this.button20.UseVisualStyleBackColor = true;
-            // 
-            // button21
-            // 
-            this.button21.Location = new System.Drawing.Point(145, 56);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(78, 75);
-            this.button21.TabIndex = 9;
-            this.button21.Text = "Especiales I";
-            this.button21.UseVisualStyleBackColor = true;
-            // 
-            // button22
-            // 
-            this.button22.Location = new System.Drawing.Point(229, 56);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(78, 75);
-            this.button22.TabIndex = 10;
-            this.button22.Text = "Especiales II";
-            this.button22.UseVisualStyleBackColor = true;
-            // 
-            // button23
-            // 
-            this.button23.Location = new System.Drawing.Point(61, 137);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(78, 75);
-            this.button23.TabIndex = 11;
-            this.button23.Text = "Especiales en Fugazza";
-            this.button23.UseVisualStyleBackColor = true;
-            // 
-            // button24
-            // 
-            this.button24.Location = new System.Drawing.Point(145, 137);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(78, 75);
-            this.button24.TabIndex = 12;
-            this.button24.Text = "Especiales en Fugazzeta";
-            this.button24.UseVisualStyleBackColor = true;
-            // 
-            // button25
-            // 
-            this.button25.Location = new System.Drawing.Point(61, 218);
-            this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(78, 75);
-            this.button25.TabIndex = 13;
-            this.button25.Text = "Otras Especiales";
-            this.button25.UseVisualStyleBackColor = true;
-            // 
-            // button26
-            // 
-            this.button26.Location = new System.Drawing.Point(229, 137);
-            this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(78, 75);
-            this.button26.TabIndex = 14;
-            this.button26.Text = "Especialidades en Calzones";
-            this.button26.UseVisualStyleBackColor = true;
-            // 
-            // button27
-            // 
-            this.button27.Location = new System.Drawing.Point(50, 56);
-            this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(78, 75);
-            this.button27.TabIndex = 15;
-            this.button27.Text = "Empanadas";
-            this.button27.UseVisualStyleBackColor = true;
-            // 
-            // button28
-            // 
-            this.button28.Location = new System.Drawing.Point(134, 56);
-            this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(78, 75);
-            this.button28.TabIndex = 16;
-            this.button28.Text = "Sandwiches";
-            this.button28.UseVisualStyleBackColor = true;
-            // 
-            // button29
-            // 
-            this.button29.Location = new System.Drawing.Point(218, 56);
-            this.button29.Name = "button29";
-            this.button29.Size = new System.Drawing.Size(78, 75);
-            this.button29.TabIndex = 17;
-            this.button29.Text = "Pastas";
-            this.button29.UseVisualStyleBackColor = true;
-            // 
-            // button30
-            // 
-            this.button30.Location = new System.Drawing.Point(50, 137);
-            this.button30.Name = "button30";
-            this.button30.Size = new System.Drawing.Size(78, 75);
-            this.button30.TabIndex = 18;
-            this.button30.Text = "Bebidas";
-            this.button30.UseVisualStyleBackColor = true;
-            // 
-            // button31
-            // 
-            this.button31.Location = new System.Drawing.Point(134, 137);
-            this.button31.Name = "button31";
-            this.button31.Size = new System.Drawing.Size(78, 75);
-            this.button31.TabIndex = 19;
-            this.button31.Text = "Postres";
-            this.button31.UseVisualStyleBackColor = true;
-            // 
-            // button32
-            // 
-            this.button32.Location = new System.Drawing.Point(218, 137);
-            this.button32.Name = "button32";
-            this.button32.Size = new System.Drawing.Size(78, 75);
-            this.button32.TabIndex = 20;
-            this.button32.Text = "Menús";
-            this.button32.UseVisualStyleBackColor = true;
-            // 
-            // button33
-            // 
-            this.button33.Location = new System.Drawing.Point(50, 218);
-            this.button33.Name = "button33";
-            this.button33.Size = new System.Drawing.Size(78, 75);
-            this.button33.TabIndex = 21;
-            this.button33.Text = "Promos";
-            this.button33.UseVisualStyleBackColor = true;
-            // 
             // listBox2
             // 
             this.listBox2.FormattingEnabled = true;
@@ -547,7 +547,7 @@
             this.groupBox1.Size = new System.Drawing.Size(679, 490);
             this.groupBox1.TabIndex = 18;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.groupBox1.Text = "Categorías";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // SubSeccionCrearPedidos
