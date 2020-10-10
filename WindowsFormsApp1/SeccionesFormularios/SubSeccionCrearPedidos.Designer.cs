@@ -138,7 +138,7 @@
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(89, 82);
             this.button8.TabIndex = 5;
-            this.button8.Text = "Omelettes";
+            this.button8.Text = "Omellete";
             this.button8.UseVisualStyleBackColor = true;
             // 
             // button7

@@ -89,10 +89,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Capa de Lógica de Negocios\CapaDeLógicaDeNegocios.csproj">
+      <Project>{e7c07caa-6fb6-433d-b9a5-926c908d4683}</Project>
+      <Name>CapaDeLógicaDeNegocios</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SeccionesFormularios\SeccionesFormularios.csproj">
       <Project>{a0ad50d0-5d4e-44f9-80db-49a838e3a51d}</Project>
       <Name>SeccionesFormularios</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
