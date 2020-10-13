@@ -89,9 +89,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Capa de Lógica de Negocios\CapaDeLógicaDeNegocios.csproj">
-      <Project>{e7c07caa-6fb6-433d-b9a5-926c908d4683}</Project>
-      <Name>CapaDeLógicaDeNegocios</Name>
+    <ProjectReference Include="..\CapaDeNegocios\CapaDeNegocios.csproj">
+      <Project>{b8184da5-7609-4bc5-8646-6528e5096f94}</Project>
+      <Name>CapaDeNegocios</Name>
     </ProjectReference>
     <ProjectReference Include="..\SeccionesFormularios\SeccionesFormularios.csproj">
       <Project>{a0ad50d0-5d4e-44f9-80db-49a838e3a51d}</Project>

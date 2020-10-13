@@ -56,5 +56,11 @@
       <DependentUpon>SubSeccionCrearPedidos.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaDeNegocios\CapaDeNegocios.csproj">
+      <Project>{b8184da5-7609-4bc5-8646-6528e5096f94}</Project>
+      <Name>CapaDeNegocios</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

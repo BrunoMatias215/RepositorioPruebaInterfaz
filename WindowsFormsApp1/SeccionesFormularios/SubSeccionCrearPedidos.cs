@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaDeNegocios;
 
 namespace SeccionesFormularios
 {
@@ -25,24 +26,71 @@ namespace SeccionesFormularios
 
             this.FormBorderStyle = FormBorderStyle.None;
 
-            string item = "Muzarella";
+            this.ListaDeProductos.DisplayMember = "descripcion";
 
-            int precio = 200;
+        }
 
-            int cantidad = 1;
+        private void BotonEntradas_Click(object sender, EventArgs e)
+        {
 
-            for (int i = 1; i < 21; i++)
+            this.ListaDeProductos.Items.Clear();
+
+            CapaDeNegocios.Producto producto = new Producto();
+
+            List<Producto> listadeentradas = new List<Producto>();
+
+            listadeentradas = producto.CargarEntradas();
+
+            foreach (Producto entrada in listadeentradas)
             {
 
-                this.listBox1.Items.Add(" "+item+" "+"("+cantidad+") "+precio);
+                this.ListaDeProductos.Items.Add(entrada);
 
             }
 
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
+        private void BotonConsultarPrecio_Click(object sender, EventArgs e)
         {
 
+            if (this.ListaDeProductos.SelectedItem != null)
+            {
+  
+                Producto entrada = (Producto)this.ListaDeProductos.SelectedItem;
+
+                int precio = entrada.Precio;
+
+                MessageBox.Show("El precio es " + precio, "Ver Precio");
+
+            }
+            else
+            {
+
+                MessageBox.Show("No seleccionó ningun producto", "Ver Precio");
+
+            }
+
         }
+
+        private void BotonOmelletes_Click(object sender, EventArgs e)
+        {
+
+            this.ListaDeProductos.Items.Clear();
+
+            CapaDeNegocios.Producto producto = new Producto();
+
+            List<Producto> listadeomelletes = new List<Producto>();
+
+            listadeomelletes = producto.CargarOmelettes();
+
+            foreach (Producto omellete in listadeomelletes)
+            {
+
+                this.ListaDeProductos.Items.Add(omellete);
+
+            }
+
+        }
+
     }
 }
