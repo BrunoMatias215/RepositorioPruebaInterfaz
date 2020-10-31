@@ -53,9 +53,9 @@ namespace CapaDeNegocios
 
             CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
 
-            DataTable tablaproductos = productodal.BuscarCategoriaEntrada();
+            DataTable tablaproductos = productodal.BuscarEntradas();
 
-            List<Producto> listadeentradas = new List<Producto>();
+            List<Producto> productosacargar = new List<Producto>();
 
             foreach (DataRow fila in tablaproductos.Rows)
             {
@@ -76,24 +76,24 @@ namespace CapaDeNegocios
 
                 idcategoriaproducto = int.Parse(fila["idproductocategoria"].ToString());
 
-                Producto entrada = new Producto(idproducto, descripcion, precio, idcategoriaproducto);
+                Producto producto = new Producto(idproducto, descripcion, precio, idcategoriaproducto);
 
-                listadeentradas.Add(entrada);
+                productosacargar.Add(producto);
 
             }
 
-            return listadeentradas;
+            return productosacargar;
 
         }
 
-        public List<Producto> CargarOmelettes ()
+        public List<Producto> CargarOmelletes ()
         {
 
             CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
 
-            DataTable tablaproductos = productodal.BuscarCategoriaOmelette();
+            DataTable tablaproductos = productodal.BuscarOmelletes();
 
-            List<Producto> listadeomelettes = new List<Producto>();
+            List<Producto> productosacargar = new List<Producto>();
 
             foreach (DataRow fila in tablaproductos.Rows)
             {
@@ -114,18 +114,928 @@ namespace CapaDeNegocios
 
                 idcategoriaproducto = int.Parse(fila["idproductocategoria"].ToString());
 
-                Producto omelette = new Producto(idproducto, descripcion, precio, idcategoriaproducto);
+                Producto producto = new Producto(idproducto, descripcion, precio, idcategoriaproducto);
 
-                listadeomelettes.Add(omelette);
+                productosacargar.Add(producto);
 
             }
 
-            return listadeomelettes;
+            return productosacargar;
 
         }
-   
+
+        public List<Producto> CargarTortillas()
+        {
+
+            CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
+
+            DataTable tablaproductos = productodal.BuscarTortillas();
+
+            List<Producto> productosacargar = new List<Producto>();
+
+            foreach (DataRow fila in tablaproductos.Rows)
+            {
+
+                int idproducto;
+
+                string descripcion;
+
+                int precio;
+
+                int idcategoriaproducto;
+
+                idproducto = int.Parse(fila["idproducto"].ToString());
+
+                descripcion = fila["descripcion"].ToString();
+
+                precio = int.Parse(fila["precio"].ToString());
+
+                idcategoriaproducto = int.Parse(fila["idproductocategoria"].ToString());
+
+                Producto producto = new Producto(idproducto, descripcion, precio, idcategoriaproducto);
+
+                productosacargar.Add(producto);
+
+            }
+
+            return productosacargar;
+
+        }
+
+        public List<Producto> CargarMilanesas()
+        {
+
+            CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
+
+            DataTable tablaproductos = productodal.BuscarMilanesas();
+
+            List<Producto> productosacargar = new List<Producto>();
+
+            foreach (DataRow fila in tablaproductos.Rows)
+            {
+
+                int idproducto;
+
+                string descripcion;
+
+                int precio;
+
+                int idcategoriaproducto;
+
+                idproducto = int.Parse(fila["idproducto"].ToString());
+
+                descripcion = fila["descripcion"].ToString();
+
+                precio = int.Parse(fila["precio"].ToString());
+
+                idcategoriaproducto = int.Parse(fila["idproductocategoria"].ToString());
+
+                Producto producto = new Producto(idproducto, descripcion, precio, idcategoriaproducto);
+
+                productosacargar.Add(producto);
+
+            }
+
+            return productosacargar;
+
+        }
+
+        public List<Producto> CargarSupremas()
+        {
+
+            CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
+
+            DataTable tablaproductos = productodal.BuscarSupremas();
+
+            List<Producto> productosacargar = new List<Producto>();
+
+            foreach (DataRow fila in tablaproductos.Rows)
+            {
+
+                int idproducto;
+
+                string descripcion;
+
+                int precio;
+
+                int idcategoriaproducto;
+
+                idproducto = int.Parse(fila["idproducto"].ToString());
+
+                descripcion = fila["descripcion"].ToString();
+
+                precio = int.Parse(fila["precio"].ToString());
+
+                idcategoriaproducto = int.Parse(fila["idproductocategoria"].ToString());
+
+                Producto producto = new Producto(idproducto, descripcion, precio, idcategoriaproducto);
+
+                productosacargar.Add(producto);
+
+            }
+
+            return productosacargar;
+
+        }
+
+        public List<Producto> CargarMatambre()
+        {
+
+            CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
+
+            DataTable tablaproductos = productodal.BuscarMatambre();
+
+            List<Producto> productosacargar = new List<Producto>();
+
+            foreach (DataRow fila in tablaproductos.Rows)
+            {
+
+                int idproducto;
+
+                string descripcion;
+
+                int precio;
+
+                int idcategoriaproducto;
+
+                idproducto = int.Parse(fila["idproducto"].ToString());
+
+                descripcion = fila["descripcion"].ToString();
+
+                precio = int.Parse(fila["precio"].ToString());
+
+                idcategoriaproducto = int.Parse(fila["idproductocategoria"].ToString());
+
+                Producto producto = new Producto(idproducto, descripcion, precio, idcategoriaproducto);
+
+                productosacargar.Add(producto);
+
+            }
+
+            return productosacargar;
+
+        }
+
+        public List<Producto> CargarGuarnicion()
+        {
+
+            CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
+
+            DataTable tablaproductos = productodal.BuscarGuarnicion();
+
+            List<Producto> productosacargar = new List<Producto>();
+
+            foreach (DataRow fila in tablaproductos.Rows)
+            {
+
+                int idproducto;
+
+                string descripcion;
+
+                int precio;
+
+                int idcategoriaproducto;
+
+                idproducto = int.Parse(fila["idproducto"].ToString());
+
+                descripcion = fila["descripcion"].ToString();
+
+                precio = int.Parse(fila["precio"].ToString());
+
+                idcategoriaproducto = int.Parse(fila["idproductocategoria"].ToString());
+
+                Producto producto = new Producto(idproducto, descripcion, precio, idcategoriaproducto);
+
+                productosacargar.Add(producto);
+
+            }
+
+            return productosacargar;
+
+        }
+
+        public List<Producto> CargarPollos()
+        {
+
+            CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
+
+            DataTable tablaproductos = productodal.BuscarPollos();
+
+            List<Producto> productosacargar = new List<Producto>();
+
+            foreach (DataRow fila in tablaproductos.Rows)
+            {
+
+                int idproducto;
+
+                string descripcion;
+
+                int precio;
+
+                int idcategoriaproducto;
+
+                idproducto = int.Parse(fila["idproducto"].ToString());
+
+                descripcion = fila["descripcion"].ToString();
+
+                precio = int.Parse(fila["precio"].ToString());
+
+                idcategoriaproducto = int.Parse(fila["idproductocategoria"].ToString());
+
+                Producto producto = new Producto(idproducto, descripcion, precio, idcategoriaproducto);
+
+                productosacargar.Add(producto);
+
+            }
+
+            return productosacargar;
+
+        }
+
+        public List<Producto> CargarParillas()
+        {
+
+            CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
+
+            DataTable tablaproductos = productodal.BuscarParillas();
+
+            List<Producto> productosacargar = new List<Producto>();
+
+            foreach (DataRow fila in tablaproductos.Rows)
+            {
+
+                int idproducto;
+
+                string descripcion;
+
+                int precio;
+
+                int idcategoriaproducto;
+
+                idproducto = int.Parse(fila["idproducto"].ToString());
+
+                descripcion = fila["descripcion"].ToString();
+
+                precio = int.Parse(fila["precio"].ToString());
+
+                idcategoriaproducto = int.Parse(fila["idproductocategoria"].ToString());
+
+                Producto producto = new Producto(idproducto, descripcion, precio, idcategoriaproducto);
+
+                productosacargar.Add(producto);
+
+            }
+
+            return productosacargar;
+
+        }
+
+        public List<Producto> CargarPescados()
+        {
+
+            CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
+
+            DataTable tablaproductos = productodal.BuscarPescados();
+
+            List<Producto> productosacargar = new List<Producto>();
+
+            foreach (DataRow fila in tablaproductos.Rows)
+            {
+
+                int idproducto;
+
+                string descripcion;
+
+                int precio;
+
+                int idcategoriaproducto;
+
+                idproducto = int.Parse(fila["idproducto"].ToString());
+
+                descripcion = fila["descripcion"].ToString();
+
+                precio = int.Parse(fila["precio"].ToString());
+
+                idcategoriaproducto = int.Parse(fila["idproductocategoria"].ToString());
+
+                Producto producto = new Producto(idproducto, descripcion, precio, idcategoriaproducto);
+
+                productosacargar.Add(producto);
+
+            }
+
+            return productosacargar;
+
+        }
+
+        public List<Producto> CargarEnsaladas()
+        {
+
+            CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
+
+            DataTable tablaproductos = productodal.BuscarEnsaladas();
+
+            List<Producto> productosacargar = new List<Producto>();
+
+            foreach (DataRow fila in tablaproductos.Rows)
+            {
+
+                int idproducto;
+
+                string descripcion;
+
+                int precio;
+
+                int idcategoriaproducto;
+
+                idproducto = int.Parse(fila["idproducto"].ToString());
+
+                descripcion = fila["descripcion"].ToString();
+
+                precio = int.Parse(fila["precio"].ToString());
+
+                idcategoriaproducto = int.Parse(fila["idproductocategoria"].ToString());
+
+                Producto producto = new Producto(idproducto, descripcion, precio, idcategoriaproducto);
+
+                productosacargar.Add(producto);
+
+            }
+
+            return productosacargar;
+
+        }
+
+        public List<Producto> CargarEnsaladasEsp()
+        {
+
+            CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
+
+            DataTable tablaproductos = productodal.BuscarEnsaladasEsp();
+
+            List<Producto> productosacargar = new List<Producto>();
+
+            foreach (DataRow fila in tablaproductos.Rows)
+            {
+
+                int idproducto;
+
+                string descripcion;
+
+                int precio;
+
+                int idcategoriaproducto;
+
+                idproducto = int.Parse(fila["idproducto"].ToString());
+
+                descripcion = fila["descripcion"].ToString();
+
+                precio = int.Parse(fila["precio"].ToString());
+
+                idcategoriaproducto = int.Parse(fila["idproductocategoria"].ToString());
+
+                Producto producto = new Producto(idproducto, descripcion, precio, idcategoriaproducto);
+
+                productosacargar.Add(producto);
+
+            }
+
+            return productosacargar;
+
+        }
+
+        public List<Producto> CargarTradicionales()
+        {
+
+            CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
+
+            DataTable tablaproductos = productodal.BuscarTradicionales();
+
+            List<Producto> productosacargar = new List<Producto>();
+
+            foreach (DataRow fila in tablaproductos.Rows)
+            {
+
+                int idproducto;
+
+                string descripcion;
+
+                int precio;
+
+                int idcategoriaproducto;
+
+                idproducto = int.Parse(fila["idproducto"].ToString());
+
+                descripcion = fila["descripcion"].ToString();
+
+                precio = int.Parse(fila["precio"].ToString());
+
+                idcategoriaproducto = int.Parse(fila["idproductocategoria"].ToString());
+
+                Producto producto = new Producto(idproducto, descripcion, precio, idcategoriaproducto);
+
+                productosacargar.Add(producto);
+
+            }
+
+            return productosacargar;
+
+        }
+
+        public List<Producto> CargarEspecialesI()
+        {
+
+            CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
+
+            DataTable tablaproductos = productodal.BuscarEspecialesI();
+
+            List<Producto> productosacargar = new List<Producto>();
+
+            foreach (DataRow fila in tablaproductos.Rows)
+            {
+
+                int idproducto;
+
+                string descripcion;
+
+                int precio;
+
+                int idcategoriaproducto;
+
+                idproducto = int.Parse(fila["idproducto"].ToString());
+
+                descripcion = fila["descripcion"].ToString();
+
+                precio = int.Parse(fila["precio"].ToString());
+
+                idcategoriaproducto = int.Parse(fila["idproductocategoria"].ToString());
+
+                Producto producto = new Producto(idproducto, descripcion, precio, idcategoriaproducto);
+
+                productosacargar.Add(producto);
+
+            }
+
+            return productosacargar;
+
+        }
+
+        public List<Producto> CargarEspecialesII()
+        {
+
+            CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
+
+            DataTable tablaproductos = productodal.BuscarEspecialesII();
+
+            List<Producto> productosacargar = new List<Producto>();
+
+            foreach (DataRow fila in tablaproductos.Rows)
+            {
+
+                int idproducto;
+
+                string descripcion;
+
+                int precio;
+
+                int idcategoriaproducto;
+
+                idproducto = int.Parse(fila["idproducto"].ToString());
+
+                descripcion = fila["descripcion"].ToString();
+
+                precio = int.Parse(fila["precio"].ToString());
+
+                idcategoriaproducto = int.Parse(fila["idproductocategoria"].ToString());
+
+                Producto producto = new Producto(idproducto, descripcion, precio, idcategoriaproducto);
+
+                productosacargar.Add(producto);
+
+            }
+
+            return productosacargar;
+
+        }
+
+        public List<Producto> CargarFugazzas()
+        {
+
+            CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
+
+            DataTable tablaproductos = productodal.BuscarFugazzas();
+
+            List<Producto> productosacargar = new List<Producto>();
+
+            foreach (DataRow fila in tablaproductos.Rows)
+            {
+
+                int idproducto;
+
+                string descripcion;
+
+                int precio;
+
+                int idcategoriaproducto;
+
+                idproducto = int.Parse(fila["idproducto"].ToString());
+
+                descripcion = fila["descripcion"].ToString();
+
+                precio = int.Parse(fila["precio"].ToString());
+
+                idcategoriaproducto = int.Parse(fila["idproductocategoria"].ToString());
+
+                Producto producto = new Producto(idproducto, descripcion, precio, idcategoriaproducto);
+
+                productosacargar.Add(producto);
+
+            }
+
+            return productosacargar;
+
+        }
+
+        public List<Producto> CargarFugazzetas()
+        {
+
+            CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
+
+            DataTable tablaproductos = productodal.BuscarFugazzetas();
+
+            List<Producto> productosacargar = new List<Producto>();
+
+            foreach (DataRow fila in tablaproductos.Rows)
+            {
+
+                int idproducto;
+
+                string descripcion;
+
+                int precio;
+
+                int idcategoriaproducto;
+
+                idproducto = int.Parse(fila["idproducto"].ToString());
+
+                descripcion = fila["descripcion"].ToString();
+
+                precio = int.Parse(fila["precio"].ToString());
+
+                idcategoriaproducto = int.Parse(fila["idproductocategoria"].ToString());
+
+                Producto producto = new Producto(idproducto, descripcion, precio, idcategoriaproducto);
+
+                productosacargar.Add(producto);
+
+            }
+
+            return productosacargar;
+
+        }
+
+        public List<Producto> CargarCalzones()
+        {
+
+            CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
+
+            DataTable tablaproductos = productodal.BuscarCalzones();
+
+            List<Producto> productosacargar = new List<Producto>();
+
+            foreach (DataRow fila in tablaproductos.Rows)
+            {
+
+                int idproducto;
+
+                string descripcion;
+
+                int precio;
+
+                int idcategoriaproducto;
+
+                idproducto = int.Parse(fila["idproducto"].ToString());
+
+                descripcion = fila["descripcion"].ToString();
+
+                precio = int.Parse(fila["precio"].ToString());
+
+                idcategoriaproducto = int.Parse(fila["idproductocategoria"].ToString());
+
+                Producto producto = new Producto(idproducto, descripcion, precio, idcategoriaproducto);
+
+                productosacargar.Add(producto);
+
+            }
+
+            return productosacargar;
+
+        }
+
+        public List<Producto> CargarOtrasEspecialidades()
+        {
+
+            CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
+
+            DataTable tablaproductos = productodal.BuscarOtrasEspecialidades();
+
+            List<Producto> productosacargar = new List<Producto>();
+
+            foreach (DataRow fila in tablaproductos.Rows)
+            {
+
+                int idproducto;
+
+                string descripcion;
+
+                int precio;
+
+                int idcategoriaproducto;
+
+                idproducto = int.Parse(fila["idproducto"].ToString());
+
+                descripcion = fila["descripcion"].ToString();
+
+                precio = int.Parse(fila["precio"].ToString());
+
+                idcategoriaproducto = int.Parse(fila["idproductocategoria"].ToString());
+
+                Producto producto = new Producto(idproducto, descripcion, precio, idcategoriaproducto);
+
+                productosacargar.Add(producto);
+
+            }
+
+            return productosacargar;
+
+        }
+
+        public List<Producto> CargarEmpanadas()
+        {
+
+            CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
+
+            DataTable tablaproductos = productodal.BuscarEmpanadas();
+
+            List<Producto> productosacargar = new List<Producto>();
+
+            foreach (DataRow fila in tablaproductos.Rows)
+            {
+
+                int idproducto;
+
+                string descripcion;
+
+                int precio;
+
+                int idcategoriaproducto;
+
+                idproducto = int.Parse(fila["idproducto"].ToString());
+
+                descripcion = fila["descripcion"].ToString();
+
+                precio = int.Parse(fila["precio"].ToString());
+
+                idcategoriaproducto = int.Parse(fila["idproductocategoria"].ToString());
+
+                Producto producto = new Producto(idproducto, descripcion, precio, idcategoriaproducto);
+
+                productosacargar.Add(producto);
+
+            }
+
+            return productosacargar;
+
+        }
+
+        public List<Producto> CargarSandwiches()
+        {
+
+            CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
+
+            DataTable tablaproductos = productodal.BuscarSandwiches();
+
+            List<Producto> productosacargar = new List<Producto>();
+
+            foreach (DataRow fila in tablaproductos.Rows)
+            {
+
+                int idproducto;
+
+                string descripcion;
+
+                int precio;
+
+                int idcategoriaproducto;
+
+                idproducto = int.Parse(fila["idproducto"].ToString());
+
+                descripcion = fila["descripcion"].ToString();
+
+                precio = int.Parse(fila["precio"].ToString());
+
+                idcategoriaproducto = int.Parse(fila["idproductocategoria"].ToString());
+
+                Producto producto = new Producto(idproducto, descripcion, precio, idcategoriaproducto);
+
+                productosacargar.Add(producto);
+
+            }
+
+            return productosacargar;
+
+        }
+
+        public List<Producto> CargarPastas()
+        {
+
+            CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
+
+            DataTable tablaproductos = productodal.BuscarPastas();
+
+            List<Producto> productosacargar = new List<Producto>();
+
+            foreach (DataRow fila in tablaproductos.Rows)
+            {
+
+                int idproducto;
+
+                string descripcion;
+
+                int precio;
+
+                int idcategoriaproducto;
+
+                idproducto = int.Parse(fila["idproducto"].ToString());
+
+                descripcion = fila["descripcion"].ToString();
+
+                precio = int.Parse(fila["precio"].ToString());
+
+                idcategoriaproducto = int.Parse(fila["idproductocategoria"].ToString());
+
+                Producto producto = new Producto(idproducto, descripcion, precio, idcategoriaproducto);
+
+                productosacargar.Add(producto);
+
+            }
+
+            return productosacargar;
+
+        }
+
+        public List<Producto> CargarBebidas()
+        {
+
+            CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
+
+            DataTable tablaproductos = productodal.BuscarBebidas();
+
+            List<Producto> productosacargar = new List<Producto>();
+
+            foreach (DataRow fila in tablaproductos.Rows)
+            {
+
+                int idproducto;
+
+                string descripcion;
+
+                int precio;
+
+                int idcategoriaproducto;
+
+                idproducto = int.Parse(fila["idproducto"].ToString());
+
+                descripcion = fila["descripcion"].ToString();
+
+                precio = int.Parse(fila["precio"].ToString());
+
+                idcategoriaproducto = int.Parse(fila["idproductocategoria"].ToString());
+
+                Producto producto = new Producto(idproducto, descripcion, precio, idcategoriaproducto);
+
+                productosacargar.Add(producto);
+
+            }
+
+            return productosacargar;
+
+        }
+
+        public List<Producto> CargarPostres()
+        {
+
+            CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
+
+            DataTable tablaproductos = productodal.BuscarPostres();
+
+            List<Producto> productosacargar = new List<Producto>();
+
+            foreach (DataRow fila in tablaproductos.Rows)
+            {
+
+                int idproducto;
+
+                string descripcion;
+
+                int precio;
+
+                int idcategoriaproducto;
+
+                idproducto = int.Parse(fila["idproducto"].ToString());
+
+                descripcion = fila["descripcion"].ToString();
+
+                precio = int.Parse(fila["precio"].ToString());
+
+                idcategoriaproducto = int.Parse(fila["idproductocategoria"].ToString());
+
+                Producto producto = new Producto(idproducto, descripcion, precio, idcategoriaproducto);
+
+                productosacargar.Add(producto);
+
+            }
+
+            return productosacargar;
+
+        }
+
+        public List<Producto> CargarMenus()
+        {
+
+            CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
+
+            DataTable tablaproductos = productodal.BuscarMenus();
+
+            List<Producto> productosacargar = new List<Producto>();
+
+            foreach (DataRow fila in tablaproductos.Rows)
+            {
+
+                int idproducto;
+
+                string descripcion;
+
+                int precio;
+
+                int idcategoriaproducto;
+
+                idproducto = int.Parse(fila["idproducto"].ToString());
+
+                descripcion = fila["descripcion"].ToString();
+
+                precio = int.Parse(fila["precio"].ToString());
+
+                idcategoriaproducto = int.Parse(fila["idproductocategoria"].ToString());
+
+                Producto producto = new Producto(idproducto, descripcion, precio, idcategoriaproducto);
+
+                productosacargar.Add(producto);
+
+            }
+
+            return productosacargar;
+
+        }
+
+        public List<Producto> CargarPromos()
+        {
+
+            CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
+
+            DataTable tablaproductos = productodal.BuscarPromos();
+
+            List<Producto> productosacargar = new List<Producto>();
+
+            foreach (DataRow fila in tablaproductos.Rows)
+            {
+
+                int idproducto;
+
+                string descripcion;
+
+                int precio;
+
+                int idcategoriaproducto;
+
+                idproducto = int.Parse(fila["idproducto"].ToString());
+
+                descripcion = fila["descripcion"].ToString();
+
+                precio = int.Parse(fila["precio"].ToString());
+
+                idcategoriaproducto = int.Parse(fila["idproductocategoria"].ToString());
+
+                Producto producto = new Producto(idproducto, descripcion, precio, idcategoriaproducto);
+
+                productosacargar.Add(producto);
+
+            }
+
+            return productosacargar;
+
+        }
 
     }
-
 
 }

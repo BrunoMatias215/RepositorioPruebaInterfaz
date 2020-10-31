@@ -31,52 +31,54 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.BotonEntradas = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
+            this.BotonGuarnicion = new System.Windows.Forms.Button();
             this.BotonOmelletes = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.BotonTortillas = new System.Windows.Forms.Button();
+            this.BotonMatambre = new System.Windows.Forms.Button();
+            this.BotonSupremas = new System.Windows.Forms.Button();
+            this.BotonMilanesas = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.button16 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
+            this.BotonEnsaladasEsp = new System.Windows.Forms.Button();
+            this.BotonEnsaladas = new System.Windows.Forms.Button();
+            this.BotonPescados = new System.Windows.Forms.Button();
+            this.BotonParillas = new System.Windows.Forms.Button();
+            this.BotonPollos = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.button26 = new System.Windows.Forms.Button();
-            this.button25 = new System.Windows.Forms.Button();
-            this.button24 = new System.Windows.Forms.Button();
-            this.button23 = new System.Windows.Forms.Button();
-            this.button22 = new System.Windows.Forms.Button();
-            this.button21 = new System.Windows.Forms.Button();
-            this.button20 = new System.Windows.Forms.Button();
+            this.BotonCalzones = new System.Windows.Forms.Button();
+            this.BotonOtrasEspeciales = new System.Windows.Forms.Button();
+            this.BotonEspecialesEnFugazzeta = new System.Windows.Forms.Button();
+            this.BotonEspecialesEnFugazza = new System.Windows.Forms.Button();
+            this.BotonEspecialesII = new System.Windows.Forms.Button();
+            this.BotonEspecialesI = new System.Windows.Forms.Button();
+            this.BotonTradicionales = new System.Windows.Forms.Button();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.button33 = new System.Windows.Forms.Button();
-            this.button32 = new System.Windows.Forms.Button();
-            this.button31 = new System.Windows.Forms.Button();
-            this.button30 = new System.Windows.Forms.Button();
-            this.button29 = new System.Windows.Forms.Button();
-            this.button28 = new System.Windows.Forms.Button();
-            this.button27 = new System.Windows.Forms.Button();
+            this.BotonPromos = new System.Windows.Forms.Button();
+            this.BotonMenus = new System.Windows.Forms.Button();
+            this.BotonPostres = new System.Windows.Forms.Button();
+            this.BotonBebidas = new System.Windows.Forms.Button();
+            this.BotonPastas = new System.Windows.Forms.Button();
+            this.BotonSandwiches = new System.Windows.Forms.Button();
+            this.BotonEmpanadas = new System.Windows.Forms.Button();
             this.ListaDeProductos = new System.Windows.Forms.ListBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBoxClientes = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBoxCadetes = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.comboBoxFormasDePago = new System.Windows.Forms.ComboBox();
+            this.BotonCrearPedido = new System.Windows.Forms.Button();
+            this.Total = new System.Windows.Forms.Label();
+            this.comboBoxCantidad = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.listBox2 = new System.Windows.Forms.ListBox();
+            this.BotonAgregarProducto = new System.Windows.Forms.Button();
+            this.BotonBorrarProducto = new System.Windows.Forms.Button();
+            this.ListaDeDetallesPedidos = new System.Windows.Forms.ListBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.BotonConsultarPrecio = new System.Windows.Forms.Button();
+            this.Observaciones = new System.Windows.Forms.RichTextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -95,22 +97,22 @@
             this.tabControl1.Location = new System.Drawing.Point(12, 22);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(400, 407);
+            this.tabControl1.Size = new System.Drawing.Size(400, 393);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.BotonEntradas);
-            this.tabPage1.Controls.Add(this.button9);
+            this.tabPage1.Controls.Add(this.BotonGuarnicion);
             this.tabPage1.Controls.Add(this.BotonOmelletes);
-            this.tabPage1.Controls.Add(this.button7);
-            this.tabPage1.Controls.Add(this.button6);
-            this.tabPage1.Controls.Add(this.button5);
-            this.tabPage1.Controls.Add(this.button4);
+            this.tabPage1.Controls.Add(this.BotonTortillas);
+            this.tabPage1.Controls.Add(this.BotonMatambre);
+            this.tabPage1.Controls.Add(this.BotonSupremas);
+            this.tabPage1.Controls.Add(this.BotonMilanesas);
             this.tabPage1.Location = new System.Drawing.Point(4, 27);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(392, 376);
+            this.tabPage1.Size = new System.Drawing.Size(392, 362);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Entradas y Minutas";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -125,14 +127,15 @@
             this.BotonEntradas.UseVisualStyleBackColor = true;
             this.BotonEntradas.Click += new System.EventHandler(this.BotonEntradas_Click);
             // 
-            // button9
+            // BotonGuarnicion
             // 
-            this.button9.Location = new System.Drawing.Point(54, 220);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(89, 82);
-            this.button9.TabIndex = 6;
-            this.button9.Text = "Guarnición";
-            this.button9.UseVisualStyleBackColor = true;
+            this.BotonGuarnicion.Location = new System.Drawing.Point(54, 220);
+            this.BotonGuarnicion.Name = "BotonGuarnicion";
+            this.BotonGuarnicion.Size = new System.Drawing.Size(89, 82);
+            this.BotonGuarnicion.TabIndex = 6;
+            this.BotonGuarnicion.Text = "Guarnición";
+            this.BotonGuarnicion.UseVisualStyleBackColor = true;
+            this.BotonGuarnicion.Click += new System.EventHandler(this.BotonGuarnicion_Click);
             // 
             // BotonOmelletes
             // 
@@ -144,282 +147,306 @@
             this.BotonOmelletes.UseVisualStyleBackColor = true;
             this.BotonOmelletes.Click += new System.EventHandler(this.BotonOmelletes_Click);
             // 
-            // button7
+            // BotonTortillas
             // 
-            this.button7.Location = new System.Drawing.Point(244, 44);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(89, 82);
-            this.button7.TabIndex = 4;
-            this.button7.Text = "Tortillas";
-            this.button7.UseVisualStyleBackColor = true;
+            this.BotonTortillas.Location = new System.Drawing.Point(244, 44);
+            this.BotonTortillas.Name = "BotonTortillas";
+            this.BotonTortillas.Size = new System.Drawing.Size(89, 82);
+            this.BotonTortillas.TabIndex = 4;
+            this.BotonTortillas.Text = "Tortillas";
+            this.BotonTortillas.UseVisualStyleBackColor = true;
+            this.BotonTortillas.Click += new System.EventHandler(this.BotonTortillas_Click);
             // 
-            // button6
+            // BotonMatambre
             // 
-            this.button6.Location = new System.Drawing.Point(244, 132);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(89, 82);
-            this.button6.TabIndex = 3;
-            this.button6.Text = "Matambre";
-            this.button6.UseVisualStyleBackColor = true;
+            this.BotonMatambre.Location = new System.Drawing.Point(244, 132);
+            this.BotonMatambre.Name = "BotonMatambre";
+            this.BotonMatambre.Size = new System.Drawing.Size(89, 82);
+            this.BotonMatambre.TabIndex = 3;
+            this.BotonMatambre.Text = "Matambre";
+            this.BotonMatambre.UseVisualStyleBackColor = true;
+            this.BotonMatambre.Click += new System.EventHandler(this.BotonMatambre_Click);
             // 
-            // button5
+            // BotonSupremas
             // 
-            this.button5.Location = new System.Drawing.Point(149, 132);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(89, 82);
-            this.button5.TabIndex = 2;
-            this.button5.Text = "Supremas";
-            this.button5.UseVisualStyleBackColor = true;
+            this.BotonSupremas.Location = new System.Drawing.Point(149, 132);
+            this.BotonSupremas.Name = "BotonSupremas";
+            this.BotonSupremas.Size = new System.Drawing.Size(89, 82);
+            this.BotonSupremas.TabIndex = 2;
+            this.BotonSupremas.Text = "Supremas";
+            this.BotonSupremas.UseVisualStyleBackColor = true;
+            this.BotonSupremas.Click += new System.EventHandler(this.BotonSupremas_Click);
             // 
-            // button4
+            // BotonMilanesas
             // 
-            this.button4.Location = new System.Drawing.Point(54, 132);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(89, 82);
-            this.button4.TabIndex = 1;
-            this.button4.Text = "Milanesas";
-            this.button4.UseVisualStyleBackColor = true;
+            this.BotonMilanesas.Location = new System.Drawing.Point(54, 132);
+            this.BotonMilanesas.Name = "BotonMilanesas";
+            this.BotonMilanesas.Size = new System.Drawing.Size(89, 82);
+            this.BotonMilanesas.TabIndex = 1;
+            this.BotonMilanesas.Text = "Milanesas";
+            this.BotonMilanesas.UseVisualStyleBackColor = true;
+            this.BotonMilanesas.Click += new System.EventHandler(this.BotonMilanesas_Click);
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.button16);
-            this.tabPage2.Controls.Add(this.button15);
-            this.tabPage2.Controls.Add(this.button14);
-            this.tabPage2.Controls.Add(this.button13);
-            this.tabPage2.Controls.Add(this.button12);
+            this.tabPage2.Controls.Add(this.BotonEnsaladasEsp);
+            this.tabPage2.Controls.Add(this.BotonEnsaladas);
+            this.tabPage2.Controls.Add(this.BotonPescados);
+            this.tabPage2.Controls.Add(this.BotonParillas);
+            this.tabPage2.Controls.Add(this.BotonPollos);
             this.tabPage2.Location = new System.Drawing.Point(4, 27);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(392, 376);
+            this.tabPage2.Size = new System.Drawing.Size(392, 362);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Carnes y Ensaladas";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // button16
+            // BotonEnsaladasEsp
             // 
-            this.button16.Location = new System.Drawing.Point(149, 139);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(89, 82);
-            this.button16.TabIndex = 4;
-            this.button16.Text = "Ensalada Esp.";
-            this.button16.UseVisualStyleBackColor = true;
+            this.BotonEnsaladasEsp.Location = new System.Drawing.Point(149, 139);
+            this.BotonEnsaladasEsp.Name = "BotonEnsaladasEsp";
+            this.BotonEnsaladasEsp.Size = new System.Drawing.Size(89, 82);
+            this.BotonEnsaladasEsp.TabIndex = 4;
+            this.BotonEnsaladasEsp.Text = "Ensalada Esp.";
+            this.BotonEnsaladasEsp.UseVisualStyleBackColor = true;
+            this.BotonEnsaladasEsp.Click += new System.EventHandler(this.BotonEnsaladasEsp_Click);
             // 
-            // button15
+            // BotonEnsaladas
             // 
-            this.button15.Location = new System.Drawing.Point(54, 139);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(89, 82);
-            this.button15.TabIndex = 3;
-            this.button15.Text = "Ensaladas";
-            this.button15.UseVisualStyleBackColor = true;
+            this.BotonEnsaladas.Location = new System.Drawing.Point(54, 139);
+            this.BotonEnsaladas.Name = "BotonEnsaladas";
+            this.BotonEnsaladas.Size = new System.Drawing.Size(89, 82);
+            this.BotonEnsaladas.TabIndex = 3;
+            this.BotonEnsaladas.Text = "Ensaladas";
+            this.BotonEnsaladas.UseVisualStyleBackColor = true;
+            this.BotonEnsaladas.Click += new System.EventHandler(this.BotonEnsaladas_Click);
             // 
-            // button14
+            // BotonPescados
             // 
-            this.button14.Location = new System.Drawing.Point(244, 51);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(89, 82);
-            this.button14.TabIndex = 2;
-            this.button14.Text = "Pescados";
-            this.button14.UseVisualStyleBackColor = true;
+            this.BotonPescados.Location = new System.Drawing.Point(244, 51);
+            this.BotonPescados.Name = "BotonPescados";
+            this.BotonPescados.Size = new System.Drawing.Size(89, 82);
+            this.BotonPescados.TabIndex = 2;
+            this.BotonPescados.Text = "Pescados";
+            this.BotonPescados.UseVisualStyleBackColor = true;
+            this.BotonPescados.Click += new System.EventHandler(this.BotonPescados_Click);
             // 
-            // button13
+            // BotonParillas
             // 
-            this.button13.Location = new System.Drawing.Point(149, 51);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(89, 82);
-            this.button13.TabIndex = 1;
-            this.button13.Text = "Parillas";
-            this.button13.UseVisualStyleBackColor = true;
+            this.BotonParillas.Location = new System.Drawing.Point(149, 51);
+            this.BotonParillas.Name = "BotonParillas";
+            this.BotonParillas.Size = new System.Drawing.Size(89, 82);
+            this.BotonParillas.TabIndex = 1;
+            this.BotonParillas.Text = "Parillas";
+            this.BotonParillas.UseVisualStyleBackColor = true;
+            this.BotonParillas.Click += new System.EventHandler(this.BotonParillas_Click);
             // 
-            // button12
+            // BotonPollos
             // 
-            this.button12.Location = new System.Drawing.Point(54, 51);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(89, 82);
-            this.button12.TabIndex = 0;
-            this.button12.Text = "Pollos";
-            this.button12.UseVisualStyleBackColor = true;
+            this.BotonPollos.Location = new System.Drawing.Point(54, 51);
+            this.BotonPollos.Name = "BotonPollos";
+            this.BotonPollos.Size = new System.Drawing.Size(89, 82);
+            this.BotonPollos.TabIndex = 0;
+            this.BotonPollos.Text = "Pollos";
+            this.BotonPollos.UseVisualStyleBackColor = true;
+            this.BotonPollos.Click += new System.EventHandler(this.BotonPollos_Click);
             // 
             // tabPage3
             // 
-            this.tabPage3.Controls.Add(this.button26);
-            this.tabPage3.Controls.Add(this.button25);
-            this.tabPage3.Controls.Add(this.button24);
-            this.tabPage3.Controls.Add(this.button23);
-            this.tabPage3.Controls.Add(this.button22);
-            this.tabPage3.Controls.Add(this.button21);
-            this.tabPage3.Controls.Add(this.button20);
+            this.tabPage3.Controls.Add(this.BotonCalzones);
+            this.tabPage3.Controls.Add(this.BotonOtrasEspeciales);
+            this.tabPage3.Controls.Add(this.BotonEspecialesEnFugazzeta);
+            this.tabPage3.Controls.Add(this.BotonEspecialesEnFugazza);
+            this.tabPage3.Controls.Add(this.BotonEspecialesII);
+            this.tabPage3.Controls.Add(this.BotonEspecialesI);
+            this.tabPage3.Controls.Add(this.BotonTradicionales);
             this.tabPage3.Location = new System.Drawing.Point(4, 27);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(392, 376);
+            this.tabPage3.Size = new System.Drawing.Size(392, 362);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Pizzas";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // button26
+            // BotonCalzones
             // 
-            this.button26.Location = new System.Drawing.Point(229, 137);
-            this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(78, 75);
-            this.button26.TabIndex = 14;
-            this.button26.Text = "Especialidades en Calzones";
-            this.button26.UseVisualStyleBackColor = true;
+            this.BotonCalzones.Location = new System.Drawing.Point(229, 137);
+            this.BotonCalzones.Name = "BotonCalzones";
+            this.BotonCalzones.Size = new System.Drawing.Size(78, 75);
+            this.BotonCalzones.TabIndex = 14;
+            this.BotonCalzones.Text = "Especialidades en Calzones";
+            this.BotonCalzones.UseVisualStyleBackColor = true;
+            this.BotonCalzones.Click += new System.EventHandler(this.BotonCalzones_Click);
             // 
-            // button25
+            // BotonOtrasEspeciales
             // 
-            this.button25.Location = new System.Drawing.Point(61, 218);
-            this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(78, 75);
-            this.button25.TabIndex = 13;
-            this.button25.Text = "Otras Especiales";
-            this.button25.UseVisualStyleBackColor = true;
+            this.BotonOtrasEspeciales.Location = new System.Drawing.Point(61, 218);
+            this.BotonOtrasEspeciales.Name = "BotonOtrasEspeciales";
+            this.BotonOtrasEspeciales.Size = new System.Drawing.Size(78, 75);
+            this.BotonOtrasEspeciales.TabIndex = 13;
+            this.BotonOtrasEspeciales.Text = "Otras Especiales";
+            this.BotonOtrasEspeciales.UseVisualStyleBackColor = true;
+            this.BotonOtrasEspeciales.Click += new System.EventHandler(this.BotonOtrasEspeciales_Click);
             // 
-            // button24
+            // BotonEspecialesEnFugazzeta
             // 
-            this.button24.Location = new System.Drawing.Point(145, 137);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(78, 75);
-            this.button24.TabIndex = 12;
-            this.button24.Text = "Especiales en Fugazzeta";
-            this.button24.UseVisualStyleBackColor = true;
+            this.BotonEspecialesEnFugazzeta.Location = new System.Drawing.Point(145, 137);
+            this.BotonEspecialesEnFugazzeta.Name = "BotonEspecialesEnFugazzeta";
+            this.BotonEspecialesEnFugazzeta.Size = new System.Drawing.Size(78, 75);
+            this.BotonEspecialesEnFugazzeta.TabIndex = 12;
+            this.BotonEspecialesEnFugazzeta.Text = "Especiales en Fugazzeta";
+            this.BotonEspecialesEnFugazzeta.UseVisualStyleBackColor = true;
+            this.BotonEspecialesEnFugazzeta.Click += new System.EventHandler(this.BotonEspecialesEnFugazzeta_Click);
             // 
-            // button23
+            // BotonEspecialesEnFugazza
             // 
-            this.button23.Location = new System.Drawing.Point(61, 137);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(78, 75);
-            this.button23.TabIndex = 11;
-            this.button23.Text = "Especiales en Fugazza";
-            this.button23.UseVisualStyleBackColor = true;
+            this.BotonEspecialesEnFugazza.Location = new System.Drawing.Point(61, 137);
+            this.BotonEspecialesEnFugazza.Name = "BotonEspecialesEnFugazza";
+            this.BotonEspecialesEnFugazza.Size = new System.Drawing.Size(78, 75);
+            this.BotonEspecialesEnFugazza.TabIndex = 11;
+            this.BotonEspecialesEnFugazza.Text = "Especiales en Fugazza";
+            this.BotonEspecialesEnFugazza.UseVisualStyleBackColor = true;
+            this.BotonEspecialesEnFugazza.Click += new System.EventHandler(this.BotonEspecialesEnFugazza_Click);
             // 
-            // button22
+            // BotonEspecialesII
             // 
-            this.button22.Location = new System.Drawing.Point(229, 56);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(78, 75);
-            this.button22.TabIndex = 10;
-            this.button22.Text = "Especiales II";
-            this.button22.UseVisualStyleBackColor = true;
+            this.BotonEspecialesII.Location = new System.Drawing.Point(229, 56);
+            this.BotonEspecialesII.Name = "BotonEspecialesII";
+            this.BotonEspecialesII.Size = new System.Drawing.Size(78, 75);
+            this.BotonEspecialesII.TabIndex = 10;
+            this.BotonEspecialesII.Text = "Especiales II";
+            this.BotonEspecialesII.UseVisualStyleBackColor = true;
+            this.BotonEspecialesII.Click += new System.EventHandler(this.BotonEspecialesII_Click);
             // 
-            // button21
+            // BotonEspecialesI
             // 
-            this.button21.Location = new System.Drawing.Point(145, 56);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(78, 75);
-            this.button21.TabIndex = 9;
-            this.button21.Text = "Especiales I";
-            this.button21.UseVisualStyleBackColor = true;
+            this.BotonEspecialesI.Location = new System.Drawing.Point(145, 56);
+            this.BotonEspecialesI.Name = "BotonEspecialesI";
+            this.BotonEspecialesI.Size = new System.Drawing.Size(78, 75);
+            this.BotonEspecialesI.TabIndex = 9;
+            this.BotonEspecialesI.Text = "Especiales I";
+            this.BotonEspecialesI.UseVisualStyleBackColor = true;
+            this.BotonEspecialesI.Click += new System.EventHandler(this.BotonEspecialesI_Click);
             // 
-            // button20
+            // BotonTradicionales
             // 
-            this.button20.Location = new System.Drawing.Point(61, 56);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(78, 75);
-            this.button20.TabIndex = 8;
-            this.button20.Text = "Tradicionales";
-            this.button20.UseVisualStyleBackColor = true;
+            this.BotonTradicionales.Location = new System.Drawing.Point(61, 56);
+            this.BotonTradicionales.Name = "BotonTradicionales";
+            this.BotonTradicionales.Size = new System.Drawing.Size(78, 75);
+            this.BotonTradicionales.TabIndex = 8;
+            this.BotonTradicionales.Text = "Tradicionales";
+            this.BotonTradicionales.UseVisualStyleBackColor = true;
+            this.BotonTradicionales.Click += new System.EventHandler(this.BotonTradicionales_Click);
             // 
             // tabPage4
             // 
-            this.tabPage4.Controls.Add(this.button33);
-            this.tabPage4.Controls.Add(this.button32);
-            this.tabPage4.Controls.Add(this.button31);
-            this.tabPage4.Controls.Add(this.button30);
-            this.tabPage4.Controls.Add(this.button29);
-            this.tabPage4.Controls.Add(this.button28);
-            this.tabPage4.Controls.Add(this.button27);
+            this.tabPage4.Controls.Add(this.BotonPromos);
+            this.tabPage4.Controls.Add(this.BotonMenus);
+            this.tabPage4.Controls.Add(this.BotonPostres);
+            this.tabPage4.Controls.Add(this.BotonBebidas);
+            this.tabPage4.Controls.Add(this.BotonPastas);
+            this.tabPage4.Controls.Add(this.BotonSandwiches);
+            this.tabPage4.Controls.Add(this.BotonEmpanadas);
             this.tabPage4.Location = new System.Drawing.Point(4, 27);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(392, 376);
+            this.tabPage4.Size = new System.Drawing.Size(392, 362);
             this.tabPage4.TabIndex = 8;
             this.tabPage4.Text = "Otros";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // button33
+            // BotonPromos
             // 
-            this.button33.Location = new System.Drawing.Point(50, 218);
-            this.button33.Name = "button33";
-            this.button33.Size = new System.Drawing.Size(78, 75);
-            this.button33.TabIndex = 21;
-            this.button33.Text = "Promos";
-            this.button33.UseVisualStyleBackColor = true;
+            this.BotonPromos.Location = new System.Drawing.Point(50, 218);
+            this.BotonPromos.Name = "BotonPromos";
+            this.BotonPromos.Size = new System.Drawing.Size(78, 75);
+            this.BotonPromos.TabIndex = 21;
+            this.BotonPromos.Text = "Promos";
+            this.BotonPromos.UseVisualStyleBackColor = true;
+            this.BotonPromos.Click += new System.EventHandler(this.BotonPromos_Click);
             // 
-            // button32
+            // BotonMenus
             // 
-            this.button32.Location = new System.Drawing.Point(218, 137);
-            this.button32.Name = "button32";
-            this.button32.Size = new System.Drawing.Size(78, 75);
-            this.button32.TabIndex = 20;
-            this.button32.Text = "Menús";
-            this.button32.UseVisualStyleBackColor = true;
+            this.BotonMenus.Location = new System.Drawing.Point(218, 137);
+            this.BotonMenus.Name = "BotonMenus";
+            this.BotonMenus.Size = new System.Drawing.Size(78, 75);
+            this.BotonMenus.TabIndex = 20;
+            this.BotonMenus.Text = "Menús";
+            this.BotonMenus.UseVisualStyleBackColor = true;
+            this.BotonMenus.Click += new System.EventHandler(this.BotonMenus_Click);
             // 
-            // button31
+            // BotonPostres
             // 
-            this.button31.Location = new System.Drawing.Point(134, 137);
-            this.button31.Name = "button31";
-            this.button31.Size = new System.Drawing.Size(78, 75);
-            this.button31.TabIndex = 19;
-            this.button31.Text = "Postres";
-            this.button31.UseVisualStyleBackColor = true;
+            this.BotonPostres.Location = new System.Drawing.Point(134, 137);
+            this.BotonPostres.Name = "BotonPostres";
+            this.BotonPostres.Size = new System.Drawing.Size(78, 75);
+            this.BotonPostres.TabIndex = 19;
+            this.BotonPostres.Text = "Postres";
+            this.BotonPostres.UseVisualStyleBackColor = true;
+            this.BotonPostres.Click += new System.EventHandler(this.BotonPostres_Click);
             // 
-            // button30
+            // BotonBebidas
             // 
-            this.button30.Location = new System.Drawing.Point(50, 137);
-            this.button30.Name = "button30";
-            this.button30.Size = new System.Drawing.Size(78, 75);
-            this.button30.TabIndex = 18;
-            this.button30.Text = "Bebidas";
-            this.button30.UseVisualStyleBackColor = true;
+            this.BotonBebidas.Location = new System.Drawing.Point(50, 137);
+            this.BotonBebidas.Name = "BotonBebidas";
+            this.BotonBebidas.Size = new System.Drawing.Size(78, 75);
+            this.BotonBebidas.TabIndex = 18;
+            this.BotonBebidas.Text = "Bebidas";
+            this.BotonBebidas.UseVisualStyleBackColor = true;
+            this.BotonBebidas.Click += new System.EventHandler(this.BotonBebidas_Click);
             // 
-            // button29
+            // BotonPastas
             // 
-            this.button29.Location = new System.Drawing.Point(218, 56);
-            this.button29.Name = "button29";
-            this.button29.Size = new System.Drawing.Size(78, 75);
-            this.button29.TabIndex = 17;
-            this.button29.Text = "Pastas";
-            this.button29.UseVisualStyleBackColor = true;
+            this.BotonPastas.Location = new System.Drawing.Point(218, 56);
+            this.BotonPastas.Name = "BotonPastas";
+            this.BotonPastas.Size = new System.Drawing.Size(78, 75);
+            this.BotonPastas.TabIndex = 17;
+            this.BotonPastas.Text = "Pastas";
+            this.BotonPastas.UseVisualStyleBackColor = true;
+            this.BotonPastas.Click += new System.EventHandler(this.BotonPastas_Click);
             // 
-            // button28
+            // BotonSandwiches
             // 
-            this.button28.Location = new System.Drawing.Point(134, 56);
-            this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(78, 75);
-            this.button28.TabIndex = 16;
-            this.button28.Text = "Sandwiches";
-            this.button28.UseVisualStyleBackColor = true;
+            this.BotonSandwiches.Location = new System.Drawing.Point(134, 56);
+            this.BotonSandwiches.Name = "BotonSandwiches";
+            this.BotonSandwiches.Size = new System.Drawing.Size(78, 75);
+            this.BotonSandwiches.TabIndex = 16;
+            this.BotonSandwiches.Text = "Sandwiches";
+            this.BotonSandwiches.UseVisualStyleBackColor = true;
+            this.BotonSandwiches.Click += new System.EventHandler(this.BotonSandwiches_Click);
             // 
-            // button27
+            // BotonEmpanadas
             // 
-            this.button27.Location = new System.Drawing.Point(50, 56);
-            this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(78, 75);
-            this.button27.TabIndex = 15;
-            this.button27.Text = "Empanadas";
-            this.button27.UseVisualStyleBackColor = true;
+            this.BotonEmpanadas.Location = new System.Drawing.Point(50, 56);
+            this.BotonEmpanadas.Name = "BotonEmpanadas";
+            this.BotonEmpanadas.Size = new System.Drawing.Size(78, 75);
+            this.BotonEmpanadas.TabIndex = 15;
+            this.BotonEmpanadas.Text = "Empanadas";
+            this.BotonEmpanadas.UseVisualStyleBackColor = true;
+            this.BotonEmpanadas.Click += new System.EventHandler(this.BotonEmpanadas_Click);
             // 
             // ListaDeProductos
             // 
-            this.ListaDeProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ListaDeProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ListaDeProductos.FormattingEnabled = true;
-            this.ListaDeProductos.ItemHeight = 18;
+            this.ListaDeProductos.HorizontalScrollbar = true;
+            this.ListaDeProductos.ItemHeight = 16;
             this.ListaDeProductos.Location = new System.Drawing.Point(418, 43);
             this.ListaDeProductos.Name = "ListaDeProductos";
-            this.ListaDeProductos.Size = new System.Drawing.Size(243, 382);
+            this.ListaDeProductos.Size = new System.Drawing.Size(258, 372);
             this.ListaDeProductos.TabIndex = 1;
             // 
-            // comboBox1
+            // comboBoxClientes
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(14, 529);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(147, 21);
-            this.comboBox1.TabIndex = 3;
+            this.comboBoxClientes.FormattingEnabled = true;
+            this.comboBoxClientes.Location = new System.Drawing.Point(14, 513);
+            this.comboBoxClientes.Name = "comboBoxClientes";
+            this.comboBoxClientes.Size = new System.Drawing.Size(161, 21);
+            this.comboBoxClientes.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(11, 505);
+            this.label2.Location = new System.Drawing.Point(12, 497);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 13);
             this.label2.TabIndex = 4;
@@ -428,32 +455,24 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(11, 570);
+            this.label3.Location = new System.Drawing.Point(12, 553);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(78, 13);
             this.label3.TabIndex = 5;
             this.label3.Text = "Observaciones";
             // 
-            // textBox1
+            // comboBoxCadetes
             // 
-            this.textBox1.Location = new System.Drawing.Point(14, 596);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(147, 21);
-            this.textBox1.TabIndex = 6;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(225, 529);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(147, 21);
-            this.comboBox2.TabIndex = 7;
+            this.comboBoxCadetes.FormattingEnabled = true;
+            this.comboBoxCadetes.Location = new System.Drawing.Point(225, 513);
+            this.comboBoxCadetes.Name = "comboBoxCadetes";
+            this.comboBoxCadetes.Size = new System.Drawing.Size(161, 21);
+            this.comboBoxCadetes.TabIndex = 7;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(227, 505);
+            this.label4.Location = new System.Drawing.Point(222, 497);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(46, 13);
             this.label4.TabIndex = 8;
@@ -462,106 +481,140 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(431, 505);
+            this.label5.Location = new System.Drawing.Point(429, 497);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(79, 13);
             this.label5.TabIndex = 9;
             this.label5.Text = "Forma de Pago";
             // 
-            // comboBox3
+            // comboBoxFormasDePago
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(434, 529);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(147, 21);
-            this.comboBox3.TabIndex = 10;
+            this.comboBoxFormasDePago.FormattingEnabled = true;
+            this.comboBoxFormasDePago.Location = new System.Drawing.Point(432, 513);
+            this.comboBoxFormasDePago.Name = "comboBoxFormasDePago";
+            this.comboBoxFormasDePago.Size = new System.Drawing.Size(161, 21);
+            this.comboBoxFormasDePago.TabIndex = 10;
             // 
-            // button1
+            // BotonCrearPedido
             // 
-            this.button1.Location = new System.Drawing.Point(701, 436);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(152, 36);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Crear Pedido";
-            this.button1.UseVisualStyleBackColor = true;
+            this.BotonCrearPedido.Location = new System.Drawing.Point(716, 442);
+            this.BotonCrearPedido.Name = "BotonCrearPedido";
+            this.BotonCrearPedido.Size = new System.Drawing.Size(152, 36);
+            this.BotonCrearPedido.TabIndex = 11;
+            this.BotonCrearPedido.Text = "Crear Pedido";
+            this.BotonCrearPedido.UseVisualStyleBackColor = true;
+            this.BotonCrearPedido.Click += new System.EventHandler(this.BotonCrearPedido_Click);
             // 
-            // label6
+            // Total
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(859, 451);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(42, 16);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "Total:";
+            this.Total.AutoSize = true;
+            this.Total.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Total.Location = new System.Drawing.Point(874, 461);
+            this.Total.Name = "Total";
+            this.Total.Size = new System.Drawing.Size(42, 16);
+            this.Total.TabIndex = 12;
+            this.Total.Text = "Total:";
             // 
-            // comboBox4
+            // comboBoxCantidad
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(70, 449);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(152, 21);
-            this.comboBox4.TabIndex = 13;
+            this.comboBoxCantidad.FormattingEnabled = true;
+            this.comboBoxCantidad.Location = new System.Drawing.Point(70, 435);
+            this.comboBoxCantidad.Name = "comboBoxCantidad";
+            this.comboBoxCantidad.Size = new System.Drawing.Size(152, 21);
+            this.comboBoxCantidad.TabIndex = 13;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(15, 452);
+            this.label7.Location = new System.Drawing.Point(15, 438);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(49, 13);
             this.label7.TabIndex = 14;
             this.label7.Text = "Cantidad";
             // 
-            // button2
+            // BotonAgregarProducto
             // 
-            this.button2.Location = new System.Drawing.Point(228, 441);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(128, 35);
-            this.button2.TabIndex = 15;
-            this.button2.Text = "Agregar Producto";
-            this.button2.UseVisualStyleBackColor = true;
+            this.BotonAgregarProducto.Location = new System.Drawing.Point(570, 427);
+            this.BotonAgregarProducto.Name = "BotonAgregarProducto";
+            this.BotonAgregarProducto.Size = new System.Drawing.Size(106, 35);
+            this.BotonAgregarProducto.TabIndex = 15;
+            this.BotonAgregarProducto.Text = "Agregar Producto";
+            this.BotonAgregarProducto.UseVisualStyleBackColor = true;
+            this.BotonAgregarProducto.Click += new System.EventHandler(this.BotonAgregarProducto_Click);
             // 
-            // button3
+            // BotonBorrarProducto
             // 
-            this.button3.Location = new System.Drawing.Point(950, 44);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(112, 36);
-            this.button3.TabIndex = 16;
-            this.button3.Text = "Borrar Producto";
-            this.button3.UseVisualStyleBackColor = true;
+            this.BotonBorrarProducto.Location = new System.Drawing.Point(1008, 44);
+            this.BotonBorrarProducto.Name = "BotonBorrarProducto";
+            this.BotonBorrarProducto.Size = new System.Drawing.Size(85, 36);
+            this.BotonBorrarProducto.TabIndex = 16;
+            this.BotonBorrarProducto.Text = "Borrar Producto";
+            this.BotonBorrarProducto.UseVisualStyleBackColor = true;
+            this.BotonBorrarProducto.Click += new System.EventHandler(this.BotonBorrarProducto_Click);
             // 
-            // listBox2
+            // ListaDeDetallesPedidos
             // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.Location = new System.Drawing.Point(701, 44);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(243, 381);
-            this.listBox2.TabIndex = 17;
+            this.ListaDeDetallesPedidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ListaDeDetallesPedidos.FormattingEnabled = true;
+            this.ListaDeDetallesPedidos.ItemHeight = 16;
+            this.ListaDeDetallesPedidos.Location = new System.Drawing.Point(716, 44);
+            this.ListaDeDetallesPedidos.Name = "ListaDeDetallesPedidos";
+            this.ListaDeDetallesPedidos.Size = new System.Drawing.Size(275, 372);
+            this.ListaDeDetallesPedidos.TabIndex = 17;
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.BotonConsultarPrecio);
             this.groupBox1.Controls.Add(this.tabControl1);
             this.groupBox1.Controls.Add(this.ListaDeProductos);
-            this.groupBox1.Controls.Add(this.comboBox4);
-            this.groupBox1.Controls.Add(this.button2);
+            this.groupBox1.Controls.Add(this.comboBoxCantidad);
+            this.groupBox1.Controls.Add(this.BotonAgregarProducto);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Location = new System.Drawing.Point(2, 1);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(679, 490);
+            this.groupBox1.Size = new System.Drawing.Size(693, 477);
             this.groupBox1.TabIndex = 18;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Categorías";
+            this.groupBox1.Text = "Categorías de Productos";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(418, 22);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(69, 16);
+            this.label8.TabIndex = 17;
+            this.label8.Text = "Productos";
             // 
             // BotonConsultarPrecio
             // 
-            this.BotonConsultarPrecio.Location = new System.Drawing.Point(533, 441);
+            this.BotonConsultarPrecio.Location = new System.Drawing.Point(418, 427);
             this.BotonConsultarPrecio.Name = "BotonConsultarPrecio";
-            this.BotonConsultarPrecio.Size = new System.Drawing.Size(128, 35);
+            this.BotonConsultarPrecio.Size = new System.Drawing.Size(110, 35);
             this.BotonConsultarPrecio.TabIndex = 16;
             this.BotonConsultarPrecio.Text = "Consultar Precio";
             this.BotonConsultarPrecio.UseVisualStyleBackColor = true;
             this.BotonConsultarPrecio.Click += new System.EventHandler(this.BotonConsultarPrecio_Click);
+            // 
+            // Observaciones
+            // 
+            this.Observaciones.Location = new System.Drawing.Point(14, 569);
+            this.Observaciones.Name = "Observaciones";
+            this.Observaciones.Size = new System.Drawing.Size(161, 47);
+            this.Observaciones.TabIndex = 19;
+            this.Observaciones.Text = "";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(713, 23);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(52, 16);
+            this.label1.TabIndex = 20;
+            this.label1.Text = "Pedido";
             // 
             // SubSeccionCrearPedidos
             // 
@@ -569,19 +622,20 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1114, 638);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.Observaciones);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.listBox2);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.ListaDeDetallesPedidos);
+            this.Controls.Add(this.BotonBorrarProducto);
+            this.Controls.Add(this.Total);
+            this.Controls.Add(this.BotonCrearPedido);
+            this.Controls.Add(this.comboBoxFormasDePago);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.comboBoxCadetes);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.comboBoxClientes);
             this.Name = "SubSeccionCrearPedidos";
             this.Text = "SubSeccionCrearPedidos";
             this.Load += new System.EventHandler(this.SubSeccionPedidos_Load);
@@ -604,49 +658,51 @@
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.ListBox ListaDeProductos;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBoxClientes;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBoxCadetes;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox comboBoxFormasDePago;
+        private System.Windows.Forms.Button BotonCrearPedido;
+        private System.Windows.Forms.Label Total;
+        private System.Windows.Forms.ComboBox comboBoxCantidad;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button BotonAgregarProducto;
+        private System.Windows.Forms.Button BotonBorrarProducto;
         private System.Windows.Forms.Button BotonEntradas;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button BotonGuarnicion;
         private System.Windows.Forms.Button BotonOmelletes;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button BotonTortillas;
+        private System.Windows.Forms.Button BotonMatambre;
+        private System.Windows.Forms.Button BotonSupremas;
+        private System.Windows.Forms.Button BotonMilanesas;
         private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button26;
-        private System.Windows.Forms.Button button25;
-        private System.Windows.Forms.Button button24;
-        private System.Windows.Forms.Button button23;
-        private System.Windows.Forms.Button button22;
-        private System.Windows.Forms.Button button21;
-        private System.Windows.Forms.Button button20;
-        private System.Windows.Forms.Button button33;
-        private System.Windows.Forms.Button button32;
-        private System.Windows.Forms.Button button31;
-        private System.Windows.Forms.Button button30;
-        private System.Windows.Forms.Button button29;
-        private System.Windows.Forms.Button button28;
-        private System.Windows.Forms.Button button27;
-        private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.Button BotonPollos;
+        private System.Windows.Forms.Button BotonEnsaladasEsp;
+        private System.Windows.Forms.Button BotonEnsaladas;
+        private System.Windows.Forms.Button BotonPescados;
+        private System.Windows.Forms.Button BotonParillas;
+        private System.Windows.Forms.Button BotonCalzones;
+        private System.Windows.Forms.Button BotonOtrasEspeciales;
+        private System.Windows.Forms.Button BotonEspecialesEnFugazzeta;
+        private System.Windows.Forms.Button BotonEspecialesEnFugazza;
+        private System.Windows.Forms.Button BotonEspecialesII;
+        private System.Windows.Forms.Button BotonEspecialesI;
+        private System.Windows.Forms.Button BotonTradicionales;
+        private System.Windows.Forms.Button BotonPromos;
+        private System.Windows.Forms.Button BotonMenus;
+        private System.Windows.Forms.Button BotonPostres;
+        private System.Windows.Forms.Button BotonBebidas;
+        private System.Windows.Forms.Button BotonPastas;
+        private System.Windows.Forms.Button BotonSandwiches;
+        private System.Windows.Forms.Button BotonEmpanadas;
+        private System.Windows.Forms.ListBox ListaDeDetallesPedidos;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button BotonConsultarPrecio;
+        private System.Windows.Forms.RichTextBox Observaciones;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label1;
     }
 }
