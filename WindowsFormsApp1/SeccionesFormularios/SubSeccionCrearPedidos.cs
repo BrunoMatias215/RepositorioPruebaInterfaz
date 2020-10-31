@@ -744,6 +744,8 @@ namespace SeccionesFormularios
                 else
                 {
 
+                    // Pedido
+
                     CapaDeNegocios.Pedido pedido = new CapaDeNegocios.Pedido();
 
                     pedido.Idformadepago = ((FormaDePago)this.comboBoxFormasDePago.SelectedItem).Idformadepago;
@@ -758,8 +760,29 @@ namespace SeccionesFormularios
 
                     pedido.Idestadocategoria = 1;
 
-                    int valor = pedido.CrearPedido();
+                    int valorcrearpedido = pedido.CrearPedido();
 
+                    // Detalle Pedido
+
+                    foreach (DetallePedido detallepedidolocal in this.ListaDeDetallesPedidos.Items)
+                    {
+
+                        CapaDeNegocios.DetallePedido detallepedido = new CapaDeNegocios.DetallePedido();
+
+                        detallepedido.Idproducto = detallepedidolocal.Idproducto;
+
+                        detallepedido.Idpedido = int.Parse(detallepedido.getReferenciaIdPedido().Rows[0][0].ToString());
+
+                        detallepedido.Cantidad = detallepedidolocal.Cantidad;
+
+                        detallepedido.Precioventa = detallepedidolocal.Precioventa;
+
+                        int valordetallepedido = detallepedido.CrearDetallePedido();
+
+                        MessageBox.Show("Detalle pedido creado");
+
+                    }
+                    
                 }
 
             }

@@ -44,6 +44,7 @@
     <Compile Include="Cadete.cs" />
     <Compile Include="Cliente.cs" />
     <Compile Include="Conexion.cs" />
+    <Compile Include="DetallePedido.cs" />
     <Compile Include="EstadoCategoria.cs" />
     <Compile Include="FormaDePago.cs" />
     <Compile Include="PedidoDAL.cs" />

@@ -50,10 +50,19 @@
     <Compile Include="SubSeccionCrearPedidos.Designer.cs">
       <DependentUpon>SubSeccionCrearPedidos.cs</DependentUpon>
     </Compile>
+    <Compile Include="SubSeccionGestionDePedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubSeccionGestionDePedidos.Designer.cs">
+      <DependentUpon>SubSeccionGestionDePedidos.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="SubSeccionCrearPedidos.resx">
       <DependentUpon>SubSeccionCrearPedidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubSeccionGestionDePedidos.resx">
+      <DependentUpon>SubSeccionGestionDePedidos.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

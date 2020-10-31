@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,7 +25,9 @@ namespace CapaDeNegocios
 
         private string informacion;
 
-        public DetallePedido (int pidproducto, int pcantidad, int pprecioventa, 
+        private DataTable referenciaIdPedido;
+
+        public DetallePedido(int pidproducto, int pcantidad, int pprecioventa,
             DateTime pfechayhora, string pinformacion)
         {
 
@@ -40,7 +43,7 @@ namespace CapaDeNegocios
 
         }
 
-        public DetallePedido ()
+        public DetallePedido()
         {
 
 
@@ -61,6 +64,32 @@ namespace CapaDeNegocios
 
         public string Informacion { get => informacion; set => informacion = value; }
 
+        public DataTable ReferenciaIdPedido { get => referenciaIdPedido; set => referenciaIdPedido = value; }
+
+        public int CrearDetallePedido()
+        {
+
+            int cantidaddefilarafectadas = 0;
+
+            CapaDeDatos.DetallePedido detallepedido = new CapaDeDatos.DetallePedido();
+
+            detallepedido.CrearDetallePedido(this.idproducto, this.idpedido, this.cantidad, this.precioventa);
+
+            return cantidaddefilarafectadas;
+
+        }
+
+        public DataTable getReferenciaIdPedido ()
+        {
+
+            CapaDeDatos.DetallePedido detallepedido = new CapaDeDatos.DetallePedido();
+
+            this.referenciaIdPedido = detallepedido.getReferenciaIdPedido();
+
+            return this.referenciaIdPedido;
+
+        }
+ 
     }
 
 }

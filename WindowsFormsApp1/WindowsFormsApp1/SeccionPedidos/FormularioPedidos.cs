@@ -13,6 +13,11 @@ namespace WindowsFormsApp1
 {
     public partial class FormularioPedidos : Form
     {
+
+        private SubSeccionCrearPedidos subseccioncrearpedidos;
+
+        private SubSeccionGestionDePedidos subsecciongestiondepedidos;
+
         public FormularioPedidos()
         {
 
@@ -20,15 +25,15 @@ namespace WindowsFormsApp1
 
             this.FormBorderStyle = FormBorderStyle.None;
 
-            SubSeccionCrearPedidos subseccionpedidos = new SubSeccionCrearPedidos();
+            this.subseccioncrearpedidos = new SubSeccionCrearPedidos();
 
-            subseccionpedidos.TopLevel = false;
+            this.subseccioncrearpedidos.TopLevel = false;
 
-            this.panel2.Controls.Add(subseccionpedidos);
+            this.panel2.Controls.Add(this.subseccioncrearpedidos);
 
-            this.panel2.Tag = subseccionpedidos;
+            this.panel2.Tag = this.subseccioncrearpedidos;
 
-            subseccionpedidos.Show();
+            this.subseccioncrearpedidos.Show();
 
         }
 
@@ -42,8 +47,46 @@ namespace WindowsFormsApp1
         private void button1_Click(object sender, EventArgs e)
         {
 
+            if (this.panel2.Contains(this.subsecciongestiondepedidos))
+            {
 
+                this.subsecciongestiondepedidos.Close();
 
+                this.subseccioncrearpedidos = new SubSeccionCrearPedidos();
+
+                this.subseccioncrearpedidos.TopLevel = false;
+
+                this.panel2.Controls.Add(this.subseccioncrearpedidos);
+
+                this.panel2.Tag = this.subseccioncrearpedidos;
+
+                this.subseccioncrearpedidos.Show();
+
+            }
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            if (this.panel2.Contains(this.subseccioncrearpedidos)) {
+
+                this.subseccioncrearpedidos.Close();
+
+                this.subsecciongestiondepedidos = new SubSeccionGestionDePedidos();
+
+                this.subsecciongestiondepedidos.FormBorderStyle = FormBorderStyle.None;
+
+                this.subsecciongestiondepedidos.TopLevel = false;
+
+                this.panel2.Controls.Add(this.subsecciongestiondepedidos);
+
+                this.panel2.Tag = this.subsecciongestiondepedidos;
+
+                this.subsecciongestiondepedidos.Show();
+
+            }
+  
         }
 
     }

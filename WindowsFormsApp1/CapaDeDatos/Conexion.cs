@@ -155,7 +155,7 @@ namespace CapaDeDatos
 
         }
 
-        public SqlParameter crearParametro(string pNombre, string pValor)
+        public SqlParameter CrearParametro(string pNombre, string pValor)
         {
 
             SqlParameter objParametro = new SqlParameter();
