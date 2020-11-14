@@ -52,6 +52,30 @@
     <Compile Include="IntefazGeneral.Designer.cs">
       <DependentUpon>IntefazGeneral.cs</DependentUpon>
     </Compile>
+    <Compile Include="SeccionCaja\FormularioCaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeccionCaja\FormularioCaja.Designer.cs">
+      <DependentUpon>FormularioCaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SeccionClientes\FormularioClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeccionClientes\FormularioClientes.Designer.cs">
+      <DependentUpon>FormularioClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SeccionClientes\FormularioModificarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeccionClientes\FormularioModificarCliente.Designer.cs">
+      <DependentUpon>FormularioModificarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SeccionGestión\FormularioGestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeccionGestión\FormularioGestion.Designer.cs">
+      <DependentUpon>FormularioGestion.cs</DependentUpon>
+    </Compile>
     <Compile Include="SeccionPedidos\FormularioPedidos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +86,18 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="IntefazGeneral.resx">
       <DependentUpon>IntefazGeneral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeccionCaja\FormularioCaja.resx">
+      <DependentUpon>FormularioCaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeccionClientes\FormularioClientes.resx">
+      <DependentUpon>FormularioClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeccionClientes\FormularioModificarCliente.resx">
+      <DependentUpon>FormularioModificarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeccionGestión\FormularioGestion.resx">
+      <DependentUpon>FormularioGestion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SeccionPedidos\FormularioPedidos.resx">
       <DependentUpon>FormularioPedidos.cs</DependentUpon>
@@ -101,5 +137,6 @@
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

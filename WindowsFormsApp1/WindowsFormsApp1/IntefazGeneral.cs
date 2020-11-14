@@ -14,6 +14,14 @@ namespace WindowsFormsApp1
     public partial class InterfazGeneral : Form
     {
 
+        FormularioPedidos formulariopedidos;
+
+        SeccionClientes.FormularioClientes formularioclientes;
+
+        SeccionCaja.FormularioCaja formulariocaja;
+
+        SeccionGestión.FormularioGestion formulariogestion;
+
         public InterfazGeneral()
         {
 
@@ -28,22 +36,83 @@ namespace WindowsFormsApp1
 
             this.CenterToScreen();
 
-            FormularioPedidos formulariopedidos = new FormularioPedidos();
+            this.formulariopedidos = new FormularioPedidos();
 
-            formulariopedidos.TopLevel = false;
+            this.formulariopedidos.TopLevel = false;
 
             this.PanelInterfaz.Controls.Add(formulariopedidos);
 
             this.PanelInterfaz.Tag = formulariopedidos;
 
-            formulariopedidos.Show();
+            this.formulariopedidos.Show();
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void BotonPedidos_Click(object sender, EventArgs e)
         {
 
-            
+            this.PanelInterfaz.Controls.Remove(this.PanelInterfaz.Controls[0]);
+
+            this.formulariopedidos = new FormularioPedidos();
+
+            this.formulariopedidos.TopLevel = false;
+
+            this.PanelInterfaz.Controls.Add(formulariopedidos);
+
+            this.PanelInterfaz.Tag = formulariopedidos;
+
+            this.formulariopedidos.Show();
+
+        }
+
+        private void BotonClientes_Click(object sender, EventArgs e)
+        {
+
+            this.PanelInterfaz.Controls.Remove(this.PanelInterfaz.Controls[0]);
+
+            this.formularioclientes = new SeccionClientes.FormularioClientes();
+
+            this.formularioclientes.TopLevel = false;
+
+            this.PanelInterfaz.Controls.Add(this.formularioclientes);
+
+            this.PanelInterfaz.Tag = this.formularioclientes;
+
+            this.formularioclientes.Show();
+
+        }
+
+        private void BotonCajas_Click(object sender, EventArgs e)
+        {
+
+            this.PanelInterfaz.Controls.Remove(this.PanelInterfaz.Controls[0]);
+
+            this.formulariocaja = new SeccionCaja.FormularioCaja();
+
+            this.formulariocaja.TopLevel = false;
+
+            this.PanelInterfaz.Controls.Add(this.formulariocaja);
+
+            this.PanelInterfaz.Tag = this.formulariocaja;
+
+            this.formulariocaja.Show();
+
+        }
+
+        private void BotonGestion_Click(object sender, EventArgs e)
+        {
+
+            this.PanelInterfaz.Controls.Remove(this.PanelInterfaz.Controls[0]);
+
+            this.formulariogestion = new SeccionGestión.FormularioGestion();
+
+            this.formulariogestion.TopLevel = false;
+
+            this.PanelInterfaz.Controls.Add(this.formulariogestion);
+
+            this.PanelInterfaz.Tag = this.formulariogestion;
+
+            this.formulariogestion.Show();
 
         }
 

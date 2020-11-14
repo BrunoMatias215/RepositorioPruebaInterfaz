@@ -84,7 +84,7 @@
             this.ClientSize = new System.Drawing.Size(1151, 729);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.BarraHerramientas);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormularioPedidos";
             this.Text = "Pedido";
             this.Load += new System.EventHandler(this.Form2_Load);

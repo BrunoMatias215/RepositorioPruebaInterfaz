@@ -71,6 +71,7 @@
             this.BotonGestion.TabIndex = 2;
             this.BotonGestion.Text = "Gestion";
             this.BotonGestion.UseVisualStyleBackColor = true;
+            this.BotonGestion.Click += new System.EventHandler(this.BotonGestion_Click);
             // 
             // BotonCajas
             // 
@@ -80,6 +81,7 @@
             this.BotonCajas.TabIndex = 4;
             this.BotonCajas.Text = "Caja";
             this.BotonCajas.UseVisualStyleBackColor = true;
+            this.BotonCajas.Click += new System.EventHandler(this.BotonCajas_Click);
             // 
             // BotonClientes
             // 
@@ -89,6 +91,7 @@
             this.BotonClientes.TabIndex = 3;
             this.BotonClientes.Text = "Clientes";
             this.BotonClientes.UseVisualStyleBackColor = true;
+            this.BotonClientes.Click += new System.EventHandler(this.BotonClientes_Click);
             // 
             // BotonPedidos
             // 
@@ -98,16 +101,16 @@
             this.BotonPedidos.TabIndex = 0;
             this.BotonPedidos.Text = "Pedidos";
             this.BotonPedidos.UseVisualStyleBackColor = true;
-            this.BotonPedidos.Click += new System.EventHandler(this.button1_Click);
+            this.BotonPedidos.Click += new System.EventHandler(this.BotonPedidos_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(73, 36);
+            this.label1.Location = new System.Drawing.Point(32, 51);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(34, 13);
+            this.label1.Size = new System.Drawing.Size(98, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Yoel5";
+            this.label1.Text = "Nombre de Usuario";
             // 
             // PanelInterfaz
             // 

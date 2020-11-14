@@ -636,6 +636,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.comboBoxClientes);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SubSeccionCrearPedidos";
             this.Text = "SubSeccionCrearPedidos";
             this.Load += new System.EventHandler(this.SubSeccionPedidos_Load);

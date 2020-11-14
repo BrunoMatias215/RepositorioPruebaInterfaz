@@ -23,8 +23,6 @@ namespace WindowsFormsApp1
 
             InitializeComponent();
 
-            this.FormBorderStyle = FormBorderStyle.None;
-
             this.subseccioncrearpedidos = new SubSeccionCrearPedidos();
 
             this.subseccioncrearpedidos.TopLevel = false;
@@ -88,6 +86,6 @@ namespace WindowsFormsApp1
             }
   
         }
-
+        
     }
 }
