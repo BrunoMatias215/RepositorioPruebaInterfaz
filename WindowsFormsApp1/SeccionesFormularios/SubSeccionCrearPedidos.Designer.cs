@@ -93,11 +93,11 @@
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(12, 22);
+            this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControl1.Location = new System.Drawing.Point(12, 43);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(400, 393);
+            this.tabControl1.Size = new System.Drawing.Size(396, 372);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -109,10 +109,10 @@
             this.tabPage1.Controls.Add(this.BotonMatambre);
             this.tabPage1.Controls.Add(this.BotonSupremas);
             this.tabPage1.Controls.Add(this.BotonMilanesas);
-            this.tabPage1.Location = new System.Drawing.Point(4, 27);
+            this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(392, 362);
+            this.tabPage1.Size = new System.Drawing.Size(388, 343);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Entradas y Minutas";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -194,17 +194,17 @@
             this.tabPage2.Controls.Add(this.BotonPescados);
             this.tabPage2.Controls.Add(this.BotonParillas);
             this.tabPage2.Controls.Add(this.BotonPollos);
-            this.tabPage2.Location = new System.Drawing.Point(4, 27);
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(392, 362);
+            this.tabPage2.Size = new System.Drawing.Size(388, 343);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Carnes y Ensaladas";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // BotonEnsaladasEsp
             // 
-            this.BotonEnsaladasEsp.Location = new System.Drawing.Point(149, 139);
+            this.BotonEnsaladasEsp.Location = new System.Drawing.Point(149, 132);
             this.BotonEnsaladasEsp.Name = "BotonEnsaladasEsp";
             this.BotonEnsaladasEsp.Size = new System.Drawing.Size(89, 82);
             this.BotonEnsaladasEsp.TabIndex = 4;
@@ -214,7 +214,7 @@
             // 
             // BotonEnsaladas
             // 
-            this.BotonEnsaladas.Location = new System.Drawing.Point(54, 139);
+            this.BotonEnsaladas.Location = new System.Drawing.Point(54, 132);
             this.BotonEnsaladas.Name = "BotonEnsaladas";
             this.BotonEnsaladas.Size = new System.Drawing.Size(89, 82);
             this.BotonEnsaladas.TabIndex = 3;
@@ -224,7 +224,7 @@
             // 
             // BotonPescados
             // 
-            this.BotonPescados.Location = new System.Drawing.Point(244, 51);
+            this.BotonPescados.Location = new System.Drawing.Point(244, 44);
             this.BotonPescados.Name = "BotonPescados";
             this.BotonPescados.Size = new System.Drawing.Size(89, 82);
             this.BotonPescados.TabIndex = 2;
@@ -234,7 +234,7 @@
             // 
             // BotonParillas
             // 
-            this.BotonParillas.Location = new System.Drawing.Point(149, 51);
+            this.BotonParillas.Location = new System.Drawing.Point(149, 44);
             this.BotonParillas.Name = "BotonParillas";
             this.BotonParillas.Size = new System.Drawing.Size(89, 82);
             this.BotonParillas.TabIndex = 1;
@@ -244,7 +244,7 @@
             // 
             // BotonPollos
             // 
-            this.BotonPollos.Location = new System.Drawing.Point(54, 51);
+            this.BotonPollos.Location = new System.Drawing.Point(54, 44);
             this.BotonPollos.Name = "BotonPollos";
             this.BotonPollos.Size = new System.Drawing.Size(89, 82);
             this.BotonPollos.TabIndex = 0;
@@ -261,18 +261,18 @@
             this.tabPage3.Controls.Add(this.BotonEspecialesII);
             this.tabPage3.Controls.Add(this.BotonEspecialesI);
             this.tabPage3.Controls.Add(this.BotonTradicionales);
-            this.tabPage3.Location = new System.Drawing.Point(4, 27);
+            this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(392, 362);
+            this.tabPage3.Size = new System.Drawing.Size(388, 343);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Pizzas";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // BotonCalzones
             // 
-            this.BotonCalzones.Location = new System.Drawing.Point(229, 137);
+            this.BotonCalzones.Location = new System.Drawing.Point(244, 132);
             this.BotonCalzones.Name = "BotonCalzones";
-            this.BotonCalzones.Size = new System.Drawing.Size(78, 75);
+            this.BotonCalzones.Size = new System.Drawing.Size(89, 82);
             this.BotonCalzones.TabIndex = 14;
             this.BotonCalzones.Text = "Especialidades en Calzones";
             this.BotonCalzones.UseVisualStyleBackColor = true;
@@ -280,9 +280,9 @@
             // 
             // BotonOtrasEspeciales
             // 
-            this.BotonOtrasEspeciales.Location = new System.Drawing.Point(61, 218);
+            this.BotonOtrasEspeciales.Location = new System.Drawing.Point(54, 220);
             this.BotonOtrasEspeciales.Name = "BotonOtrasEspeciales";
-            this.BotonOtrasEspeciales.Size = new System.Drawing.Size(78, 75);
+            this.BotonOtrasEspeciales.Size = new System.Drawing.Size(89, 82);
             this.BotonOtrasEspeciales.TabIndex = 13;
             this.BotonOtrasEspeciales.Text = "Otras Especiales";
             this.BotonOtrasEspeciales.UseVisualStyleBackColor = true;
@@ -290,9 +290,9 @@
             // 
             // BotonEspecialesEnFugazzeta
             // 
-            this.BotonEspecialesEnFugazzeta.Location = new System.Drawing.Point(145, 137);
+            this.BotonEspecialesEnFugazzeta.Location = new System.Drawing.Point(149, 132);
             this.BotonEspecialesEnFugazzeta.Name = "BotonEspecialesEnFugazzeta";
-            this.BotonEspecialesEnFugazzeta.Size = new System.Drawing.Size(78, 75);
+            this.BotonEspecialesEnFugazzeta.Size = new System.Drawing.Size(89, 82);
             this.BotonEspecialesEnFugazzeta.TabIndex = 12;
             this.BotonEspecialesEnFugazzeta.Text = "Especiales en Fugazzeta";
             this.BotonEspecialesEnFugazzeta.UseVisualStyleBackColor = true;
@@ -300,9 +300,9 @@
             // 
             // BotonEspecialesEnFugazza
             // 
-            this.BotonEspecialesEnFugazza.Location = new System.Drawing.Point(61, 137);
+            this.BotonEspecialesEnFugazza.Location = new System.Drawing.Point(54, 132);
             this.BotonEspecialesEnFugazza.Name = "BotonEspecialesEnFugazza";
-            this.BotonEspecialesEnFugazza.Size = new System.Drawing.Size(78, 75);
+            this.BotonEspecialesEnFugazza.Size = new System.Drawing.Size(89, 82);
             this.BotonEspecialesEnFugazza.TabIndex = 11;
             this.BotonEspecialesEnFugazza.Text = "Especiales en Fugazza";
             this.BotonEspecialesEnFugazza.UseVisualStyleBackColor = true;
@@ -310,9 +310,9 @@
             // 
             // BotonEspecialesII
             // 
-            this.BotonEspecialesII.Location = new System.Drawing.Point(229, 56);
+            this.BotonEspecialesII.Location = new System.Drawing.Point(244, 44);
             this.BotonEspecialesII.Name = "BotonEspecialesII";
-            this.BotonEspecialesII.Size = new System.Drawing.Size(78, 75);
+            this.BotonEspecialesII.Size = new System.Drawing.Size(89, 82);
             this.BotonEspecialesII.TabIndex = 10;
             this.BotonEspecialesII.Text = "Especiales II";
             this.BotonEspecialesII.UseVisualStyleBackColor = true;
@@ -320,9 +320,9 @@
             // 
             // BotonEspecialesI
             // 
-            this.BotonEspecialesI.Location = new System.Drawing.Point(145, 56);
+            this.BotonEspecialesI.Location = new System.Drawing.Point(149, 44);
             this.BotonEspecialesI.Name = "BotonEspecialesI";
-            this.BotonEspecialesI.Size = new System.Drawing.Size(78, 75);
+            this.BotonEspecialesI.Size = new System.Drawing.Size(89, 82);
             this.BotonEspecialesI.TabIndex = 9;
             this.BotonEspecialesI.Text = "Especiales I";
             this.BotonEspecialesI.UseVisualStyleBackColor = true;
@@ -330,9 +330,9 @@
             // 
             // BotonTradicionales
             // 
-            this.BotonTradicionales.Location = new System.Drawing.Point(61, 56);
+            this.BotonTradicionales.Location = new System.Drawing.Point(54, 44);
             this.BotonTradicionales.Name = "BotonTradicionales";
-            this.BotonTradicionales.Size = new System.Drawing.Size(78, 75);
+            this.BotonTradicionales.Size = new System.Drawing.Size(89, 82);
             this.BotonTradicionales.TabIndex = 8;
             this.BotonTradicionales.Text = "Tradicionales";
             this.BotonTradicionales.UseVisualStyleBackColor = true;
@@ -347,18 +347,18 @@
             this.tabPage4.Controls.Add(this.BotonPastas);
             this.tabPage4.Controls.Add(this.BotonSandwiches);
             this.tabPage4.Controls.Add(this.BotonEmpanadas);
-            this.tabPage4.Location = new System.Drawing.Point(4, 27);
+            this.tabPage4.Location = new System.Drawing.Point(4, 25);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(392, 362);
+            this.tabPage4.Size = new System.Drawing.Size(388, 343);
             this.tabPage4.TabIndex = 8;
             this.tabPage4.Text = "Otros";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // BotonPromos
             // 
-            this.BotonPromos.Location = new System.Drawing.Point(50, 218);
+            this.BotonPromos.Location = new System.Drawing.Point(54, 220);
             this.BotonPromos.Name = "BotonPromos";
-            this.BotonPromos.Size = new System.Drawing.Size(78, 75);
+            this.BotonPromos.Size = new System.Drawing.Size(89, 82);
             this.BotonPromos.TabIndex = 21;
             this.BotonPromos.Text = "Promos";
             this.BotonPromos.UseVisualStyleBackColor = true;
@@ -366,9 +366,9 @@
             // 
             // BotonMenus
             // 
-            this.BotonMenus.Location = new System.Drawing.Point(218, 137);
+            this.BotonMenus.Location = new System.Drawing.Point(244, 132);
             this.BotonMenus.Name = "BotonMenus";
-            this.BotonMenus.Size = new System.Drawing.Size(78, 75);
+            this.BotonMenus.Size = new System.Drawing.Size(89, 82);
             this.BotonMenus.TabIndex = 20;
             this.BotonMenus.Text = "Menús";
             this.BotonMenus.UseVisualStyleBackColor = true;
@@ -376,9 +376,9 @@
             // 
             // BotonPostres
             // 
-            this.BotonPostres.Location = new System.Drawing.Point(134, 137);
+            this.BotonPostres.Location = new System.Drawing.Point(149, 132);
             this.BotonPostres.Name = "BotonPostres";
-            this.BotonPostres.Size = new System.Drawing.Size(78, 75);
+            this.BotonPostres.Size = new System.Drawing.Size(89, 82);
             this.BotonPostres.TabIndex = 19;
             this.BotonPostres.Text = "Postres";
             this.BotonPostres.UseVisualStyleBackColor = true;
@@ -386,9 +386,9 @@
             // 
             // BotonBebidas
             // 
-            this.BotonBebidas.Location = new System.Drawing.Point(50, 137);
+            this.BotonBebidas.Location = new System.Drawing.Point(54, 132);
             this.BotonBebidas.Name = "BotonBebidas";
-            this.BotonBebidas.Size = new System.Drawing.Size(78, 75);
+            this.BotonBebidas.Size = new System.Drawing.Size(89, 82);
             this.BotonBebidas.TabIndex = 18;
             this.BotonBebidas.Text = "Bebidas";
             this.BotonBebidas.UseVisualStyleBackColor = true;
@@ -396,9 +396,9 @@
             // 
             // BotonPastas
             // 
-            this.BotonPastas.Location = new System.Drawing.Point(218, 56);
+            this.BotonPastas.Location = new System.Drawing.Point(244, 44);
             this.BotonPastas.Name = "BotonPastas";
-            this.BotonPastas.Size = new System.Drawing.Size(78, 75);
+            this.BotonPastas.Size = new System.Drawing.Size(89, 82);
             this.BotonPastas.TabIndex = 17;
             this.BotonPastas.Text = "Pastas";
             this.BotonPastas.UseVisualStyleBackColor = true;
@@ -406,9 +406,9 @@
             // 
             // BotonSandwiches
             // 
-            this.BotonSandwiches.Location = new System.Drawing.Point(134, 56);
+            this.BotonSandwiches.Location = new System.Drawing.Point(149, 44);
             this.BotonSandwiches.Name = "BotonSandwiches";
-            this.BotonSandwiches.Size = new System.Drawing.Size(78, 75);
+            this.BotonSandwiches.Size = new System.Drawing.Size(89, 82);
             this.BotonSandwiches.TabIndex = 16;
             this.BotonSandwiches.Text = "Sandwiches";
             this.BotonSandwiches.UseVisualStyleBackColor = true;
@@ -416,9 +416,9 @@
             // 
             // BotonEmpanadas
             // 
-            this.BotonEmpanadas.Location = new System.Drawing.Point(50, 56);
+            this.BotonEmpanadas.Location = new System.Drawing.Point(54, 44);
             this.BotonEmpanadas.Name = "BotonEmpanadas";
-            this.BotonEmpanadas.Size = new System.Drawing.Size(78, 75);
+            this.BotonEmpanadas.Size = new System.Drawing.Size(89, 82);
             this.BotonEmpanadas.TabIndex = 15;
             this.BotonEmpanadas.Text = "Empanadas";
             this.BotonEmpanadas.UseVisualStyleBackColor = true;
@@ -430,15 +430,15 @@
             this.ListaDeProductos.FormattingEnabled = true;
             this.ListaDeProductos.HorizontalScrollbar = true;
             this.ListaDeProductos.ItemHeight = 16;
-            this.ListaDeProductos.Location = new System.Drawing.Point(418, 43);
+            this.ListaDeProductos.Location = new System.Drawing.Point(425, 43);
             this.ListaDeProductos.Name = "ListaDeProductos";
-            this.ListaDeProductos.Size = new System.Drawing.Size(258, 372);
+            this.ListaDeProductos.Size = new System.Drawing.Size(275, 372);
             this.ListaDeProductos.TabIndex = 1;
             // 
             // comboBoxClientes
             // 
             this.comboBoxClientes.FormattingEnabled = true;
-            this.comboBoxClientes.Location = new System.Drawing.Point(14, 513);
+            this.comboBoxClientes.Location = new System.Drawing.Point(14, 519);
             this.comboBoxClientes.Name = "comboBoxClientes";
             this.comboBoxClientes.Size = new System.Drawing.Size(161, 21);
             this.comboBoxClientes.TabIndex = 3;
@@ -446,7 +446,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 497);
+            this.label2.Location = new System.Drawing.Point(11, 503);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 13);
             this.label2.TabIndex = 4;
@@ -455,7 +455,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 553);
+            this.label3.Location = new System.Drawing.Point(12, 558);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(78, 13);
             this.label3.TabIndex = 5;
@@ -464,7 +464,7 @@
             // comboBoxCadetes
             // 
             this.comboBoxCadetes.FormattingEnabled = true;
-            this.comboBoxCadetes.Location = new System.Drawing.Point(225, 513);
+            this.comboBoxCadetes.Location = new System.Drawing.Point(225, 519);
             this.comboBoxCadetes.Name = "comboBoxCadetes";
             this.comboBoxCadetes.Size = new System.Drawing.Size(161, 21);
             this.comboBoxCadetes.TabIndex = 7;
@@ -472,7 +472,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(222, 497);
+            this.label4.Location = new System.Drawing.Point(222, 503);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(46, 13);
             this.label4.TabIndex = 8;
@@ -481,7 +481,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(429, 497);
+            this.label5.Location = new System.Drawing.Point(427, 503);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(79, 13);
             this.label5.TabIndex = 9;
@@ -490,16 +490,16 @@
             // comboBoxFormasDePago
             // 
             this.comboBoxFormasDePago.FormattingEnabled = true;
-            this.comboBoxFormasDePago.Location = new System.Drawing.Point(432, 513);
+            this.comboBoxFormasDePago.Location = new System.Drawing.Point(430, 519);
             this.comboBoxFormasDePago.Name = "comboBoxFormasDePago";
             this.comboBoxFormasDePago.Size = new System.Drawing.Size(161, 21);
             this.comboBoxFormasDePago.TabIndex = 10;
             // 
             // BotonCrearPedido
             // 
-            this.BotonCrearPedido.Location = new System.Drawing.Point(716, 442);
+            this.BotonCrearPedido.Location = new System.Drawing.Point(732, 439);
             this.BotonCrearPedido.Name = "BotonCrearPedido";
-            this.BotonCrearPedido.Size = new System.Drawing.Size(152, 36);
+            this.BotonCrearPedido.Size = new System.Drawing.Size(152, 35);
             this.BotonCrearPedido.TabIndex = 11;
             this.BotonCrearPedido.Text = "Crear Pedido";
             this.BotonCrearPedido.UseVisualStyleBackColor = true;
@@ -509,7 +509,7 @@
             // 
             this.Total.AutoSize = true;
             this.Total.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Total.Location = new System.Drawing.Point(874, 461);
+            this.Total.Location = new System.Drawing.Point(913, 458);
             this.Total.Name = "Total";
             this.Total.Size = new System.Drawing.Size(42, 16);
             this.Total.TabIndex = 12;
@@ -534,9 +534,9 @@
             // 
             // BotonAgregarProducto
             // 
-            this.BotonAgregarProducto.Location = new System.Drawing.Point(570, 427);
+            this.BotonAgregarProducto.Location = new System.Drawing.Point(573, 427);
             this.BotonAgregarProducto.Name = "BotonAgregarProducto";
-            this.BotonAgregarProducto.Size = new System.Drawing.Size(106, 35);
+            this.BotonAgregarProducto.Size = new System.Drawing.Size(127, 35);
             this.BotonAgregarProducto.TabIndex = 15;
             this.BotonAgregarProducto.Text = "Agregar Producto";
             this.BotonAgregarProducto.UseVisualStyleBackColor = true;
@@ -544,7 +544,7 @@
             // 
             // BotonBorrarProducto
             // 
-            this.BotonBorrarProducto.Location = new System.Drawing.Point(1008, 44);
+            this.BotonBorrarProducto.Location = new System.Drawing.Point(1014, 55);
             this.BotonBorrarProducto.Name = "BotonBorrarProducto";
             this.BotonBorrarProducto.Size = new System.Drawing.Size(85, 36);
             this.BotonBorrarProducto.TabIndex = 16;
@@ -557,7 +557,7 @@
             this.ListaDeDetallesPedidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ListaDeDetallesPedidos.FormattingEnabled = true;
             this.ListaDeDetallesPedidos.ItemHeight = 16;
-            this.ListaDeDetallesPedidos.Location = new System.Drawing.Point(716, 44);
+            this.ListaDeDetallesPedidos.Location = new System.Drawing.Point(732, 55);
             this.ListaDeDetallesPedidos.Name = "ListaDeDetallesPedidos";
             this.ListaDeDetallesPedidos.Size = new System.Drawing.Size(275, 372);
             this.ListaDeDetallesPedidos.TabIndex = 17;
@@ -571,9 +571,9 @@
             this.groupBox1.Controls.Add(this.comboBoxCantidad);
             this.groupBox1.Controls.Add(this.BotonAgregarProducto);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Location = new System.Drawing.Point(2, 1);
+            this.groupBox1.Location = new System.Drawing.Point(5, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(693, 477);
+            this.groupBox1.Size = new System.Drawing.Size(716, 477);
             this.groupBox1.TabIndex = 18;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Categorías de Productos";
@@ -582,7 +582,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(418, 22);
+            this.label8.Location = new System.Drawing.Point(422, 22);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(69, 16);
             this.label8.TabIndex = 17;
@@ -590,9 +590,9 @@
             // 
             // BotonConsultarPrecio
             // 
-            this.BotonConsultarPrecio.Location = new System.Drawing.Point(418, 427);
+            this.BotonConsultarPrecio.Location = new System.Drawing.Point(425, 427);
             this.BotonConsultarPrecio.Name = "BotonConsultarPrecio";
-            this.BotonConsultarPrecio.Size = new System.Drawing.Size(110, 35);
+            this.BotonConsultarPrecio.Size = new System.Drawing.Size(127, 35);
             this.BotonConsultarPrecio.TabIndex = 16;
             this.BotonConsultarPrecio.Text = "Consultar Precio";
             this.BotonConsultarPrecio.UseVisualStyleBackColor = true;
@@ -600,7 +600,7 @@
             // 
             // Observaciones
             // 
-            this.Observaciones.Location = new System.Drawing.Point(14, 569);
+            this.Observaciones.Location = new System.Drawing.Point(14, 574);
             this.Observaciones.Name = "Observaciones";
             this.Observaciones.Size = new System.Drawing.Size(161, 47);
             this.Observaciones.TabIndex = 19;
@@ -610,7 +610,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(713, 23);
+            this.label1.Location = new System.Drawing.Point(729, 34);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(52, 16);
             this.label1.TabIndex = 20;
@@ -621,7 +621,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1114, 638);
+            this.ClientSize = new System.Drawing.Size(1106, 638);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Observaciones);
             this.Controls.Add(this.groupBox1);
