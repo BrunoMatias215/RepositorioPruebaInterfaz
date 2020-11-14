@@ -49,9 +49,9 @@
             this.label7 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.BotonInformes = new System.Windows.Forms.Button();
-            this.BotonProductos = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.BotonProductos = new System.Windows.Forms.Button();
+            this.BotonInformes = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.panel1.SuspendLayout();
@@ -251,32 +251,32 @@
             this.panel1.Size = new System.Drawing.Size(1151, 52);
             this.panel1.TabIndex = 20;
             // 
-            // BotonInformes
+            // button3
             // 
-            this.BotonInformes.Location = new System.Drawing.Point(12, 12);
-            this.BotonInformes.Name = "BotonInformes";
-            this.BotonInformes.Size = new System.Drawing.Size(75, 28);
-            this.BotonInformes.TabIndex = 0;
-            this.BotonInformes.Text = "Informes";
-            this.BotonInformes.UseVisualStyleBackColor = true;
+            this.button3.Location = new System.Drawing.Point(259, 7);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(119, 40);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "Personal";
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // BotonProductos
             // 
-            this.BotonProductos.Location = new System.Drawing.Point(107, 12);
+            this.BotonProductos.Location = new System.Drawing.Point(134, 7);
             this.BotonProductos.Name = "BotonProductos";
-            this.BotonProductos.Size = new System.Drawing.Size(75, 28);
+            this.BotonProductos.Size = new System.Drawing.Size(119, 40);
             this.BotonProductos.TabIndex = 1;
             this.BotonProductos.Text = "Productos";
             this.BotonProductos.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // BotonInformes
             // 
-            this.button3.Location = new System.Drawing.Point(199, 12);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 28);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Personal";
-            this.button3.UseVisualStyleBackColor = true;
+            this.BotonInformes.Location = new System.Drawing.Point(9, 7);
+            this.BotonInformes.Name = "BotonInformes";
+            this.BotonInformes.Size = new System.Drawing.Size(119, 40);
+            this.BotonInformes.TabIndex = 0;
+            this.BotonInformes.Text = "Informes";
+            this.BotonInformes.UseVisualStyleBackColor = true;
             // 
             // FormularioGestion
             // 

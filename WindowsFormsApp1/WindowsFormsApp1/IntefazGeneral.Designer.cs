@@ -56,9 +56,9 @@
             // 
             // BotonCerrarSesion
             // 
-            this.BotonCerrarSesion.Location = new System.Drawing.Point(35, 690);
+            this.BotonCerrarSesion.Location = new System.Drawing.Point(34, 684);
             this.BotonCerrarSesion.Name = "BotonCerrarSesion";
-            this.BotonCerrarSesion.Size = new System.Drawing.Size(111, 27);
+            this.BotonCerrarSesion.Size = new System.Drawing.Size(111, 33);
             this.BotonCerrarSesion.TabIndex = 5;
             this.BotonCerrarSesion.Text = "Cerrar Sesion";
             this.BotonCerrarSesion.UseVisualStyleBackColor = true;
@@ -69,7 +69,7 @@
             this.BotonGestion.Name = "BotonGestion";
             this.BotonGestion.Size = new System.Drawing.Size(162, 37);
             this.BotonGestion.TabIndex = 2;
-            this.BotonGestion.Text = "Gestion";
+            this.BotonGestion.Text = "Gestión";
             this.BotonGestion.UseVisualStyleBackColor = true;
             this.BotonGestion.Click += new System.EventHandler(this.BotonGestion_Click);
             // 
@@ -106,11 +106,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(32, 51);
+            this.label1.Location = new System.Drawing.Point(67, 59);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 13);
+            this.label1.Size = new System.Drawing.Size(43, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Nombre de Usuario";
+            this.label1.Text = "Usuario";
             // 
             // PanelInterfaz
             // 
