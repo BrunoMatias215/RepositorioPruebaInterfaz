@@ -80,6 +80,8 @@ namespace WindowsFormsApp1
 
             this.PanelInterfaz.Tag = this.formularioclientes;
 
+            this.formularioclientes.Dock = DockStyle.Fill;
+
             this.formularioclientes.Show();
 
         }

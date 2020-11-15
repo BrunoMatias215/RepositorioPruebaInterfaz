@@ -38,6 +38,8 @@ namespace SeccionesFormularios
 
             this.ListaDeDetallesPedidos.DisplayMember = "informacion";
 
+            this.comboBoxCantidad.Text = "1";
+
             for (int i = 1; i <= 10; i++)
             {
 
@@ -681,6 +683,8 @@ namespace SeccionesFormularios
                 }
 
                 this.Total.Text = "Total: " + acumuladorprecio.ToString();
+
+                this.comboBoxCantidad.Text = "1";
 
             }
 

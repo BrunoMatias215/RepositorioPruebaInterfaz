@@ -55,7 +55,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(19, 41);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(705, 252);
+            this.dataGridView1.Size = new System.Drawing.Size(705, 150);
             this.dataGridView1.TabIndex = 1;
             // 
             // labelBúsquedaClientes
@@ -69,7 +69,7 @@
             // 
             // BotonNuevoCliente
             // 
-            this.BotonNuevoCliente.Location = new System.Drawing.Point(19, 308);
+            this.BotonNuevoCliente.Location = new System.Drawing.Point(19, 207);
             this.BotonNuevoCliente.Name = "BotonNuevoCliente";
             this.BotonNuevoCliente.Size = new System.Drawing.Size(94, 37);
             this.BotonNuevoCliente.TabIndex = 3;
@@ -78,7 +78,7 @@
             // 
             // BotonModificarCliente
             // 
-            this.BotonModificarCliente.Location = new System.Drawing.Point(132, 308);
+            this.BotonModificarCliente.Location = new System.Drawing.Point(119, 207);
             this.BotonModificarCliente.Name = "BotonModificarCliente";
             this.BotonModificarCliente.Size = new System.Drawing.Size(94, 37);
             this.BotonModificarCliente.TabIndex = 4;
@@ -87,7 +87,7 @@
             // 
             // BotonEliminarCliente
             // 
-            this.BotonEliminarCliente.Location = new System.Drawing.Point(244, 308);
+            this.BotonEliminarCliente.Location = new System.Drawing.Point(219, 207);
             this.BotonEliminarCliente.Name = "BotonEliminarCliente";
             this.BotonEliminarCliente.Size = new System.Drawing.Size(94, 37);
             this.BotonEliminarCliente.TabIndex = 5;
@@ -97,7 +97,7 @@
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(19, 375);
+            this.dataGridView2.Location = new System.Drawing.Point(19, 283);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(705, 141);
             this.dataGridView2.TabIndex = 6;
@@ -105,7 +105,7 @@
             // dataGridView3
             // 
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(19, 549);
+            this.dataGridView3.Location = new System.Drawing.Point(19, 474);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.Size = new System.Drawing.Size(705, 141);
             this.dataGridView3.TabIndex = 7;
@@ -113,7 +113,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(16, 359);
+            this.label1.Location = new System.Drawing.Point(16, 267);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(40, 13);
             this.label1.TabIndex = 8;
@@ -122,7 +122,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(16, 533);
+            this.label2.Location = new System.Drawing.Point(16, 458);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(76, 13);
             this.label2.TabIndex = 9;
@@ -132,7 +132,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1151, 690);
+            this.ClientSize = new System.Drawing.Size(747, 650);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView3);
