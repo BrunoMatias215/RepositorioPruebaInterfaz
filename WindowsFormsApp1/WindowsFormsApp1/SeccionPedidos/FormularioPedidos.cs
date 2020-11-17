@@ -23,6 +23,8 @@ namespace WindowsFormsApp1
 
             InitializeComponent();
 
+            this.BarraHerramientas.BackColor = Color.FromArgb(20, 34, 56);
+
             this.subseccioncrearpedidos = new SubSeccionCrearPedidos();
 
             this.subseccioncrearpedidos.TopLevel = false;
@@ -86,6 +88,6 @@ namespace WindowsFormsApp1
             }
   
         }
-        
+
     }
 }

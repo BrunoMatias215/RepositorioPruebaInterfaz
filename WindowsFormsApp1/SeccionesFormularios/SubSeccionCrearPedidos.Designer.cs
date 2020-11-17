@@ -63,8 +63,6 @@
             this.comboBoxClientes = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBoxCadetes = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.comboBoxFormasDePago = new System.Windows.Forms.ComboBox();
             this.BotonCrearPedido = new System.Windows.Forms.Button();
@@ -79,6 +77,8 @@
             this.BotonConsultarPrecio = new System.Windows.Forms.Button();
             this.Observaciones = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.comboBoxCadetes = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -94,7 +94,7 @@
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(12, 43);
+            this.tabControl1.Location = new System.Drawing.Point(18, 43);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(396, 372);
@@ -430,15 +430,15 @@
             this.ListaDeProductos.FormattingEnabled = true;
             this.ListaDeProductos.HorizontalScrollbar = true;
             this.ListaDeProductos.ItemHeight = 16;
-            this.ListaDeProductos.Location = new System.Drawing.Point(425, 43);
+            this.ListaDeProductos.Location = new System.Drawing.Point(445, 43);
             this.ListaDeProductos.Name = "ListaDeProductos";
-            this.ListaDeProductos.Size = new System.Drawing.Size(275, 372);
+            this.ListaDeProductos.Size = new System.Drawing.Size(240, 372);
             this.ListaDeProductos.TabIndex = 1;
             // 
             // comboBoxClientes
             // 
             this.comboBoxClientes.FormattingEnabled = true;
-            this.comboBoxClientes.Location = new System.Drawing.Point(14, 519);
+            this.comboBoxClientes.Location = new System.Drawing.Point(36, 519);
             this.comboBoxClientes.Name = "comboBoxClientes";
             this.comboBoxClientes.Size = new System.Drawing.Size(161, 21);
             this.comboBoxClientes.TabIndex = 3;
@@ -446,7 +446,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(11, 503);
+            this.label2.Location = new System.Drawing.Point(33, 503);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 13);
             this.label2.TabIndex = 4;
@@ -455,33 +455,16 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 558);
+            this.label3.Location = new System.Drawing.Point(33, 558);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(78, 13);
             this.label3.TabIndex = 5;
             this.label3.Text = "Observaciones";
             // 
-            // comboBoxCadetes
-            // 
-            this.comboBoxCadetes.FormattingEnabled = true;
-            this.comboBoxCadetes.Location = new System.Drawing.Point(225, 519);
-            this.comboBoxCadetes.Name = "comboBoxCadetes";
-            this.comboBoxCadetes.Size = new System.Drawing.Size(161, 21);
-            this.comboBoxCadetes.TabIndex = 7;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(222, 503);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(46, 13);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Cadetes";
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(427, 503);
+            this.label5.Location = new System.Drawing.Point(414, 503);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(79, 13);
             this.label5.TabIndex = 9;
@@ -490,16 +473,16 @@
             // comboBoxFormasDePago
             // 
             this.comboBoxFormasDePago.FormattingEnabled = true;
-            this.comboBoxFormasDePago.Location = new System.Drawing.Point(430, 519);
+            this.comboBoxFormasDePago.Location = new System.Drawing.Point(417, 519);
             this.comboBoxFormasDePago.Name = "comboBoxFormasDePago";
             this.comboBoxFormasDePago.Size = new System.Drawing.Size(161, 21);
             this.comboBoxFormasDePago.TabIndex = 10;
             // 
             // BotonCrearPedido
             // 
-            this.BotonCrearPedido.Location = new System.Drawing.Point(732, 439);
+            this.BotonCrearPedido.Location = new System.Drawing.Point(740, 439);
             this.BotonCrearPedido.Name = "BotonCrearPedido";
-            this.BotonCrearPedido.Size = new System.Drawing.Size(152, 35);
+            this.BotonCrearPedido.Size = new System.Drawing.Size(106, 35);
             this.BotonCrearPedido.TabIndex = 11;
             this.BotonCrearPedido.Text = "Crear Pedido";
             this.BotonCrearPedido.UseVisualStyleBackColor = true;
@@ -509,7 +492,7 @@
             // 
             this.Total.AutoSize = true;
             this.Total.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Total.Location = new System.Drawing.Point(913, 458);
+            this.Total.Location = new System.Drawing.Point(867, 458);
             this.Total.Name = "Total";
             this.Total.Size = new System.Drawing.Size(42, 16);
             this.Total.TabIndex = 12;
@@ -518,7 +501,7 @@
             // comboBoxCantidad
             // 
             this.comboBoxCantidad.FormattingEnabled = true;
-            this.comboBoxCantidad.Location = new System.Drawing.Point(70, 435);
+            this.comboBoxCantidad.Location = new System.Drawing.Point(76, 435);
             this.comboBoxCantidad.Name = "comboBoxCantidad";
             this.comboBoxCantidad.Size = new System.Drawing.Size(152, 21);
             this.comboBoxCantidad.TabIndex = 13;
@@ -526,7 +509,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(15, 438);
+            this.label7.Location = new System.Drawing.Point(15, 440);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(49, 13);
             this.label7.TabIndex = 14;
@@ -534,9 +517,9 @@
             // 
             // BotonAgregarProducto
             // 
-            this.BotonAgregarProducto.Location = new System.Drawing.Point(573, 427);
+            this.BotonAgregarProducto.Location = new System.Drawing.Point(579, 427);
             this.BotonAgregarProducto.Name = "BotonAgregarProducto";
-            this.BotonAgregarProducto.Size = new System.Drawing.Size(127, 35);
+            this.BotonAgregarProducto.Size = new System.Drawing.Size(106, 35);
             this.BotonAgregarProducto.TabIndex = 15;
             this.BotonAgregarProducto.Text = "Agregar Producto";
             this.BotonAgregarProducto.UseVisualStyleBackColor = true;
@@ -544,7 +527,7 @@
             // 
             // BotonBorrarProducto
             // 
-            this.BotonBorrarProducto.Location = new System.Drawing.Point(1014, 55);
+            this.BotonBorrarProducto.Location = new System.Drawing.Point(993, 55);
             this.BotonBorrarProducto.Name = "BotonBorrarProducto";
             this.BotonBorrarProducto.Size = new System.Drawing.Size(85, 36);
             this.BotonBorrarProducto.TabIndex = 16;
@@ -557,9 +540,9 @@
             this.ListaDeDetallesPedidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ListaDeDetallesPedidos.FormattingEnabled = true;
             this.ListaDeDetallesPedidos.ItemHeight = 16;
-            this.ListaDeDetallesPedidos.Location = new System.Drawing.Point(732, 55);
+            this.ListaDeDetallesPedidos.Location = new System.Drawing.Point(740, 55);
             this.ListaDeDetallesPedidos.Name = "ListaDeDetallesPedidos";
-            this.ListaDeDetallesPedidos.Size = new System.Drawing.Size(275, 372);
+            this.ListaDeDetallesPedidos.Size = new System.Drawing.Size(240, 372);
             this.ListaDeDetallesPedidos.TabIndex = 17;
             // 
             // groupBox1
@@ -571,9 +554,10 @@
             this.groupBox1.Controls.Add(this.comboBoxCantidad);
             this.groupBox1.Controls.Add(this.BotonAgregarProducto);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Location = new System.Drawing.Point(5, 12);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(18, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(716, 477);
+            this.groupBox1.Size = new System.Drawing.Size(703, 477);
             this.groupBox1.TabIndex = 18;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Categorías de Productos";
@@ -582,7 +566,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(422, 22);
+            this.label8.Location = new System.Drawing.Point(442, 22);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(69, 16);
             this.label8.TabIndex = 17;
@@ -590,9 +574,9 @@
             // 
             // BotonConsultarPrecio
             // 
-            this.BotonConsultarPrecio.Location = new System.Drawing.Point(425, 427);
+            this.BotonConsultarPrecio.Location = new System.Drawing.Point(445, 427);
             this.BotonConsultarPrecio.Name = "BotonConsultarPrecio";
-            this.BotonConsultarPrecio.Size = new System.Drawing.Size(127, 35);
+            this.BotonConsultarPrecio.Size = new System.Drawing.Size(106, 35);
             this.BotonConsultarPrecio.TabIndex = 16;
             this.BotonConsultarPrecio.Text = "Consultar Precio";
             this.BotonConsultarPrecio.UseVisualStyleBackColor = true;
@@ -600,7 +584,7 @@
             // 
             // Observaciones
             // 
-            this.Observaciones.Location = new System.Drawing.Point(14, 574);
+            this.Observaciones.Location = new System.Drawing.Point(36, 574);
             this.Observaciones.Name = "Observaciones";
             this.Observaciones.Size = new System.Drawing.Size(161, 47);
             this.Observaciones.TabIndex = 19;
@@ -610,18 +594,35 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(729, 34);
+            this.label1.Location = new System.Drawing.Point(737, 34);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(52, 16);
             this.label1.TabIndex = 20;
             this.label1.Text = "Pedido";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(222, 503);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(46, 13);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Cadetes";
+            // 
+            // comboBoxCadetes
+            // 
+            this.comboBoxCadetes.FormattingEnabled = true;
+            this.comboBoxCadetes.Location = new System.Drawing.Point(225, 519);
+            this.comboBoxCadetes.Name = "comboBoxCadetes";
+            this.comboBoxCadetes.Size = new System.Drawing.Size(161, 21);
+            this.comboBoxCadetes.TabIndex = 7;
             // 
             // SubSeccionCrearPedidos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1106, 638);
+            this.ClientSize = new System.Drawing.Size(1090, 640);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Observaciones);
             this.Controls.Add(this.groupBox1);
@@ -662,8 +663,6 @@
         private System.Windows.Forms.ComboBox comboBoxClientes;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBoxCadetes;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox comboBoxFormasDePago;
         private System.Windows.Forms.Button BotonCrearPedido;
@@ -705,5 +704,7 @@
         private System.Windows.Forms.RichTextBox Observaciones;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox comboBoxCadetes;
     }
 }

@@ -44,7 +44,7 @@
             this.BarraHerramientas.Location = new System.Drawing.Point(0, 0);
             this.BarraHerramientas.Margin = new System.Windows.Forms.Padding(0);
             this.BarraHerramientas.Name = "BarraHerramientas";
-            this.BarraHerramientas.Size = new System.Drawing.Size(1106, 52);
+            this.BarraHerramientas.Size = new System.Drawing.Size(1090, 52);
             this.BarraHerramientas.TabIndex = 0;
             // 
             // button2
@@ -70,18 +70,18 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.Control;
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 52);
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1106, 677);
+            this.panel2.Size = new System.Drawing.Size(1090, 640);
             this.panel2.TabIndex = 1;
             // 
             // FormularioPedidos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1106, 680);
+            this.ClientSize = new System.Drawing.Size(1090, 692);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.BarraHerramientas);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

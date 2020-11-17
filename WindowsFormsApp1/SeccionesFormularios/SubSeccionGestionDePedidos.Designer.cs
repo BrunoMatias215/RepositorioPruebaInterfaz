@@ -117,7 +117,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(97, 42);
             this.button1.TabIndex = 8;
-            this.button1.Text = "Ver Detalla Pedido";
+            this.button1.Text = "Ver Detalle Pedido";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // panel1
@@ -140,7 +140,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1135, 638);
+            this.ClientSize = new System.Drawing.Size(1090, 638);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SubSeccionGestionDePedidos";

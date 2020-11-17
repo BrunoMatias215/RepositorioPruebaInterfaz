@@ -28,6 +28,8 @@ namespace SeccionesFormularios
 
             this.FormBorderStyle = FormBorderStyle.None;
 
+            this.BackColor = Color.FromArgb(20, 34, 56);
+
             this.ListaDeProductos.DisplayMember = "descripcion";
 
             this.comboBoxClientes.DisplayMember = "apellido";
