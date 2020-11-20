@@ -11,6 +11,23 @@ namespace CapaDeDatos
     public class Cadete
     {
 
+        public DataTable BuscarCadetes()
+        {
+
+            Conexion objetoconexion = new Conexion();
+
+            objetoconexion.Conectar();
+
+            DataTable objetotabla = objetoconexion.LeerPorStoreProcedure("SPBuscarCadeteS");
+
+            //DataTable objetotabla = objetoconexion.LecturaPorComando("SELECT * FROM Producto WHERE idproductocategoria = 1");
+
+            objetoconexion.Desconectar();
+
+            return objetotabla;
+
+        }
+
         public DataTable BuscarCadeteYRodado()
         {
 
@@ -18,7 +35,7 @@ namespace CapaDeDatos
 
             objetoconexion.Conectar();
 
-            DataTable objetotabla = objetoconexion.LeerPorStoreProcedure("SPBuscarCadeteYRodado");
+            DataTable objetotabla = objetoconexion.LeerPorStoreProcedure("SPBuscarCadeteS");
 
             //DataTable objetotabla = objetoconexion.LecturaPorComando("SELECT * FROM Producto WHERE idproductocategoria = 1");
 

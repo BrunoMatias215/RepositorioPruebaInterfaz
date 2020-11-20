@@ -36,60 +36,76 @@
             this.BotonEliminarCliente = new System.Windows.Forms.Button();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.labelPedido = new System.Windows.Forms.Label();
+            this.labelDetallePedido = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(132, 12);
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.Color.White;
+            this.textBox1.Location = new System.Drawing.Point(141, 22);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(206, 20);
+            this.textBox1.Size = new System.Drawing.Size(206, 15);
             this.textBox1.TabIndex = 0;
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(19, 41);
+            this.dataGridView1.Location = new System.Drawing.Point(19, 58);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(705, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(668, 150);
             this.dataGridView1.TabIndex = 1;
             // 
             // labelBúsquedaClientes
             // 
             this.labelBúsquedaClientes.AutoSize = true;
-            this.labelBúsquedaClientes.Location = new System.Drawing.Point(16, 15);
+            this.labelBúsquedaClientes.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelBúsquedaClientes.Location = new System.Drawing.Point(16, 23);
             this.labelBúsquedaClientes.Name = "labelBúsquedaClientes";
-            this.labelBúsquedaClientes.Size = new System.Drawing.Size(110, 13);
+            this.labelBúsquedaClientes.Size = new System.Drawing.Size(119, 13);
             this.labelBúsquedaClientes.TabIndex = 2;
             this.labelBúsquedaClientes.Text = "Búsqueda de Clientes";
             // 
             // BotonNuevoCliente
             // 
-            this.BotonNuevoCliente.Location = new System.Drawing.Point(19, 207);
+            this.BotonNuevoCliente.FlatAppearance.BorderSize = 0;
+            this.BotonNuevoCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BotonNuevoCliente.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BotonNuevoCliente.Location = new System.Drawing.Point(19, 224);
             this.BotonNuevoCliente.Name = "BotonNuevoCliente";
-            this.BotonNuevoCliente.Size = new System.Drawing.Size(94, 37);
+            this.BotonNuevoCliente.Size = new System.Drawing.Size(120, 37);
             this.BotonNuevoCliente.TabIndex = 3;
             this.BotonNuevoCliente.Text = "Nuevo Cliente";
             this.BotonNuevoCliente.UseVisualStyleBackColor = true;
             // 
             // BotonModificarCliente
             // 
-            this.BotonModificarCliente.Location = new System.Drawing.Point(119, 207);
+            this.BotonModificarCliente.FlatAppearance.BorderSize = 0;
+            this.BotonModificarCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BotonModificarCliente.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BotonModificarCliente.Location = new System.Drawing.Point(145, 224);
             this.BotonModificarCliente.Name = "BotonModificarCliente";
-            this.BotonModificarCliente.Size = new System.Drawing.Size(94, 37);
+            this.BotonModificarCliente.Size = new System.Drawing.Size(120, 37);
             this.BotonModificarCliente.TabIndex = 4;
             this.BotonModificarCliente.Text = "Modificar Cliente";
             this.BotonModificarCliente.UseVisualStyleBackColor = true;
             // 
             // BotonEliminarCliente
             // 
-            this.BotonEliminarCliente.Location = new System.Drawing.Point(219, 207);
+            this.BotonEliminarCliente.FlatAppearance.BorderSize = 0;
+            this.BotonEliminarCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BotonEliminarCliente.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BotonEliminarCliente.Location = new System.Drawing.Point(271, 224);
             this.BotonEliminarCliente.Name = "BotonEliminarCliente";
-            this.BotonEliminarCliente.Size = new System.Drawing.Size(94, 37);
+            this.BotonEliminarCliente.Size = new System.Drawing.Size(120, 37);
             this.BotonEliminarCliente.TabIndex = 5;
             this.BotonEliminarCliente.Text = "Eliminar Cliente";
             this.BotonEliminarCliente.UseVisualStyleBackColor = true;
@@ -97,60 +113,81 @@
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(19, 283);
+            this.dataGridView2.Location = new System.Drawing.Point(19, 293);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(705, 141);
+            this.dataGridView2.Size = new System.Drawing.Size(668, 141);
             this.dataGridView2.TabIndex = 6;
             // 
             // dataGridView3
             // 
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(19, 474);
+            this.dataGridView3.Location = new System.Drawing.Point(19, 468);
             this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(705, 141);
+            this.dataGridView3.Size = new System.Drawing.Size(668, 141);
             this.dataGridView3.TabIndex = 7;
             // 
-            // label1
+            // labelPedido
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(16, 267);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(40, 13);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Pedido";
+            this.labelPedido.AutoSize = true;
+            this.labelPedido.Font = new System.Drawing.Font("Segoe UI Emoji", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPedido.Location = new System.Drawing.Point(16, 275);
+            this.labelPedido.Name = "labelPedido";
+            this.labelPedido.Size = new System.Drawing.Size(43, 15);
+            this.labelPedido.TabIndex = 8;
+            this.labelPedido.Text = "Pedido";
             // 
-            // label2
+            // labelDetallePedido
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(16, 458);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 13);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Detalle Pedido";
+            this.labelDetallePedido.AutoSize = true;
+            this.labelDetallePedido.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDetallePedido.Location = new System.Drawing.Point(16, 452);
+            this.labelDetallePedido.Name = "labelDetallePedido";
+            this.labelDetallePedido.Size = new System.Drawing.Size(82, 13);
+            this.labelDetallePedido.TabIndex = 9;
+            this.labelDetallePedido.Text = "Detalle Pedido";
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.labelBúsquedaClientes);
+            this.panel1.Controls.Add(this.labelDetallePedido);
+            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.labelPedido);
+            this.panel1.Controls.Add(this.dataGridView1);
+            this.panel1.Controls.Add(this.dataGridView3);
+            this.panel1.Controls.Add(this.BotonNuevoCliente);
+            this.panel1.Controls.Add(this.dataGridView2);
+            this.panel1.Controls.Add(this.BotonModificarCliente);
+            this.panel1.Controls.Add(this.BotonEliminarCliente);
+            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(706, 626);
+            this.panel1.TabIndex = 10;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Location = new System.Drawing.Point(145, 42);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(206, 1);
+            this.panel2.TabIndex = 11;
             // 
             // FormularioClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(747, 650);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView3);
-            this.Controls.Add(this.dataGridView2);
-            this.Controls.Add(this.BotonEliminarCliente);
-            this.Controls.Add(this.BotonModificarCliente);
-            this.Controls.Add(this.BotonNuevoCliente);
-            this.Controls.Add(this.labelBúsquedaClientes);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(1067, 650);
+            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormularioClientes";
             this.Text = "FormularioClientes";
+            this.Load += new System.EventHandler(this.FormularioClientes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -164,7 +201,9 @@
         private System.Windows.Forms.Button BotonEliminarCliente;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.DataGridView dataGridView3;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelPedido;
+        private System.Windows.Forms.Label labelDetallePedido;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
     }
 }

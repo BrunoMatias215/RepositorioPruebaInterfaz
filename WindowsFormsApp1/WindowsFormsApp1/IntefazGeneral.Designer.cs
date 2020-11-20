@@ -60,14 +60,14 @@
             this.MenuOpciones.Location = new System.Drawing.Point(0, 0);
             this.MenuOpciones.Margin = new System.Windows.Forms.Padding(0);
             this.MenuOpciones.Name = "MenuOpciones";
-            this.MenuOpciones.Size = new System.Drawing.Size(183, 729);
+            this.MenuOpciones.Size = new System.Drawing.Size(183, 673);
             this.MenuOpciones.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(9, 113);
+            this.label2.Location = new System.Drawing.Point(8, 118);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(51, 20);
             this.label2.TabIndex = 6;
@@ -77,10 +77,10 @@
             // 
             this.BotonCerrarSesion.FlatAppearance.BorderSize = 0;
             this.BotonCerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BotonCerrarSesion.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BotonCerrarSesion.Location = new System.Drawing.Point(12, 684);
+            this.BotonCerrarSesion.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BotonCerrarSesion.Location = new System.Drawing.Point(12, 635);
             this.BotonCerrarSesion.Name = "BotonCerrarSesion";
-            this.BotonCerrarSesion.Size = new System.Drawing.Size(111, 33);
+            this.BotonCerrarSesion.Size = new System.Drawing.Size(92, 26);
             this.BotonCerrarSesion.TabIndex = 5;
             this.BotonCerrarSesion.Text = "Cerrar Sesion";
             this.BotonCerrarSesion.UseVisualStyleBackColor = true;
@@ -90,7 +90,7 @@
             // 
             this.BotonGestion.FlatAppearance.BorderSize = 0;
             this.BotonGestion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BotonGestion.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BotonGestion.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BotonGestion.Location = new System.Drawing.Point(12, 356);
             this.BotonGestion.Name = "BotonGestion";
             this.BotonGestion.Size = new System.Drawing.Size(141, 37);
@@ -103,7 +103,7 @@
             // 
             this.BotonCajas.FlatAppearance.BorderSize = 0;
             this.BotonCajas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BotonCajas.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BotonCajas.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BotonCajas.Location = new System.Drawing.Point(12, 313);
             this.BotonCajas.Name = "BotonCajas";
             this.BotonCajas.Size = new System.Drawing.Size(141, 37);
@@ -116,7 +116,7 @@
             // 
             this.BotonClientes.FlatAppearance.BorderSize = 0;
             this.BotonClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BotonClientes.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BotonClientes.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BotonClientes.Location = new System.Drawing.Point(12, 270);
             this.BotonClientes.Name = "BotonClientes";
             this.BotonClientes.Size = new System.Drawing.Size(141, 37);
@@ -129,7 +129,7 @@
             // 
             this.BotonPedidos.FlatAppearance.BorderSize = 0;
             this.BotonPedidos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BotonPedidos.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BotonPedidos.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BotonPedidos.Location = new System.Drawing.Point(12, 227);
             this.BotonPedidos.Name = "BotonPedidos";
             this.BotonPedidos.Size = new System.Drawing.Size(141, 37);
@@ -142,7 +142,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(9, 78);
+            this.label1.Location = new System.Drawing.Point(8, 83);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(51, 20);
             this.label1.TabIndex = 1;
@@ -150,10 +150,10 @@
             // 
             // PanelInterfaz
             // 
-            this.PanelInterfaz.Location = new System.Drawing.Point(183, 32);
+            this.PanelInterfaz.Location = new System.Drawing.Point(183, 29);
             this.PanelInterfaz.Margin = new System.Windows.Forms.Padding(0);
             this.PanelInterfaz.Name = "PanelInterfaz";
-            this.PanelInterfaz.Size = new System.Drawing.Size(1090, 697);
+            this.PanelInterfaz.Size = new System.Drawing.Size(1067, 644);
             this.PanelInterfaz.TabIndex = 2;
             // 
             // panel1
@@ -163,13 +163,13 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(183, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1090, 29);
+            this.panel1.Size = new System.Drawing.Size(1067, 29);
             this.panel1.TabIndex = 3;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(1041, 5);
+            this.pictureBox2.Location = new System.Drawing.Point(1016, 5);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(18, 18);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -180,7 +180,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1065, 5);
+            this.pictureBox1.Location = new System.Drawing.Point(1040, 5);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(18, 18);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -192,7 +192,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1273, 729);
+            this.ClientSize = new System.Drawing.Size(1250, 673);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.PanelInterfaz);
             this.Controls.Add(this.MenuOpciones);

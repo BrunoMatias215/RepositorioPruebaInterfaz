@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,6 +28,40 @@ namespace CapaDeDatos
             objetoconexion.Desconectar();
 
             return Filasafectadas;
+
+        }
+
+        public DataTable BuscarPedidosActivos()
+        {
+
+            Conexion objetoconexion = new Conexion();
+
+            objetoconexion.Conectar();
+
+            DataTable objetotabla = objetoconexion.LeerPorStoreProcedure("SPBuscarPedidosActivos");
+
+            objetoconexion.Desconectar();
+
+            return objetotabla;
+
+        }
+
+        public void ModificarEstadoPedido(int pidpedido, int pidestadocategoria)
+        {
+
+            SqlParameter[] parametros = new SqlParameter[2];
+
+            Conexion objetoconexion = new Conexion();
+
+            objetoconexion.Conectar();
+
+            parametros[0] = objetoconexion.CrearParametro("@idpedido", pidpedido.ToString());
+
+            parametros[1] = objetoconexion.CrearParametro("@idestadocategoria", pidestadocategoria.ToString());
+
+            objetoconexion.EscribirPorStoreProcedure("SPModificarEstadoPedido", parametros);
+
+            objetoconexion.Desconectar();
 
         }
 

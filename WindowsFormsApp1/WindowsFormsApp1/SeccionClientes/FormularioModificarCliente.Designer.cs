@@ -43,22 +43,23 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(60, 35);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(22, 33);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 13);
+            this.label1.Size = new System.Drawing.Size(48, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nombre";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(63, 51);
+            this.textBox1.Location = new System.Drawing.Point(25, 49);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(186, 20);
             this.textBox1.TabIndex = 1;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(63, 116);
+            this.textBox2.Location = new System.Drawing.Point(25, 114);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(186, 20);
             this.textBox2.TabIndex = 3;
@@ -66,15 +67,16 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(60, 100);
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(22, 98);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 13);
+            this.label2.Size = new System.Drawing.Size(50, 13);
             this.label2.TabIndex = 2;
             this.label2.Text = "Apellido";
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(63, 179);
+            this.textBox3.Location = new System.Drawing.Point(25, 177);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(186, 20);
             this.textBox3.TabIndex = 5;
@@ -82,15 +84,16 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(60, 163);
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(25, 161);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(49, 13);
+            this.label3.Size = new System.Drawing.Size(52, 13);
             this.label3.TabIndex = 4;
             this.label3.Text = "Teléfono";
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(63, 241);
+            this.textBox4.Location = new System.Drawing.Point(25, 239);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(186, 20);
             this.textBox4.TabIndex = 7;
@@ -98,15 +101,17 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(60, 225);
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(22, 223);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(52, 13);
+            this.label4.Size = new System.Drawing.Size(55, 13);
             this.label4.TabIndex = 6;
             this.label4.Text = "Direccion";
             // 
             // BotonGuardarCambios
             // 
-            this.BotonGuardarCambios.Location = new System.Drawing.Point(63, 289);
+            this.BotonGuardarCambios.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BotonGuardarCambios.Location = new System.Drawing.Point(25, 287);
             this.BotonGuardarCambios.Name = "BotonGuardarCambios";
             this.BotonGuardarCambios.Size = new System.Drawing.Size(79, 35);
             this.BotonGuardarCambios.TabIndex = 8;
@@ -115,7 +120,8 @@
             // 
             // BotonCancelar
             // 
-            this.BotonCancelar.Location = new System.Drawing.Point(169, 289);
+            this.BotonCancelar.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BotonCancelar.Location = new System.Drawing.Point(131, 287);
             this.BotonCancelar.Name = "BotonCancelar";
             this.BotonCancelar.Size = new System.Drawing.Size(80, 35);
             this.BotonCancelar.TabIndex = 9;
@@ -126,7 +132,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(312, 353);
+            this.ClientSize = new System.Drawing.Size(241, 356);
             this.Controls.Add(this.BotonCancelar);
             this.Controls.Add(this.BotonGuardarCambios);
             this.Controls.Add(this.textBox4);

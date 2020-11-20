@@ -36,6 +36,19 @@ namespace CapaDeNegocios
 
         }
 
+        public Cadete(int pidcadete, string pnombre, string papellido, int ptelefono)
+        {
+
+            this.Idcadete = pidcadete;
+
+            this.Nombre = pnombre;
+
+            this.Apellido = papellido;
+
+            this.Telefono = ptelefono;
+
+        }
+
         public Cadete ()
         {
 
@@ -102,6 +115,44 @@ namespace CapaDeNegocios
             }
 
             return cadeteyrodadoacargar;
+
+        }
+
+        public List<Cadete> CargarCadetes()
+        {
+
+            CapaDeDatos.Cadete cadetedal = new CapaDeDatos.Cadete();
+
+            DataTable tabladecadetes = cadetedal.BuscarCadetes();
+
+            List<Cadete> cadetesaagregar = new List<Cadete>();
+
+            foreach (DataRow fila in tabladecadetes.Rows)
+            {
+
+                int idcadete;
+
+                string nombre;
+
+                string apellido;
+
+                int telefono;
+
+                idcadete = int.Parse(fila["idcadete"].ToString());
+
+                nombre = fila["nombre"].ToString();
+
+                apellido = fila["apellido"].ToString();
+
+                telefono = int.Parse(fila["telefono"].ToString());
+
+                Cadete cadete = new Cadete(idcadete, nombre, apellido, telefono);
+
+                cadetesaagregar.Add(cadete);
+
+            }
+
+            return cadetesaagregar;
 
         }
 

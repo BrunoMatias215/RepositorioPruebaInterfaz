@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -52,6 +53,26 @@ namespace CapaDeNegocios
             cantidaddefilarafectadas = pedido.CrearPedido(this.Idformadepago, this.Idcliente, this.Idusuario, this.Observaciones, this.Idcadete, this.Idestadocategoria);
 
             return cantidaddefilarafectadas;
+
+        }
+
+        public DataTable CargarPedidosActivos()
+        {
+
+            CapaDeDatos.PedidoDAL pedidodal = new CapaDeDatos.PedidoDAL();
+
+            DataTable tablapedidosactivos = pedidodal.BuscarPedidosActivos();
+
+            return tablapedidosactivos;
+
+        }
+
+        public void ModificarEstadoPedido (int idpedido, int idestadocategoria)
+        {
+
+            PedidoDAL pedido = new PedidoDAL();
+
+            pedido.ModificarEstadoPedido(idpedido, idestadocategoria);
 
         }
 

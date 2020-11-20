@@ -55,10 +55,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 26.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(4, 76);
+            this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 27.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(4, 67);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(92, 43);
+            this.label1.Size = new System.Drawing.Size(99, 45);
             this.label1.TabIndex = 0;
             this.label1.Text = "label1";
             // 
@@ -220,7 +220,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Name = "InterfazInicioDeSesion";
-            this.Text = "InterfazInicioDeSesion";
+            this.Text = "**";
             this.Load += new System.EventHandler(this.InterfazInicioDeSesion_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

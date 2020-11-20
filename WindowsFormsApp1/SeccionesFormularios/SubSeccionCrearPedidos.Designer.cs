@@ -72,19 +72,18 @@
             this.BotonAgregarProducto = new System.Windows.Forms.Button();
             this.BotonBorrarProducto = new System.Windows.Forms.Button();
             this.ListaDeDetallesPedidos = new System.Windows.Forms.ListBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.BotonConsultarPrecio = new System.Windows.Forms.Button();
             this.Observaciones = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.comboBoxCadetes = new System.Windows.Forms.ComboBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -93,8 +92,8 @@
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(18, 43);
+            this.tabControl1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControl1.Location = new System.Drawing.Point(20, 32);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(396, 372);
@@ -109,16 +108,17 @@
             this.tabPage1.Controls.Add(this.BotonMatambre);
             this.tabPage1.Controls.Add(this.BotonSupremas);
             this.tabPage1.Controls.Add(this.BotonMilanesas);
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Location = new System.Drawing.Point(4, 26);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(388, 343);
+            this.tabPage1.Size = new System.Drawing.Size(388, 342);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Entradas y Minutas";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // BotonEntradas
             // 
+            this.BotonEntradas.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BotonEntradas.Location = new System.Drawing.Point(54, 44);
             this.BotonEntradas.Name = "BotonEntradas";
             this.BotonEntradas.Size = new System.Drawing.Size(89, 82);
@@ -129,6 +129,7 @@
             // 
             // BotonGuarnicion
             // 
+            this.BotonGuarnicion.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BotonGuarnicion.Location = new System.Drawing.Point(54, 220);
             this.BotonGuarnicion.Name = "BotonGuarnicion";
             this.BotonGuarnicion.Size = new System.Drawing.Size(89, 82);
@@ -139,6 +140,7 @@
             // 
             // BotonOmelletes
             // 
+            this.BotonOmelletes.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BotonOmelletes.Location = new System.Drawing.Point(149, 44);
             this.BotonOmelletes.Name = "BotonOmelletes";
             this.BotonOmelletes.Size = new System.Drawing.Size(89, 82);
@@ -149,6 +151,7 @@
             // 
             // BotonTortillas
             // 
+            this.BotonTortillas.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BotonTortillas.Location = new System.Drawing.Point(244, 44);
             this.BotonTortillas.Name = "BotonTortillas";
             this.BotonTortillas.Size = new System.Drawing.Size(89, 82);
@@ -159,6 +162,7 @@
             // 
             // BotonMatambre
             // 
+            this.BotonMatambre.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BotonMatambre.Location = new System.Drawing.Point(244, 132);
             this.BotonMatambre.Name = "BotonMatambre";
             this.BotonMatambre.Size = new System.Drawing.Size(89, 82);
@@ -169,6 +173,7 @@
             // 
             // BotonSupremas
             // 
+            this.BotonSupremas.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BotonSupremas.Location = new System.Drawing.Point(149, 132);
             this.BotonSupremas.Name = "BotonSupremas";
             this.BotonSupremas.Size = new System.Drawing.Size(89, 82);
@@ -179,6 +184,7 @@
             // 
             // BotonMilanesas
             // 
+            this.BotonMilanesas.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BotonMilanesas.Location = new System.Drawing.Point(54, 132);
             this.BotonMilanesas.Name = "BotonMilanesas";
             this.BotonMilanesas.Size = new System.Drawing.Size(89, 82);
@@ -194,16 +200,17 @@
             this.tabPage2.Controls.Add(this.BotonPescados);
             this.tabPage2.Controls.Add(this.BotonParillas);
             this.tabPage2.Controls.Add(this.BotonPollos);
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Location = new System.Drawing.Point(4, 26);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(388, 343);
+            this.tabPage2.Size = new System.Drawing.Size(388, 342);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Carnes y Ensaladas";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // BotonEnsaladasEsp
             // 
+            this.BotonEnsaladasEsp.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BotonEnsaladasEsp.Location = new System.Drawing.Point(149, 132);
             this.BotonEnsaladasEsp.Name = "BotonEnsaladasEsp";
             this.BotonEnsaladasEsp.Size = new System.Drawing.Size(89, 82);
@@ -214,6 +221,7 @@
             // 
             // BotonEnsaladas
             // 
+            this.BotonEnsaladas.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BotonEnsaladas.Location = new System.Drawing.Point(54, 132);
             this.BotonEnsaladas.Name = "BotonEnsaladas";
             this.BotonEnsaladas.Size = new System.Drawing.Size(89, 82);
@@ -224,6 +232,7 @@
             // 
             // BotonPescados
             // 
+            this.BotonPescados.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BotonPescados.Location = new System.Drawing.Point(244, 44);
             this.BotonPescados.Name = "BotonPescados";
             this.BotonPescados.Size = new System.Drawing.Size(89, 82);
@@ -234,6 +243,7 @@
             // 
             // BotonParillas
             // 
+            this.BotonParillas.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BotonParillas.Location = new System.Drawing.Point(149, 44);
             this.BotonParillas.Name = "BotonParillas";
             this.BotonParillas.Size = new System.Drawing.Size(89, 82);
@@ -244,6 +254,7 @@
             // 
             // BotonPollos
             // 
+            this.BotonPollos.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BotonPollos.Location = new System.Drawing.Point(54, 44);
             this.BotonPollos.Name = "BotonPollos";
             this.BotonPollos.Size = new System.Drawing.Size(89, 82);
@@ -261,15 +272,16 @@
             this.tabPage3.Controls.Add(this.BotonEspecialesII);
             this.tabPage3.Controls.Add(this.BotonEspecialesI);
             this.tabPage3.Controls.Add(this.BotonTradicionales);
-            this.tabPage3.Location = new System.Drawing.Point(4, 25);
+            this.tabPage3.Location = new System.Drawing.Point(4, 26);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(388, 343);
+            this.tabPage3.Size = new System.Drawing.Size(388, 342);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Pizzas";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // BotonCalzones
             // 
+            this.BotonCalzones.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BotonCalzones.Location = new System.Drawing.Point(244, 132);
             this.BotonCalzones.Name = "BotonCalzones";
             this.BotonCalzones.Size = new System.Drawing.Size(89, 82);
@@ -280,6 +292,7 @@
             // 
             // BotonOtrasEspeciales
             // 
+            this.BotonOtrasEspeciales.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BotonOtrasEspeciales.Location = new System.Drawing.Point(54, 220);
             this.BotonOtrasEspeciales.Name = "BotonOtrasEspeciales";
             this.BotonOtrasEspeciales.Size = new System.Drawing.Size(89, 82);
@@ -290,6 +303,7 @@
             // 
             // BotonEspecialesEnFugazzeta
             // 
+            this.BotonEspecialesEnFugazzeta.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BotonEspecialesEnFugazzeta.Location = new System.Drawing.Point(149, 132);
             this.BotonEspecialesEnFugazzeta.Name = "BotonEspecialesEnFugazzeta";
             this.BotonEspecialesEnFugazzeta.Size = new System.Drawing.Size(89, 82);
@@ -300,6 +314,7 @@
             // 
             // BotonEspecialesEnFugazza
             // 
+            this.BotonEspecialesEnFugazza.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BotonEspecialesEnFugazza.Location = new System.Drawing.Point(54, 132);
             this.BotonEspecialesEnFugazza.Name = "BotonEspecialesEnFugazza";
             this.BotonEspecialesEnFugazza.Size = new System.Drawing.Size(89, 82);
@@ -310,6 +325,7 @@
             // 
             // BotonEspecialesII
             // 
+            this.BotonEspecialesII.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BotonEspecialesII.Location = new System.Drawing.Point(244, 44);
             this.BotonEspecialesII.Name = "BotonEspecialesII";
             this.BotonEspecialesII.Size = new System.Drawing.Size(89, 82);
@@ -320,6 +336,7 @@
             // 
             // BotonEspecialesI
             // 
+            this.BotonEspecialesI.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BotonEspecialesI.Location = new System.Drawing.Point(149, 44);
             this.BotonEspecialesI.Name = "BotonEspecialesI";
             this.BotonEspecialesI.Size = new System.Drawing.Size(89, 82);
@@ -330,6 +347,7 @@
             // 
             // BotonTradicionales
             // 
+            this.BotonTradicionales.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BotonTradicionales.Location = new System.Drawing.Point(54, 44);
             this.BotonTradicionales.Name = "BotonTradicionales";
             this.BotonTradicionales.Size = new System.Drawing.Size(89, 82);
@@ -347,15 +365,16 @@
             this.tabPage4.Controls.Add(this.BotonPastas);
             this.tabPage4.Controls.Add(this.BotonSandwiches);
             this.tabPage4.Controls.Add(this.BotonEmpanadas);
-            this.tabPage4.Location = new System.Drawing.Point(4, 25);
+            this.tabPage4.Location = new System.Drawing.Point(4, 26);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(388, 343);
+            this.tabPage4.Size = new System.Drawing.Size(388, 342);
             this.tabPage4.TabIndex = 8;
             this.tabPage4.Text = "Otros";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // BotonPromos
             // 
+            this.BotonPromos.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BotonPromos.Location = new System.Drawing.Point(54, 220);
             this.BotonPromos.Name = "BotonPromos";
             this.BotonPromos.Size = new System.Drawing.Size(89, 82);
@@ -366,6 +385,7 @@
             // 
             // BotonMenus
             // 
+            this.BotonMenus.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BotonMenus.Location = new System.Drawing.Point(244, 132);
             this.BotonMenus.Name = "BotonMenus";
             this.BotonMenus.Size = new System.Drawing.Size(89, 82);
@@ -376,6 +396,7 @@
             // 
             // BotonPostres
             // 
+            this.BotonPostres.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BotonPostres.Location = new System.Drawing.Point(149, 132);
             this.BotonPostres.Name = "BotonPostres";
             this.BotonPostres.Size = new System.Drawing.Size(89, 82);
@@ -386,6 +407,7 @@
             // 
             // BotonBebidas
             // 
+            this.BotonBebidas.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BotonBebidas.Location = new System.Drawing.Point(54, 132);
             this.BotonBebidas.Name = "BotonBebidas";
             this.BotonBebidas.Size = new System.Drawing.Size(89, 82);
@@ -396,6 +418,7 @@
             // 
             // BotonPastas
             // 
+            this.BotonPastas.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BotonPastas.Location = new System.Drawing.Point(244, 44);
             this.BotonPastas.Name = "BotonPastas";
             this.BotonPastas.Size = new System.Drawing.Size(89, 82);
@@ -406,6 +429,7 @@
             // 
             // BotonSandwiches
             // 
+            this.BotonSandwiches.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BotonSandwiches.Location = new System.Drawing.Point(149, 44);
             this.BotonSandwiches.Name = "BotonSandwiches";
             this.BotonSandwiches.Size = new System.Drawing.Size(89, 82);
@@ -416,6 +440,7 @@
             // 
             // BotonEmpanadas
             // 
+            this.BotonEmpanadas.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BotonEmpanadas.Location = new System.Drawing.Point(54, 44);
             this.BotonEmpanadas.Name = "BotonEmpanadas";
             this.BotonEmpanadas.Size = new System.Drawing.Size(89, 82);
@@ -426,19 +451,20 @@
             // 
             // ListaDeProductos
             // 
-            this.ListaDeProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ListaDeProductos.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ListaDeProductos.FormattingEnabled = true;
             this.ListaDeProductos.HorizontalScrollbar = true;
-            this.ListaDeProductos.ItemHeight = 16;
-            this.ListaDeProductos.Location = new System.Drawing.Point(445, 43);
+            this.ListaDeProductos.ItemHeight = 17;
+            this.ListaDeProductos.Location = new System.Drawing.Point(446, 43);
             this.ListaDeProductos.Name = "ListaDeProductos";
-            this.ListaDeProductos.Size = new System.Drawing.Size(240, 372);
+            this.ListaDeProductos.Size = new System.Drawing.Size(240, 361);
             this.ListaDeProductos.TabIndex = 1;
             // 
             // comboBoxClientes
             // 
+            this.comboBoxClientes.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxClientes.FormattingEnabled = true;
-            this.comboBoxClientes.Location = new System.Drawing.Point(36, 519);
+            this.comboBoxClientes.Location = new System.Drawing.Point(36, 527);
             this.comboBoxClientes.Name = "comboBoxClientes";
             this.comboBoxClientes.Size = new System.Drawing.Size(161, 21);
             this.comboBoxClientes.TabIndex = 3;
@@ -446,41 +472,48 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(33, 503);
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(443, 23);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 13);
+            this.label2.Size = new System.Drawing.Size(67, 17);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Clientes";
+            this.label2.Text = "Productos";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(33, 558);
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(21, 427);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(78, 13);
+            this.label3.Size = new System.Drawing.Size(54, 13);
             this.label3.TabIndex = 5;
-            this.label3.Text = "Observaciones";
+            this.label3.Text = "Cantidad";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(414, 503);
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(229, 511);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(79, 13);
+            this.label5.Size = new System.Drawing.Size(84, 13);
             this.label5.TabIndex = 9;
             this.label5.Text = "Forma de Pago";
             // 
             // comboBoxFormasDePago
             // 
+            this.comboBoxFormasDePago.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxFormasDePago.FormattingEnabled = true;
-            this.comboBoxFormasDePago.Location = new System.Drawing.Point(417, 519);
+            this.comboBoxFormasDePago.Location = new System.Drawing.Point(232, 527);
             this.comboBoxFormasDePago.Name = "comboBoxFormasDePago";
             this.comboBoxFormasDePago.Size = new System.Drawing.Size(161, 21);
             this.comboBoxFormasDePago.TabIndex = 10;
             // 
             // BotonCrearPedido
             // 
-            this.BotonCrearPedido.Location = new System.Drawing.Point(740, 439);
+            this.BotonCrearPedido.FlatAppearance.BorderSize = 0;
+            this.BotonCrearPedido.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BotonCrearPedido.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BotonCrearPedido.Location = new System.Drawing.Point(770, 431);
             this.BotonCrearPedido.Name = "BotonCrearPedido";
             this.BotonCrearPedido.Size = new System.Drawing.Size(106, 35);
             this.BotonCrearPedido.TabIndex = 11;
@@ -491,17 +524,18 @@
             // Total
             // 
             this.Total.AutoSize = true;
-            this.Total.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Total.Location = new System.Drawing.Point(867, 458);
+            this.Total.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Total.Location = new System.Drawing.Point(891, 449);
             this.Total.Name = "Total";
-            this.Total.Size = new System.Drawing.Size(42, 16);
+            this.Total.Size = new System.Drawing.Size(72, 17);
             this.Total.TabIndex = 12;
-            this.Total.Text = "Total:";
+            this.Total.Text = "Importe: 0";
             // 
             // comboBoxCantidad
             // 
+            this.comboBoxCantidad.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxCantidad.FormattingEnabled = true;
-            this.comboBoxCantidad.Location = new System.Drawing.Point(76, 435);
+            this.comboBoxCantidad.Location = new System.Drawing.Point(81, 424);
             this.comboBoxCantidad.Name = "comboBoxCantidad";
             this.comboBoxCantidad.Size = new System.Drawing.Size(152, 21);
             this.comboBoxCantidad.TabIndex = 13;
@@ -509,17 +543,21 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(15, 440);
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(767, 35);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(49, 13);
+            this.label7.Size = new System.Drawing.Size(55, 17);
             this.label7.TabIndex = 14;
-            this.label7.Text = "Cantidad";
+            this.label7.Text = "Pedidos";
             // 
             // BotonAgregarProducto
             // 
-            this.BotonAgregarProducto.Location = new System.Drawing.Point(579, 427);
+            this.BotonAgregarProducto.FlatAppearance.BorderSize = 0;
+            this.BotonAgregarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BotonAgregarProducto.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BotonAgregarProducto.Location = new System.Drawing.Point(574, 419);
             this.BotonAgregarProducto.Name = "BotonAgregarProducto";
-            this.BotonAgregarProducto.Size = new System.Drawing.Size(106, 35);
+            this.BotonAgregarProducto.Size = new System.Drawing.Size(112, 35);
             this.BotonAgregarProducto.TabIndex = 15;
             this.BotonAgregarProducto.Text = "Agregar Producto";
             this.BotonAgregarProducto.UseVisualStyleBackColor = true;
@@ -527,56 +565,38 @@
             // 
             // BotonBorrarProducto
             // 
-            this.BotonBorrarProducto.Location = new System.Drawing.Point(993, 55);
+            this.BotonBorrarProducto.BackColor = System.Drawing.SystemColors.Control;
+            this.BotonBorrarProducto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.BotonBorrarProducto.FlatAppearance.BorderSize = 0;
+            this.BotonBorrarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BotonBorrarProducto.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BotonBorrarProducto.ForeColor = System.Drawing.Color.White;
+            this.BotonBorrarProducto.Location = new System.Drawing.Point(1028, 55);
             this.BotonBorrarProducto.Name = "BotonBorrarProducto";
-            this.BotonBorrarProducto.Size = new System.Drawing.Size(85, 36);
+            this.BotonBorrarProducto.Size = new System.Drawing.Size(25, 28);
             this.BotonBorrarProducto.TabIndex = 16;
-            this.BotonBorrarProducto.Text = "Borrar Producto";
-            this.BotonBorrarProducto.UseVisualStyleBackColor = true;
+            this.BotonBorrarProducto.Text = "X";
+            this.BotonBorrarProducto.UseVisualStyleBackColor = false;
             this.BotonBorrarProducto.Click += new System.EventHandler(this.BotonBorrarProducto_Click);
             // 
             // ListaDeDetallesPedidos
             // 
-            this.ListaDeDetallesPedidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ListaDeDetallesPedidos.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ListaDeDetallesPedidos.FormattingEnabled = true;
-            this.ListaDeDetallesPedidos.ItemHeight = 16;
-            this.ListaDeDetallesPedidos.Location = new System.Drawing.Point(740, 55);
+            this.ListaDeDetallesPedidos.ItemHeight = 17;
+            this.ListaDeDetallesPedidos.Location = new System.Drawing.Point(770, 55);
             this.ListaDeDetallesPedidos.Name = "ListaDeDetallesPedidos";
-            this.ListaDeDetallesPedidos.Size = new System.Drawing.Size(240, 372);
+            this.ListaDeDetallesPedidos.Size = new System.Drawing.Size(240, 361);
             this.ListaDeDetallesPedidos.TabIndex = 17;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.BotonConsultarPrecio);
-            this.groupBox1.Controls.Add(this.tabControl1);
-            this.groupBox1.Controls.Add(this.ListaDeProductos);
-            this.groupBox1.Controls.Add(this.comboBoxCantidad);
-            this.groupBox1.Controls.Add(this.BotonAgregarProducto);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(18, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(703, 477);
-            this.groupBox1.TabIndex = 18;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Categorías de Productos";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(442, 22);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(69, 16);
-            this.label8.TabIndex = 17;
-            this.label8.Text = "Productos";
             // 
             // BotonConsultarPrecio
             // 
-            this.BotonConsultarPrecio.Location = new System.Drawing.Point(445, 427);
+            this.BotonConsultarPrecio.FlatAppearance.BorderSize = 0;
+            this.BotonConsultarPrecio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BotonConsultarPrecio.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BotonConsultarPrecio.Location = new System.Drawing.Point(446, 419);
             this.BotonConsultarPrecio.Name = "BotonConsultarPrecio";
-            this.BotonConsultarPrecio.Size = new System.Drawing.Size(106, 35);
+            this.BotonConsultarPrecio.Size = new System.Drawing.Size(112, 35);
             this.BotonConsultarPrecio.TabIndex = 16;
             this.BotonConsultarPrecio.Text = "Consultar Precio";
             this.BotonConsultarPrecio.UseVisualStyleBackColor = true;
@@ -584,7 +604,9 @@
             // 
             // Observaciones
             // 
-            this.Observaciones.Location = new System.Drawing.Point(36, 574);
+            this.Observaciones.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Observaciones.Font = new System.Drawing.Font("Rockwell", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Observaciones.Location = new System.Drawing.Point(424, 527);
             this.Observaciones.Name = "Observaciones";
             this.Observaciones.Size = new System.Drawing.Size(161, 47);
             this.Observaciones.TabIndex = 19;
@@ -593,39 +615,59 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(737, 34);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(21, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 16);
+            this.label1.Size = new System.Drawing.Size(158, 17);
             this.label1.TabIndex = 20;
-            this.label1.Text = "Pedido";
+            this.label1.Text = "Categorías de Productos";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(222, 503);
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(33, 511);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(46, 13);
+            this.label4.Size = new System.Drawing.Size(48, 13);
             this.label4.TabIndex = 8;
-            this.label4.Text = "Cadetes";
+            this.label4.Text = "Clientes";
             // 
-            // comboBoxCadetes
+            // panel1
             // 
-            this.comboBoxCadetes.FormattingEnabled = true;
-            this.comboBoxCadetes.Location = new System.Drawing.Point(225, 519);
-            this.comboBoxCadetes.Name = "comboBoxCadetes";
-            this.comboBoxCadetes.Size = new System.Drawing.Size(161, 21);
-            this.comboBoxCadetes.TabIndex = 7;
+            this.panel1.BackColor = System.Drawing.SystemColors.Control;
+            this.panel1.Controls.Add(this.tabControl1);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.ListaDeProductos);
+            this.panel1.Controls.Add(this.BotonAgregarProducto);
+            this.panel1.Controls.Add(this.comboBoxCantidad);
+            this.panel1.Controls.Add(this.BotonConsultarPrecio);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Location = new System.Drawing.Point(36, 12);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(708, 469);
+            this.panel1.TabIndex = 21;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(421, 511);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(82, 13);
+            this.label6.TabIndex = 18;
+            this.label6.Text = "Observaciones";
             // 
             // SubSeccionCrearPedidos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1090, 640);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(1067, 592);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.Observaciones);
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.ListaDeDetallesPedidos);
             this.Controls.Add(this.BotonBorrarProducto);
             this.Controls.Add(this.Total);
@@ -633,9 +675,6 @@
             this.Controls.Add(this.comboBoxFormasDePago);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.comboBoxCadetes);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.comboBoxClientes);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SubSeccionCrearPedidos";
@@ -646,8 +685,8 @@
             this.tabPage2.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -699,12 +738,11 @@
         private System.Windows.Forms.Button BotonSandwiches;
         private System.Windows.Forms.Button BotonEmpanadas;
         private System.Windows.Forms.ListBox ListaDeDetallesPedidos;
-        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button BotonConsultarPrecio;
         private System.Windows.Forms.RichTextBox Observaciones;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBoxCadetes;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label6;
     }
 }

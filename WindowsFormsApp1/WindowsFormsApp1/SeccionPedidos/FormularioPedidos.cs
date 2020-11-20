@@ -25,6 +25,18 @@ namespace WindowsFormsApp1
 
             this.BarraHerramientas.BackColor = Color.FromArgb(20, 34, 56);
 
+            this.BotonCrearPedido.ForeColor = Color.White;
+
+            this.BotonCrearPedido.BackColor = Color.FromArgb(53, 64, 97);
+
+            this.BotonCrearPedido.FlatAppearance.MouseOverBackColor = Color.FromArgb(95, 109, 149);
+
+            this.BotonGestionDePedido.ForeColor = Color.White;
+
+            this.BotonGestionDePedido.BackColor = Color.FromArgb(53, 64, 97);
+
+            this.BotonGestionDePedido.FlatAppearance.MouseOverBackColor = Color.FromArgb(95, 109, 149);
+
             this.subseccioncrearpedidos = new SubSeccionCrearPedidos();
 
             this.subseccioncrearpedidos.TopLevel = false;

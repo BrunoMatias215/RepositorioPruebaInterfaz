@@ -14,8 +14,6 @@ namespace SeccionesFormularios
     public partial class SubSeccionCrearPedidos : Form
     {
 
-        private String informacion;
-
         public SubSeccionCrearPedidos()
         {
 
@@ -30,11 +28,41 @@ namespace SeccionesFormularios
 
             this.BackColor = Color.FromArgb(20, 34, 56);
 
+            this.panel1.BackColor = Color.FromArgb(48, 58, 105);
+
+            this.label1.ForeColor = Color.White;
+
+            this.label2.ForeColor = Color.White;
+
+            this.BotonConsultarPrecio.ForeColor = Color.White;
+
+            this.BotonConsultarPrecio.BackColor = Color.FromArgb(98, 104, 140);
+
+            this.BotonAgregarProducto.ForeColor = Color.White;
+
+            this.BotonAgregarProducto.BackColor = Color.FromArgb(98, 104, 140);
+
+            this.label3.ForeColor = Color.White;
+
+            this.label4.ForeColor = Color.White;
+
+            this.label5.ForeColor = Color.White;
+
+            this.label6.ForeColor = Color.White;
+
+            this.label7.ForeColor = Color.White;
+
+            this.BotonCrearPedido.ForeColor = Color.White;
+
+            this.BotonCrearPedido.BackColor = Color.FromArgb(98, 104, 140);
+
+            this.Total.ForeColor = Color.White;
+
+            this.BotonBorrarProducto.BackColor = Color.Red;
+
             this.ListaDeProductos.DisplayMember = "descripcion";
 
             this.comboBoxClientes.DisplayMember = "apellido";
-
-            this.comboBoxCadetes.DisplayMember = "nombre";
 
             this.comboBoxFormasDePago.DisplayMember = "descripcion";
 
@@ -63,22 +91,7 @@ namespace SeccionesFormularios
                 this.comboBoxClientes.Items.Add(lineacliente);
 
             }
-
-            // Cadetes
-
-            CapaDeNegocios.Cadete cadete = new CapaDeNegocios.Cadete();
-
-            List<Cadete> cadetesacargar = new List<Cadete>();
-
-            cadetesacargar = cadete.CargarCadeteYRodado();
-
-            foreach (Cadete lineacadete in cadetesacargar)
-            {
-
-                this.comboBoxCadetes.Items.Add(lineacadete);
-
-            }
-
+   
             // Formas de Pago
 
             CapaDeNegocios.FormaDePago formadepago = new CapaDeNegocios.FormaDePago();
@@ -735,12 +748,6 @@ namespace SeccionesFormularios
                     MessageBox.Show("No se especificó el cliente del pedido", "Error");
 
                 }
-                else if (this.comboBoxCadetes.SelectedItem == null)
-                {
-
-                    MessageBox.Show("No se especificó el cadete del pedido", "Error");
-
-                }
                 else if (this.comboBoxFormasDePago.SelectedItem == null)
                 {
 
@@ -761,8 +768,6 @@ namespace SeccionesFormularios
                     pedido.Idusuario = 1;
 
                     pedido.Observaciones = this.Observaciones.Text;
-
-                    pedido.Idcadete = ((Cadete)this.comboBoxCadetes.SelectedItem).Idcadete;
 
                     pedido.Idestadocategoria = 1;
 
