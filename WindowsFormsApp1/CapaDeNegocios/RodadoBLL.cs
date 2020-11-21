@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace CapaDeNegocios
 {
 
-    public class Rodado
+    public class RodadoBLL
     {
 
         private int idrodado;
@@ -16,7 +16,7 @@ namespace CapaDeNegocios
 
         private string patente;
 
-        public Rodado(int pidrodado, string pdescripcion, string ppatente)
+        public RodadoBLL(int pidrodado, string pdescripcion, string ppatente)
         {
 
             this.Idrodado = pidrodado;
@@ -27,7 +27,7 @@ namespace CapaDeNegocios
 
         }
 
-        public Rodado ()
+        public RodadoBLL ()
         {
 
 

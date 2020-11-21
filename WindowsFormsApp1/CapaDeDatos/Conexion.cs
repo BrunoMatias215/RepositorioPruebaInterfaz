@@ -30,7 +30,7 @@ namespace CapaDeDatos
         {
 
             this.connectionstring = "Integrated Security = SSPI; Persist Security Info = False; Initial Catalog = Che Miranda; Data Source =.\\SQLEXPRESS";
-
+                                  
             this.objetoconexion = new SqlConnection();
 
             this.objetoconexion.ConnectionString = Connectionstring;

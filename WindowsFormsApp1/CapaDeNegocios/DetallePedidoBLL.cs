@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace CapaDeNegocios
 {
 
-    public class DetallePedido
+    public class DetallePedidoBLL
     {
 
         private int iddetallepedido;
@@ -27,7 +27,7 @@ namespace CapaDeNegocios
 
         private DataTable referenciaIdPedido;
 
-        public DetallePedido(int pidproducto, int pcantidad, int pprecioventa,
+        public DetallePedidoBLL(int pidproducto, int pcantidad, int pprecioventa,
             DateTime pfechayhora, string pinformacion)
         {
 
@@ -43,7 +43,7 @@ namespace CapaDeNegocios
 
         }
 
-        public DetallePedido()
+        public DetallePedidoBLL()
         {
 
 

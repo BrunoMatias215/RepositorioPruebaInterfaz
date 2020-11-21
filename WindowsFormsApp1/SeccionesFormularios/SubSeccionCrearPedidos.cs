@@ -79,13 +79,13 @@ namespace SeccionesFormularios
 
             // Clientes
 
-            CapaDeNegocios.Cliente cliente = new CapaDeNegocios.Cliente();
+            CapaDeNegocios.ClienteBLL cliente = new CapaDeNegocios.ClienteBLL();
 
-            List<Cliente> clientesacargar = new List<Cliente>();
+            List<ClienteBLL> clientesacargar = new List<ClienteBLL>();
 
             clientesacargar = cliente.CargarClientes();
 
-            foreach (Cliente lineacliente in clientesacargar)
+            foreach (ClienteBLL lineacliente in clientesacargar)
             {
 
                 this.comboBoxClientes.Items.Add(lineacliente);
@@ -94,13 +94,13 @@ namespace SeccionesFormularios
    
             // Formas de Pago
 
-            CapaDeNegocios.FormaDePago formadepago = new CapaDeNegocios.FormaDePago();
+            CapaDeNegocios.FormaDePagoBLL formadepago = new CapaDeNegocios.FormaDePagoBLL();
 
-            List<FormaDePago> formasdepagoaaagregar = new List<FormaDePago>();
+            List<FormaDePagoBLL> formasdepagoaaagregar = new List<FormaDePagoBLL>();
 
             formasdepagoaaagregar = formadepago.CargarFormasDePago();
 
-            foreach (FormaDePago lineaformadepago in formasdepagoaaagregar)
+            foreach (FormaDePagoBLL lineaformadepago in formasdepagoaaagregar)
             {
 
                 this.comboBoxFormasDePago.Items.Add(lineaformadepago);
@@ -114,13 +114,13 @@ namespace SeccionesFormularios
 
             this.ListaDeProductos.Items.Clear();
 
-            CapaDeNegocios.Producto producto = new Producto();
+            CapaDeNegocios.ProductoBLL producto = new ProductoBLL();
 
-            List<Producto> productosacargar = new List<Producto>();
+            List<ProductoBLL> productosacargar = new List<ProductoBLL>();
 
             productosacargar = producto.CargarEntradas();
 
-            foreach (Producto lineaproducto in productosacargar)
+            foreach (ProductoBLL lineaproducto in productosacargar)
             {
 
                 this.ListaDeProductos.Items.Add(lineaproducto);
@@ -135,7 +135,7 @@ namespace SeccionesFormularios
             if (this.ListaDeProductos.SelectedItem != null)
             {
   
-                Producto entrada = (Producto)this.ListaDeProductos.SelectedItem;
+                ProductoBLL entrada = (ProductoBLL)this.ListaDeProductos.SelectedItem;
 
                 int precio = entrada.Precio;
 
@@ -156,13 +156,13 @@ namespace SeccionesFormularios
 
             this.ListaDeProductos.Items.Clear();
 
-            CapaDeNegocios.Producto producto = new Producto();
+            CapaDeNegocios.ProductoBLL producto = new ProductoBLL();
 
-            List<Producto> productosacargar = new List<Producto>();
+            List<ProductoBLL> productosacargar = new List<ProductoBLL>();
 
             productosacargar = producto.CargarOmelletes();
 
-            foreach (Producto lineaproducto in productosacargar)
+            foreach (ProductoBLL lineaproducto in productosacargar)
             {
 
                 this.ListaDeProductos.Items.Add(lineaproducto);
@@ -176,13 +176,13 @@ namespace SeccionesFormularios
 
             this.ListaDeProductos.Items.Clear();
 
-            CapaDeNegocios.Producto producto = new Producto();
+            CapaDeNegocios.ProductoBLL producto = new ProductoBLL();
 
-            List<Producto> productosacargar = new List<Producto>();
+            List<ProductoBLL> productosacargar = new List<ProductoBLL>();
 
             productosacargar = producto.CargarTortillas();
 
-            foreach (Producto lineaproducto in productosacargar)
+            foreach (ProductoBLL lineaproducto in productosacargar)
             {
 
                 this.ListaDeProductos.Items.Add(lineaproducto);
@@ -196,13 +196,13 @@ namespace SeccionesFormularios
 
             this.ListaDeProductos.Items.Clear();
 
-            CapaDeNegocios.Producto producto = new Producto();
+            CapaDeNegocios.ProductoBLL producto = new ProductoBLL();
 
-            List<Producto> productosacargar = new List<Producto>();
+            List<ProductoBLL> productosacargar = new List<ProductoBLL>();
 
             productosacargar = producto.CargarMilanesas();
 
-            foreach (Producto lineaproducto in productosacargar)
+            foreach (ProductoBLL lineaproducto in productosacargar)
             {
 
                 this.ListaDeProductos.Items.Add(lineaproducto);
@@ -217,13 +217,13 @@ namespace SeccionesFormularios
 
             this.ListaDeProductos.Items.Clear();
 
-            CapaDeNegocios.Producto producto = new Producto();
+            CapaDeNegocios.ProductoBLL producto = new ProductoBLL();
 
-            List<Producto> productosacargar = new List<Producto>();
+            List<ProductoBLL> productosacargar = new List<ProductoBLL>();
 
             productosacargar = producto.CargarSupremas();
 
-            foreach (Producto lineaproducto in productosacargar)
+            foreach (ProductoBLL lineaproducto in productosacargar)
             {
 
                 this.ListaDeProductos.Items.Add(lineaproducto);
@@ -237,13 +237,13 @@ namespace SeccionesFormularios
 
             this.ListaDeProductos.Items.Clear();
 
-            CapaDeNegocios.Producto producto = new Producto();
+            CapaDeNegocios.ProductoBLL producto = new ProductoBLL();
 
-            List<Producto> productosacargar = new List<Producto>();
+            List<ProductoBLL> productosacargar = new List<ProductoBLL>();
 
             productosacargar = producto.CargarMatambre();
 
-            foreach (Producto lineaproducto in productosacargar)
+            foreach (ProductoBLL lineaproducto in productosacargar)
             {
 
                 this.ListaDeProductos.Items.Add(lineaproducto);
@@ -257,13 +257,13 @@ namespace SeccionesFormularios
 
             this.ListaDeProductos.Items.Clear();
 
-            CapaDeNegocios.Producto producto = new Producto();
+            CapaDeNegocios.ProductoBLL producto = new ProductoBLL();
 
-            List<Producto> productosacargar = new List<Producto>();
+            List<ProductoBLL> productosacargar = new List<ProductoBLL>();
 
             productosacargar = producto.CargarGuarnicion();
 
-            foreach (Producto lineaproducto in productosacargar)
+            foreach (ProductoBLL lineaproducto in productosacargar)
             {
 
                 this.ListaDeProductos.Items.Add(lineaproducto);
@@ -277,13 +277,13 @@ namespace SeccionesFormularios
 
             this.ListaDeProductos.Items.Clear();
 
-            CapaDeNegocios.Producto producto = new Producto();
+            CapaDeNegocios.ProductoBLL producto = new ProductoBLL();
 
-            List<Producto> productosacargar = new List<Producto>();
+            List<ProductoBLL> productosacargar = new List<ProductoBLL>();
 
             productosacargar = producto.CargarPollos();
 
-            foreach (Producto lineaproducto in productosacargar)
+            foreach (ProductoBLL lineaproducto in productosacargar)
             {
 
                 this.ListaDeProductos.Items.Add(lineaproducto);
@@ -297,13 +297,13 @@ namespace SeccionesFormularios
 
             this.ListaDeProductos.Items.Clear();
 
-            CapaDeNegocios.Producto producto = new Producto();
+            CapaDeNegocios.ProductoBLL producto = new ProductoBLL();
 
-            List<Producto> productosacargar = new List<Producto>();
+            List<ProductoBLL> productosacargar = new List<ProductoBLL>();
 
             productosacargar = producto.CargarParillas();
 
-            foreach (Producto lineaproducto in productosacargar)
+            foreach (ProductoBLL lineaproducto in productosacargar)
             {
 
                 this.ListaDeProductos.Items.Add(lineaproducto);
@@ -317,13 +317,13 @@ namespace SeccionesFormularios
 
             this.ListaDeProductos.Items.Clear();
 
-            CapaDeNegocios.Producto producto = new Producto();
+            CapaDeNegocios.ProductoBLL producto = new ProductoBLL();
 
-            List<Producto> productosacargar = new List<Producto>();
+            List<ProductoBLL> productosacargar = new List<ProductoBLL>();
 
             productosacargar = producto.CargarPescados();
 
-            foreach (Producto lineaproducto in productosacargar)
+            foreach (ProductoBLL lineaproducto in productosacargar)
             {
 
                 this.ListaDeProductos.Items.Add(lineaproducto);
@@ -337,13 +337,13 @@ namespace SeccionesFormularios
 
             this.ListaDeProductos.Items.Clear();
 
-            CapaDeNegocios.Producto producto = new Producto();
+            CapaDeNegocios.ProductoBLL producto = new ProductoBLL();
 
-            List<Producto> productosacargar = new List<Producto>();
+            List<ProductoBLL> productosacargar = new List<ProductoBLL>();
 
             productosacargar = producto.CargarEnsaladas();
 
-            foreach (Producto lineaproducto in productosacargar)
+            foreach (ProductoBLL lineaproducto in productosacargar)
             {
 
                 this.ListaDeProductos.Items.Add(lineaproducto);
@@ -357,13 +357,13 @@ namespace SeccionesFormularios
 
             this.ListaDeProductos.Items.Clear();
 
-            CapaDeNegocios.Producto producto = new Producto();
+            CapaDeNegocios.ProductoBLL producto = new ProductoBLL();
 
-            List<Producto> productosacargar = new List<Producto>();
+            List<ProductoBLL> productosacargar = new List<ProductoBLL>();
 
             productosacargar = producto.CargarEnsaladasEsp();
 
-            foreach (Producto lineaproducto in productosacargar)
+            foreach (ProductoBLL lineaproducto in productosacargar)
             {
 
                 this.ListaDeProductos.Items.Add(lineaproducto);
@@ -377,13 +377,13 @@ namespace SeccionesFormularios
 
             this.ListaDeProductos.Items.Clear();
 
-            CapaDeNegocios.Producto producto = new Producto();
+            CapaDeNegocios.ProductoBLL producto = new ProductoBLL();
 
-            List<Producto> productosacargar = new List<Producto>();
+            List<ProductoBLL> productosacargar = new List<ProductoBLL>();
 
             productosacargar = producto.CargarTradicionales();
 
-            foreach (Producto lineaproducto in productosacargar)
+            foreach (ProductoBLL lineaproducto in productosacargar)
             {
 
                 this.ListaDeProductos.Items.Add(lineaproducto);
@@ -397,13 +397,13 @@ namespace SeccionesFormularios
 
             this.ListaDeProductos.Items.Clear();
 
-            CapaDeNegocios.Producto producto = new Producto();
+            CapaDeNegocios.ProductoBLL producto = new ProductoBLL();
 
-            List<Producto> productosacargar = new List<Producto>();
+            List<ProductoBLL> productosacargar = new List<ProductoBLL>();
 
             productosacargar = producto.CargarEspecialesI();
 
-            foreach (Producto lineaproducto in productosacargar)
+            foreach (ProductoBLL lineaproducto in productosacargar)
             {
 
                 this.ListaDeProductos.Items.Add(lineaproducto);
@@ -417,13 +417,13 @@ namespace SeccionesFormularios
 
             this.ListaDeProductos.Items.Clear();
 
-            CapaDeNegocios.Producto producto = new Producto();
+            CapaDeNegocios.ProductoBLL producto = new ProductoBLL();
 
-            List<Producto> productosacargar = new List<Producto>();
+            List<ProductoBLL> productosacargar = new List<ProductoBLL>();
 
             productosacargar = producto.CargarEspecialesII();
 
-            foreach (Producto lineaproducto in productosacargar)
+            foreach (ProductoBLL lineaproducto in productosacargar)
             {
 
                 this.ListaDeProductos.Items.Add(lineaproducto);
@@ -437,13 +437,13 @@ namespace SeccionesFormularios
 
             this.ListaDeProductos.Items.Clear();
 
-            CapaDeNegocios.Producto producto = new Producto();
+            CapaDeNegocios.ProductoBLL producto = new ProductoBLL();
 
-            List<Producto> productosacargar = new List<Producto>();
+            List<ProductoBLL> productosacargar = new List<ProductoBLL>();
 
             productosacargar = producto.CargarFugazzas();
 
-            foreach (Producto lineaproducto in productosacargar)
+            foreach (ProductoBLL lineaproducto in productosacargar)
             {
 
                 this.ListaDeProductos.Items.Add(lineaproducto);
@@ -457,13 +457,13 @@ namespace SeccionesFormularios
 
             this.ListaDeProductos.Items.Clear();
 
-            CapaDeNegocios.Producto producto = new Producto();
+            CapaDeNegocios.ProductoBLL producto = new ProductoBLL();
 
-            List<Producto> productosacargar = new List<Producto>();
+            List<ProductoBLL> productosacargar = new List<ProductoBLL>();
 
             productosacargar = producto.CargarFugazzetas();
 
-            foreach (Producto lineaproducto in productosacargar)
+            foreach (ProductoBLL lineaproducto in productosacargar)
             {
 
                 this.ListaDeProductos.Items.Add(lineaproducto);
@@ -477,13 +477,13 @@ namespace SeccionesFormularios
 
             this.ListaDeProductos.Items.Clear();
 
-            CapaDeNegocios.Producto producto = new Producto();
+            CapaDeNegocios.ProductoBLL producto = new ProductoBLL();
 
-            List<Producto> productosacargar = new List<Producto>();
+            List<ProductoBLL> productosacargar = new List<ProductoBLL>();
 
             productosacargar = producto.CargarCalzones();
 
-            foreach (Producto lineaproducto in productosacargar)
+            foreach (ProductoBLL lineaproducto in productosacargar)
             {
 
                 this.ListaDeProductos.Items.Add(lineaproducto);
@@ -497,13 +497,13 @@ namespace SeccionesFormularios
 
             this.ListaDeProductos.Items.Clear();
 
-            CapaDeNegocios.Producto producto = new Producto();
+            CapaDeNegocios.ProductoBLL producto = new ProductoBLL();
 
-            List<Producto> productosacargar = new List<Producto>();
+            List<ProductoBLL> productosacargar = new List<ProductoBLL>();
 
             productosacargar = producto.CargarOtrasEspecialidades();
 
-            foreach (Producto lineaproducto in productosacargar)
+            foreach (ProductoBLL lineaproducto in productosacargar)
             {
 
                 this.ListaDeProductos.Items.Add(lineaproducto);
@@ -517,13 +517,13 @@ namespace SeccionesFormularios
 
             this.ListaDeProductos.Items.Clear();
 
-            CapaDeNegocios.Producto producto = new Producto();
+            CapaDeNegocios.ProductoBLL producto = new ProductoBLL();
 
-            List<Producto> productosacargar = new List<Producto>();
+            List<ProductoBLL> productosacargar = new List<ProductoBLL>();
 
             productosacargar = producto.CargarEmpanadas();
 
-            foreach (Producto lineaproducto in productosacargar)
+            foreach (ProductoBLL lineaproducto in productosacargar)
             {
 
                 this.ListaDeProductos.Items.Add(lineaproducto);
@@ -537,13 +537,13 @@ namespace SeccionesFormularios
 
             this.ListaDeProductos.Items.Clear();
 
-            CapaDeNegocios.Producto producto = new Producto();
+            CapaDeNegocios.ProductoBLL producto = new ProductoBLL();
 
-            List<Producto> productosacargar = new List<Producto>();
+            List<ProductoBLL> productosacargar = new List<ProductoBLL>();
 
             productosacargar = producto.CargarSandwiches();
 
-            foreach (Producto lineaproducto in productosacargar)
+            foreach (ProductoBLL lineaproducto in productosacargar)
             {
 
                 this.ListaDeProductos.Items.Add(lineaproducto);
@@ -557,13 +557,13 @@ namespace SeccionesFormularios
 
             this.ListaDeProductos.Items.Clear();
 
-            CapaDeNegocios.Producto producto = new Producto();
+            CapaDeNegocios.ProductoBLL producto = new ProductoBLL();
 
-            List<Producto> productosacargar = new List<Producto>();
+            List<ProductoBLL> productosacargar = new List<ProductoBLL>();
 
             productosacargar = producto.CargarPastas();
 
-            foreach (Producto lineaproducto in productosacargar)
+            foreach (ProductoBLL lineaproducto in productosacargar)
             {
 
                 this.ListaDeProductos.Items.Add(lineaproducto);
@@ -577,13 +577,13 @@ namespace SeccionesFormularios
 
             this.ListaDeProductos.Items.Clear();
 
-            CapaDeNegocios.Producto producto = new Producto();
+            CapaDeNegocios.ProductoBLL producto = new ProductoBLL();
 
-            List<Producto> productosacargar = new List<Producto>();
+            List<ProductoBLL> productosacargar = new List<ProductoBLL>();
 
             productosacargar = producto.CargarBebidas();
 
-            foreach (Producto lineaproducto in productosacargar)
+            foreach (ProductoBLL lineaproducto in productosacargar)
             {
 
                 this.ListaDeProductos.Items.Add(lineaproducto);
@@ -597,13 +597,13 @@ namespace SeccionesFormularios
 
             this.ListaDeProductos.Items.Clear();
 
-            CapaDeNegocios.Producto producto = new Producto();
+            CapaDeNegocios.ProductoBLL producto = new ProductoBLL();
 
-            List<Producto> productosacargar = new List<Producto>();
+            List<ProductoBLL> productosacargar = new List<ProductoBLL>();
 
             productosacargar = producto.CargarPostres();
 
-            foreach (Producto lineaproducto in productosacargar)
+            foreach (ProductoBLL lineaproducto in productosacargar)
             {
 
                 this.ListaDeProductos.Items.Add(lineaproducto);
@@ -617,13 +617,13 @@ namespace SeccionesFormularios
 
             this.ListaDeProductos.Items.Clear();
 
-            CapaDeNegocios.Producto producto = new Producto();
+            CapaDeNegocios.ProductoBLL producto = new ProductoBLL();
 
-            List<Producto> productosacargar = new List<Producto>();
+            List<ProductoBLL> productosacargar = new List<ProductoBLL>();
 
             productosacargar = producto.CargarMenus();
 
-            foreach (Producto lineaproducto in productosacargar)
+            foreach (ProductoBLL lineaproducto in productosacargar)
             {
 
                 this.ListaDeProductos.Items.Add(lineaproducto);
@@ -637,13 +637,13 @@ namespace SeccionesFormularios
 
             this.ListaDeProductos.Items.Clear();
 
-            CapaDeNegocios.Producto producto = new Producto();
+            CapaDeNegocios.ProductoBLL producto = new ProductoBLL();
 
-            List<Producto> productosacargar = new List<Producto>();
+            List<ProductoBLL> productosacargar = new List<ProductoBLL>();
 
             productosacargar = producto.CargarPromos();
 
-            foreach (Producto lineaproducto in productosacargar)
+            foreach (ProductoBLL lineaproducto in productosacargar)
             {
 
                 this.ListaDeProductos.Items.Add(lineaproducto);
@@ -664,13 +664,13 @@ namespace SeccionesFormularios
             else
             {
 
-                int idproducto = ((Producto)this.ListaDeProductos.SelectedItem).Idproducto;
+                int idproducto = ((ProductoBLL)this.ListaDeProductos.SelectedItem).Idproducto;
             
-                string descripcion = ((Producto)this.ListaDeProductos.SelectedItem).Descripcion;
+                string descripcion = ((ProductoBLL)this.ListaDeProductos.SelectedItem).Descripcion;
 
                 int cantidad = int.Parse(this.comboBoxCantidad.Text);
 
-                int precioventa = ((Producto)this.ListaDeProductos.SelectedItem).Precio * cantidad;
+                int precioventa = ((ProductoBLL)this.ListaDeProductos.SelectedItem).Precio * cantidad;
 
                 String fechayhorastring = DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss");
 
@@ -678,7 +678,7 @@ namespace SeccionesFormularios
 
                 string informacion = descripcion + " " + "(" + cantidad + ")" + "  " + precioventa;
 
-                DetallePedido detallepedido = new DetallePedido(idproducto, cantidad, precioventa, fechayhora, informacion);
+                DetallePedidoBLL detallepedido = new DetallePedidoBLL(idproducto, cantidad, precioventa, fechayhora, informacion);
 
                 this.ListaDeDetallesPedidos.Items.Add(detallepedido);
 
@@ -688,7 +688,7 @@ namespace SeccionesFormularios
 
                 int acumuladorprecio = 0;
 
-                foreach (DetallePedido detallepedidolocal in this.ListaDeDetallesPedidos.Items)
+                foreach (DetallePedidoBLL detallepedidolocal in this.ListaDeDetallesPedidos.Items)
                 {
 
                     int preciodetallepedido = detallepedidolocal.Precioventa;
@@ -715,7 +715,7 @@ namespace SeccionesFormularios
 
                 this.ListaDeDetallesPedidos.Items.Remove(this.ListaDeDetallesPedidos.SelectedItem);
 
-                foreach (DetallePedido detallepedidolocal in this.ListaDeDetallesPedidos.Items)
+                foreach (DetallePedidoBLL detallepedidolocal in this.ListaDeDetallesPedidos.Items)
                 {
 
                     int preciodetallepedido = detallepedidolocal.Precioventa;
@@ -759,11 +759,11 @@ namespace SeccionesFormularios
 
                     // Pedido
 
-                    CapaDeNegocios.Pedido pedido = new CapaDeNegocios.Pedido();
+                    CapaDeNegocios.PedidoBLL pedido = new CapaDeNegocios.PedidoBLL();
 
-                    pedido.Idformadepago = ((FormaDePago)this.comboBoxFormasDePago.SelectedItem).Idformadepago;
+                    pedido.Idformadepago = ((FormaDePagoBLL)this.comboBoxFormasDePago.SelectedItem).Idformadepago;
 
-                    pedido.Idcliente = ((Cliente)this.comboBoxClientes.SelectedItem).Idcliente;
+                    pedido.Idcliente = ((ClienteBLL)this.comboBoxClientes.SelectedItem).Idcliente;
 
                     pedido.Idusuario = 1;
 
@@ -775,10 +775,10 @@ namespace SeccionesFormularios
 
                     // Detalle Pedido
 
-                    foreach (DetallePedido detallepedidolocal in this.ListaDeDetallesPedidos.Items)
+                    foreach (DetallePedidoBLL detallepedidolocal in this.ListaDeDetallesPedidos.Items)
                     {
 
-                        CapaDeNegocios.DetallePedido detallepedido = new CapaDeNegocios.DetallePedido();
+                        CapaDeNegocios.DetallePedidoBLL detallepedido = new CapaDeNegocios.DetallePedidoBLL();
 
                         detallepedido.Idproducto = detallepedidolocal.Idproducto;
 

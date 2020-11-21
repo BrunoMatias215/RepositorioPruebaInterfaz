@@ -53,19 +53,19 @@ namespace SeccionesFormularios
 
             // Pedidos
 
-            CapaDeNegocios.Pedido pedido = new CapaDeNegocios.Pedido();
+            CapaDeNegocios.PedidoBLL pedido = new CapaDeNegocios.PedidoBLL();
 
             this.dataGridView1.DataSource = pedido.CargarPedidosActivos();
 
             // Estados de Categorias
 
-            CapaDeNegocios.EstadoCategoria estadocategoria = new CapaDeNegocios.EstadoCategoria();
+            CapaDeNegocios.EstadoCategoriaBLL estadocategoria = new CapaDeNegocios.EstadoCategoriaBLL();
 
-            List<EstadoCategoria> estadoscategoriasaagregar = new List<EstadoCategoria>();
+            List<EstadoCategoriaBLL> estadoscategoriasaagregar = new List<EstadoCategoriaBLL>();
 
             estadoscategoriasaagregar = estadocategoria.CargarEstadosCategoria();
 
-            foreach (EstadoCategoria lineaestadocategoria in estadoscategoriasaagregar)
+            foreach (EstadoCategoriaBLL lineaestadocategoria in estadoscategoriasaagregar)
             {
 
                 this.comboBox1.Items.Add(lineaestadocategoria);
@@ -74,13 +74,13 @@ namespace SeccionesFormularios
 
             // Cadetes
 
-            Cadete cadete = new Cadete();
+            CadeteBLL cadete = new CadeteBLL();
 
-            List<Cadete> cadetesaagregar = new List<Cadete>();
+            List<CadeteBLL> cadetesaagregar = new List<CadeteBLL>();
 
             cadetesaagregar = cadete.CargarCadetes();
 
-            foreach (Cadete lineacadete in cadetesaagregar)
+            foreach (CadeteBLL lineacadete in cadetesaagregar)
             {
 
                 this.comboBox2.Items.Add(lineacadete);
@@ -132,11 +132,11 @@ namespace SeccionesFormularios
             if (this.dataGridView1.SelectedRows.Count > 0 && this.comboBox1.SelectedIndex >= 0)
             {
 
-                Pedido pedido = new Pedido();
+                PedidoBLL pedido = new PedidoBLL();
 
                 int idpedido = int.Parse(this.dataGridView1.SelectedRows[this.dataGridView1.SelectedRows.Count - 1].Cells[0].Value.ToString());
 
-                int idestadocategoria = ((EstadoCategoria)this.comboBox1.SelectedItem).Idestadocategoria;
+                int idestadocategoria = ((EstadoCategoriaBLL)this.comboBox1.SelectedItem).Idestadocategoria;
 
                 pedido.ModificarEstadoPedido(idpedido, idestadocategoria);
 

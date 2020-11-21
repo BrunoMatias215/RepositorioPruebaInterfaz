@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using CapaDeNegocios;
 namespace WindowsFormsApp1.SeccionCaja
 {
 
@@ -44,6 +44,21 @@ namespace WindowsFormsApp1.SeccionCaja
 
             this.dataGridView1.BackgroundColor = Color.Lavender;
 
+
+            UsuarioBLL usuario = new UsuarioBLL();
+            comboUsuarios.DisplayMember = "Nombre";
+
+            foreach (UsuarioBLL usu in usuario.CargarUsuarios())
+            {
+
+                comboUsuarios.Items.Add(usu);
+            }
+
+
+            CajaBLL caja = new CajaBLL();
+            dataGridView1.DataSource = caja.CargarCajasActivas();
+
+            
         }
 
         public void CentrarElemento(Control ppadre, Control phijo)
@@ -63,6 +78,22 @@ namespace WindowsFormsApp1.SeccionCaja
 
         }
 
+        private void BotonCrearCaja_Click(object sender, EventArgs e)
+        {
+            int idusuario = ((UsuarioBLL)comboUsuarios.SelectedItem).Legajo;
+            int efectivoencaja = int.Parse(textBoxCajaefectivoinicial.Text);
+            int posnet = 0;
+            int efectivoinicialencaja = int.Parse(textBoxCajaefectivoinicial.Text);
+            DateTime fechayhora = DateTime.Now;
+            int estado = 1;
+            CajaBLL nuevacaja = new CajaBLL();
+
+            nuevacaja.CrearCaja(idusuario, efectivoencaja, posnet, fechayhora, efectivoinicialencaja,  estado);
+
+            
+            dataGridView1.DataSource = nuevacaja.CargarCajasActivas();
+
+        }
     }
 
 }

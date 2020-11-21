@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 namespace CapaDeNegocios
 {
 
-    public class CategoriaProducto
+    public class CategoriaProductoBLL
     {
 
         private int idcategoriaproducto;
 
         private string nombre;
 
-        public CategoriaProducto(int pidcategoriaproducto, string pnombre)
+        public CategoriaProductoBLL(int pidcategoriaproducto, string pnombre)
         {
 
             this.Idcategoriaproducto = pidcategoriaproducto;

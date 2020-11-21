@@ -25,9 +25,9 @@ namespace WindowsFormsApp1
 
         private SeccionGestión.FormularioGestion formulariogestion;
 
-        private Usuario usuario;
+        private UsuarioBLL usuario;
 
-        public InterfazGeneral(Usuario pusuario, InterfazInicioDeSesion pinterfaziniciodesesion)
+        public InterfazGeneral(UsuarioBLL pusuario, InterfazInicioDeSesion pinterfaziniciodesesion)
         {
 
             InitializeComponent();
@@ -219,6 +219,10 @@ namespace WindowsFormsApp1
 
         }
 
+        private void PanelInterfaz_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 
 }

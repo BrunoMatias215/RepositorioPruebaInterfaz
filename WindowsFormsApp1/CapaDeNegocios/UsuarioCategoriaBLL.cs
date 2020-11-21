@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace CapaDeNegocios
 {
 
-    public class UsuarioCategoria
+    public class UsuarioCategoriaBLL
     {
 
 

@@ -8,21 +8,21 @@ using System.Threading.Tasks;
 namespace CapaDeNegocios
 {
 
-    public class EstadoCategoria
+    public class EstadoCategoriaBLL
     {
 
         private int idestadocategoria;
 
         private string descripcion;
 
-        public EstadoCategoria ()
+        public EstadoCategoriaBLL ()
         {
 
 
 
         }
 
-        public EstadoCategoria (int pidestadocategoria, string pdescripcion)
+        public EstadoCategoriaBLL (int pidestadocategoria, string pdescripcion)
         {
 
             this.Idestadocategoria = pidestadocategoria;
@@ -35,14 +35,14 @@ namespace CapaDeNegocios
 
         public string Descripcion { get => descripcion; set => descripcion = value; }
 
-        public List<EstadoCategoria> CargarEstadosCategoria()
+        public List<EstadoCategoriaBLL> CargarEstadosCategoria()
         {
 
             CapaDeDatos.EstadoCategoria objetoestadocategoria = new CapaDeDatos.EstadoCategoria();
 
             DataTable tablaestadoscategoria = objetoestadocategoria.BuscarCategorias();
 
-            List<EstadoCategoria> estadoscategoriasaagregar = new List<EstadoCategoria>();
+            List<EstadoCategoriaBLL> estadoscategoriasaagregar = new List<EstadoCategoriaBLL>();
 
             foreach (DataRow fila in tablaestadoscategoria.Rows)
             {
@@ -55,7 +55,7 @@ namespace CapaDeNegocios
 
                 descripcion = fila["descripcion"].ToString();
 
-                EstadoCategoria estadocategoria = new EstadoCategoria(idestadocategoria, descripcion);
+                EstadoCategoriaBLL estadocategoria = new EstadoCategoriaBLL(idestadocategoria, descripcion);
 
                 estadoscategoriasaagregar.Add(estadocategoria);
 

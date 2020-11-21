@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace CapaDeNegocios
 {
 
-    public class Cadete
+    public class CadeteBLL
     {
 
         private int idcadete;
@@ -19,9 +19,9 @@ namespace CapaDeNegocios
 
         private int telefono;
 
-        private Rodado rodado;
+        private RodadoBLL rodado;
 
-        public Cadete(int pidcadete, string pnombre, string papellido, int ptelefono, Rodado prodado)
+        public CadeteBLL(int pidcadete, string pnombre, string papellido, int ptelefono, RodadoBLL prodado)
         {
 
             this.Idcadete = pidcadete;
@@ -36,7 +36,7 @@ namespace CapaDeNegocios
 
         }
 
-        public Cadete(int pidcadete, string pnombre, string papellido, int ptelefono)
+        public CadeteBLL(int pidcadete, string pnombre, string papellido, int ptelefono)
         {
 
             this.Idcadete = pidcadete;
@@ -49,7 +49,7 @@ namespace CapaDeNegocios
 
         }
 
-        public Cadete ()
+        public CadeteBLL ()
         {
 
 
@@ -64,16 +64,16 @@ namespace CapaDeNegocios
 
         public int Telefono { get => telefono; set => telefono = value; }
 
-        public Rodado Rodado { get => rodado; set => rodado = value; }
+        public RodadoBLL Rodado { get => rodado; set => rodado = value; }
 
-        public List<Cadete> CargarCadeteYRodado()
+        public List<CadeteBLL> CargarCadeteYRodado()
         {
 
             CapaDeDatos.Cadete cadetedal = new CapaDeDatos.Cadete();
 
             DataTable tablacadeteyrodado = cadetedal.BuscarCadeteYRodado();
 
-            List<Cadete> cadeteyrodadoacargar = new List<Cadete>();
+            List<CadeteBLL> cadeteyrodadoacargar = new List<CadeteBLL>();
 
             foreach (DataRow fila in tablacadeteyrodado.Rows)
             {
@@ -106,9 +106,9 @@ namespace CapaDeNegocios
 
                 patente = fila["patente"].ToString();
 
-                Rodado rodado = new Rodado(idrodado, descripcion, patente);
+                RodadoBLL rodado = new RodadoBLL(idrodado, descripcion, patente);
 
-                Cadete cadete = new Cadete(idcadete, nombre, apellido, telefono, rodado);
+                CadeteBLL cadete = new CadeteBLL(idcadete, nombre, apellido, telefono, rodado);
 
                 cadeteyrodadoacargar.Add(cadete);
 
@@ -118,14 +118,14 @@ namespace CapaDeNegocios
 
         }
 
-        public List<Cadete> CargarCadetes()
+        public List<CadeteBLL> CargarCadetes()
         {
 
             CapaDeDatos.Cadete cadetedal = new CapaDeDatos.Cadete();
 
             DataTable tabladecadetes = cadetedal.BuscarCadetes();
 
-            List<Cadete> cadetesaagregar = new List<Cadete>();
+            List<CadeteBLL> cadetesaagregar = new List<CadeteBLL>();
 
             foreach (DataRow fila in tabladecadetes.Rows)
             {
@@ -146,7 +146,7 @@ namespace CapaDeNegocios
 
                 telefono = int.Parse(fila["telefono"].ToString());
 
-                Cadete cadete = new Cadete(idcadete, nombre, apellido, telefono);
+                CadeteBLL cadete = new CadeteBLL(idcadete, nombre, apellido, telefono);
 
                 cadetesaagregar.Add(cadete);
 

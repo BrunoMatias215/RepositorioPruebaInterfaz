@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace CapaDeNegocios
 {
 
-    public class Cliente
+    public class ClienteBLL
     {
 
         private int idcliente;
@@ -21,7 +21,7 @@ namespace CapaDeNegocios
 
         private string direccion;
 
-        public Cliente (int pidcliente, string pnombre, string papellido, int ptelefono, string pdireccion)
+        public ClienteBLL (int pidcliente, string pnombre, string papellido, int ptelefono, string pdireccion)
         {
 
             this.Idcliente = pidcliente;
@@ -36,7 +36,7 @@ namespace CapaDeNegocios
 
         }
 
-        public Cliente ()
+        public ClienteBLL ()
         {
 
 
@@ -51,14 +51,14 @@ namespace CapaDeNegocios
 
         public string Direccion { get => direccion; set => direccion = value; }
 
-        public List<Cliente> CargarClientes()
+        public List<ClienteBLL> CargarClientes()
         {
 
             CapaDeDatos.Cliente clientedal = new CapaDeDatos.Cliente();
 
             DataTable tablaclientes= clientedal.BuscarClientes();
 
-            List<Cliente> clientesacargar = new List<Cliente>();
+            List<ClienteBLL> clientesacargar = new List<ClienteBLL>();
 
             foreach (DataRow fila in tablaclientes.Rows)
             {
@@ -83,7 +83,7 @@ namespace CapaDeNegocios
 
                 direccion = fila["direccion"].ToString();
 
-                Cliente cliente = new Cliente(idcliente, nombre, apellido, telefono, direccion);
+                ClienteBLL cliente = new ClienteBLL(idcliente, nombre, apellido, telefono, direccion);
 
                 clientesacargar.Add(cliente);
 

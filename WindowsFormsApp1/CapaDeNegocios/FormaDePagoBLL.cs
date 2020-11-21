@@ -8,14 +8,14 @@ using System.Threading.Tasks;
 namespace CapaDeNegocios
 {
 
-    public class FormaDePago
+    public class FormaDePagoBLL
     {
 
         private int idformadepago;
 
         private string descripcion;
 
-        public FormaDePago (int pidformadepago, string pdescripcion)
+        public FormaDePagoBLL (int pidformadepago, string pdescripcion)
         {
 
             this.idformadepago = pidformadepago;
@@ -24,7 +24,7 @@ namespace CapaDeNegocios
 
         }
 
-        public FormaDePago ()
+        public FormaDePagoBLL ()
         {
 
 
@@ -35,14 +35,14 @@ namespace CapaDeNegocios
 
         public string Descripcion { get => descripcion; set => descripcion = value; }
 
-        public List<FormaDePago> CargarFormasDePago()
+        public List<FormaDePagoBLL> CargarFormasDePago()
         {
 
             CapaDeDatos.FormaDePago formadepagodal = new CapaDeDatos.FormaDePago();
 
             DataTable tablaformasdepago = formadepagodal.BuscarFormasDePago();
 
-            List<FormaDePago> formasdepagoaagregar = new List<FormaDePago>();
+            List<FormaDePagoBLL> formasdepagoaagregar = new List<FormaDePagoBLL>();
 
             foreach (DataRow fila in tablaformasdepago.Rows)
             {
@@ -55,7 +55,7 @@ namespace CapaDeNegocios
 
                 descripcion = fila["descripcion"].ToString();
 
-                FormaDePago formadepago = new FormaDePago(idformadepago, descripcion);
+                FormaDePagoBLL formadepago = new FormaDePagoBLL(idformadepago, descripcion);
 
                 formasdepagoaagregar.Add(formadepago);
 

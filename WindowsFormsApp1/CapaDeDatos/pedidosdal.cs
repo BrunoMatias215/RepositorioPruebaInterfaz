@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace CapaDeDatos
 {
 
-    public class PedidoDAL
+    public class PedidosDAL
     {
 
         public int CrearPedido(int pidformadepago, int pidcliente, int pidusuario, 

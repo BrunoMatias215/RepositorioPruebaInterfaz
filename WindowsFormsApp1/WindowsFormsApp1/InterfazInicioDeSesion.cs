@@ -99,10 +99,10 @@ namespace WindowsFormsApp1
             else
             {
 
-                if (nombredeusuario == "admin" && contraseña == "admin")
+                if (nombredeusuario == "admin" && contraseña == "1234")
                 {
 
-                    Usuario usuario = new Usuario(nombredeusuario, contraseña);
+                    UsuarioBLL usuario = new UsuarioBLL(nombredeusuario, int.Parse(contraseña));
 
                     InterfazGeneral interfazgeneral = new InterfazGeneral(usuario, this);
 

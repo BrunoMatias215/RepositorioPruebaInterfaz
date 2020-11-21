@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace CapaDeNegocios
 {
 
-    public class Producto
+    public class ProductoBLL
     {
 
         private int idproducto;
@@ -19,7 +19,7 @@ namespace CapaDeNegocios
 
         private int idcategoriaproducto; // Agregar despues el tipo de dato categoriaproducto
 
-        public Producto(int pidproducto, string pdescripcion,
+        public ProductoBLL(int pidproducto, string pdescripcion,
             int pprecio, int pidcategoriaproducto)
         {
 
@@ -33,7 +33,7 @@ namespace CapaDeNegocios
 
         }
 
-        public Producto ()
+        public ProductoBLL ()
         {
 
 
@@ -48,14 +48,14 @@ namespace CapaDeNegocios
 
         public int Idcategoriaproducto { get => idcategoriaproducto; set => idcategoriaproducto = value; }
 
-        public List<Producto> CargarEntradas()
+        public List<ProductoBLL> CargarEntradas()
         {
 
             CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
 
             DataTable tablaproductos = productodal.BuscarEntradas();
 
-            List<Producto> productosacargar = new List<Producto>();
+            List<ProductoBLL> productosacargar = new List<ProductoBLL>();
 
             foreach (DataRow fila in tablaproductos.Rows)
             {
@@ -76,7 +76,7 @@ namespace CapaDeNegocios
 
                 idcategoriaproducto = int.Parse(fila["idproductocategoria"].ToString());
 
-                Producto producto = new Producto(idproducto, descripcion, precio, idcategoriaproducto);
+                ProductoBLL producto = new ProductoBLL(idproducto, descripcion, precio, idcategoriaproducto);
 
                 productosacargar.Add(producto);
 
@@ -86,14 +86,14 @@ namespace CapaDeNegocios
 
         }
 
-        public List<Producto> CargarOmelletes ()
+        public List<ProductoBLL> CargarOmelletes ()
         {
 
             CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
 
             DataTable tablaproductos = productodal.BuscarOmelletes();
 
-            List<Producto> productosacargar = new List<Producto>();
+            List<ProductoBLL> productosacargar = new List<ProductoBLL>();
 
             foreach (DataRow fila in tablaproductos.Rows)
             {
@@ -114,7 +114,7 @@ namespace CapaDeNegocios
 
                 idcategoriaproducto = int.Parse(fila["idproductocategoria"].ToString());
 
-                Producto producto = new Producto(idproducto, descripcion, precio, idcategoriaproducto);
+                ProductoBLL producto = new ProductoBLL(idproducto, descripcion, precio, idcategoriaproducto);
 
                 productosacargar.Add(producto);
 
@@ -124,14 +124,14 @@ namespace CapaDeNegocios
 
         }
 
-        public List<Producto> CargarTortillas()
+        public List<ProductoBLL> CargarTortillas()
         {
 
             CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
 
             DataTable tablaproductos = productodal.BuscarTortillas();
 
-            List<Producto> productosacargar = new List<Producto>();
+            List<ProductoBLL> productosacargar = new List<ProductoBLL>();
 
             foreach (DataRow fila in tablaproductos.Rows)
             {
@@ -152,7 +152,7 @@ namespace CapaDeNegocios
 
                 idcategoriaproducto = int.Parse(fila["idproductocategoria"].ToString());
 
-                Producto producto = new Producto(idproducto, descripcion, precio, idcategoriaproducto);
+                ProductoBLL producto = new ProductoBLL(idproducto, descripcion, precio, idcategoriaproducto);
 
                 productosacargar.Add(producto);
 
@@ -162,14 +162,14 @@ namespace CapaDeNegocios
 
         }
 
-        public List<Producto> CargarMilanesas()
+        public List<ProductoBLL> CargarMilanesas()
         {
 
             CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
 
             DataTable tablaproductos = productodal.BuscarMilanesas();
 
-            List<Producto> productosacargar = new List<Producto>();
+            List<ProductoBLL> productosacargar = new List<ProductoBLL>();
 
             foreach (DataRow fila in tablaproductos.Rows)
             {
@@ -190,7 +190,7 @@ namespace CapaDeNegocios
 
                 idcategoriaproducto = int.Parse(fila["idproductocategoria"].ToString());
 
-                Producto producto = new Producto(idproducto, descripcion, precio, idcategoriaproducto);
+                ProductoBLL producto = new ProductoBLL(idproducto, descripcion, precio, idcategoriaproducto);
 
                 productosacargar.Add(producto);
 
@@ -200,14 +200,14 @@ namespace CapaDeNegocios
 
         }
 
-        public List<Producto> CargarSupremas()
+        public List<ProductoBLL> CargarSupremas()
         {
 
             CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
 
             DataTable tablaproductos = productodal.BuscarSupremas();
 
-            List<Producto> productosacargar = new List<Producto>();
+            List<ProductoBLL> productosacargar = new List<ProductoBLL>();
 
             foreach (DataRow fila in tablaproductos.Rows)
             {
@@ -228,7 +228,7 @@ namespace CapaDeNegocios
 
                 idcategoriaproducto = int.Parse(fila["idproductocategoria"].ToString());
 
-                Producto producto = new Producto(idproducto, descripcion, precio, idcategoriaproducto);
+                ProductoBLL producto = new ProductoBLL(idproducto, descripcion, precio, idcategoriaproducto);
 
                 productosacargar.Add(producto);
 
@@ -238,14 +238,14 @@ namespace CapaDeNegocios
 
         }
 
-        public List<Producto> CargarMatambre()
+        public List<ProductoBLL> CargarMatambre()
         {
 
             CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
 
             DataTable tablaproductos = productodal.BuscarMatambre();
 
-            List<Producto> productosacargar = new List<Producto>();
+            List<ProductoBLL> productosacargar = new List<ProductoBLL>();
 
             foreach (DataRow fila in tablaproductos.Rows)
             {
@@ -266,7 +266,7 @@ namespace CapaDeNegocios
 
                 idcategoriaproducto = int.Parse(fila["idproductocategoria"].ToString());
 
-                Producto producto = new Producto(idproducto, descripcion, precio, idcategoriaproducto);
+                ProductoBLL producto = new ProductoBLL(idproducto, descripcion, precio, idcategoriaproducto);
 
                 productosacargar.Add(producto);
 
@@ -276,14 +276,14 @@ namespace CapaDeNegocios
 
         }
 
-        public List<Producto> CargarGuarnicion()
+        public List<ProductoBLL> CargarGuarnicion()
         {
 
             CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
 
             DataTable tablaproductos = productodal.BuscarGuarnicion();
 
-            List<Producto> productosacargar = new List<Producto>();
+            List<ProductoBLL> productosacargar = new List<ProductoBLL>();
 
             foreach (DataRow fila in tablaproductos.Rows)
             {
@@ -304,7 +304,7 @@ namespace CapaDeNegocios
 
                 idcategoriaproducto = int.Parse(fila["idproductocategoria"].ToString());
 
-                Producto producto = new Producto(idproducto, descripcion, precio, idcategoriaproducto);
+                ProductoBLL producto = new ProductoBLL(idproducto, descripcion, precio, idcategoriaproducto);
 
                 productosacargar.Add(producto);
 
@@ -314,14 +314,14 @@ namespace CapaDeNegocios
 
         }
 
-        public List<Producto> CargarPollos()
+        public List<ProductoBLL> CargarPollos()
         {
 
             CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
 
             DataTable tablaproductos = productodal.BuscarPollos();
 
-            List<Producto> productosacargar = new List<Producto>();
+            List<ProductoBLL> productosacargar = new List<ProductoBLL>();
 
             foreach (DataRow fila in tablaproductos.Rows)
             {
@@ -342,7 +342,7 @@ namespace CapaDeNegocios
 
                 idcategoriaproducto = int.Parse(fila["idproductocategoria"].ToString());
 
-                Producto producto = new Producto(idproducto, descripcion, precio, idcategoriaproducto);
+                ProductoBLL producto = new ProductoBLL(idproducto, descripcion, precio, idcategoriaproducto);
 
                 productosacargar.Add(producto);
 
@@ -352,14 +352,14 @@ namespace CapaDeNegocios
 
         }
 
-        public List<Producto> CargarParillas()
+        public List<ProductoBLL> CargarParillas()
         {
 
             CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
 
             DataTable tablaproductos = productodal.BuscarParillas();
 
-            List<Producto> productosacargar = new List<Producto>();
+            List<ProductoBLL> productosacargar = new List<ProductoBLL>();
 
             foreach (DataRow fila in tablaproductos.Rows)
             {
@@ -380,7 +380,7 @@ namespace CapaDeNegocios
 
                 idcategoriaproducto = int.Parse(fila["idproductocategoria"].ToString());
 
-                Producto producto = new Producto(idproducto, descripcion, precio, idcategoriaproducto);
+                ProductoBLL producto = new ProductoBLL(idproducto, descripcion, precio, idcategoriaproducto);
 
                 productosacargar.Add(producto);
 
@@ -390,14 +390,14 @@ namespace CapaDeNegocios
 
         }
 
-        public List<Producto> CargarPescados()
+        public List<ProductoBLL> CargarPescados()
         {
 
             CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
 
             DataTable tablaproductos = productodal.BuscarPescados();
 
-            List<Producto> productosacargar = new List<Producto>();
+            List<ProductoBLL> productosacargar = new List<ProductoBLL>();
 
             foreach (DataRow fila in tablaproductos.Rows)
             {
@@ -418,7 +418,7 @@ namespace CapaDeNegocios
 
                 idcategoriaproducto = int.Parse(fila["idproductocategoria"].ToString());
 
-                Producto producto = new Producto(idproducto, descripcion, precio, idcategoriaproducto);
+                ProductoBLL producto = new ProductoBLL(idproducto, descripcion, precio, idcategoriaproducto);
 
                 productosacargar.Add(producto);
 
@@ -428,14 +428,14 @@ namespace CapaDeNegocios
 
         }
 
-        public List<Producto> CargarEnsaladas()
+        public List<ProductoBLL> CargarEnsaladas()
         {
 
             CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
 
             DataTable tablaproductos = productodal.BuscarEnsaladas();
 
-            List<Producto> productosacargar = new List<Producto>();
+            List<ProductoBLL> productosacargar = new List<ProductoBLL>();
 
             foreach (DataRow fila in tablaproductos.Rows)
             {
@@ -456,7 +456,7 @@ namespace CapaDeNegocios
 
                 idcategoriaproducto = int.Parse(fila["idproductocategoria"].ToString());
 
-                Producto producto = new Producto(idproducto, descripcion, precio, idcategoriaproducto);
+                ProductoBLL producto = new ProductoBLL(idproducto, descripcion, precio, idcategoriaproducto);
 
                 productosacargar.Add(producto);
 
@@ -466,14 +466,14 @@ namespace CapaDeNegocios
 
         }
 
-        public List<Producto> CargarEnsaladasEsp()
+        public List<ProductoBLL> CargarEnsaladasEsp()
         {
 
             CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
 
             DataTable tablaproductos = productodal.BuscarEnsaladasEsp();
 
-            List<Producto> productosacargar = new List<Producto>();
+            List<ProductoBLL> productosacargar = new List<ProductoBLL>();
 
             foreach (DataRow fila in tablaproductos.Rows)
             {
@@ -494,7 +494,7 @@ namespace CapaDeNegocios
 
                 idcategoriaproducto = int.Parse(fila["idproductocategoria"].ToString());
 
-                Producto producto = new Producto(idproducto, descripcion, precio, idcategoriaproducto);
+                ProductoBLL producto = new ProductoBLL(idproducto, descripcion, precio, idcategoriaproducto);
 
                 productosacargar.Add(producto);
 
@@ -504,14 +504,14 @@ namespace CapaDeNegocios
 
         }
 
-        public List<Producto> CargarTradicionales()
+        public List<ProductoBLL> CargarTradicionales()
         {
 
             CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
 
             DataTable tablaproductos = productodal.BuscarTradicionales();
 
-            List<Producto> productosacargar = new List<Producto>();
+            List<ProductoBLL> productosacargar = new List<ProductoBLL>();
 
             foreach (DataRow fila in tablaproductos.Rows)
             {
@@ -532,7 +532,7 @@ namespace CapaDeNegocios
 
                 idcategoriaproducto = int.Parse(fila["idproductocategoria"].ToString());
 
-                Producto producto = new Producto(idproducto, descripcion, precio, idcategoriaproducto);
+                ProductoBLL producto = new ProductoBLL(idproducto, descripcion, precio, idcategoriaproducto);
 
                 productosacargar.Add(producto);
 
@@ -542,14 +542,14 @@ namespace CapaDeNegocios
 
         }
 
-        public List<Producto> CargarEspecialesI()
+        public List<ProductoBLL> CargarEspecialesI()
         {
 
             CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
 
             DataTable tablaproductos = productodal.BuscarEspecialesI();
 
-            List<Producto> productosacargar = new List<Producto>();
+            List<ProductoBLL> productosacargar = new List<ProductoBLL>();
 
             foreach (DataRow fila in tablaproductos.Rows)
             {
@@ -570,7 +570,7 @@ namespace CapaDeNegocios
 
                 idcategoriaproducto = int.Parse(fila["idproductocategoria"].ToString());
 
-                Producto producto = new Producto(idproducto, descripcion, precio, idcategoriaproducto);
+                ProductoBLL producto = new ProductoBLL(idproducto, descripcion, precio, idcategoriaproducto);
 
                 productosacargar.Add(producto);
 
@@ -580,14 +580,14 @@ namespace CapaDeNegocios
 
         }
 
-        public List<Producto> CargarEspecialesII()
+        public List<ProductoBLL> CargarEspecialesII()
         {
 
             CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
 
             DataTable tablaproductos = productodal.BuscarEspecialesII();
 
-            List<Producto> productosacargar = new List<Producto>();
+            List<ProductoBLL> productosacargar = new List<ProductoBLL>();
 
             foreach (DataRow fila in tablaproductos.Rows)
             {
@@ -608,7 +608,7 @@ namespace CapaDeNegocios
 
                 idcategoriaproducto = int.Parse(fila["idproductocategoria"].ToString());
 
-                Producto producto = new Producto(idproducto, descripcion, precio, idcategoriaproducto);
+                ProductoBLL producto = new ProductoBLL(idproducto, descripcion, precio, idcategoriaproducto);
 
                 productosacargar.Add(producto);
 
@@ -618,14 +618,14 @@ namespace CapaDeNegocios
 
         }
 
-        public List<Producto> CargarFugazzas()
+        public List<ProductoBLL> CargarFugazzas()
         {
 
             CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
 
             DataTable tablaproductos = productodal.BuscarFugazzas();
 
-            List<Producto> productosacargar = new List<Producto>();
+            List<ProductoBLL> productosacargar = new List<ProductoBLL>();
 
             foreach (DataRow fila in tablaproductos.Rows)
             {
@@ -646,7 +646,7 @@ namespace CapaDeNegocios
 
                 idcategoriaproducto = int.Parse(fila["idproductocategoria"].ToString());
 
-                Producto producto = new Producto(idproducto, descripcion, precio, idcategoriaproducto);
+                ProductoBLL producto = new ProductoBLL(idproducto, descripcion, precio, idcategoriaproducto);
 
                 productosacargar.Add(producto);
 
@@ -656,14 +656,14 @@ namespace CapaDeNegocios
 
         }
 
-        public List<Producto> CargarFugazzetas()
+        public List<ProductoBLL> CargarFugazzetas()
         {
 
             CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
 
             DataTable tablaproductos = productodal.BuscarFugazzetas();
 
-            List<Producto> productosacargar = new List<Producto>();
+            List<ProductoBLL> productosacargar = new List<ProductoBLL>();
 
             foreach (DataRow fila in tablaproductos.Rows)
             {
@@ -684,7 +684,7 @@ namespace CapaDeNegocios
 
                 idcategoriaproducto = int.Parse(fila["idproductocategoria"].ToString());
 
-                Producto producto = new Producto(idproducto, descripcion, precio, idcategoriaproducto);
+                ProductoBLL producto = new ProductoBLL(idproducto, descripcion, precio, idcategoriaproducto);
 
                 productosacargar.Add(producto);
 
@@ -694,14 +694,14 @@ namespace CapaDeNegocios
 
         }
 
-        public List<Producto> CargarCalzones()
+        public List<ProductoBLL> CargarCalzones()
         {
 
             CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
 
             DataTable tablaproductos = productodal.BuscarCalzones();
 
-            List<Producto> productosacargar = new List<Producto>();
+            List<ProductoBLL> productosacargar = new List<ProductoBLL>();
 
             foreach (DataRow fila in tablaproductos.Rows)
             {
@@ -722,7 +722,7 @@ namespace CapaDeNegocios
 
                 idcategoriaproducto = int.Parse(fila["idproductocategoria"].ToString());
 
-                Producto producto = new Producto(idproducto, descripcion, precio, idcategoriaproducto);
+                ProductoBLL producto = new ProductoBLL(idproducto, descripcion, precio, idcategoriaproducto);
 
                 productosacargar.Add(producto);
 
@@ -732,14 +732,14 @@ namespace CapaDeNegocios
 
         }
 
-        public List<Producto> CargarOtrasEspecialidades()
+        public List<ProductoBLL> CargarOtrasEspecialidades()
         {
 
             CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
 
             DataTable tablaproductos = productodal.BuscarOtrasEspecialidades();
 
-            List<Producto> productosacargar = new List<Producto>();
+            List<ProductoBLL> productosacargar = new List<ProductoBLL>();
 
             foreach (DataRow fila in tablaproductos.Rows)
             {
@@ -760,7 +760,7 @@ namespace CapaDeNegocios
 
                 idcategoriaproducto = int.Parse(fila["idproductocategoria"].ToString());
 
-                Producto producto = new Producto(idproducto, descripcion, precio, idcategoriaproducto);
+                ProductoBLL producto = new ProductoBLL(idproducto, descripcion, precio, idcategoriaproducto);
 
                 productosacargar.Add(producto);
 
@@ -770,14 +770,14 @@ namespace CapaDeNegocios
 
         }
 
-        public List<Producto> CargarEmpanadas()
+        public List<ProductoBLL> CargarEmpanadas()
         {
 
             CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
 
             DataTable tablaproductos = productodal.BuscarEmpanadas();
 
-            List<Producto> productosacargar = new List<Producto>();
+            List<ProductoBLL> productosacargar = new List<ProductoBLL>();
 
             foreach (DataRow fila in tablaproductos.Rows)
             {
@@ -798,7 +798,7 @@ namespace CapaDeNegocios
 
                 idcategoriaproducto = int.Parse(fila["idproductocategoria"].ToString());
 
-                Producto producto = new Producto(idproducto, descripcion, precio, idcategoriaproducto);
+                ProductoBLL producto = new ProductoBLL(idproducto, descripcion, precio, idcategoriaproducto);
 
                 productosacargar.Add(producto);
 
@@ -808,14 +808,14 @@ namespace CapaDeNegocios
 
         }
 
-        public List<Producto> CargarSandwiches()
+        public List<ProductoBLL> CargarSandwiches()
         {
 
             CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
 
             DataTable tablaproductos = productodal.BuscarSandwiches();
 
-            List<Producto> productosacargar = new List<Producto>();
+            List<ProductoBLL> productosacargar = new List<ProductoBLL>();
 
             foreach (DataRow fila in tablaproductos.Rows)
             {
@@ -836,7 +836,7 @@ namespace CapaDeNegocios
 
                 idcategoriaproducto = int.Parse(fila["idproductocategoria"].ToString());
 
-                Producto producto = new Producto(idproducto, descripcion, precio, idcategoriaproducto);
+                ProductoBLL producto = new ProductoBLL(idproducto, descripcion, precio, idcategoriaproducto);
 
                 productosacargar.Add(producto);
 
@@ -846,14 +846,14 @@ namespace CapaDeNegocios
 
         }
 
-        public List<Producto> CargarPastas()
+        public List<ProductoBLL> CargarPastas()
         {
 
             CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
 
             DataTable tablaproductos = productodal.BuscarPastas();
 
-            List<Producto> productosacargar = new List<Producto>();
+            List<ProductoBLL> productosacargar = new List<ProductoBLL>();
 
             foreach (DataRow fila in tablaproductos.Rows)
             {
@@ -874,7 +874,7 @@ namespace CapaDeNegocios
 
                 idcategoriaproducto = int.Parse(fila["idproductocategoria"].ToString());
 
-                Producto producto = new Producto(idproducto, descripcion, precio, idcategoriaproducto);
+                ProductoBLL producto = new ProductoBLL(idproducto, descripcion, precio, idcategoriaproducto);
 
                 productosacargar.Add(producto);
 
@@ -884,14 +884,14 @@ namespace CapaDeNegocios
 
         }
 
-        public List<Producto> CargarBebidas()
+        public List<ProductoBLL> CargarBebidas()
         {
 
             CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
 
             DataTable tablaproductos = productodal.BuscarBebidas();
 
-            List<Producto> productosacargar = new List<Producto>();
+            List<ProductoBLL> productosacargar = new List<ProductoBLL>();
 
             foreach (DataRow fila in tablaproductos.Rows)
             {
@@ -912,7 +912,7 @@ namespace CapaDeNegocios
 
                 idcategoriaproducto = int.Parse(fila["idproductocategoria"].ToString());
 
-                Producto producto = new Producto(idproducto, descripcion, precio, idcategoriaproducto);
+                ProductoBLL producto = new ProductoBLL(idproducto, descripcion, precio, idcategoriaproducto);
 
                 productosacargar.Add(producto);
 
@@ -922,14 +922,14 @@ namespace CapaDeNegocios
 
         }
 
-        public List<Producto> CargarPostres()
+        public List<ProductoBLL> CargarPostres()
         {
 
             CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
 
             DataTable tablaproductos = productodal.BuscarPostres();
 
-            List<Producto> productosacargar = new List<Producto>();
+            List<ProductoBLL> productosacargar = new List<ProductoBLL>();
 
             foreach (DataRow fila in tablaproductos.Rows)
             {
@@ -950,7 +950,7 @@ namespace CapaDeNegocios
 
                 idcategoriaproducto = int.Parse(fila["idproductocategoria"].ToString());
 
-                Producto producto = new Producto(idproducto, descripcion, precio, idcategoriaproducto);
+                ProductoBLL producto = new ProductoBLL(idproducto, descripcion, precio, idcategoriaproducto);
 
                 productosacargar.Add(producto);
 
@@ -960,14 +960,14 @@ namespace CapaDeNegocios
 
         }
 
-        public List<Producto> CargarMenus()
+        public List<ProductoBLL> CargarMenus()
         {
 
             CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
 
             DataTable tablaproductos = productodal.BuscarMenus();
 
-            List<Producto> productosacargar = new List<Producto>();
+            List<ProductoBLL> productosacargar = new List<ProductoBLL>();
 
             foreach (DataRow fila in tablaproductos.Rows)
             {
@@ -988,7 +988,7 @@ namespace CapaDeNegocios
 
                 idcategoriaproducto = int.Parse(fila["idproductocategoria"].ToString());
 
-                Producto producto = new Producto(idproducto, descripcion, precio, idcategoriaproducto);
+                ProductoBLL producto = new ProductoBLL(idproducto, descripcion, precio, idcategoriaproducto);
 
                 productosacargar.Add(producto);
 
@@ -998,14 +998,14 @@ namespace CapaDeNegocios
 
         }
 
-        public List<Producto> CargarPromos()
+        public List<ProductoBLL> CargarPromos()
         {
 
             CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
 
             DataTable tablaproductos = productodal.BuscarPromos();
 
-            List<Producto> productosacargar = new List<Producto>();
+            List<ProductoBLL> productosacargar = new List<ProductoBLL>();
 
             foreach (DataRow fila in tablaproductos.Rows)
             {
@@ -1026,7 +1026,7 @@ namespace CapaDeNegocios
 
                 idcategoriaproducto = int.Parse(fila["idproductocategoria"].ToString());
 
-                Producto producto = new Producto(idproducto, descripcion, precio, idcategoriaproducto);
+                ProductoBLL producto = new ProductoBLL(idproducto, descripcion, precio, idcategoriaproducto);
 
                 productosacargar.Add(producto);
 

@@ -9,7 +9,7 @@ using CapaDeDatos;
 namespace CapaDeNegocios
 {
 
-    public class Pedido
+    public class PedidoBLL
     {
 
         private int idformadepago;
@@ -24,7 +24,7 @@ namespace CapaDeNegocios
 
         private int idestadocategoria;
 
-        public Pedido()
+        public PedidoBLL()
         {
 
 
@@ -48,7 +48,7 @@ namespace CapaDeNegocios
 
             int cantidaddefilarafectadas = 0;
 
-            CapaDeDatos.PedidoDAL pedido = new CapaDeDatos.PedidoDAL();
+            CapaDeDatos.PedidosDAL pedido = new CapaDeDatos.PedidosDAL();
 
             cantidaddefilarafectadas = pedido.CrearPedido(this.Idformadepago, this.Idcliente, this.Idusuario, this.Observaciones, this.Idcadete, this.Idestadocategoria);
 
@@ -59,7 +59,7 @@ namespace CapaDeNegocios
         public DataTable CargarPedidosActivos()
         {
 
-            CapaDeDatos.PedidoDAL pedidodal = new CapaDeDatos.PedidoDAL();
+            CapaDeDatos.PedidosDAL pedidodal = new CapaDeDatos.PedidosDAL();
 
             DataTable tablapedidosactivos = pedidodal.BuscarPedidosActivos();
 
@@ -70,7 +70,7 @@ namespace CapaDeNegocios
         public void ModificarEstadoPedido (int idpedido, int idestadocategoria)
         {
 
-            PedidoDAL pedido = new PedidoDAL();
+            PedidosDAL pedido = new PedidosDAL();
 
             pedido.ModificarEstadoPedido(idpedido, idestadocategoria);
 
