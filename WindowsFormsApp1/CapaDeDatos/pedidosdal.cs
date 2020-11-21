@@ -13,7 +13,7 @@ namespace CapaDeDatos
     {
 
         public int CrearPedido(int pidformadepago, int pidcliente, int pidusuario, 
-            string pobservaciones, int pidcadete, int pidestadocategoria)
+            string pobservaciones, int pidestadocategoria)
         {
   
             int Filasafectadas = 1;
@@ -22,8 +22,8 @@ namespace CapaDeDatos
 
             objetoconexion.Conectar();
 
-            objetoconexion.EscrituraPorComando("INSERT INTO Pedido (idformadepago, idcliente, idusuario, fechayhora, observaciones, idcadete, idestadocategoria) VALUES (" +
-                pidformadepago + "," + pidcliente + "," + pidusuario + ", CURRENT_TIMESTAMP ,'" + pobservaciones + "'," + pidcadete + "," + pidestadocategoria + ")");
+            objetoconexion.EscrituraPorComando("INSERT INTO Pedido (idformadepago, idcliente, idusuario, fechayhora, observaciones, idestadocategoria) VALUES (" +
+                pidformadepago + "," + pidcliente + "," + pidusuario + ", CURRENT_TIMESTAMP ,'" + pobservaciones + "," + pidestadocategoria + ")");
 
             objetoconexion.Desconectar();
 

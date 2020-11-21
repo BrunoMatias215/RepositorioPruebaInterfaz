@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace CapaDeDatos
 {
 
-    public class Cadete
+    public class CadeteDAL
     {
 
         public DataTable BuscarCadetes()

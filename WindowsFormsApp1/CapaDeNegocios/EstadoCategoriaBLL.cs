@@ -38,7 +38,7 @@ namespace CapaDeNegocios
         public List<EstadoCategoriaBLL> CargarEstadosCategoria()
         {
 
-            CapaDeDatos.EstadoCategoria objetoestadocategoria = new CapaDeDatos.EstadoCategoria();
+            CapaDeDatos.EstadoCategoriaDAL objetoestadocategoria = new CapaDeDatos.EstadoCategoriaDAL();
 
             DataTable tablaestadoscategoria = objetoestadocategoria.BuscarCategorias();
 

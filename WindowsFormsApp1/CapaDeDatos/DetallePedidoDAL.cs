@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace CapaDeDatos
 {
 
-    public class DetallePedido
+    public class DetallePedidoDAL
     {
 
         public void CrearDetallePedido(int pidproducto, int pidpedido, int pcantidad, int pprecioventa)

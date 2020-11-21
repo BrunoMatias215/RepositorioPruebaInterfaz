@@ -8,17 +8,17 @@ using System.Threading.Tasks;
 namespace CapaDeDatos
 {
 
-    public class EstadoCategoria
+    public class FormaDePagoDAL
     {
 
-        public DataTable BuscarCategorias()
+        public DataTable BuscarFormasDePago()
         {
 
             Conexion objetoconexion = new Conexion();
 
             objetoconexion.Conectar();
 
-            DataTable objetotabla = objetoconexion.LeerPorStoreProcedure("SPBuscarEstadosCategorias");
+            DataTable objetotabla = objetoconexion.LeerPorStoreProcedure("SPBuscarFormasDePago");
 
             //DataTable objetotabla = objetoconexion.LecturaPorComando("SELECT * FROM Producto WHERE idproductocategoria = 1");
 

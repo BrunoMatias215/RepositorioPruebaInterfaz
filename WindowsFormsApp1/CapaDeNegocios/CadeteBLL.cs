@@ -69,7 +69,7 @@ namespace CapaDeNegocios
         public List<CadeteBLL> CargarCadeteYRodado()
         {
 
-            CapaDeDatos.Cadete cadetedal = new CapaDeDatos.Cadete();
+            CapaDeDatos.CadeteDAL cadetedal = new CapaDeDatos.CadeteDAL();
 
             DataTable tablacadeteyrodado = cadetedal.BuscarCadeteYRodado();
 
@@ -121,7 +121,7 @@ namespace CapaDeNegocios
         public List<CadeteBLL> CargarCadetes()
         {
 
-            CapaDeDatos.Cadete cadetedal = new CapaDeDatos.Cadete();
+            CapaDeDatos.CadeteDAL cadetedal = new CapaDeDatos.CadeteDAL();
 
             DataTable tabladecadetes = cadetedal.BuscarCadetes();
 

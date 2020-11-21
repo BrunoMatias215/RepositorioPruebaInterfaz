@@ -51,10 +51,11 @@
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(141, 22);
+            this.textBox1.Location = new System.Drawing.Point(145, 21);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(206, 15);
             this.textBox1.TabIndex = 0;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // dataGridView1
             // 
@@ -85,6 +86,7 @@
             this.BotonNuevoCliente.TabIndex = 3;
             this.BotonNuevoCliente.Text = "Nuevo Cliente";
             this.BotonNuevoCliente.UseVisualStyleBackColor = true;
+            this.BotonNuevoCliente.Click += new System.EventHandler(this.BotonNuevoCliente_Click);
             // 
             // BotonModificarCliente
             // 
@@ -97,6 +99,7 @@
             this.BotonModificarCliente.TabIndex = 4;
             this.BotonModificarCliente.Text = "Modificar Cliente";
             this.BotonModificarCliente.UseVisualStyleBackColor = true;
+            this.BotonModificarCliente.Click += new System.EventHandler(this.BotonModificarCliente_Click);
             // 
             // BotonEliminarCliente
             // 
@@ -109,6 +112,7 @@
             this.BotonEliminarCliente.TabIndex = 5;
             this.BotonEliminarCliente.Text = "Eliminar Cliente";
             this.BotonEliminarCliente.UseVisualStyleBackColor = true;
+            this.BotonEliminarCliente.Click += new System.EventHandler(this.BotonEliminarCliente_Click);
             // 
             // dataGridView2
             // 

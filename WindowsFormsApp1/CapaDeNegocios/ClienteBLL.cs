@@ -4,6 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CapaDeDatos;
 
 namespace CapaDeNegocios
 {
@@ -26,7 +27,7 @@ namespace CapaDeNegocios
 
             this.Idcliente = pidcliente;
 
-            this.nombre = pnombre;
+            this.Nombre = pnombre;
 
             this.Apellido = papellido;
 
@@ -45,16 +46,18 @@ namespace CapaDeNegocios
 
         public int Idcliente { get => idcliente; set => idcliente = value; }
 
+        public string Nombre { get => nombre; set => nombre = value; }
+
         public string Apellido { get => apellido; set => apellido = value; }
 
         public int Telefono { get => telefono; set => telefono = value; }
 
         public string Direccion { get => direccion; set => direccion = value; }
-
+        
         public List<ClienteBLL> CargarClientes()
         {
 
-            CapaDeDatos.Cliente clientedal = new CapaDeDatos.Cliente();
+            CapaDeDatos.ClienteDAL clientedal = new CapaDeDatos.ClienteDAL();
 
             DataTable tablaclientes= clientedal.BuscarClientes();
 
@@ -90,6 +93,55 @@ namespace CapaDeNegocios
             }
 
             return clientesacargar;
+
+        }
+
+        public DataTable CargarClientesDataTable()
+        {
+
+            CapaDeDatos.ClienteDAL clientedal = new CapaDeDatos.ClienteDAL();
+
+            DataTable tablaclientes = clientedal.BuscarClientes();
+
+            return tablaclientes;
+
+        }
+
+        public void CrearCliente(string pnombre, string papellido, int ptelefono, string pdireccion)
+        {
+
+            CapaDeDatos.ClienteDAL cliente = new CapaDeDatos.ClienteDAL();
+
+            cliente.CrearCliente(pnombre,papellido,ptelefono,pdireccion);
+
+        }
+
+        public void EliminarCliente (int pidcliente)
+        {
+
+            ClienteDAL cliente = new ClienteDAL();
+
+            cliente.EliminarCliente(pidcliente);
+
+        }
+
+        public DataTable BuscarClientePorNombre (string pnombre)
+        {
+
+            ClienteDAL cliente = new ClienteDAL();
+
+            DataTable tablacliente = cliente.BuscarClientePorNombre(pnombre);
+
+            return tablacliente;
+
+        }
+
+        public void ModificarCliente (int pidcliente, string pnombre, string papellido, int ptelefono, string pdireccion)
+        {
+
+            ClienteDAL cliente = new ClienteDAL();
+
+            cliente.ModificarCliente(pidcliente, pnombre, papellido, ptelefono, pdireccion);
 
         }
 

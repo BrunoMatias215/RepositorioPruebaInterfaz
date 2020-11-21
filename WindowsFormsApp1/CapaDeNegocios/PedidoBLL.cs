@@ -50,7 +50,7 @@ namespace CapaDeNegocios
 
             CapaDeDatos.PedidosDAL pedido = new CapaDeDatos.PedidosDAL();
 
-            cantidaddefilarafectadas = pedido.CrearPedido(this.Idformadepago, this.Idcliente, this.Idusuario, this.Observaciones, this.Idcadete, this.Idestadocategoria);
+            cantidaddefilarafectadas = pedido.CrearPedido(this.Idformadepago, this.Idcliente, this.Idusuario, this.Observaciones, this.Idestadocategoria);
 
             return cantidaddefilarafectadas;
 

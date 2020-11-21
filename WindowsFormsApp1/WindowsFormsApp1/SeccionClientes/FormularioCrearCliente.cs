@@ -12,36 +12,22 @@ using CapaDeNegocios;
 namespace WindowsFormsApp1.SeccionClientes
 {
 
-    public partial class FormularioModificarCliente : Form
+    public partial class FormularioCrearCliente : Form
     {
 
-        private ClienteBLL cliente;
-
-        public FormularioModificarCliente(ClienteBLL pcliente)
+        public FormularioCrearCliente()
         {
 
             InitializeComponent();
 
-            this.cliente = pcliente;
-
         }
 
-        public ClienteBLL Cliente { get => cliente; set => cliente = value; }
-
-        private void FormularioModificarCliente_Load(object sender, EventArgs e)
+        private void FormularioCrearCliente_Load(object sender, EventArgs e)
         {
 
             this.CenterToScreen();
 
             this.BackColor = Color.FromArgb(20, 34, 56);
-
-            this.textBox1.Text = this.cliente.Nombre;
-
-            this.textBox2.Text = this.cliente.Apellido;
-
-            this.textBox3.Text = this.cliente.Telefono.ToString();
-
-            this.textBox4.Text = this.cliente.Direccion;
 
             this.label1.ForeColor = Color.White;
 
@@ -92,9 +78,9 @@ namespace WindowsFormsApp1.SeccionClientes
 
                     int telefononumero = int.Parse(telefono);
 
-                    ClienteBLL clientelocal = new ClienteBLL();
+                    ClienteBLL cliente = new ClienteBLL();
 
-                    clientelocal.ModificarCliente(this.cliente.Idcliente, nombre,apellido,telefononumero,direccion);
+                    cliente.CrearCliente(nombre, apellido, telefononumero, direccion);
 
                     this.Close();
 
@@ -113,7 +99,7 @@ namespace WindowsFormsApp1.SeccionClientes
                 MessageBox.Show("Debe completar todos los campos", "Registrar Cliente");
 
             }
-
+  
         }
 
         private void BotonCancelar_Click(object sender, EventArgs e)
@@ -124,5 +110,4 @@ namespace WindowsFormsApp1.SeccionClientes
         }
 
     }
-
 }

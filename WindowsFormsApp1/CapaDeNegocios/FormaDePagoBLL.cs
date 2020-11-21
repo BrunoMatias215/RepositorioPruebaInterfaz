@@ -38,7 +38,7 @@ namespace CapaDeNegocios
         public List<FormaDePagoBLL> CargarFormasDePago()
         {
 
-            CapaDeDatos.FormaDePago formadepagodal = new CapaDeDatos.FormaDePago();
+            CapaDeDatos.FormaDePagoDAL formadepagodal = new CapaDeDatos.FormaDePagoDAL();
 
             DataTable tablaformasdepago = formadepagodal.BuscarFormasDePago();
 

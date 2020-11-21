@@ -51,7 +51,7 @@ namespace CapaDeNegocios
         public List<ProductoBLL> CargarEntradas()
         {
 
-            CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
+            CapaDeDatos.ProductoDAL productodal = new CapaDeDatos.ProductoDAL();
 
             DataTable tablaproductos = productodal.BuscarEntradas();
 
@@ -89,7 +89,7 @@ namespace CapaDeNegocios
         public List<ProductoBLL> CargarOmelletes ()
         {
 
-            CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
+            CapaDeDatos.ProductoDAL productodal = new CapaDeDatos.ProductoDAL();
 
             DataTable tablaproductos = productodal.BuscarOmelletes();
 
@@ -127,7 +127,7 @@ namespace CapaDeNegocios
         public List<ProductoBLL> CargarTortillas()
         {
 
-            CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
+            CapaDeDatos.ProductoDAL productodal = new CapaDeDatos.ProductoDAL();
 
             DataTable tablaproductos = productodal.BuscarTortillas();
 
@@ -165,7 +165,7 @@ namespace CapaDeNegocios
         public List<ProductoBLL> CargarMilanesas()
         {
 
-            CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
+            CapaDeDatos.ProductoDAL productodal = new CapaDeDatos.ProductoDAL();
 
             DataTable tablaproductos = productodal.BuscarMilanesas();
 
@@ -203,7 +203,7 @@ namespace CapaDeNegocios
         public List<ProductoBLL> CargarSupremas()
         {
 
-            CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
+            CapaDeDatos.ProductoDAL productodal = new CapaDeDatos.ProductoDAL();
 
             DataTable tablaproductos = productodal.BuscarSupremas();
 
@@ -241,7 +241,7 @@ namespace CapaDeNegocios
         public List<ProductoBLL> CargarMatambre()
         {
 
-            CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
+            CapaDeDatos.ProductoDAL productodal = new CapaDeDatos.ProductoDAL();
 
             DataTable tablaproductos = productodal.BuscarMatambre();
 
@@ -279,7 +279,7 @@ namespace CapaDeNegocios
         public List<ProductoBLL> CargarGuarnicion()
         {
 
-            CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
+            CapaDeDatos.ProductoDAL productodal = new CapaDeDatos.ProductoDAL();
 
             DataTable tablaproductos = productodal.BuscarGuarnicion();
 
@@ -317,7 +317,7 @@ namespace CapaDeNegocios
         public List<ProductoBLL> CargarPollos()
         {
 
-            CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
+            CapaDeDatos.ProductoDAL productodal = new CapaDeDatos.ProductoDAL();
 
             DataTable tablaproductos = productodal.BuscarPollos();
 
@@ -355,7 +355,7 @@ namespace CapaDeNegocios
         public List<ProductoBLL> CargarParillas()
         {
 
-            CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
+            CapaDeDatos.ProductoDAL productodal = new CapaDeDatos.ProductoDAL();
 
             DataTable tablaproductos = productodal.BuscarParillas();
 
@@ -393,7 +393,7 @@ namespace CapaDeNegocios
         public List<ProductoBLL> CargarPescados()
         {
 
-            CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
+            CapaDeDatos.ProductoDAL productodal = new CapaDeDatos.ProductoDAL();
 
             DataTable tablaproductos = productodal.BuscarPescados();
 
@@ -431,7 +431,7 @@ namespace CapaDeNegocios
         public List<ProductoBLL> CargarEnsaladas()
         {
 
-            CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
+            CapaDeDatos.ProductoDAL productodal = new CapaDeDatos.ProductoDAL();
 
             DataTable tablaproductos = productodal.BuscarEnsaladas();
 
@@ -469,7 +469,7 @@ namespace CapaDeNegocios
         public List<ProductoBLL> CargarEnsaladasEsp()
         {
 
-            CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
+            CapaDeDatos.ProductoDAL productodal = new CapaDeDatos.ProductoDAL();
 
             DataTable tablaproductos = productodal.BuscarEnsaladasEsp();
 
@@ -507,7 +507,7 @@ namespace CapaDeNegocios
         public List<ProductoBLL> CargarTradicionales()
         {
 
-            CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
+            CapaDeDatos.ProductoDAL productodal = new CapaDeDatos.ProductoDAL();
 
             DataTable tablaproductos = productodal.BuscarTradicionales();
 
@@ -545,7 +545,7 @@ namespace CapaDeNegocios
         public List<ProductoBLL> CargarEspecialesI()
         {
 
-            CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
+            CapaDeDatos.ProductoDAL productodal = new CapaDeDatos.ProductoDAL();
 
             DataTable tablaproductos = productodal.BuscarEspecialesI();
 
@@ -583,7 +583,7 @@ namespace CapaDeNegocios
         public List<ProductoBLL> CargarEspecialesII()
         {
 
-            CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
+            CapaDeDatos.ProductoDAL productodal = new CapaDeDatos.ProductoDAL();
 
             DataTable tablaproductos = productodal.BuscarEspecialesII();
 
@@ -621,7 +621,7 @@ namespace CapaDeNegocios
         public List<ProductoBLL> CargarFugazzas()
         {
 
-            CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
+            CapaDeDatos.ProductoDAL productodal = new CapaDeDatos.ProductoDAL();
 
             DataTable tablaproductos = productodal.BuscarFugazzas();
 
@@ -659,7 +659,7 @@ namespace CapaDeNegocios
         public List<ProductoBLL> CargarFugazzetas()
         {
 
-            CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
+            CapaDeDatos.ProductoDAL productodal = new CapaDeDatos.ProductoDAL();
 
             DataTable tablaproductos = productodal.BuscarFugazzetas();
 
@@ -697,7 +697,7 @@ namespace CapaDeNegocios
         public List<ProductoBLL> CargarCalzones()
         {
 
-            CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
+            CapaDeDatos.ProductoDAL productodal = new CapaDeDatos.ProductoDAL();
 
             DataTable tablaproductos = productodal.BuscarCalzones();
 
@@ -735,7 +735,7 @@ namespace CapaDeNegocios
         public List<ProductoBLL> CargarOtrasEspecialidades()
         {
 
-            CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
+            CapaDeDatos.ProductoDAL productodal = new CapaDeDatos.ProductoDAL();
 
             DataTable tablaproductos = productodal.BuscarOtrasEspecialidades();
 
@@ -773,7 +773,7 @@ namespace CapaDeNegocios
         public List<ProductoBLL> CargarEmpanadas()
         {
 
-            CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
+            CapaDeDatos.ProductoDAL productodal = new CapaDeDatos.ProductoDAL();
 
             DataTable tablaproductos = productodal.BuscarEmpanadas();
 
@@ -811,7 +811,7 @@ namespace CapaDeNegocios
         public List<ProductoBLL> CargarSandwiches()
         {
 
-            CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
+            CapaDeDatos.ProductoDAL productodal = new CapaDeDatos.ProductoDAL();
 
             DataTable tablaproductos = productodal.BuscarSandwiches();
 
@@ -849,7 +849,7 @@ namespace CapaDeNegocios
         public List<ProductoBLL> CargarPastas()
         {
 
-            CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
+            CapaDeDatos.ProductoDAL productodal = new CapaDeDatos.ProductoDAL();
 
             DataTable tablaproductos = productodal.BuscarPastas();
 
@@ -887,7 +887,7 @@ namespace CapaDeNegocios
         public List<ProductoBLL> CargarBebidas()
         {
 
-            CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
+            CapaDeDatos.ProductoDAL productodal = new CapaDeDatos.ProductoDAL();
 
             DataTable tablaproductos = productodal.BuscarBebidas();
 
@@ -925,7 +925,7 @@ namespace CapaDeNegocios
         public List<ProductoBLL> CargarPostres()
         {
 
-            CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
+            CapaDeDatos.ProductoDAL productodal = new CapaDeDatos.ProductoDAL();
 
             DataTable tablaproductos = productodal.BuscarPostres();
 
@@ -963,7 +963,7 @@ namespace CapaDeNegocios
         public List<ProductoBLL> CargarMenus()
         {
 
-            CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
+            CapaDeDatos.ProductoDAL productodal = new CapaDeDatos.ProductoDAL();
 
             DataTable tablaproductos = productodal.BuscarMenus();
 
@@ -1001,7 +1001,7 @@ namespace CapaDeNegocios
         public List<ProductoBLL> CargarPromos()
         {
 
-            CapaDeDatos.Producto productodal = new CapaDeDatos.Producto();
+            CapaDeDatos.ProductoDAL productodal = new CapaDeDatos.ProductoDAL();
 
             DataTable tablaproductos = productodal.BuscarPromos();
 

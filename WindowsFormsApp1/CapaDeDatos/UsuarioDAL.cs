@@ -10,8 +10,6 @@ namespace CapaDeDatos
     public class UsuarioDAL
     {
 
-
-
         public DataTable BuscarUsuario()
         {
 
@@ -28,9 +26,6 @@ namespace CapaDeDatos
             return objetotabla;
 
         }
-
-
-        
 
     }
 }

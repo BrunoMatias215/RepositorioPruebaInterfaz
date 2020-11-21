@@ -71,7 +71,7 @@ namespace CapaDeNegocios
 
             int cantidaddefilarafectadas = 0;
 
-            CapaDeDatos.DetallePedido detallepedido = new CapaDeDatos.DetallePedido();
+            CapaDeDatos.DetallePedidoDAL detallepedido = new CapaDeDatos.DetallePedidoDAL();
 
             detallepedido.CrearDetallePedido(this.idproducto, this.idpedido, this.cantidad, this.precioventa);
 
@@ -82,7 +82,7 @@ namespace CapaDeNegocios
         public DataTable getReferenciaIdPedido ()
         {
 
-            CapaDeDatos.DetallePedido detallepedido = new CapaDeDatos.DetallePedido();
+            CapaDeDatos.DetallePedidoDAL detallepedido = new CapaDeDatos.DetallePedidoDAL();
 
             this.referenciaIdPedido = detallepedido.getReferenciaIdPedido();
 

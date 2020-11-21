@@ -33,7 +33,7 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBoxCajaefectivoinicial = new System.Windows.Forms.TextBox();
+            this.textBoxCajaEfectivoInicial = new System.Windows.Forms.TextBox();
             this.BotonCrearCaja = new System.Windows.Forms.Button();
             this.BotonCerrarCaja = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -47,7 +47,7 @@
             this.comboUsuarios.FormattingEnabled = true;
             this.comboUsuarios.Location = new System.Drawing.Point(20, 274);
             this.comboUsuarios.Name = "comboUsuarios";
-            this.comboUsuarios.Size = new System.Drawing.Size(121, 23);
+            this.comboUsuarios.Size = new System.Drawing.Size(121, 21);
             this.comboUsuarios.TabIndex = 0;
             // 
             // label1
@@ -56,7 +56,7 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(17, 258);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 17);
+            this.label1.Size = new System.Drawing.Size(47, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Usuario";
             // 
@@ -75,7 +75,7 @@
             this.label2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(171, 258);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(89, 17);
+            this.label2.Size = new System.Drawing.Size(80, 13);
             this.label2.TabIndex = 3;
             this.label2.Text = "Efectivo Inicial";
             // 
@@ -85,17 +85,17 @@
             this.label3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(17, 18);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(38, 20);
+            this.label3.Size = new System.Drawing.Size(34, 17);
             this.label3.TabIndex = 4;
             this.label3.Text = "Caja";
             // 
-            // textBoxCajaefectivoinicial
+            // textBoxCajaEfectivoInicial
             // 
-            this.textBoxCajaefectivoinicial.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCajaefectivoinicial.Location = new System.Drawing.Point(174, 273);
-            this.textBoxCajaefectivoinicial.Name = "textBoxCajaefectivoinicial";
-            this.textBoxCajaefectivoinicial.Size = new System.Drawing.Size(121, 24);
-            this.textBoxCajaefectivoinicial.TabIndex = 5;
+            this.textBoxCajaEfectivoInicial.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxCajaEfectivoInicial.Location = new System.Drawing.Point(174, 273);
+            this.textBoxCajaEfectivoInicial.Name = "textBoxCajaEfectivoInicial";
+            this.textBoxCajaEfectivoInicial.Size = new System.Drawing.Size(121, 22);
+            this.textBoxCajaEfectivoInicial.TabIndex = 5;
             // 
             // BotonCrearCaja
             // 
@@ -129,7 +129,7 @@
             this.panel1.Controls.Add(this.comboUsuarios);
             this.panel1.Controls.Add(this.BotonCrearCaja);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.textBoxCajaefectivoinicial);
+            this.panel1.Controls.Add(this.textBoxCajaEfectivoInicial);
             this.panel1.Controls.Add(this.dataGridView1);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Location = new System.Drawing.Point(12, 12);
@@ -161,7 +161,7 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBoxCajaefectivoinicial;
+        private System.Windows.Forms.TextBox textBoxCajaEfectivoInicial;
         private System.Windows.Forms.Button BotonCrearCaja;
         private System.Windows.Forms.Button BotonCerrarCaja;
         private System.Windows.Forms.Panel panel1;

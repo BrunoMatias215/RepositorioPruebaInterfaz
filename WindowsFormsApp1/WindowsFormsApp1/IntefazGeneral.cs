@@ -63,9 +63,33 @@ namespace WindowsFormsApp1
 
             this.label2.ForeColor = Color.White;
 
-            this.label2.Text = "Legajo ";
+            this.label2.Text = "Legajo "+ this.usuario.Legajo;
 
             this.CentrarElemento(this.MenuOpciones, this.label2);
+
+            this.label3.ForeColor = Color.White;
+
+            if (this.usuario.Idusuariocategoria == 1)
+            {
+
+                this.label3.Text = "[Dueño]";
+
+            }
+            else
+            {
+
+                this.label3.Text = "[Encargado]";
+
+            }
+
+            if (this.label3.Text == "[Encargado]")
+            {
+
+                this.BotonGestion.Enabled = false;
+
+            }
+
+            this.CentrarElemento(this.MenuOpciones, this.label3);
 
             this.BotonPedidos.ForeColor = Color.White;
 

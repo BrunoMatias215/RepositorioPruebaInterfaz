@@ -15,6 +15,10 @@ namespace WindowsFormsApp1
     public partial class InterfazInicioDeSesion : Form
     {
 
+        private List<UsuarioBLL> listadeusuarios;
+
+        public List<UsuarioBLL> Listadeusuarios { get => listadeusuarios; set => listadeusuarios = value; }
+
         public InterfazInicioDeSesion()
         {
 
@@ -77,6 +81,12 @@ namespace WindowsFormsApp1
 
             this.label4.ForeColor = Color.White;
 
+            // Cargar Usuarios
+
+            UsuarioBLL usuario = new UsuarioBLL();
+        
+            this.listadeusuarios = usuario.CargarUsuarios();
+
         }
 
         private void BotonIniciarSesion_Click(object sender, EventArgs e)
@@ -99,16 +109,30 @@ namespace WindowsFormsApp1
             else
             {
 
-                if (nombredeusuario == "admin" && contraseña == "1234")
+                UsuarioBLL usuario = null;
+
+                int contadorusuarios = 0;
+
+                foreach (UsuarioBLL usuarioelemento in this.listadeusuarios)
                 {
 
-                    UsuarioBLL usuario = new UsuarioBLL(nombredeusuario, int.Parse(contraseña));
+                    contadorusuarios++;
 
-                    InterfazGeneral interfazgeneral = new InterfazGeneral(usuario, this);
+                    if ((nombredeusuario == usuarioelemento.Nombre) && (contraseña == usuarioelemento.Contraseña.ToString()))
+                    {
 
-                    this.Visible = false;
+                        usuario = usuarioelemento;
 
-                    interfazgeneral.Show();
+                        break;
+
+                    }
+      
+                }
+
+                if (usuario == null)
+                {
+
+                    MessageBox.Show("Usuario no registrado", "Iniciar Sesión");
 
                     this.textBox1.Text = "";
 
@@ -118,14 +142,18 @@ namespace WindowsFormsApp1
                 else
                 {
 
-                    MessageBox.Show("Nombre de usuario o contraseña incorrecta", "Iniciar Sesión");
+                    InterfazGeneral interfazgeneral = new InterfazGeneral(usuario, this);
+
+                    interfazgeneral.Show();
+
+                    this.Visible = false;
 
                     this.textBox1.Text = "";
 
                     this.textBox2.Text = "";
 
                 }
-
+  
             }
 
         }

@@ -220,7 +220,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Name = "InterfazInicioDeSesion";
-            this.Text = "**";
+            this.Text = "InterfazInicioDeSesion";
             this.Load += new System.EventHandler(this.InterfazInicioDeSesion_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

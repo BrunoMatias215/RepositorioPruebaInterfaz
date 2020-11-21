@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InterfazGeneral));
             this.MenuOpciones = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.BotonCerrarSesion = new System.Windows.Forms.Button();
             this.BotonGestion = new System.Windows.Forms.Button();
@@ -49,6 +50,7 @@
             // 
             // MenuOpciones
             // 
+            this.MenuOpciones.Controls.Add(this.label3);
             this.MenuOpciones.Controls.Add(this.label2);
             this.MenuOpciones.Controls.Add(this.BotonCerrarSesion);
             this.MenuOpciones.Controls.Add(this.BotonGestion);
@@ -63,11 +65,21 @@
             this.MenuOpciones.Size = new System.Drawing.Size(183, 673);
             this.MenuOpciones.TabIndex = 1;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(8, 135);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(51, 20);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "label3";
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(8, 118);
+            this.label2.Location = new System.Drawing.Point(8, 105);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(51, 20);
             this.label2.TabIndex = 6;
@@ -142,7 +154,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(8, 83);
+            this.label1.Location = new System.Drawing.Point(8, 76);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(51, 20);
             this.label1.TabIndex = 1;
@@ -223,6 +235,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label3;
     }
 }
 
