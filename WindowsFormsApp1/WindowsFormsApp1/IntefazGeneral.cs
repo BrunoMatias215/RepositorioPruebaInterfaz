@@ -47,7 +47,9 @@ namespace WindowsFormsApp1
 
             this.CenterToScreen();
 
-            this.formulariopedidos = new FormularioPedidos();
+            int idusuario = this.usuario.Legajo;
+
+            this.formulariopedidos = new FormularioPedidos(idusuario);
 
             this.formulariopedidos.TopLevel = false;
 
@@ -144,7 +146,9 @@ namespace WindowsFormsApp1
 
             this.PanelInterfaz.Controls.Remove(this.PanelInterfaz.Controls[0]);
 
-            this.formulariopedidos = new FormularioPedidos();
+            int idusuario = this.usuario.Legajo;
+
+            this.formulariopedidos = new FormularioPedidos(idusuario);
 
             this.formulariopedidos.TopLevel = false;
 

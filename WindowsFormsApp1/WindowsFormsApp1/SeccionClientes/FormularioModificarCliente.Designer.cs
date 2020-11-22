@@ -59,6 +59,7 @@
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.ForeColor = System.Drawing.Color.White;
             this.textBox1.Location = new System.Drawing.Point(25, 49);
+            this.textBox1.MaxLength = 20;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(186, 13);
             this.textBox1.TabIndex = 1;
@@ -68,6 +69,7 @@
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.ForeColor = System.Drawing.Color.White;
             this.textBox2.Location = new System.Drawing.Point(25, 114);
+            this.textBox2.MaxLength = 20;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(186, 13);
             this.textBox2.TabIndex = 3;
@@ -87,6 +89,7 @@
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox3.ForeColor = System.Drawing.Color.White;
             this.textBox3.Location = new System.Drawing.Point(25, 177);
+            this.textBox3.MaxLength = 20;
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(186, 13);
             this.textBox3.TabIndex = 5;
@@ -106,6 +109,7 @@
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox4.ForeColor = System.Drawing.Color.White;
             this.textBox4.Location = new System.Drawing.Point(25, 239);
+            this.textBox4.MaxLength = 50;
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(186, 13);
             this.textBox4.TabIndex = 7;

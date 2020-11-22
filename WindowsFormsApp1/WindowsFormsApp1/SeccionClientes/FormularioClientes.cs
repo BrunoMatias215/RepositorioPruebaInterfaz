@@ -69,11 +69,15 @@ namespace WindowsFormsApp1.SeccionClientes
 
             this.dataGridView1.RowsDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
 
+            this.dataGridView1.ReadOnly = true;
+
             this.dataGridView1.BackgroundColor = Color.Lavender;
 
             ClienteBLL cliente = new ClienteBLL();
 
             this.dataGridView1.DataSource = cliente.CargarClientesDataTable();
+
+            this.dataGridView1.MultiSelect = false;
 
             // Pedidos
 
@@ -94,6 +98,8 @@ namespace WindowsFormsApp1.SeccionClientes
             this.dataGridView2.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
 
             this.dataGridView2.RowsDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
+            this.dataGridView2.ReadOnly = true;
 
             this.dataGridView2.BackgroundColor = Color.Lavender;
 
@@ -116,6 +122,8 @@ namespace WindowsFormsApp1.SeccionClientes
             this.dataGridView3.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
 
             this.dataGridView3.RowsDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
+            this.dataGridView3.ReadOnly = true;
 
             this.dataGridView3.BackgroundColor = Color.Lavender;
 
@@ -219,6 +227,23 @@ namespace WindowsFormsApp1.SeccionClientes
             formulariomodificarcliente.ShowDialog();
 
             this.dataGridView1.DataSource = cliente.CargarClientesDataTable();
+
+            this.dataGridView2.DataSource = null;
+
+            this.dataGridView3.DataSource = null;
+
+        }
+
+        private void dataGridView1_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+
+            int idcliente;
+
+            idcliente = int.Parse(this.dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
+
+            PedidoBLL pedido = new PedidoBLL();
+
+            this.dataGridView2.DataSource = pedido.CargarPedidosSegunCliente(idcliente);
 
         }
 

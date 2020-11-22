@@ -14,12 +14,18 @@ namespace SeccionesFormularios
     public partial class SubSeccionCrearPedidos : Form
     {
 
-        public SubSeccionCrearPedidos()
+        private int idusuario;
+
+        public SubSeccionCrearPedidos(int pidusuario)
         {
 
             InitializeComponent();
 
+            this.idusuario = pidusuario;
+
         }
+
+        public int Idusuario { get => idusuario; set => idusuario = value; }
 
         private void SubSeccionPedidos_Load(object sender, EventArgs e)
         {
@@ -68,7 +74,7 @@ namespace SeccionesFormularios
 
             this.ListaDeDetallesPedidos.DisplayMember = "informacion";
 
-            this.comboBoxCantidad.Text = "1";
+            this.comboBoxCantidad.Text = "";
 
             for (int i = 1; i <= 10; i++)
             {
@@ -697,7 +703,7 @@ namespace SeccionesFormularios
 
                 }
 
-                this.Total.Text = "Total: " + acumuladorprecio.ToString();
+                this.Total.Text = acumuladorprecio.ToString();
 
                 this.comboBoxCantidad.Text = "1";
 
@@ -724,7 +730,7 @@ namespace SeccionesFormularios
 
                 }
 
-                this.Total.Text = "Total: " + acumuladorprecio.ToString();
+                this.Total.Text = acumuladorprecio.ToString();
 
             }
             else
@@ -761,15 +767,19 @@ namespace SeccionesFormularios
 
                     CapaDeNegocios.PedidoBLL pedido = new CapaDeNegocios.PedidoBLL();
 
-                    pedido.Idformadepago = ((FormaDePagoBLL)this.comboBoxFormasDePago.SelectedItem).Idformadepago;
-
                     pedido.Idcliente = ((ClienteBLL)this.comboBoxClientes.SelectedItem).Idcliente;
 
-                    pedido.Idusuario = 1;
+                    pedido.Idformadepago = ((FormaDePagoBLL)this.comboBoxFormasDePago.SelectedItem).Idformadepago;
+
+                    pedido.Idusuario = this.idusuario;
 
                     pedido.Observaciones = this.Observaciones.Text;
 
+                    pedido.Idcadete = 1;
+
                     pedido.Idestadocategoria = 1;
+
+                    pedido.Total = int.Parse(this.Total.Text);
 
                     int valorcrearpedido = pedido.CrearPedido();
 
@@ -790,9 +800,9 @@ namespace SeccionesFormularios
 
                         int valordetallepedido = detallepedido.CrearDetallePedido();
 
-                        MessageBox.Show("Detalle pedido creado");
-
                     }
+
+                    MessageBox.Show("Pedido Creado", "Crear Pedido");
                     
                 }
 

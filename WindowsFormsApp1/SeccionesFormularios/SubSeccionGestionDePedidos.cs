@@ -105,6 +105,8 @@ namespace SeccionesFormularios
 
             this.dataGridView1.RowsDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
 
+            this.dataGridView1.ReadOnly = true;
+
             this.dataGridView1.BackgroundColor = Color.Lavender;
 
         }

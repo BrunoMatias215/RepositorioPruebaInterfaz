@@ -24,6 +24,8 @@ namespace CapaDeNegocios
 
         private int idestadocategoria;
 
+        private int total;
+
         public PedidoBLL()
         {
 
@@ -43,14 +45,16 @@ namespace CapaDeNegocios
 
         public int Idestadocategoria { get => idestadocategoria; set => idestadocategoria = value; }
 
+        public int Total { get => total; set => total = value; }
+
         public int CrearPedido()
         {
 
             int cantidaddefilarafectadas = 0;
 
-            CapaDeDatos.PedidosDAL pedido = new CapaDeDatos.PedidosDAL();
+            CapaDeDatos.PedidoDAL pedido = new CapaDeDatos.PedidoDAL();
 
-            cantidaddefilarafectadas = pedido.CrearPedido(this.Idformadepago, this.Idcliente, this.Idusuario, this.Observaciones, this.Idestadocategoria);
+            cantidaddefilarafectadas = pedido.CrearPedido(this.Idformadepago, this.Idcliente, this.Idusuario, this.Observaciones, this.Idcadete, this.Idestadocategoria, this.Total);
 
             return cantidaddefilarafectadas;
 
@@ -59,7 +63,7 @@ namespace CapaDeNegocios
         public DataTable CargarPedidosActivos()
         {
 
-            CapaDeDatos.PedidosDAL pedidodal = new CapaDeDatos.PedidosDAL();
+            CapaDeDatos.PedidoDAL pedidodal = new CapaDeDatos.PedidoDAL();
 
             DataTable tablapedidosactivos = pedidodal.BuscarPedidosActivos();
 
@@ -70,9 +74,20 @@ namespace CapaDeNegocios
         public void ModificarEstadoPedido (int idpedido, int idestadocategoria)
         {
 
-            PedidosDAL pedido = new PedidosDAL();
+            PedidoDAL pedido = new PedidoDAL();
 
             pedido.ModificarEstadoPedido(idpedido, idestadocategoria);
+
+        }
+
+        public DataTable CargarPedidosSegunCliente (int pidcliente)
+        {
+
+            CapaDeDatos.PedidoDAL pedidodal = new CapaDeDatos.PedidoDAL();
+
+            DataTable tablapedidos = pedidodal.BuscarPedidosSegunCliente(pidcliente);
+
+            return tablapedidos;
 
         }
 

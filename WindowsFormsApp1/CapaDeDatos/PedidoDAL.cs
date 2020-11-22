@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 namespace CapaDeDatos
 {
 
-    public class PedidosDAL
+    public class PedidoDAL
     {
 
         public int CrearPedido(int pidformadepago, int pidcliente, int pidusuario, 
-            string pobservaciones, int pidestadocategoria)
+            string pobservaciones, int pidcadete, int pidestadocategoria, int ptotal)
         {
   
             int Filasafectadas = 1;
@@ -22,8 +22,8 @@ namespace CapaDeDatos
 
             objetoconexion.Conectar();
 
-            objetoconexion.EscrituraPorComando("INSERT INTO Pedido (idformadepago, idcliente, idusuario, fechayhora, observaciones, idestadocategoria) VALUES (" +
-                pidformadepago + "," + pidcliente + "," + pidusuario + ", CURRENT_TIMESTAMP ,'" + pobservaciones + "," + pidestadocategoria + ")");
+            objetoconexion.EscrituraPorComando("INSERT INTO Pedido (idformadepago, idcliente, idusuario, fechayhora, observaciones, idcadete, idestadocategoria, total) VALUES (" +
+                pidformadepago + "," + pidcliente + "," + pidusuario + ", CURRENT_TIMESTAMP ,'" + pobservaciones + "'," + pidcadete + ", "+ pidestadocategoria + "," + ptotal+ ")");
 
             objetoconexion.Desconectar();
 
@@ -62,6 +62,25 @@ namespace CapaDeDatos
             objetoconexion.EscribirPorStoreProcedure("SPModificarEstadoPedido", parametros);
 
             objetoconexion.Desconectar();
+
+        }
+
+        public DataTable BuscarPedidosSegunCliente(int pidcliente)
+        {
+
+            SqlParameter[] parametros = new SqlParameter[1];
+
+            Conexion objetoconexion = new Conexion();
+
+            objetoconexion.Conectar();
+
+            parametros[0] = objetoconexion.CrearParametro("@idcliente", pidcliente.ToString());
+
+            DataTable objetotabla = objetoconexion.LeerPorStoreProcedureConParametros("SPBuscarPedidosSegunCliente", parametros);
+
+            objetoconexion.Desconectar();
+
+            return objetotabla;
 
         }
 

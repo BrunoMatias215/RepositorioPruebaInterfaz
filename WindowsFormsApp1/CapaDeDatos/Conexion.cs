@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
+using System.Windows.Forms;
 
 namespace CapaDeDatos
 {
@@ -150,7 +151,6 @@ namespace CapaDeDatos
                 this.Desconectar();
             }
 
-
             return unaTabla;
 
         }
@@ -223,6 +223,70 @@ namespace CapaDeDatos
             }
 
             return filasAfectadas;
+
+        }
+
+        public DataTable LeerPorStoreProcedureConParametros(string pNombreStoreProcedure, SqlParameter[] pParametrosSql)
+        {
+
+            int filasAfectadas = 0;
+
+            DataTable unaTabla = new DataTable();
+
+            //Instancio un objeto del tipo SqlCommand
+            SqlCommand objComando = new SqlCommand();
+
+            //Me conecto...
+            this.Conectar();
+
+            try
+            {
+                objComando.CommandText = pNombreStoreProcedure;
+
+                objComando.CommandType = CommandType.StoredProcedure;
+
+                objComando.Connection = this.objetoconexion;
+
+                if (pParametrosSql.Length > 0)
+                {
+
+                    objComando.Parameters.AddRange(pParametrosSql);
+                    //El método ExecuteNonQuery() me devuelve la cantidad de filas afectadas.
+                    //filasAfectadas = objComando.ExecuteNonQuery();
+
+                }
+                else
+                {
+                    //retorno -1 porque la lista de parametros Sql tiene 0 ítems...
+                    filasAfectadas = -1;
+
+                }
+
+                //Instancio un adaptador con el parametro SqlCommand
+                SqlDataAdapter objAdaptador = new SqlDataAdapter(objComando);
+
+                //Lleno la tabla, el objeto unaTabla con el adaptador
+                objAdaptador.Fill(unaTabla);
+
+                filasAfectadas = objComando.ExecuteNonQuery();
+
+            }
+            catch (Exception)
+            {
+                //Como hay error... por el motivo que sea asigno el resultado a null
+                unaTabla = null;
+
+                throw;
+
+            }
+            finally
+            {
+
+                //Pase lo que pase me desconecto
+                this.Desconectar();
+            }
+
+            return unaTabla;
 
         }
 

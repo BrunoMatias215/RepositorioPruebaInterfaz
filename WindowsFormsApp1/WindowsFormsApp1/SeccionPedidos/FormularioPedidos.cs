@@ -18,10 +18,14 @@ namespace WindowsFormsApp1
 
         private SubSeccionGestionDePedidos subsecciongestiondepedidos;
 
-        public FormularioPedidos()
+        private int idusuario;
+
+        public FormularioPedidos(int pidusuario)
         {
 
             InitializeComponent();
+
+            this.idusuario = pidusuario;
 
             this.BarraHerramientas.BackColor = Color.FromArgb(20, 34, 56);
 
@@ -37,7 +41,7 @@ namespace WindowsFormsApp1
 
             this.BotonGestionDePedido.FlatAppearance.MouseOverBackColor = Color.FromArgb(95, 109, 149);
 
-            this.subseccioncrearpedidos = new SubSeccionCrearPedidos();
+            this.subseccioncrearpedidos = new SubSeccionCrearPedidos(this.idusuario);
 
             this.subseccioncrearpedidos.TopLevel = false;
 
@@ -64,7 +68,7 @@ namespace WindowsFormsApp1
 
                 this.subsecciongestiondepedidos.Close();
 
-                this.subseccioncrearpedidos = new SubSeccionCrearPedidos();
+                this.subseccioncrearpedidos = new SubSeccionCrearPedidos(this.idusuario);
 
                 this.subseccioncrearpedidos.TopLevel = false;
 

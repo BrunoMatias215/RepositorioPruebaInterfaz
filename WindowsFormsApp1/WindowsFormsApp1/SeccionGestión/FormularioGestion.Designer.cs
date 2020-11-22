@@ -321,7 +321,7 @@
             this.panel2.Controls.Add(this.comboBoxAño);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.BotonVerPedidos);
-            this.panel2.Location = new System.Drawing.Point(12, 58);
+            this.panel2.Location = new System.Drawing.Point(12, 79);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(771, 543);
             this.panel2.TabIndex = 21;
