@@ -1036,6 +1036,32 @@ namespace CapaDeNegocios
 
         }
 
+        public DataTable CargarTodolosproductos()
+        {
+
+            CapaDeDatos.ProductoDAL productodal = new CapaDeDatos.ProductoDAL();
+
+            DataTable tablaproductos = productodal.BuscarTodo();
+
+            return tablaproductos;
+
+        }
+
+        public DataTable FIltroProductos(string pfiltro)
+        {
+
+            CapaDeDatos.ProductoDAL productodal = new CapaDeDatos.ProductoDAL();
+
+            DataTable tablaproductos = productodal.FiltroProductos(pfiltro);
+
+            return tablaproductos;
+
+        }
+
+
     }
+
+
+
 
 }

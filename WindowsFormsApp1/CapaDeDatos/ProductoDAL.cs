@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -402,6 +403,42 @@ namespace CapaDeDatos
             return objetotabla;
 
         }
+        public DataTable BuscarTodo()
+        {
+
+            Conexion objetoconexion = new Conexion();
+
+            objetoconexion.Conectar();
+
+            DataTable objetotabla = objetoconexion.LeerPorStoreProcedure("SPBuscartodoslosproductos");
+
+            //DataTable objetotabla = objetoconexion.LecturaPorComando("SELECT * FROM Producto WHERE idproductocategoria = 1");
+
+            objetoconexion.Desconectar();
+
+            return objetotabla;
+
+        }
+
+        public DataTable FiltroProductos(string pfiltro)
+        {
+
+            SqlParameter[] parametros = new SqlParameter[1];
+
+            Conexion objetoconexion = new Conexion();
+
+            objetoconexion.Conectar();
+
+            parametros[0] = objetoconexion.CrearParametro("@filtro", pfiltro);
+
+            DataTable objetotabla = objetoconexion.LeerPorStoreProcedureConParametros("SPfiltroProductoPorNombreyCategoria", parametros);
+
+            objetoconexion.Desconectar();
+
+            return objetotabla;
+
+        }
+
 
     }
 
