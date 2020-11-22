@@ -4,6 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CapaDeDatos;
 
 namespace CapaDeNegocios
 {
@@ -156,6 +157,14 @@ namespace CapaDeNegocios
 
         }
 
+        public void AsignarCadete (int pidpedido, int pidcadete)
+        {
+
+            CadeteDAL cadete = new CadeteDAL();
+
+            cadete.AsignarCadete(pidpedido, pidcadete);
+
+        }
 
     }
 

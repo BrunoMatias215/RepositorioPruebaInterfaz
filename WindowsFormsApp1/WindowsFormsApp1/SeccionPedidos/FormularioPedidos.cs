@@ -89,7 +89,7 @@ namespace WindowsFormsApp1
 
                 this.subseccioncrearpedidos.Close();
 
-                this.subsecciongestiondepedidos = new SubSeccionGestionDePedidos();
+                this.subsecciongestiondepedidos = new SubSeccionGestionDePedidos(this.idusuario);
 
                 this.subsecciongestiondepedidos.FormBorderStyle = FormBorderStyle.None;
 

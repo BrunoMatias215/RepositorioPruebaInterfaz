@@ -78,7 +78,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.labelImporte = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -526,7 +526,7 @@
             // 
             this.Total.AutoSize = true;
             this.Total.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Total.Location = new System.Drawing.Point(970, 449);
+            this.Total.Location = new System.Drawing.Point(968, 449);
             this.Total.Name = "Total";
             this.Total.Size = new System.Drawing.Size(15, 17);
             this.Total.TabIndex = 12;
@@ -659,15 +659,15 @@
             this.label6.TabIndex = 18;
             this.label6.Text = "Observaciones";
             // 
-            // label8
+            // labelImporte
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(882, 449);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(61, 17);
-            this.label8.TabIndex = 22;
-            this.label8.Text = "Importe:";
+            this.labelImporte.AutoSize = true;
+            this.labelImporte.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelImporte.Location = new System.Drawing.Point(882, 449);
+            this.labelImporte.Name = "labelImporte";
+            this.labelImporte.Size = new System.Drawing.Size(61, 17);
+            this.labelImporte.TabIndex = 22;
+            this.labelImporte.Text = "Importe:";
             // 
             // SubSeccionCrearPedidos
             // 
@@ -675,7 +675,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1067, 592);
-            this.Controls.Add(this.label8);
+            this.Controls.Add(this.labelImporte);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.panel1);
@@ -756,6 +756,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label labelImporte;
     }
 }

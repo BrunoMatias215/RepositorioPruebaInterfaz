@@ -60,12 +60,12 @@ namespace CapaDeNegocios
 
         }
 
-        public DataTable CargarPedidosActivos()
+        public DataTable CargarPedidosActivos(int pidusuario)
         {
 
             CapaDeDatos.PedidoDAL pedidodal = new CapaDeDatos.PedidoDAL();
 
-            DataTable tablapedidosactivos = pedidodal.BuscarPedidosActivos();
+            DataTable tablapedidosactivos = pedidodal.BuscarPedidosActivos(pidusuario);
 
             return tablapedidosactivos;
 

@@ -97,6 +97,9 @@
     <EmbeddedResource Include="SubSeccionPersonal.resx">
       <DependentUpon>SubSeccionPersonal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SubSeccionProductos.resx">
+      <DependentUpon>SubSeccionProductos.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CapaDeNegocios\CapaDeNegocios.csproj">

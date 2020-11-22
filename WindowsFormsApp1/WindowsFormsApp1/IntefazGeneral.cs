@@ -144,72 +144,92 @@ namespace WindowsFormsApp1
         private void BotonPedidos_Click(object sender, EventArgs e)
         {
 
-            this.PanelInterfaz.Controls.Remove(this.PanelInterfaz.Controls[0]);
+            if (!(this.PanelInterfaz.Contains(this.formulariopedidos)))
+            {
 
-            int idusuario = this.usuario.Legajo;
+                this.PanelInterfaz.Controls.Remove(this.PanelInterfaz.Controls[0]);
 
-            this.formulariopedidos = new FormularioPedidos(idusuario);
+                int idusuario = this.usuario.Legajo;
 
-            this.formulariopedidos.TopLevel = false;
+                this.formulariopedidos = new FormularioPedidos(idusuario);
 
-            this.PanelInterfaz.Controls.Add(formulariopedidos);
+                this.formulariopedidos.TopLevel = false;
 
-            this.PanelInterfaz.Tag = formulariopedidos;
+                this.PanelInterfaz.Controls.Add(formulariopedidos);
 
-            this.formulariopedidos.Show();
+                this.PanelInterfaz.Tag = formulariopedidos;
+
+                this.formulariopedidos.Show();
+
+            }
 
         }
 
         private void BotonClientes_Click(object sender, EventArgs e)
         {
 
-            this.PanelInterfaz.Controls.Remove(this.PanelInterfaz.Controls[0]);
+            if (!(this.PanelInterfaz.Contains(this.formularioclientes)))
+            {
 
-            this.formularioclientes = new SeccionClientes.FormularioClientes();
+                this.PanelInterfaz.Controls.Remove(this.PanelInterfaz.Controls[0]);
 
-            this.formularioclientes.TopLevel = false;
+                this.formularioclientes = new SeccionClientes.FormularioClientes();
 
-            this.PanelInterfaz.Controls.Add(this.formularioclientes);
+                this.formularioclientes.TopLevel = false;
 
-            this.PanelInterfaz.Tag = this.formularioclientes;
+                this.PanelInterfaz.Controls.Add(this.formularioclientes);
 
-            this.formularioclientes.Dock = DockStyle.Fill;
+                this.PanelInterfaz.Tag = this.formularioclientes;
 
-            this.formularioclientes.Show();
+                this.formularioclientes.Dock = DockStyle.Fill;
+
+                this.formularioclientes.Show();
+
+            }
 
         }
 
         private void BotonCajas_Click(object sender, EventArgs e)
         {
 
-            this.PanelInterfaz.Controls.Remove(this.PanelInterfaz.Controls[0]);
+            if (!(this.PanelInterfaz.Contains(this.formulariocaja)))
+            {
 
-            this.formulariocaja = new SeccionCaja.FormularioCaja();
+                this.PanelInterfaz.Controls.Remove(this.PanelInterfaz.Controls[0]);
 
-            this.formulariocaja.TopLevel = false;
+                this.formulariocaja = new SeccionCaja.FormularioCaja();
 
-            this.PanelInterfaz.Controls.Add(this.formulariocaja);
+                this.formulariocaja.TopLevel = false;
 
-            this.PanelInterfaz.Tag = this.formulariocaja;
+                this.PanelInterfaz.Controls.Add(this.formulariocaja);
 
-            this.formulariocaja.Show();
+                this.PanelInterfaz.Tag = this.formulariocaja;
+
+                this.formulariocaja.Show();
+
+            }
 
         }
 
         private void BotonGestion_Click(object sender, EventArgs e)
         {
 
-            this.PanelInterfaz.Controls.Remove(this.PanelInterfaz.Controls[0]);
+            if (!(this.PanelInterfaz.Contains(this.formulariogestion)))
+            {
 
-            this.formulariogestion = new SeccionGestión.FormularioGestion();
+                this.PanelInterfaz.Controls.Remove(this.PanelInterfaz.Controls[0]);
 
-            this.formulariogestion.TopLevel = false;
+                this.formulariogestion = new SeccionGestión.FormularioGestion();
 
-            this.PanelInterfaz.Controls.Add(this.formulariogestion);
+                this.formulariogestion.TopLevel = false;
 
-            this.PanelInterfaz.Tag = this.formulariogestion;
+                this.PanelInterfaz.Controls.Add(this.formulariogestion);
 
-            this.formulariogestion.Show();
+                this.PanelInterfaz.Tag = this.formulariogestion;
+
+                this.formulariogestion.Show();
+
+            }
 
         }
 
@@ -247,10 +267,6 @@ namespace WindowsFormsApp1
 
         }
 
-        private void PanelInterfaz_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 
 }

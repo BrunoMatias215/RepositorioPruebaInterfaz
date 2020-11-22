@@ -76,6 +76,10 @@ namespace SeccionesFormularios
 
             this.comboBoxCantidad.Text = "";
 
+            this.labelImporte.ForeColor = Color.White;
+
+            this.Total.ForeColor = Color.White;
+
             for (int i = 1; i <= 10; i++)
             {
 
@@ -661,17 +665,11 @@ namespace SeccionesFormularios
         private void BotonAgregarProducto_Click(object sender, EventArgs e)
         {
 
-            if (this.comboBoxCantidad.SelectedItem == null || this.ListaDeProductos.SelectedItem == null)
-            {
-
-                MessageBox.Show("Faltan datos por completar.", "Agregar Producto");
-
-            }
-            else
+            if (this.comboBoxCantidad.SelectedItem != null && this.ListaDeProductos.SelectedItem != null)
             {
 
                 int idproducto = ((ProductoBLL)this.ListaDeProductos.SelectedItem).Idproducto;
-            
+
                 string descripcion = ((ProductoBLL)this.ListaDeProductos.SelectedItem).Descripcion;
 
                 int cantidad = int.Parse(this.comboBoxCantidad.Text);
@@ -705,7 +703,26 @@ namespace SeccionesFormularios
 
                 this.Total.Text = acumuladorprecio.ToString();
 
-                this.comboBoxCantidad.Text = "1";
+                this.comboBoxCantidad.SelectedItem = null;
+
+                this.comboBoxCantidad.Text = "";
+
+            }
+            else
+            {
+
+                if (this.comboBoxCantidad.SelectedItem == null)
+                {
+
+                    MessageBox.Show("No se ha especificado la cantidad del producto", "Agregar Producto");
+
+                }
+                else
+                {
+
+                    MessageBox.Show("No se ha seleccionado un producto para agregar al pedido", "Agregar Producto");
+
+                }
 
             }
 
@@ -803,14 +820,36 @@ namespace SeccionesFormularios
                     }
 
                     MessageBox.Show("Pedido Creado", "Crear Pedido");
-                    
+
+                    this.comboBoxCantidad.SelectedItem = null;
+
+                    this.comboBoxCantidad.Text = "";
+
+                    this.ListaDeProductos.SelectedItem = null;
+
+                    this.ListaDeProductos.Items.Clear();
+
+                    this.ListaDeDetallesPedidos.Items.Clear();
+
+                    this.comboBoxClientes.SelectedItem = null;
+
+                    this.comboBoxClientes.Text = "";
+
+                    this.comboBoxFormasDePago.SelectedItem = null;
+
+                    this.comboBoxClientes.Text = "";
+
+                    this.Observaciones.Text = "";
+
+                    this.Total.Text = "0";
+
                 }
 
             }
             else
             {
 
-                MessageBox.Show("No hay items para crear el pedido", "Error");
+                MessageBox.Show("No se agregaron productos para crear el pedido", "Error");
 
             }
 

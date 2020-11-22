@@ -90,9 +90,9 @@
             this.BotonCerrarSesion.FlatAppearance.BorderSize = 0;
             this.BotonCerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BotonCerrarSesion.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BotonCerrarSesion.Location = new System.Drawing.Point(12, 635);
+            this.BotonCerrarSesion.Location = new System.Drawing.Point(12, 629);
             this.BotonCerrarSesion.Name = "BotonCerrarSesion";
-            this.BotonCerrarSesion.Size = new System.Drawing.Size(92, 26);
+            this.BotonCerrarSesion.Size = new System.Drawing.Size(94, 32);
             this.BotonCerrarSesion.TabIndex = 5;
             this.BotonCerrarSesion.Text = "Cerrar Sesion";
             this.BotonCerrarSesion.UseVisualStyleBackColor = true;

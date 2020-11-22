@@ -16,5 +16,10 @@ namespace SeccionesFormularios
         {
             InitializeComponent();
         }
+
+        private void SubSeccionProductos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

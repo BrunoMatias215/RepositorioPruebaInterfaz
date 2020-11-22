@@ -15,10 +15,14 @@ namespace SeccionesFormularios
     public partial class SubSeccionGestionDePedidos : Form
     {
 
-        public SubSeccionGestionDePedidos()
+        private int idusuario;
+
+        public SubSeccionGestionDePedidos(int pidusuario)
         {
 
             InitializeComponent();
+
+            this.idusuario = pidusuario;
 
         }
 
@@ -29,9 +33,9 @@ namespace SeccionesFormularios
 
             this.CentrarElemento(this, this.panel1);
 
-            this.comboBox1.DisplayMember = "descripcion";
+            this.comboBoxEstadoPedido.DisplayMember = "descripcion";
 
-            this.comboBox2.DisplayMember = "nombre";
+            this.comboBoxCadete.DisplayMember = "nombre";
 
             this.label1.ForeColor = Color.White;
 
@@ -55,7 +59,7 @@ namespace SeccionesFormularios
 
             CapaDeNegocios.PedidoBLL pedido = new CapaDeNegocios.PedidoBLL();
 
-            this.dataGridView1.DataSource = pedido.CargarPedidosActivos();
+            this.dataGridView1.DataSource = pedido.CargarPedidosActivos(this.idusuario);
 
             // Estados de Categorias
 
@@ -68,7 +72,7 @@ namespace SeccionesFormularios
             foreach (EstadoCategoriaBLL lineaestadocategoria in estadoscategoriasaagregar)
             {
 
-                this.comboBox1.Items.Add(lineaestadocategoria);
+                this.comboBoxEstadoPedido.Items.Add(lineaestadocategoria);
 
             }
 
@@ -83,7 +87,7 @@ namespace SeccionesFormularios
             foreach (CadeteBLL lineacadete in cadetesaagregar)
             {
 
-                this.comboBox2.Items.Add(lineacadete);
+                this.comboBoxCadete.Items.Add(lineacadete);
 
             }
 
@@ -131,24 +135,94 @@ namespace SeccionesFormularios
         private void BotonModificarEstado_Click(object sender, EventArgs e)
         {
 
-            if (this.dataGridView1.SelectedRows.Count > 0 && this.comboBox1.SelectedIndex >= 0)
+            if (this.dataGridView1.SelectedRows.Count > 0 && this.comboBoxEstadoPedido.SelectedIndex >= 0)
             {
 
-                PedidoBLL pedido = new PedidoBLL();
+                if (this.comboBoxEstadoPedido.SelectedItem != null && this.comboBoxEstadoPedido.Text == "Inicializado")
+                {
 
-                int idpedido = int.Parse(this.dataGridView1.SelectedRows[this.dataGridView1.SelectedRows.Count - 1].Cells[0].Value.ToString());
+                    if (this.dataGridView1.SelectedRows[0].Cells[4].Value.ToString() == "Inicializado")
+                    {
 
-                int idestadocategoria = ((EstadoCategoriaBLL)this.comboBox1.SelectedItem).Idestadocategoria;
+                        MessageBox.Show("El pedido ya se encuentra inicializado", "Modificar Pedido");
 
-                pedido.ModificarEstadoPedido(idpedido, idestadocategoria);
+                        this.comboBoxEstadoPedido.SelectedItem = null;
 
-                this.dataGridView1.DataSource = pedido.CargarPedidosActivos();
+                        this.comboBoxEstadoPedido.Text = "";
+
+                    }
+                    else
+                    {
+
+                        PedidoBLL pedido = new PedidoBLL();
+
+                        int idpedido = int.Parse(this.dataGridView1.SelectedRows[this.dataGridView1.SelectedRows.Count - 1].Cells[0].Value.ToString());
+
+                        int idestadocategoria = ((EstadoCategoriaBLL)this.comboBoxEstadoPedido.SelectedItem).Idestadocategoria;
+
+                        pedido.ModificarEstadoPedido(idpedido, idestadocategoria);
+
+                        this.dataGridView1.DataSource = pedido.CargarPedidosActivos(this.idusuario);
+
+                    }
+
+                }
+                else if (this.comboBoxEstadoPedido.SelectedItem != null && this.comboBoxEstadoPedido.Text == "Cancelado")
+                {
+
+
+
+                }else
+                {
+
+
+
+                }
 
             }
             else
             {
 
-                MessageBox.Show("Debe seleccionar un pedido y un estado para el mismo", "Modificar Estado");
+                if (this.dataGridView1.SelectedRows.Count <= 0)
+                {
+
+                    MessageBox.Show("Debe seleccionar un pedido", "Modificar Pedido");
+
+                }
+                else
+                {
+
+                    MessageBox.Show("Debe seleccionar un estado para el pedido", "Modificar Pedido");
+
+                }
+
+            }
+
+        }
+
+        private void BotonAsignarCadete_Click(object sender, EventArgs e)
+        {
+
+            if (this.dataGridView1.SelectedRows.Count > 0 && this.comboBoxCadete.SelectedItem != null && this.comboBoxCadete.Text != "")
+            {
+
+                int idpedido = int.Parse(this.dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
+
+                int idcadete = ((CadeteBLL)this.comboBoxCadete.SelectedItem).Idcadete;
+
+                CadeteBLL cadete = new CadeteBLL();
+
+                cadete.AsignarCadete(idpedido, idcadete);
+
+                PedidoBLL pedido = new PedidoBLL();
+
+                this.dataGridView1.DataSource = pedido.CargarPedidosActivos(this.idusuario);
+
+            }
+            else
+            {
+
+                MessageBox.Show("Debe seleccionar un cadete", "Asignar Cadete");
 
             }
 

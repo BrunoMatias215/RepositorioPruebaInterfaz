@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.BotonModificarEstado = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBoxEstadoPedido = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBoxCadete = new System.Windows.Forms.ComboBox();
             this.BotonAsignarCadete = new System.Windows.Forms.Button();
             this.BotonVerDetallePedido = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -48,8 +48,8 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(20, 35);
             this.dataGridView1.Name = "dataGridView1";
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.Size = new System.Drawing.Size(675, 250);
             this.dataGridView1.TabIndex = 0;
             // 
@@ -76,14 +76,14 @@
             this.BotonModificarEstado.UseVisualStyleBackColor = true;
             this.BotonModificarEstado.Click += new System.EventHandler(this.BotonModificarEstado_Click);
             // 
-            // comboBox1
+            // comboBoxEstadoPedido
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(20, 326);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 3;
+            this.comboBoxEstadoPedido.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxEstadoPedido.FormattingEnabled = true;
+            this.comboBoxEstadoPedido.Location = new System.Drawing.Point(20, 326);
+            this.comboBoxEstadoPedido.Name = "comboBoxEstadoPedido";
+            this.comboBoxEstadoPedido.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxEstadoPedido.TabIndex = 3;
             // 
             // label2
             // 
@@ -105,14 +105,14 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Cadete";
             // 
-            // comboBox2
+            // comboBoxCadete
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(302, 326);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 5;
+            this.comboBoxCadete.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxCadete.FormattingEnabled = true;
+            this.comboBoxCadete.Location = new System.Drawing.Point(302, 326);
+            this.comboBoxCadete.Name = "comboBoxCadete";
+            this.comboBoxCadete.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxCadete.TabIndex = 5;
             // 
             // BotonAsignarCadete
             // 
@@ -125,6 +125,7 @@
             this.BotonAsignarCadete.TabIndex = 7;
             this.BotonAsignarCadete.Text = "Asignar Cadete";
             this.BotonAsignarCadete.UseVisualStyleBackColor = true;
+            this.BotonAsignarCadete.Click += new System.EventHandler(this.BotonAsignarCadete_Click);
             // 
             // BotonVerDetallePedido
             // 
@@ -144,10 +145,10 @@
             this.panel1.Controls.Add(this.BotonModificarEstado);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.BotonVerDetallePedido);
-            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.comboBoxEstadoPedido);
             this.panel1.Controls.Add(this.dataGridView1);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.comboBox2);
+            this.panel1.Controls.Add(this.comboBoxCadete);
             this.panel1.Controls.Add(this.BotonAsignarCadete);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
@@ -176,10 +177,10 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button BotonModificarEstado;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBoxEstadoPedido;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBoxCadete;
         private System.Windows.Forms.Button BotonAsignarCadete;
         private System.Windows.Forms.Button BotonVerDetallePedido;
         private System.Windows.Forms.Panel panel1;

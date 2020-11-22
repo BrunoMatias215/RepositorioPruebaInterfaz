@@ -228,7 +228,13 @@ namespace WindowsFormsApp1.SeccionClientes
 
             this.dataGridView1.DataSource = cliente.CargarClientesDataTable();
 
-            this.dataGridView2.DataSource = null;
+            int idclientedatagridview;
+
+            idclientedatagridview = int.Parse(this.dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
+
+            PedidoBLL pedido = new PedidoBLL();
+
+            this.dataGridView2.DataSource = pedido.CargarPedidosSegunCliente(idclientedatagridview);
 
             this.dataGridView3.DataSource = null;
 
