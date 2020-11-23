@@ -60,7 +60,7 @@ namespace WindowsFormsApp1
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void BotonCrearPedido_Click(object sender, EventArgs e)
         {
 
             if (this.panel2.Contains(this.subsecciongestiondepedidos))
@@ -82,10 +82,11 @@ namespace WindowsFormsApp1
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void BotonGestionDePedido_Click(object sender, EventArgs e)
         {
 
-            if (this.panel2.Contains(this.subseccioncrearpedidos)) {
+            if (this.panel2.Contains(this.subseccioncrearpedidos))
+            {
 
                 this.subseccioncrearpedidos.Close();
 
@@ -102,7 +103,7 @@ namespace WindowsFormsApp1
                 this.subsecciongestiondepedidos.Show();
 
             }
-  
+
         }
 
     }

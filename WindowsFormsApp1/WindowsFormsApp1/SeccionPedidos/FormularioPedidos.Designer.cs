@@ -58,7 +58,7 @@
             this.BotonGestionDePedido.TabIndex = 1;
             this.BotonGestionDePedido.Text = "Gestión de Pedido";
             this.BotonGestionDePedido.UseVisualStyleBackColor = true;
-            this.BotonGestionDePedido.Click += new System.EventHandler(this.button2_Click);
+            this.BotonGestionDePedido.Click += new System.EventHandler(this.BotonGestionDePedido_Click);
             // 
             // BotonCrearPedido
             // 
@@ -71,7 +71,7 @@
             this.BotonCrearPedido.TabIndex = 0;
             this.BotonCrearPedido.Text = "Crear Pedido";
             this.BotonCrearPedido.UseVisualStyleBackColor = true;
-            this.BotonCrearPedido.Click += new System.EventHandler(this.button1_Click);
+            this.BotonCrearPedido.Click += new System.EventHandler(this.BotonCrearPedido_Click);
             // 
             // panel2
             // 
