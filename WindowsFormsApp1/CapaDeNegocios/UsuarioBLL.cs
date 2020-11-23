@@ -4,7 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using CapaDeDatos;
 namespace CapaDeNegocios
 {
 
@@ -153,6 +153,36 @@ namespace CapaDeNegocios
 
 
             return tablausuario;
+
+        }
+
+
+        public void CrearUsuario(string nombre,string apellido,  int CUIL, int contraseña, int idcategoria)
+        {
+
+            CapaDeDatos.UsuarioDAL usuario = new CapaDeDatos.UsuarioDAL();
+
+            usuario.CrearUsuario(nombre, apellido, CUIL, contraseña, idcategoria);
+
+        }
+
+        public void ModificarUsuario(int pidusuario, string pnombre, string  apellido, int CUIl, int contraseña , int idcategoria)
+       {
+
+            UsuarioDAL usuario = new UsuarioDAL();
+
+            usuario.ModificarUsuario(pidusuario, pnombre, apellido, CUIl, contraseña, idcategoria);
+
+
+        }
+
+
+        public void EliminarUsuario (int pid)
+        {
+
+            UsuarioDAL usuario = new UsuarioDAL();
+
+            usuario.EliminarUsuario(pid);
 
         }
 

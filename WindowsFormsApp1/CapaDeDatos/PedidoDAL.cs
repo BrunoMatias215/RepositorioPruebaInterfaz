@@ -40,7 +40,7 @@ namespace CapaDeDatos
 
             DataTable objetotabla = objetoconexion.LeerPorStoreProcedure("SPBuscarPedidosActivos");
 
-            objetoconexion.Desconectar();
+            objetoconexion.Desconectar();   
 
             return objetotabla;
 
