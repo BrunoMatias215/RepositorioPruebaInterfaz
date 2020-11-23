@@ -133,6 +133,38 @@ namespace SeccionesFormularios
 
             GridProductos.DataSource = productobll.CargarTodolosproductos();
         }
+
+        private void botonEliminarProducto_Click(object sender, EventArgs e)
+        {
+            
+                int idproducto;
+                idproducto = int.Parse(GridProductos.SelectedRows[0].Cells[0].Value.ToString());
+            string nombre = (GridProductos.SelectedRows[0].Cells[1].Value.ToString());
+            ProductoBLL producto = new ProductoBLL();
+
+                if (GridProductos.SelectedRows.Count == 1)
+                {
+                    DialogResult dialogResult = MessageBox.Show("¿Realmente quiere eliminar el producto "+nombre+"?", "Eliminar Producto", MessageBoxButtons.YesNo);
+                    if (dialogResult == DialogResult.Yes)
+                    {
+
+                    producto.EliminarProducto(idproducto);
+
+
+                    MessageBox.Show("El producto ha sido eliminado");
+
+                   
+                    GridProductos.DataSource = producto.CargarTodolosproductos();
+                }
+               
+                
+
+            }
+            else
+            {
+                MessageBox.Show("No se selecciono nigun producto");
+            }
+        }
     }
 }
 

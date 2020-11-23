@@ -484,6 +484,24 @@ namespace CapaDeDatos
 
         }
 
+        public void EliminarProducto(int pidproducto)
+        {
+
+            SqlParameter[] parametros = new SqlParameter[1];
+
+            Conexion objetoconexion = new Conexion();
+
+            objetoconexion.Conectar();
+
+            parametros[0] = objetoconexion.CrearParametro("@idproducto", pidproducto.ToString());
+
+
+            objetoconexion.EscribirPorStoreProcedure("SPEliminarProducto", parametros);
+
+            objetoconexion.Desconectar();
+
+        }
+
     }
 
 }

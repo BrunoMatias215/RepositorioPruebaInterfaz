@@ -45,6 +45,7 @@
     <Compile Include="CadeteDAL.cs" />
     <Compile Include="CajaDAL.cs" />
     <Compile Include="CategoriaProductoDAL.cs" />
+    <Compile Include="UsuarioCategoriaDAL.cs" />
     <Compile Include="UsuarioDAL.cs" />
     <Compile Include="ClienteDAL.cs" />
     <Compile Include="Conexion.cs" />

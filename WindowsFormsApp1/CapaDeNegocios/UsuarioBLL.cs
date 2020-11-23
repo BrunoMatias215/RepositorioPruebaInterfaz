@@ -26,6 +26,8 @@ namespace CapaDeNegocios
         private DateTime fechadecontratacion;
 
         private int idusuariocategoria;
+        string usuariocategoria;
+
 
         public UsuarioBLL()
         {
@@ -52,6 +54,26 @@ namespace CapaDeNegocios
             this.idusuariocategoria = pidcategoriausuario;
 
         }
+        public UsuarioBLL(int pid, string pNombre, string pApellido, int pCuil, DateTime pFechadeContratacion, string pcategoriausuario)
+        {
+
+            this.legajo = pid;
+
+            this.nombre = pNombre;
+
+            this.apellido = pApellido;
+
+            this.cuil = pCuil;
+
+          
+
+            this.fechadecontratacion = pFechadeContratacion;
+
+            this.usuariocategoria = pcategoriausuario;
+
+        }
+
+
 
         public int Legajo { get => legajo; set => legajo = value; }
 
@@ -68,6 +90,7 @@ namespace CapaDeNegocios
         public DateTime Fechadecontratacion { get => fechadecontratacion; set => fechadecontratacion = value; }
 
         public int Idusuariocategoria { get => idusuariocategoria; set => idusuariocategoria = value; }
+        public string Usuariocategoria { get => usuariocategoria; set => usuariocategoria = value; }
 
         public List<UsuarioBLL> CargarUsuarios()
         {
@@ -115,6 +138,21 @@ namespace CapaDeNegocios
             }
 
             return listausuarios;
+
+        }
+
+
+
+        public DataTable CargarUsuariossincontraseña()
+        {
+
+            CapaDeDatos.UsuarioDAL usuario = new CapaDeDatos.UsuarioDAL();
+
+            DataTable tablausuario = usuario.BuscarUsuariosincontraseña();
+
+
+
+            return tablausuario;
 
         }
 

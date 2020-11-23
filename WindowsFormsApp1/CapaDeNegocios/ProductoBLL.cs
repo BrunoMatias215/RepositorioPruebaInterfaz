@@ -1078,6 +1078,15 @@ namespace CapaDeNegocios
 
         }
 
+        public void EliminarProducto(int pidproducto)
+        {
+
+            ProductoDAL producto = new ProductoDAL();
+
+            producto.EliminarProducto(pidproducto);
+
+        }
+
     }
 
 
