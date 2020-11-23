@@ -41,6 +41,7 @@
             this.botonEliminarProducto = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.textfiltroproducto = new System.Windows.Forms.TextBox();
+            this.botonactulizar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.GridProductos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -110,6 +111,7 @@
             this.BotonCrearProducto.TabIndex = 7;
             this.BotonCrearProducto.Text = "Crear Producto";
             this.BotonCrearProducto.UseVisualStyleBackColor = true;
+            this.BotonCrearProducto.Click += new System.EventHandler(this.BotonCrearProducto_Click);
             // 
             // GridProductos
             // 
@@ -122,16 +124,17 @@
             // 
             // botonModificarProducto
             // 
-            this.botonModificarProducto.Location = new System.Drawing.Point(902, 186);
+            this.botonModificarProducto.Location = new System.Drawing.Point(902, 240);
             this.botonModificarProducto.Name = "botonModificarProducto";
             this.botonModificarProducto.Size = new System.Drawing.Size(135, 40);
             this.botonModificarProducto.TabIndex = 9;
             this.botonModificarProducto.Text = "Modificiar Producto";
             this.botonModificarProducto.UseVisualStyleBackColor = true;
+            this.botonModificarProducto.Click += new System.EventHandler(this.botonModificarProducto_Click);
             // 
             // botonEliminarProducto
             // 
-            this.botonEliminarProducto.Location = new System.Drawing.Point(902, 266);
+            this.botonEliminarProducto.Location = new System.Drawing.Point(902, 286);
             this.botonEliminarProducto.Name = "botonEliminarProducto";
             this.botonEliminarProducto.Size = new System.Drawing.Size(135, 40);
             this.botonEliminarProducto.TabIndex = 10;
@@ -155,11 +158,22 @@
             this.textfiltroproducto.TabIndex = 12;
             this.textfiltroproducto.TextChanged += new System.EventHandler(this.textfiltroproducto_TextChanged);
             // 
+            // botonactulizar
+            // 
+            this.botonactulizar.Location = new System.Drawing.Point(902, 194);
+            this.botonactulizar.Name = "botonactulizar";
+            this.botonactulizar.Size = new System.Drawing.Size(135, 40);
+            this.botonactulizar.TabIndex = 13;
+            this.botonactulizar.Text = "Actualizar Lista";
+            this.botonactulizar.UseVisualStyleBackColor = true;
+            this.botonactulizar.Click += new System.EventHandler(this.botonactulizar_Click);
+            // 
             // SubSeccionProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 592);
+            this.Controls.Add(this.botonactulizar);
             this.Controls.Add(this.textfiltroproducto);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.botonEliminarProducto);
@@ -198,5 +212,6 @@
         private System.Windows.Forms.Button botonEliminarProducto;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textfiltroproducto;
+        private System.Windows.Forms.Button botonactulizar;
     }
 }

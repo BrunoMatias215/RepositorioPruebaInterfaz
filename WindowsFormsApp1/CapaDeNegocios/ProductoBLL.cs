@@ -4,7 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using CapaDeDatos;
 namespace CapaDeNegocios
 {
 
@@ -1058,6 +1058,25 @@ namespace CapaDeNegocios
 
         }
 
+
+        public void CrearProducto(string pdescripcion, int idproductocategoria, int pprecio)
+        {
+
+            CapaDeDatos.ProductoDAL producto = new CapaDeDatos.ProductoDAL();
+
+            producto.CrearProducto(pdescripcion, idproductocategoria, pprecio );
+
+        }
+
+
+        public void ModificarProducto (int pidproducto, string pnombre, int idcategoria, int precio)
+        {
+
+            ProductoDAL producto = new ProductoDAL();
+
+            producto.ModificarProducto(pidproducto, pnombre, idcategoria, precio);
+
+        }
 
     }
 

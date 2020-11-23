@@ -67,6 +67,12 @@
     <Compile Include="SubSeccionInformes.Designer.cs">
       <DependentUpon>SubSeccionInformes.cs</DependentUpon>
     </Compile>
+    <Compile Include="SubSeccionModificarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubSeccionModificarProducto.Designer.cs">
+      <DependentUpon>SubSeccionModificarProducto.cs</DependentUpon>
+    </Compile>
     <Compile Include="SubSeccionPersonal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +99,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SubSeccionInformes.resx">
       <DependentUpon>SubSeccionInformes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubSeccionModificarProducto.resx">
+      <DependentUpon>SubSeccionModificarProducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SubSeccionPersonal.resx">
       <DependentUpon>SubSeccionPersonal.cs</DependentUpon>

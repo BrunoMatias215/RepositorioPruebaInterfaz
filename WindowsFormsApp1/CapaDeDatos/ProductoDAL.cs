@@ -438,6 +438,52 @@ namespace CapaDeDatos
             return objetotabla;
 
         }
+        public void CrearProducto(string pdescripcion, int idproductocategoria, int pprecio)
+        {
+
+            SqlParameter[] parametros = new SqlParameter[3];
+
+            Conexion objetoconexion = new Conexion();
+
+            objetoconexion.Conectar();
+
+            parametros[0] = objetoconexion.CrearParametro("@descripcion", pdescripcion.ToString());
+
+            parametros[1] = objetoconexion.CrearParametro("@idproductocategoria", idproductocategoria.ToString());
+
+            parametros[2] = objetoconexion.CrearParametro("@precio", pprecio.ToString());
+
+          
+
+            objetoconexion.EscribirPorStoreProcedure("SPCrearProducto", parametros);
+
+            objetoconexion.Desconectar();
+
+        }
+
+        public void ModificarProducto(int pidproducto, string pnombre, int categoria, int precio)
+        {
+
+            SqlParameter[] parametros = new SqlParameter[4];
+
+            Conexion objetoconexion = new Conexion();
+
+            objetoconexion.Conectar();
+
+            parametros[0] = objetoconexion.CrearParametro("@idproducto", pidproducto.ToString());
+
+            parametros[1] = objetoconexion.CrearParametro("@nombre", pnombre);
+
+            parametros[2] = objetoconexion.CrearParametro("@idproductocategoria ", categoria.ToString());
+
+            parametros[3] = objetoconexion.CrearParametro("@precio", precio.ToString());
+
+           
+            objetoconexion.EscribirPorStoreProcedure("SPModificarProducto", parametros);
+
+            objetoconexion.Desconectar();
+
+        }
 
 
     }
