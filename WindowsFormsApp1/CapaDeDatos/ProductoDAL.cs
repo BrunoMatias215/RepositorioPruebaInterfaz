@@ -431,7 +431,7 @@ namespace CapaDeDatos
 
             parametros[0] = objetoconexion.CrearParametro("@filtro", pfiltro);
 
-            DataTable objetotabla = objetoconexion.LeerPorStoreProcedureConParametros("SPfiltroProductoPorNombreyCategoria", parametros);
+            DataTable objetotabla = objetoconexion.LeerPorStoreProcedureConParametros("SPFiltroProductoPorNombreYCategoria", parametros);
 
             objetoconexion.Desconectar();
 
@@ -478,13 +478,11 @@ namespace CapaDeDatos
 
             parametros[3] = objetoconexion.CrearParametro("@precio", precio.ToString());
 
-           
             objetoconexion.EscribirPorStoreProcedure("SPModificarProducto", parametros);
 
             objetoconexion.Desconectar();
 
         }
-
 
     }
 

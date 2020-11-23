@@ -50,34 +50,34 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(33, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 15);
+            this.label1.Size = new System.Drawing.Size(55, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Productos";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(77, 89);
+            this.label2.Location = new System.Drawing.Point(92, 92);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(123, 15);
+            this.label2.Size = new System.Drawing.Size(106, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "Nombre del producto";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(358, 89);
+            this.label3.Location = new System.Drawing.Point(403, 92);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(60, 15);
+            this.label3.Size = new System.Drawing.Size(52, 13);
             this.label3.TabIndex = 2;
             this.label3.Text = "Categoria";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(611, 89);
+            this.label4.Location = new System.Drawing.Point(683, 92);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(42, 15);
+            this.label4.Size = new System.Drawing.Size(37, 13);
             this.label4.TabIndex = 3;
             this.label4.Text = "Precio";
             // 
@@ -90,7 +90,7 @@
             // 
             // textPrecioP
             // 
-            this.textPrecioP.Location = new System.Drawing.Point(659, 89);
+            this.textPrecioP.Location = new System.Drawing.Point(726, 89);
             this.textPrecioP.Name = "textPrecioP";
             this.textPrecioP.Size = new System.Drawing.Size(145, 20);
             this.textPrecioP.TabIndex = 5;
@@ -98,14 +98,14 @@
             // comboCategoriaP
             // 
             this.comboCategoriaP.FormattingEnabled = true;
-            this.comboCategoriaP.Location = new System.Drawing.Point(434, 89);
+            this.comboCategoriaP.Location = new System.Drawing.Point(461, 89);
             this.comboCategoriaP.Name = "comboCategoriaP";
             this.comboCategoriaP.Size = new System.Drawing.Size(157, 21);
             this.comboCategoriaP.TabIndex = 6;
             // 
             // BotonCrearProducto
             // 
-            this.BotonCrearProducto.Location = new System.Drawing.Point(910, 79);
+            this.BotonCrearProducto.Location = new System.Drawing.Point(902, 79);
             this.BotonCrearProducto.Name = "BotonCrearProducto";
             this.BotonCrearProducto.Size = new System.Drawing.Size(127, 39);
             this.BotonCrearProducto.TabIndex = 7;
@@ -124,7 +124,7 @@
             // 
             // botonModificarProducto
             // 
-            this.botonModificarProducto.Location = new System.Drawing.Point(902, 240);
+            this.botonModificarProducto.Location = new System.Drawing.Point(902, 232);
             this.botonModificarProducto.Name = "botonModificarProducto";
             this.botonModificarProducto.Size = new System.Drawing.Size(135, 40);
             this.botonModificarProducto.TabIndex = 9;
@@ -134,7 +134,7 @@
             // 
             // botonEliminarProducto
             // 
-            this.botonEliminarProducto.Location = new System.Drawing.Point(902, 286);
+            this.botonEliminarProducto.Location = new System.Drawing.Point(902, 278);
             this.botonEliminarProducto.Name = "botonEliminarProducto";
             this.botonEliminarProducto.Size = new System.Drawing.Size(135, 40);
             this.botonEliminarProducto.TabIndex = 10;
@@ -144,15 +144,15 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(116, 163);
+            this.label5.Location = new System.Drawing.Point(92, 163);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(102, 15);
+            this.label5.Size = new System.Drawing.Size(90, 13);
             this.label5.TabIndex = 11;
             this.label5.Text = "Buscar productos";
             // 
             // textfiltroproducto
             // 
-            this.textfiltroproducto.Location = new System.Drawing.Point(224, 160);
+            this.textfiltroproducto.Location = new System.Drawing.Point(189, 160);
             this.textfiltroproducto.Name = "textfiltroproducto";
             this.textfiltroproducto.Size = new System.Drawing.Size(137, 20);
             this.textfiltroproducto.TabIndex = 12;
@@ -160,7 +160,7 @@
             // 
             // botonactulizar
             // 
-            this.botonactulizar.Location = new System.Drawing.Point(902, 194);
+            this.botonactulizar.Location = new System.Drawing.Point(902, 186);
             this.botonactulizar.Name = "botonactulizar";
             this.botonactulizar.Size = new System.Drawing.Size(135, 40);
             this.botonactulizar.TabIndex = 13;

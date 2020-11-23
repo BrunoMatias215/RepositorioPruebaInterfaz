@@ -31,18 +31,14 @@ namespace CapaDeDatos
 
         }
 
-        public DataTable BuscarPedidosActivos(int pidusuario)
+        public DataTable BuscarPedidosActivos()
         {
-
-            SqlParameter[] parametros = new SqlParameter[1];
 
             Conexion objetoconexion = new Conexion();
 
             objetoconexion.Conectar();
 
-            parametros[0] = objetoconexion.CrearParametro("@idusuario", pidusuario.ToString());
-
-            DataTable objetotabla = objetoconexion.LeerPorStoreProcedureConParametros("SPBuscarPedidosActivos", parametros);
+            DataTable objetotabla = objetoconexion.LeerPorStoreProcedure("SPBuscarPedidosActivos");
 
             objetoconexion.Desconectar();
 

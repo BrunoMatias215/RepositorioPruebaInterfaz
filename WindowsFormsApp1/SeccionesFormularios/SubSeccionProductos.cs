@@ -30,6 +30,7 @@ namespace SeccionesFormularios
 
             GridProductos.DataSource = productobll.CargarTodolosproductos();
 
+            this.GridProductos.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
             this.GridProductos.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
            

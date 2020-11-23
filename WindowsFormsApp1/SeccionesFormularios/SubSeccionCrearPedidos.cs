@@ -676,13 +676,9 @@ namespace SeccionesFormularios
 
                 int precioventa = ((ProductoBLL)this.ListaDeProductos.SelectedItem).Precio * cantidad;
 
-                String fechayhorastring = DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss");
-
-                DateTime fechayhora = DateTime.Parse(fechayhorastring);
-
                 string informacion = descripcion + " " + "(" + cantidad + ")" + "  " + precioventa;
 
-                DetallePedidoBLL detallepedido = new DetallePedidoBLL(idproducto, cantidad, precioventa, fechayhora, informacion);
+                DetallePedidoBLL detallepedido = new DetallePedidoBLL(idproducto, cantidad, precioventa, informacion);
 
                 this.ListaDeDetallesPedidos.Items.Add(detallepedido);
 

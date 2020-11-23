@@ -51,6 +51,25 @@ namespace CapaDeDatos
 
         }
 
+        public DataTable BuscarDetallePedidoSegunPedido(int pidpedido)
+        {
+
+            SqlParameter[] parametros = new SqlParameter[1];
+
+            Conexion objetoconexion = new Conexion();
+
+            objetoconexion.Conectar();
+
+            parametros[0] = objetoconexion.CrearParametro("@idpedido", pidpedido.ToString());
+
+            DataTable objetotabla = objetoconexion.LeerPorStoreProcedureConParametros("SPBuscarDetallePedidoSegunPedido", parametros);
+
+            objetoconexion.Desconectar();
+
+            return objetotabla;
+
+        }
+
     }
 
 }

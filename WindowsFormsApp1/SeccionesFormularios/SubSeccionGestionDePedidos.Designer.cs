@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.BotonModificarEstado = new System.Windows.Forms.Button();
@@ -48,9 +48,9 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(20, 35);
             this.dataGridView1.Name = "dataGridView1";
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.Size = new System.Drawing.Size(675, 250);
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridView1.Size = new System.Drawing.Size(715, 250);
             this.dataGridView1.TabIndex = 0;
             // 
             // label1
@@ -68,7 +68,7 @@
             this.BotonModificarEstado.FlatAppearance.BorderSize = 0;
             this.BotonModificarEstado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BotonModificarEstado.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BotonModificarEstado.Location = new System.Drawing.Point(165, 310);
+            this.BotonModificarEstado.Location = new System.Drawing.Point(477, 310);
             this.BotonModificarEstado.Name = "BotonModificarEstado";
             this.BotonModificarEstado.Size = new System.Drawing.Size(110, 42);
             this.BotonModificarEstado.TabIndex = 2;
@@ -80,7 +80,7 @@
             // 
             this.comboBoxEstadoPedido.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxEstadoPedido.FormattingEnabled = true;
-            this.comboBoxEstadoPedido.Location = new System.Drawing.Point(20, 326);
+            this.comboBoxEstadoPedido.Location = new System.Drawing.Point(320, 326);
             this.comboBoxEstadoPedido.Name = "comboBoxEstadoPedido";
             this.comboBoxEstadoPedido.Size = new System.Drawing.Size(121, 21);
             this.comboBoxEstadoPedido.TabIndex = 3;
@@ -89,7 +89,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(17, 310);
+            this.label2.Location = new System.Drawing.Point(317, 310);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(81, 13);
             this.label2.TabIndex = 4;
@@ -99,7 +99,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(299, 310);
+            this.label3.Location = new System.Drawing.Point(17, 310);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(43, 13);
             this.label3.TabIndex = 6;
@@ -109,7 +109,7 @@
             // 
             this.comboBoxCadete.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxCadete.FormattingEnabled = true;
-            this.comboBoxCadete.Location = new System.Drawing.Point(302, 326);
+            this.comboBoxCadete.Location = new System.Drawing.Point(20, 326);
             this.comboBoxCadete.Name = "comboBoxCadete";
             this.comboBoxCadete.Size = new System.Drawing.Size(121, 21);
             this.comboBoxCadete.TabIndex = 5;
@@ -119,7 +119,7 @@
             this.BotonAsignarCadete.FlatAppearance.BorderSize = 0;
             this.BotonAsignarCadete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BotonAsignarCadete.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BotonAsignarCadete.Location = new System.Drawing.Point(456, 310);
+            this.BotonAsignarCadete.Location = new System.Drawing.Point(170, 310);
             this.BotonAsignarCadete.Name = "BotonAsignarCadete";
             this.BotonAsignarCadete.Size = new System.Drawing.Size(110, 42);
             this.BotonAsignarCadete.TabIndex = 7;
@@ -132,27 +132,28 @@
             this.BotonVerDetallePedido.FlatAppearance.BorderSize = 0;
             this.BotonVerDetallePedido.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BotonVerDetallePedido.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BotonVerDetallePedido.Location = new System.Drawing.Point(583, 310);
+            this.BotonVerDetallePedido.Location = new System.Drawing.Point(625, 310);
             this.BotonVerDetallePedido.Name = "BotonVerDetallePedido";
             this.BotonVerDetallePedido.Size = new System.Drawing.Size(110, 42);
             this.BotonVerDetallePedido.TabIndex = 8;
             this.BotonVerDetallePedido.Text = "Ver Detalle Pedido";
             this.BotonVerDetallePedido.UseVisualStyleBackColor = true;
+            this.BotonVerDetallePedido.Click += new System.EventHandler(this.BotonVerDetallePedido_Click);
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.BotonModificarEstado);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.BotonVerDetallePedido);
-            this.panel1.Controls.Add(this.comboBoxEstadoPedido);
-            this.panel1.Controls.Add(this.dataGridView1);
             this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.comboBoxEstadoPedido);
+            this.panel1.Controls.Add(this.BotonVerDetallePedido);
+            this.panel1.Controls.Add(this.dataGridView1);
             this.panel1.Controls.Add(this.comboBoxCadete);
             this.panel1.Controls.Add(this.BotonAsignarCadete);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(718, 378);
+            this.panel1.Size = new System.Drawing.Size(757, 378);
             this.panel1.TabIndex = 9;
             // 
             // SubSeccionGestionDePedidos

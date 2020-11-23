@@ -15,14 +15,10 @@ namespace SeccionesFormularios
     public partial class SubSeccionGestionDePedidos : Form
     {
 
-        private int idusuario;
-
         public SubSeccionGestionDePedidos(int pidusuario)
         {
 
             InitializeComponent();
-
-            this.idusuario = pidusuario;
 
         }
 
@@ -59,7 +55,7 @@ namespace SeccionesFormularios
 
             CapaDeNegocios.PedidoBLL pedido = new CapaDeNegocios.PedidoBLL();
 
-            this.dataGridView1.DataSource = pedido.CargarPedidosActivos(this.idusuario);
+            this.dataGridView1.DataSource = pedido.CargarPedidosActivos();
 
             // Estados de Categorias
 
@@ -135,343 +131,38 @@ namespace SeccionesFormularios
         private void BotonModificarEstado_Click(object sender, EventArgs e)
         {
 
-            if (this.dataGridView1.SelectedRows.Count > 0 && this.comboBoxEstadoPedido.SelectedIndex >= 0)
-            {
-
-                if (this.comboBoxEstadoPedido.SelectedIndex == 0)
-                {
-
-                    if (this.dataGridView1.SelectedRows[0].Cells[4].Value.ToString() == "Inicializado")
-                    {
-
-                        MessageBox.Show("El pedido ya se encuentra inicializado", "Modificar Pedido");
-
-                        this.comboBoxEstadoPedido.SelectedIndex = -1;
-
-                        this.comboBoxEstadoPedido.Text = "";
-
-                    }
-                    else if (this.dataGridView1.SelectedRows[0].Cells[4].Value.ToString() == "Delivery")
-                    {
-
-                        // Cadete
-
-                        int idpedido = int.Parse(this.dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
-
-                        int idcadete = ((CadeteBLL)this.comboBoxCadete.SelectedItem).Idcadete;
-
-                        CadeteBLL cadete = new CadeteBLL();
-
-                        cadete.AsignarCadete(idpedido, idcadete);
-
-                        PedidoBLL pedido = new PedidoBLL();
-
-                        this.dataGridView1.DataSource = pedido.CargarPedidosActivos(this.idusuario);
-
-                        // Estado Pedido
-
-                        PedidoBLL otropedido = new PedidoBLL();
-
-                        int idpedidoseleccionado = int.Parse(this.dataGridView1.SelectedRows[this.dataGridView1.SelectedRows.Count - 1].Cells[0].Value.ToString());
-
-                        int idestadocategoria = 1;
-
-                        pedido.ModificarEstadoPedido(idpedidoseleccionado, idestadocategoria);
-
-                        this.dataGridView1.DataSource = pedido.CargarPedidosActivos(this.idusuario);
-
-                        this.comboBoxEstadoPedido.SelectedIndex = -1;
-
-                        this.comboBoxEstadoPedido.Text = "";
-
-                    }
-                    else if (this.dataGridView1.SelectedRows[0].Cells[4].Value.ToString() == "Cancelado")
-                    {
-
-                        MessageBox.Show("No se puede inicializar un pedido una vez cancelado. Se debe crear otro.", "Modificar Pedido");
-
-                        this.comboBoxEstadoPedido.SelectedIndex = -1;
-
-                        this.comboBoxEstadoPedido.Text = "";
-
-                    }
-                    else
-                    {
-
-                        MessageBox.Show("No se puede inicializar un pedido una vez finalizado", "Modificar Pedido");
-
-                        this.comboBoxEstadoPedido.SelectedIndex = -1;
-
-                        this.comboBoxEstadoPedido.Text = "";
-
-                    }
-
-                }
-                else if (this.comboBoxEstadoPedido.SelectedIndex == 1)
-                {
-
-                    if (this.dataGridView1.SelectedRows[0].Cells[4].Value.ToString() == "Cancelado")
-                    {
-
-                        MessageBox.Show("El pedido ya se encuentra cancelado", "Modificar Pedido");
-
-                        this.comboBoxEstadoPedido.SelectedIndex = -1;
-
-                        this.comboBoxEstadoPedido.Text = "";
-
-                    }
-                    else if (this.dataGridView1.SelectedRows[0].Cells[4].Value.ToString() == "Inicializado") 
-                    {
-
-                        // Estado Pedido
-
-                        PedidoBLL pedido = new PedidoBLL();
-
-                        int idpedido = int.Parse(this.dataGridView1.SelectedRows[this.dataGridView1.SelectedRows.Count - 1].Cells[0].Value.ToString());
-
-                        int idestadocategoria = ((EstadoCategoriaBLL)this.comboBoxEstadoPedido.SelectedItem).Idestadocategoria;
-
-                        pedido.ModificarEstadoPedido(idpedido, idestadocategoria);
-
-                        this.dataGridView1.DataSource = pedido.CargarPedidosActivos(this.idusuario);
-
-                        this.comboBoxEstadoPedido.SelectedIndex = -1;
-
-                        this.comboBoxEstadoPedido.Text = "";
-
-                    }
-                    else if (this.dataGridView1.SelectedRows[0].Cells[4].Value.ToString() == "Delivery")
-                    {
-
-                        // Estado Pedido
-
-                        PedidoBLL pedido = new PedidoBLL();
-
-                        int idpedido = int.Parse(this.dataGridView1.SelectedRows[this.dataGridView1.SelectedRows.Count - 1].Cells[0].Value.ToString());
-
-                        int idestadocategoria = ((EstadoCategoriaBLL)this.comboBoxEstadoPedido.SelectedItem).Idestadocategoria;
-
-                        pedido.ModificarEstadoPedido(idpedido, idestadocategoria);
-
-                        this.dataGridView1.DataSource = pedido.CargarPedidosActivos(this.idusuario);
-
-                        this.comboBoxEstadoPedido.SelectedIndex = -1;
-
-                        this.comboBoxEstadoPedido.Text = "";
-
-                    }
-                    else
-                    {
-
-                        MessageBox.Show("No se puede cancelar un pedido ya finalizado", "Modificar Pedido");
-
-                    }
-
-                }
-                else
-                {
-
-                    if (this.dataGridView1.SelectedRows[0].Cells[4].Value.ToString() == "Finalizado")
-                    {
-
-                        MessageBox.Show("El pedido ya se encuentra finalizado", "Modificar Pedido");
-
-                        this.comboBoxEstadoPedido.SelectedIndex = -1;
-
-                        this.comboBoxEstadoPedido.Text = "";
-
-                    }
-                    else if (this.dataGridView1.SelectedRows[0].Cells[4].Value.ToString() == "Inicializado")
-                    {
-
-                        MessageBox.Show("No se puede finalizar un pedido inicializado. Debera primero ser entregado por el cadete al cliente", "Modificar Pedido");
-
-                        this.comboBoxEstadoPedido.SelectedIndex = -1;
-
-                        this.comboBoxEstadoPedido.Text = "";
-
-                    }
-                    else if (this.dataGridView1.SelectedRows[0].Cells[4].Value.ToString() == "Delivery") 
-                    {
-
-                        PedidoBLL pedido = new PedidoBLL();
-
-                        int idpedido = int.Parse(this.dataGridView1.SelectedRows[this.dataGridView1.SelectedRows.Count - 1].Cells[0].Value.ToString());
-
-                        int idestadocategoria = ((EstadoCategoriaBLL)this.comboBoxEstadoPedido.SelectedItem).Idestadocategoria;
-
-                        pedido.ModificarEstadoPedido(idpedido, idestadocategoria);
-
-                        this.dataGridView1.DataSource = pedido.CargarPedidosActivos(this.idusuario);
-
-                        this.comboBoxEstadoPedido.SelectedIndex = -1;
-
-                        this.comboBoxEstadoPedido.Text = "";
-
-                    }
-                    else
-                    {
-
-                        MessageBox.Show("No se puede finalizar un pedido cancelado", "Modificar Pedido");
-
-                        this.comboBoxEstadoPedido.SelectedIndex = -1;
-
-                        this.comboBoxEstadoPedido.Text = "";
-
-                    }
-
-                }
-
-            }
-            else
-            {
-
-                if (this.dataGridView1.SelectedRows.Count <= 0)
-                {
-
-                    MessageBox.Show("Debe seleccionar un pedido", "Modificar Pedido");
-
-                }
-                else
-                {
-
-                    MessageBox.Show("Debe seleccionar un estado para el pedido", "Modificar Pedido");
-
-                }
-
-            }
+            
 
         }
 
         private void BotonAsignarCadete_Click(object sender, EventArgs e)
         {
 
-            if (this.dataGridView1.SelectedRows.Count > 0 && this.comboBoxCadete.SelectedIndex >= 0)
+            
+
+        }
+
+        private void BotonVerDetallePedido_Click(object sender, EventArgs e)
+        {
+
+            if (this.dataGridView1.SelectedRows.Count > 0)
             {
 
-                if (this.comboBoxCadete.SelectedIndex == 0)
-                {
+                int idpedido = int.Parse(this.dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
 
-                    if (this.dataGridView1.SelectedRows[0].Cells[3].Value.ToString() == "Sin Cadete")
-                    {
+                DetallePedidoBLL detallepedido = new DetallePedidoBLL();
 
-                        MessageBox.Show("El pedido ya se encuentra sin cadete", "Asignar Cadete");
+                List<DetallePedidoBLL> listadetallespedidos = detallepedido.CargarDetallePedidoSegunPedido(idpedido);
 
-                        this.comboBoxCadete.SelectedIndex = -1;
+                FormularioVerDetallePedido formularioverdetallepedido = new FormularioVerDetallePedido(listadetallespedidos);
 
-                        this.comboBoxCadete.Text = "";
+                formularioverdetallepedido.ShowDialog();
 
-                    }
-                    else
-                    {
-
-                        if (this.dataGridView1.SelectedRows[0].Cells[4].Value.ToString() == "Delivery")
-                        {
-
-                            // Cadete
-
-                            int idpedido = int.Parse(this.dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
-
-                            int idcadete = ((CadeteBLL)this.comboBoxCadete.SelectedItem).Idcadete;
-
-                            CadeteBLL cadete = new CadeteBLL();
-
-                            cadete.AsignarCadete(idpedido, idcadete);
-
-                            PedidoBLL pedido = new PedidoBLL();
-
-                            this.dataGridView1.DataSource = pedido.CargarPedidosActivos(this.idusuario);
-
-                            // Estado Pedido
-
-                            PedidoBLL otropedido = new PedidoBLL();
-
-                            int idpedidoseleccionado = int.Parse(this.dataGridView1.SelectedRows[this.dataGridView1.SelectedRows.Count - 1].Cells[0].Value.ToString());
-
-                            int idestadocategoria = 1;
-
-                            pedido.ModificarEstadoPedido(idpedidoseleccionado, idestadocategoria);
-
-                            this.dataGridView1.DataSource = pedido.CargarPedidosActivos(this.idusuario);
-
-                            this.comboBoxCadete.SelectedIndex = -1;
-
-                            this.comboBoxCadete.Text = "";
-
-                        }else if (this.dataGridView1.SelectedRows[0].Cells[4].Value.ToString() == "Cancelado")
-                        {
-
-                            MessageBox.Show("No se puede remover el cadete del pedido cancelado", "Asignar Cadete");
-
-                        }
-                        else
-                        {
-
-                            MessageBox.Show("No se puede remover el cadete del pedido finalizado", "Asignar Cadete");
-
-                        }
-
-                    }
-
-                }
-                else
-                {
-
-                    if (this.dataGridView1.SelectedRows[0].Cells[4].Value.ToString() == "Inicializado")
-                    {
-
-
-
-                    }
-
-                    // Cadete
-
-                    int idpedido = int.Parse(this.dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
-
-                    int idcadete = ((CadeteBLL)this.comboBoxCadete.SelectedItem).Idcadete;
-
-                    CadeteBLL cadete = new CadeteBLL();
-
-                    cadete.AsignarCadete(idpedido, idcadete);
-
-                    PedidoBLL pedido = new PedidoBLL();
-
-                    this.dataGridView1.DataSource = pedido.CargarPedidosActivos(this.idusuario);
-
-                    // Estado Pedido
-
-                    PedidoBLL otropedido = new PedidoBLL();
-
-                    int idpedidoseleccionado = int.Parse(this.dataGridView1.SelectedRows[this.dataGridView1.SelectedRows.Count - 1].Cells[0].Value.ToString());
-
-                    int idestadocategoria = 2;
-
-                    pedido.ModificarEstadoPedido(idpedidoseleccionado, idestadocategoria);
-
-                    this.dataGridView1.DataSource = pedido.CargarPedidosActivos(this.idusuario);
-
-                    this.comboBoxCadete.SelectedIndex = -1;
-
-                    this.comboBoxCadete.Text = "";
-
-                }
-  
             }
             else
             {
 
-                if (this.dataGridView1.SelectedRows.Count <= 0)
-                {
-
-                    MessageBox.Show("Debe seleccionar un pedido", "Asignar Cadete");
-
-                }
-                else
-                {
-
-                    MessageBox.Show("Debe seleccionar un cadete para el pedido", "Asignar Cadete");
-
-                }
+                MessageBox.Show("Debe seleccionar un pedido", "Ver Detalle Pedido");
 
             }
 
@@ -480,3 +171,4 @@ namespace SeccionesFormularios
     }
 
 }
+

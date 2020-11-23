@@ -84,13 +84,6 @@ namespace WindowsFormsApp1
 
             }
 
-            if (this.label3.Text == "[Encargado]")
-            {
-
-                this.BotonGestion.Enabled = false;
-
-            }
-
             this.CentrarElemento(this.MenuOpciones, this.label3);
 
             this.BotonPedidos.ForeColor = Color.White;
@@ -230,7 +223,7 @@ namespace WindowsFormsApp1
                 this.formulariogestion.Show();
 
             }
-
+    
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
