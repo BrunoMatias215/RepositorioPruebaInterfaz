@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.labeltotal = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.gridProductos = new System.Windows.Forms.DataGridView();
@@ -49,7 +50,6 @@
             this.comboBoxAño = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.BotonVerPedidos = new System.Windows.Forms.Button();
-            this.labeltotal = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridProductos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridPedidos)).BeginInit();
@@ -82,6 +82,16 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(771, 543);
             this.panel2.TabIndex = 22;
+            // 
+            // labeltotal
+            // 
+            this.labeltotal.AutoSize = true;
+            this.labeltotal.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labeltotal.Location = new System.Drawing.Point(709, 66);
+            this.labeltotal.Name = "labeltotal";
+            this.labeltotal.Size = new System.Drawing.Size(15, 17);
+            this.labeltotal.TabIndex = 21;
+            this.labeltotal.Text = "0";
             // 
             // label7
             // 
@@ -178,7 +188,7 @@
             // 
             this.radioButtonMensual.AutoSize = true;
             this.radioButtonMensual.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonMensual.Location = new System.Drawing.Point(24, 77);
+            this.radioButtonMensual.Location = new System.Drawing.Point(24, 73);
             this.radioButtonMensual.Name = "radioButtonMensual";
             this.radioButtonMensual.Size = new System.Drawing.Size(75, 21);
             this.radioButtonMensual.TabIndex = 3;
@@ -289,16 +299,6 @@
             this.BotonVerPedidos.Text = "Ver Pedidos";
             this.BotonVerPedidos.UseVisualStyleBackColor = true;
             this.BotonVerPedidos.Click += new System.EventHandler(this.BotonVerPedidos_Click);
-            // 
-            // labeltotal
-            // 
-            this.labeltotal.AutoSize = true;
-            this.labeltotal.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labeltotal.Location = new System.Drawing.Point(709, 66);
-            this.labeltotal.Name = "labeltotal";
-            this.labeltotal.Size = new System.Drawing.Size(15, 17);
-            this.labeltotal.TabIndex = 21;
-            this.labeltotal.Text = "0";
             // 
             // SubSeccionInformes
             // 
