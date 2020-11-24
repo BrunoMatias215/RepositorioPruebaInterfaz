@@ -79,6 +79,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.labelImporte = new System.Windows.Forms.Label();
+            this.Comanda = new System.Drawing.Printing.PrintDocument();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -669,6 +670,10 @@
             this.labelImporte.TabIndex = 22;
             this.labelImporte.Text = "Importe:";
             // 
+            // Comanda
+            // 
+            this.Comanda.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.Imprimir);
+            // 
             // SubSeccionCrearPedidos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -757,5 +762,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label labelImporte;
+        private System.Drawing.Printing.PrintDocument Comanda;
     }
 }

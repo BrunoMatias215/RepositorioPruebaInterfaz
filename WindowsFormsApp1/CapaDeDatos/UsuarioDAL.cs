@@ -35,7 +35,7 @@ namespace CapaDeDatos
 
             objetoconexion.Conectar();
 
-            DataTable objetotabla = objetoconexion.LeerPorStoreProcedure("SPBuscarUsuariosincontraseña");
+            DataTable objetotabla = objetoconexion.LeerPorStoreProcedure("SPBuscarUsuariosSinContraseña");
 
             //DataTable objetotabla = objetoconexion.LecturaPorComando("SELECT * FROM Producto WHERE idproductocategoria = 1");
 
