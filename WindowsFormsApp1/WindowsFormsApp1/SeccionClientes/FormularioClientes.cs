@@ -41,10 +41,6 @@ namespace WindowsFormsApp1.SeccionClientes
 
             this.BotonModificarCliente.BackColor = Color.FromArgb(98, 104, 140);
 
-            this.BotonEliminarCliente.ForeColor = Color.White;
-
-            this.BotonEliminarCliente.BackColor = Color.FromArgb(98, 104, 140);
-
             this.labelPedido.ForeColor = Color.White;
 
             this.labelDetallePedido.ForeColor = Color.White;

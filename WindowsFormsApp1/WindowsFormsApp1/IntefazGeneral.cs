@@ -21,8 +21,6 @@ namespace WindowsFormsApp1
 
         private SeccionClientes.FormularioClientes formularioclientes;
 
-        private SeccionCaja.FormularioCaja formulariocaja;
-
         private SeccionGestión.FormularioGestion formulariogestion;
 
         private UsuarioBLL usuario;
@@ -102,14 +100,6 @@ namespace WindowsFormsApp1
 
             this.CentrarElemento(this.MenuOpciones, this.BotonClientes);
 
-            this.BotonCajas.ForeColor = Color.White;
-
-            this.BotonCajas.BackColor = Color.FromArgb(53, 64, 97);
-
-            this.BotonCajas.FlatAppearance.MouseOverBackColor = Color.FromArgb(95, 109, 149);
-
-            this.CentrarElemento(this.MenuOpciones, this.BotonCajas);
-
             this.BotonGestion.ForeColor = Color.White;
 
             this.BotonGestion.BackColor = Color.FromArgb(53, 64, 97);
@@ -177,28 +167,6 @@ namespace WindowsFormsApp1
                 this.formularioclientes.Dock = DockStyle.Fill;
 
                 this.formularioclientes.Show();
-
-            }
-
-        }
-
-        private void BotonCajas_Click(object sender, EventArgs e)
-        {
-
-            if (!(this.PanelInterfaz.Contains(this.formulariocaja)))
-            {
-
-                this.PanelInterfaz.Controls.Remove(this.PanelInterfaz.Controls[0]);
-
-                this.formulariocaja = new SeccionCaja.FormularioCaja();
-
-                this.formulariocaja.TopLevel = false;
-
-                this.PanelInterfaz.Controls.Add(this.formulariocaja);
-
-                this.PanelInterfaz.Tag = this.formulariocaja;
-
-                this.formulariocaja.Show();
 
             }
 

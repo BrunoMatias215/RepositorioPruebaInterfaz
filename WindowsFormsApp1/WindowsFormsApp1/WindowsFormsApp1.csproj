@@ -58,12 +58,6 @@
     <Compile Include="InterfazInicioDeSesion.Designer.cs">
       <DependentUpon>InterfazInicioDeSesion.cs</DependentUpon>
     </Compile>
-    <Compile Include="SeccionCaja\FormularioCaja.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SeccionCaja\FormularioCaja.Designer.cs">
-      <DependentUpon>FormularioCaja.cs</DependentUpon>
-    </Compile>
     <Compile Include="SeccionClientes\FormularioClientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,9 +95,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="InterfazInicioDeSesion.resx">
       <DependentUpon>InterfazInicioDeSesion.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SeccionCaja\FormularioCaja.resx">
-      <DependentUpon>FormularioCaja.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SeccionClientes\FormularioClientes.resx">
       <DependentUpon>FormularioClientes.cs</DependentUpon>

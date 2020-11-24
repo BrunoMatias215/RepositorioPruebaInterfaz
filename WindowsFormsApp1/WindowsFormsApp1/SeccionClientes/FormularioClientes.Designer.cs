@@ -39,7 +39,6 @@
             this.labelDetallePedido = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.BotonEliminarCliente = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
@@ -140,7 +139,6 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.BotonEliminarCliente);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.labelBúsquedaClientes);
             this.panel1.Controls.Add(this.labelDetallePedido);
@@ -163,18 +161,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(206, 1);
             this.panel2.TabIndex = 11;
-            // 
-            // BotonEliminarCliente
-            // 
-            this.BotonEliminarCliente.FlatAppearance.BorderSize = 0;
-            this.BotonEliminarCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BotonEliminarCliente.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BotonEliminarCliente.Location = new System.Drawing.Point(271, 224);
-            this.BotonEliminarCliente.Name = "BotonEliminarCliente";
-            this.BotonEliminarCliente.Size = new System.Drawing.Size(120, 37);
-            this.BotonEliminarCliente.TabIndex = 12;
-            this.BotonEliminarCliente.Text = "Eliminar Cliente";
-            this.BotonEliminarCliente.UseVisualStyleBackColor = true;
             // 
             // FormularioClientes
             // 
@@ -208,6 +194,5 @@
         private System.Windows.Forms.Label labelDetallePedido;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button BotonEliminarCliente;
     }
 }

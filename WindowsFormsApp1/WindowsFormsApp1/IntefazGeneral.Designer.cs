@@ -34,7 +34,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.BotonCerrarSesion = new System.Windows.Forms.Button();
             this.BotonGestion = new System.Windows.Forms.Button();
-            this.BotonCajas = new System.Windows.Forms.Button();
             this.BotonClientes = new System.Windows.Forms.Button();
             this.BotonPedidos = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -54,7 +53,6 @@
             this.MenuOpciones.Controls.Add(this.label2);
             this.MenuOpciones.Controls.Add(this.BotonCerrarSesion);
             this.MenuOpciones.Controls.Add(this.BotonGestion);
-            this.MenuOpciones.Controls.Add(this.BotonCajas);
             this.MenuOpciones.Controls.Add(this.BotonClientes);
             this.MenuOpciones.Controls.Add(this.BotonPedidos);
             this.MenuOpciones.Controls.Add(this.label1);
@@ -103,26 +101,13 @@
             this.BotonGestion.FlatAppearance.BorderSize = 0;
             this.BotonGestion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BotonGestion.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BotonGestion.Location = new System.Drawing.Point(12, 356);
+            this.BotonGestion.Location = new System.Drawing.Point(12, 313);
             this.BotonGestion.Name = "BotonGestion";
             this.BotonGestion.Size = new System.Drawing.Size(141, 37);
             this.BotonGestion.TabIndex = 2;
             this.BotonGestion.Text = "Gestión";
             this.BotonGestion.UseVisualStyleBackColor = true;
             this.BotonGestion.Click += new System.EventHandler(this.BotonGestion_Click);
-            // 
-            // BotonCajas
-            // 
-            this.BotonCajas.FlatAppearance.BorderSize = 0;
-            this.BotonCajas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BotonCajas.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BotonCajas.Location = new System.Drawing.Point(12, 313);
-            this.BotonCajas.Name = "BotonCajas";
-            this.BotonCajas.Size = new System.Drawing.Size(141, 37);
-            this.BotonCajas.TabIndex = 4;
-            this.BotonCajas.Text = "Caja";
-            this.BotonCajas.UseVisualStyleBackColor = true;
-            this.BotonCajas.Click += new System.EventHandler(this.BotonCajas_Click);
             // 
             // BotonClientes
             // 
@@ -227,7 +212,6 @@
         private System.Windows.Forms.Button BotonCerrarSesion;
         private System.Windows.Forms.Button BotonClientes;
         private System.Windows.Forms.Button BotonGestion;
-        private System.Windows.Forms.Button BotonCajas;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button BotonPedidos;
         private System.Windows.Forms.Panel PanelInterfaz;
