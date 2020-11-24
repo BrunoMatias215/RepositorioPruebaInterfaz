@@ -91,6 +91,28 @@ namespace CapaDeNegocios
 
         }
 
+        public DataTable CargarPedidosdeldia()
+        {
+
+            CapaDeDatos.PedidoDAL pedidodal = new CapaDeDatos.PedidoDAL();
+
+            DataTable tablapedidosactivos = pedidodal.BuscarPedidosdeldia();
+
+            return tablapedidosactivos;
+
+        }
+
+        public DataTable CargarPedidosporMesAño(int mes, int año)
+        {
+
+            CapaDeDatos.PedidoDAL pedidodal = new CapaDeDatos.PedidoDAL();
+
+            DataTable tablapedidosactivos = pedidodal.BuscarPedidosSegunMesAño(mes, año);
+
+            return tablapedidosactivos;
+
+        }
+
     }
 
 }

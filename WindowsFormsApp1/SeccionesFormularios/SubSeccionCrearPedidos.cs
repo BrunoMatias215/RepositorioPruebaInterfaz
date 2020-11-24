@@ -759,100 +759,100 @@ namespace SeccionesFormularios
         private void BotonCrearPedido_Click(object sender, EventArgs e)
         {
 
-            //if (this.ListaDeDetallesPedidos.Items.Count > 0)
-            //{
+            if (this.ListaDeDetallesPedidos.Items.Count > 0)
+            {
 
-            //    if (this.comboBoxClientes.SelectedItem == null)
-            //    {
+                if (this.comboBoxClientes.SelectedItem == null)
+                {
 
-            //        MessageBox.Show("No se especificó el cliente del pedido", "Error");
+                    MessageBox.Show("No se especificó el cliente del pedido", "Error");
 
-            //    }
-            //    else if (this.comboBoxFormasDePago.SelectedItem == null)
-            //    {
+                }
+                else if (this.comboBoxFormasDePago.SelectedItem == null)
+                {
 
-            //        MessageBox.Show("No se especificó la forma de pago del pedido", "Error");
+                    MessageBox.Show("No se especificó la forma de pago del pedido", "Error");
 
-            //    }
-            //    else
-            //    {
+                }
+                else
+                {
 
-            //        // Pedido
+                    // Pedido
 
-            //        CapaDeNegocios.PedidoBLL pedido = new CapaDeNegocios.PedidoBLL();
+                    CapaDeNegocios.PedidoBLL pedido = new CapaDeNegocios.PedidoBLL();
 
-            //        pedido.Idcliente = ((ClienteBLL)this.comboBoxClientes.SelectedItem).Idcliente;
+                    pedido.Idcliente = ((ClienteBLL)this.comboBoxClientes.SelectedItem).Idcliente;
 
-            //        pedido.Idformadepago = ((FormaDePagoBLL)this.comboBoxFormasDePago.SelectedItem).Idformadepago;
+                    pedido.Idformadepago = ((FormaDePagoBLL)this.comboBoxFormasDePago.SelectedItem).Idformadepago;
 
-            //        pedido.Idusuario = this.idusuario;
+                    pedido.Idusuario = this.idusuario;
 
-            //        pedido.Observaciones = this.Observaciones.Text;
+                    pedido.Observaciones = this.Observaciones.Text;
 
-            //        pedido.Idcadete = 1;
+                    pedido.Idcadete = 1;
 
-            //        pedido.Idestadocategoria = 1;
+                    pedido.Idestadocategoria = 1;
 
-            //        pedido.Total = int.Parse(this.Total.Text);
+                    pedido.Total = int.Parse(this.Total.Text);
 
-            //        int valorcrearpedido = pedido.CrearPedido();
+                    int valorcrearpedido = pedido.CrearPedido();
 
-            //        // Detalle Pedido
+                    // Detalle Pedido
 
-            //        foreach (DetallePedidoBLL detallepedidolocal in this.ListaDeDetallesPedidos.Items)
-            //        {
+                    foreach (DetallePedidoBLL detallepedidolocal in this.ListaDeDetallesPedidos.Items)
+                    {
 
-            //            CapaDeNegocios.DetallePedidoBLL detallepedido = new CapaDeNegocios.DetallePedidoBLL();
+                        CapaDeNegocios.DetallePedidoBLL detallepedido = new CapaDeNegocios.DetallePedidoBLL();
 
-            //            detallepedido.Idproducto = detallepedidolocal.Idproducto;
+                        detallepedido.Idproducto = detallepedidolocal.Idproducto;
 
-            //            detallepedido.Idpedido = int.Parse(detallepedido.getReferenciaIdPedido().Rows[0][0].ToString());
+                        detallepedido.Idpedido = int.Parse(detallepedido.getReferenciaIdPedido().Rows[0][0].ToString());
 
-            //            detallepedido.Cantidad = detallepedidolocal.Cantidad;
+                        detallepedido.Cantidad = detallepedidolocal.Cantidad;
 
-            //            detallepedido.Precioventa = detallepedidolocal.Precioventa;
+                        detallepedido.Precioventa = detallepedidolocal.Precioventa;
 
-            //            int valordetallepedido = detallepedido.CrearDetallePedido();
+                        int valordetallepedido = detallepedido.CrearDetallePedido();
 
-            //        }
+                    }
 
-            //        this.comboBoxCantidad.SelectedItem = null;
+                    this.comboBoxCantidad.SelectedItem = null;
 
-            //        this.comboBoxCantidad.Text = "";
+                    this.comboBoxCantidad.Text = "";
 
-            //        this.ListaDeProductos.SelectedItem = null;
+                    this.ListaDeProductos.SelectedItem = null;
 
-            //        this.ListaDeProductos.Items.Clear();
+                    this.ListaDeProductos.Items.Clear();
 
-            //        this.ListaDeDetallesPedidos.Items.Clear();
+                    this.ListaDeDetallesPedidos.Items.Clear();
 
-            //        this.comboBoxClientes.SelectedItem = null;
+                    this.comboBoxClientes.SelectedItem = null;
 
-            //        this.comboBoxClientes.Text = "";
+                    this.comboBoxClientes.Text = "";
 
-            //        this.comboBoxFormasDePago.SelectedItem = null;
+                    this.comboBoxFormasDePago.SelectedItem = null;
 
-            //        this.comboBoxClientes.Text = "";
+                    this.comboBoxClientes.Text = "";
 
-            //        this.Observaciones.Text = "";
+                    this.Observaciones.Text = "";
 
-            //        this.Total.Text = "0";
+                    this.Total.Text = "0";
 
-            //        this.ConfigurarComanda();
+                    //this.ConfigurarComanda();
 
 
 
-            //        MessageBox.Show("Se ha creado el pedido", "Crear Pedido");
+                    MessageBox.Show("Se ha creado el pedido", "Crear Pedido");
 
-            //    }
+                }
 
-            //}
-            //else
-            //{
+            }
+            else
+            {
 
-            //    MessageBox.Show("No se agregaron productos para crear el pedido", "Error");
+                MessageBox.Show("No se agregaron productos para crear el pedido", "Error");
 
-            //}
+            }
 
             this.ConfigurarDocumento();
 
@@ -886,7 +886,7 @@ namespace SeccionesFormularios
 
             Font tercerafuente = new Font("Arial", 18, FontStyle.Regular);
 
-            e.Graphics.DrawString("Comandas - Guilerova Solutions", primerfuente, Brushes.CadetBlue, new PointF(0,0));
+            e.Graphics.DrawString("Comandas - Guilerova Solutions", primerfuente, Brushes.CadetBlue, new PointF(0, 0));
 
             e.Graphics.DrawString("Che Miranda", segundafuente, Brushes.Black, new PointF(0, 50));
 
@@ -894,8 +894,12 @@ namespace SeccionesFormularios
 
             e.Graphics.DrawString("______________________________", primerfuente, Brushes.Black, new PointF(0, 120));
 
-        }  
+        }
 
     }
+    }
 
-}
+
+
+
+

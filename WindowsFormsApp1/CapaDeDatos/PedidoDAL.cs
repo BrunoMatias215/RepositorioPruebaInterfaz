@@ -84,6 +84,41 @@ namespace CapaDeDatos
 
         }
 
+        public DataTable BuscarPedidosdeldia()
+        {
+
+            Conexion objetoconexion = new Conexion();
+
+            objetoconexion.Conectar();
+
+            DataTable objetotabla = objetoconexion.LeerPorStoreProcedure("SPBuscarPedidopordia");
+
+            objetoconexion.Desconectar();
+
+            return objetotabla;
+
+        }
+
+        public DataTable BuscarPedidosSegunMesAño(int mes, int año)
+        {
+
+            SqlParameter[] parametros = new SqlParameter[2];
+
+            Conexion objetoconexion = new Conexion();
+
+            objetoconexion.Conectar();
+
+            parametros[0] = objetoconexion.CrearParametro("@mes", mes.ToString());
+            parametros[1] = objetoconexion.CrearParametro("@año", año.ToString());
+
+            DataTable objetotabla = objetoconexion.LeerPorStoreProcedureConParametros("BuscarPedidoporMesAño", parametros);
+
+            objetoconexion.Desconectar();
+
+            return objetotabla;
+
+        }
+
     }
 
 }
