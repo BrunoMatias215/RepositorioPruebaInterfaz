@@ -166,6 +166,50 @@ namespace CapaDeNegocios
 
         }
 
+
+        public DataTable CargartablaCadetes()
+        {
+
+            CapaDeDatos.CadeteDAL cadete = new CadeteDAL();
+
+            DataTable tablacadete = cadete.BuscarCadetesReales();
+
+
+
+            return tablacadete;
+
+        }
+
+        public void CrearCadete(string pnombre, string papellido, int ptelefono, int licencia)
+        {
+
+            CapaDeDatos.CadeteDAL cadete = new CapaDeDatos.CadeteDAL();
+
+            cadete.CrearCadete(pnombre, papellido, ptelefono, licencia);
+
+        }
+
+
+
+        public void ModificarCadete(int pidusuario, string pnombre, string apellido, int tel, int licencia)
+        {
+
+            CadeteDAL cadete = new CadeteDAL();
+
+            cadete.ModificarCadete(pidusuario, pnombre, apellido, tel, licencia);
+
+
+        }
+
+        public void EliminarCadete(int pid)
+        {
+
+            CadeteDAL cadete = new CadeteDAL();
+
+            cadete.EliminarCadete(pid);
+
+        }
+
     }
 
 }

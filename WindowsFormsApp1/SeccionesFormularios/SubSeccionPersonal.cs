@@ -36,6 +36,19 @@ namespace SeccionesFormularios
 
             }
 
+
+
+            ////Cadete
+
+
+            this.gridcadete.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            this.gridcadete.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            CadeteBLL cadete = new CadeteBLL();
+
+            gridcadete.DataSource = cadete.CargartablaCadetes ();
+
+
+
         }
 
         private void botonactulizar_Click(object sender, EventArgs e)
@@ -115,7 +128,85 @@ namespace SeccionesFormularios
             }
             else
             {
-                MessageBox.Show("No se selecciono nigun producto");
+                MessageBox.Show("No se selecciono ningun usuario");
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (textnom.Text == "" || textape.Text == "" || texttel.Text == "" || textlicencia.Text == "" )
+
+            {
+                MessageBox.Show("Falta completar datos");
+
+            }
+          
+            else
+            {
+                string nombre = textnom.Text;
+                string apellido = textape.Text;
+                int tel = int.Parse(texttel.Text);
+                int licencia = int.Parse(textlicencia.Text);
+               
+                CadeteBLL cadete = new CadeteBLL();
+                cadete.CrearCadete(nombre, apellido, tel, licencia);
+                gridcadete.DataSource = cadete.CargarCadetes();
+                MessageBox.Show("El Cadete se creo de forma correcta");
+            }
+
+        }
+
+        private void actulizarcadete_Click(object sender, EventArgs e)
+        {
+            CadeteBLL cadete = new CadeteBLL();
+
+            gridcadete.DataSource = cadete.CargartablaCadetes();
+        }
+
+        private void motonmodicadete_Click(object sender, EventArgs e)
+        {
+            int id = int.Parse(gridcadete.SelectedRows[0].Cells[0].Value.ToString());
+            string nombre =  (gridcadete.SelectedRows[0].Cells[1].Value.ToString());
+            string apellido = (gridcadete.SelectedRows[0].Cells[2].Value.ToString());
+            int telefono = int.Parse(gridcadete.SelectedRows[0].Cells[3].Value.ToString());
+            int licencia = int.Parse(gridcadete.SelectedRows[0].Cells[4].Value.ToString());
+
+
+
+            ModificarCadete cadete = new ModificarCadete(id, nombre, apellido, telefono, licencia);
+
+                cadete.ShowDialog();
+
+        }
+
+        private void botoneliminarcadete_Click(object sender, EventArgs e)
+        {
+            int id;
+            id = int.Parse(gridcadete.SelectedRows[0].Cells[0].Value.ToString());
+            string nombre = (gridcadete.SelectedRows[0].Cells[1].Value.ToString());
+            CadeteBLL cadete = new CadeteBLL();
+
+            if (gridcadete.SelectedRows.Count == 1)
+            {
+                DialogResult dialogResult = MessageBox.Show("¿Realmente quiere eliminar el cadete " + nombre + "?", "Eliminar cadete", MessageBoxButtons.YesNo);
+                if (dialogResult == DialogResult.Yes)
+                {
+
+                    cadete.EliminarCadete(id);
+
+
+                    MessageBox.Show("El cadete ha sido eliminado");
+
+
+                    gridcadete.DataSource = cadete.CargartablaCadetes();
+                }
+
+
+
+            }
+            else
+            {
+                MessageBox.Show("No se selecciono ningun cadete");
             }
         }
     }

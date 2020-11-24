@@ -46,8 +46,24 @@
             this.label8 = new System.Windows.Forms.Label();
             this.textcontraseña2 = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textape = new System.Windows.Forms.TextBox();
+            this.textlicencia = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.actulizarcadete = new System.Windows.Forms.Button();
+            this.botoneliminarcadete = new System.Windows.Forms.Button();
+            this.motonmodicadete = new System.Windows.Forms.Button();
+            this.gridcadete = new System.Windows.Forms.DataGridView();
+            this.button4 = new System.Windows.Forms.Button();
+            this.texttel = new System.Windows.Forms.TextBox();
+            this.textnom = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.GridPersonal)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridcadete)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // botonactulizar
@@ -217,18 +233,154 @@
             this.groupBox1.Controls.Add(this.textCUIL);
             this.groupBox1.Controls.Add(this.textNombre);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(25, 26);
+            this.groupBox1.Location = new System.Drawing.Point(25, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(972, 292);
             this.groupBox1.TabIndex = 34;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Usuario";
             // 
+            // textape
+            // 
+            this.textape.Location = new System.Drawing.Point(328, 45);
+            this.textape.Name = "textape";
+            this.textape.Size = new System.Drawing.Size(129, 20);
+            this.textape.TabIndex = 47;
+            // 
+            // textlicencia
+            // 
+            this.textlicencia.Location = new System.Drawing.Point(328, 89);
+            this.textlicencia.Name = "textlicencia";
+            this.textlicencia.Size = new System.Drawing.Size(129, 20);
+            this.textlicencia.TabIndex = 46;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(260, 89);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(53, 15);
+            this.label9.TabIndex = 45;
+            this.label9.Text = "Licencia";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(19, 89);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(55, 15);
+            this.label10.TabIndex = 44;
+            this.label10.Text = "Telefono";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(262, 48);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(51, 15);
+            this.label11.TabIndex = 43;
+            this.label11.Text = "Apellido";
+            // 
+            // actulizarcadete
+            // 
+            this.actulizarcadete.Location = new System.Drawing.Point(810, 89);
+            this.actulizarcadete.Name = "actulizarcadete";
+            this.actulizarcadete.Size = new System.Drawing.Size(135, 40);
+            this.actulizarcadete.TabIndex = 42;
+            this.actulizarcadete.Text = "Actualizar Lista";
+            this.actulizarcadete.UseVisualStyleBackColor = true;
+            this.actulizarcadete.Click += new System.EventHandler(this.actulizarcadete_Click);
+            // 
+            // botoneliminarcadete
+            // 
+            this.botoneliminarcadete.Location = new System.Drawing.Point(810, 181);
+            this.botoneliminarcadete.Name = "botoneliminarcadete";
+            this.botoneliminarcadete.Size = new System.Drawing.Size(135, 40);
+            this.botoneliminarcadete.TabIndex = 41;
+            this.botoneliminarcadete.Text = "Eliminar Cadete";
+            this.botoneliminarcadete.UseVisualStyleBackColor = true;
+            this.botoneliminarcadete.Click += new System.EventHandler(this.botoneliminarcadete_Click);
+            // 
+            // motonmodicadete
+            // 
+            this.motonmodicadete.Location = new System.Drawing.Point(810, 135);
+            this.motonmodicadete.Name = "motonmodicadete";
+            this.motonmodicadete.Size = new System.Drawing.Size(135, 40);
+            this.motonmodicadete.TabIndex = 40;
+            this.motonmodicadete.Text = "Modificiar Cadete";
+            this.motonmodicadete.UseVisualStyleBackColor = true;
+            this.motonmodicadete.Click += new System.EventHandler(this.motonmodicadete_Click);
+            // 
+            // gridcadete
+            // 
+            this.gridcadete.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridcadete.Location = new System.Drawing.Point(3, 121);
+            this.gridcadete.Name = "gridcadete";
+            this.gridcadete.RowHeadersWidth = 45;
+            this.gridcadete.Size = new System.Drawing.Size(776, 110);
+            this.gridcadete.TabIndex = 39;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(501, 48);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(127, 39);
+            this.button4.TabIndex = 38;
+            this.button4.Text = "Crear Cadete";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // texttel
+            // 
+            this.texttel.Location = new System.Drawing.Point(80, 84);
+            this.texttel.Name = "texttel";
+            this.texttel.Size = new System.Drawing.Size(129, 20);
+            this.texttel.TabIndex = 36;
+            // 
+            // textnom
+            // 
+            this.textnom.Location = new System.Drawing.Point(80, 42);
+            this.textnom.Name = "textnom";
+            this.textnom.Size = new System.Drawing.Size(129, 20);
+            this.textnom.TabIndex = 35;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(22, 48);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(52, 15);
+            this.label12.TabIndex = 34;
+            this.label12.Text = "Nombre";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.gridcadete);
+            this.groupBox2.Controls.Add(this.label12);
+            this.groupBox2.Controls.Add(this.botoneliminarcadete);
+            this.groupBox2.Controls.Add(this.motonmodicadete);
+            this.groupBox2.Controls.Add(this.actulizarcadete);
+            this.groupBox2.Controls.Add(this.textape);
+            this.groupBox2.Controls.Add(this.textnom);
+            this.groupBox2.Controls.Add(this.textlicencia);
+            this.groupBox2.Controls.Add(this.texttel);
+            this.groupBox2.Controls.Add(this.label9);
+            this.groupBox2.Controls.Add(this.label10);
+            this.groupBox2.Controls.Add(this.button4);
+            this.groupBox2.Controls.Add(this.label11);
+            this.groupBox2.Location = new System.Drawing.Point(25, 310);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(972, 254);
+            this.groupBox2.TabIndex = 48;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Cadete";
+            // 
             // SubSeccionPersonal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 592);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SubSeccionPersonal";
@@ -237,6 +389,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.GridPersonal)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridcadete)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -260,5 +415,19 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox textcontraseña2;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TextBox textape;
+        private System.Windows.Forms.TextBox textlicencia;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button actulizarcadete;
+        private System.Windows.Forms.Button botoneliminarcadete;
+        private System.Windows.Forms.Button motonmodicadete;
+        private System.Windows.Forms.DataGridView gridcadete;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.TextBox texttel;
+        private System.Windows.Forms.TextBox textnom;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.GroupBox groupBox2;
     }
 }
