@@ -144,7 +144,7 @@
             // 
             this.radioButtonDiario.AutoSize = true;
             this.radioButtonDiario.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDiario.Location = new System.Drawing.Point(24, 34);
+            this.radioButtonDiario.Location = new System.Drawing.Point(24, 46);
             this.radioButtonDiario.Name = "radioButtonDiario";
             this.radioButtonDiario.Size = new System.Drawing.Size(61, 21);
             this.radioButtonDiario.TabIndex = 2;
