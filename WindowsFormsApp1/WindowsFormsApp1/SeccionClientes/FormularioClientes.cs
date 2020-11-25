@@ -187,11 +187,19 @@ namespace WindowsFormsApp1.SeccionClientes
             if (this.textBox1.Text.Length != 0 && !(this.textBox1.Text.Contains(" ")))
             {
 
-                this.dataGridView1.DataSource = cliente.BuscarClientePorNombre(this.textBox1.Text);
+                this.dataGridView1.DataSource = cliente.BuscarClientePorNombre("%"+this.textBox1.Text+"%");
 
                 // Pedidos
 
                 int idcliente;
+                if (dataGridView1.Rows.Count==0)
+                {
+
+                }
+                else
+                {
+                        
+               
 
                 idcliente = int.Parse(this.dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
 
@@ -201,8 +209,8 @@ namespace WindowsFormsApp1.SeccionClientes
 
                 // Detalle Pedido
 
-                if (this.dataGridView2.Rows.Count > 0)
-                {
+                    if (this.dataGridView2.Rows.Count > 0)
+                    {
 
                     int idpedido = int.Parse(this.dataGridView2.SelectedRows[0].Cells[0].Value.ToString());
 
@@ -210,19 +218,19 @@ namespace WindowsFormsApp1.SeccionClientes
 
                     this.dataGridView3.DataSource = detallepedido.CargarTablaDetallePedidoSegunPedido(idpedido);
 
-                }
-                else
-                {
+                    }
+                    else if(this.dataGridView2.Rows.Count == 0)
+                     {
 
                     this.dataGridView2.DataSource = null;
 
                     this.dataGridView3.DataSource = null;
 
-                }
+                     }
 
-            }
-            else
-            {
+            
+                    else 
+                    {
 
                 this.dataGridView1.DataSource = cliente.CargarClientesDataTable();
 
@@ -230,7 +238,16 @@ namespace WindowsFormsApp1.SeccionClientes
 
                 this.dataGridView3.DataSource = null;
 
+                     }
+                 }
             }
+
+            if (textBox1.Text == "")
+            {
+                dataGridView1.DataSource = cliente.CargarClientes();
+                
+            }
+
 
         }
 
@@ -320,6 +337,19 @@ namespace WindowsFormsApp1.SeccionClientes
 
         }
 
+        private void dataGridView2_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if (this.dataGridView2.Rows.Count > 0)
+            {
+
+                int idpedido = int.Parse(this.dataGridView2.SelectedRows[0].Cells[0].Value.ToString());
+
+                DetallePedidoBLL detallepedido = new DetallePedidoBLL();
+
+                this.dataGridView3.DataSource = detallepedido.CargarTablaDetallePedidoSegunPedido(idpedido);
+
+            }
+        }
     }
 
 }

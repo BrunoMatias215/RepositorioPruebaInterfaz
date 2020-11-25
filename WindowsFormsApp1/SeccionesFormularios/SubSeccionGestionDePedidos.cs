@@ -130,15 +130,29 @@ namespace SeccionesFormularios
 
         private void BotonModificarEstado_Click(object sender, EventArgs e)
         {
+            int idpedido = int.Parse(this.dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
+            int idestado = ((EstadoCategoriaBLL)comboBoxEstadoPedido.SelectedItem).Idestadocategoria;
 
-            
+
+            CapaDeNegocios.PedidoBLL pedido = new CapaDeNegocios.PedidoBLL();
+            pedido.ModificarEstadoPedido(idpedido, idestado);
+
+            this.dataGridView1.DataSource = pedido.CargarPedidosActivos();
+
 
         }
 
         private void BotonAsignarCadete_Click(object sender, EventArgs e)
         {
 
+            CadeteBLL cadete = new CadeteBLL();
             
+            int idpedido = int.Parse(this.dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
+            int idcadete = ((CadeteBLL)comboBoxCadete.SelectedItem).Idcadete;
+            cadete.AsignarCadete(idpedido, idcadete);
+            CapaDeNegocios.PedidoBLL pedido = new CapaDeNegocios.PedidoBLL();
+
+            this.dataGridView1.DataSource = pedido.CargarPedidosActivos();
 
         }
 
