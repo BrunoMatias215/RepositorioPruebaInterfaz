@@ -82,6 +82,13 @@ namespace WindowsFormsApp1
 
             }
 
+            if (this.label3.Text == "[Encargado]")
+            {
+
+                this.BotonGestion.Enabled = false;
+
+            }
+
             this.CentrarElemento(this.MenuOpciones, this.label3);
 
             this.BotonPedidos.ForeColor = Color.White;

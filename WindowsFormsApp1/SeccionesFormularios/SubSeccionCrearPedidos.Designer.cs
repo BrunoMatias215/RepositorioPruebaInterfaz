@@ -80,6 +80,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.labelImporte = new System.Windows.Forms.Label();
             this.Comanda = new System.Drawing.Printing.PrintDocument();
+            this.TicketOriginal = new System.Drawing.Printing.PrintDocument();
+            this.TicketDuplicado = new System.Drawing.Printing.PrintDocument();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -672,7 +674,15 @@
             // 
             // Comanda
             // 
-            this.Comanda.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.Imprimir);
+            this.Comanda.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.ImprimirComanda);
+            // 
+            // TicketOriginal
+            // 
+            this.TicketOriginal.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.ImprimirTicketOriginal);
+            // 
+            // TicketDuplicado
+            // 
+            this.TicketDuplicado.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.ImprimirTicketDuplicado);
             // 
             // SubSeccionCrearPedidos
             // 
@@ -763,5 +773,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label labelImporte;
         private System.Drawing.Printing.PrintDocument Comanda;
+        private System.Drawing.Printing.PrintDocument TicketOriginal;
+        private System.Drawing.Printing.PrintDocument TicketDuplicado;
     }
 }

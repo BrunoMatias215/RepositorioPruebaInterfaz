@@ -80,17 +80,17 @@ namespace WindowsFormsApp1
             this.CentrarElemento(this, this.label4);
 
             this.label4.ForeColor = Color.White;
-
-            // Cargar Usuarios
-
-            UsuarioBLL usuario = new UsuarioBLL();
-        
-            this.listadeusuarios = usuario.CargarUsuarios();
-
+            
         }
 
         private void BotonIniciarSesion_Click(object sender, EventArgs e)
         {
+
+            // Cargar Usuarios
+
+            UsuarioBLL usuariobll = new UsuarioBLL();
+
+            this.listadeusuarios = usuariobll.CargarUsuarios();
 
             string nombredeusuario;
 

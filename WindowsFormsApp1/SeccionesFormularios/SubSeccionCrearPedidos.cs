@@ -18,6 +18,10 @@ namespace SeccionesFormularios
 
         private int idusuario;
 
+        private List<DetallePedidoBLL> listadetallespedidos;
+
+        private int contadorticket = 0;
+
         public SubSeccionCrearPedidos(int pidusuario)
         {
 
@@ -28,6 +32,10 @@ namespace SeccionesFormularios
         }
 
         public int Idusuario { get => idusuario; set => idusuario = value; }
+
+        public List<DetallePedidoBLL> Listadetallespedidos { get => listadetallespedidos; set => listadetallespedidos = value; }
+
+        public int Contadorticket { get => contadorticket; set => contadorticket = value; }
 
         private void SubSeccionPedidos_Load(object sender, EventArgs e)
         {
@@ -800,6 +808,8 @@ namespace SeccionesFormularios
 
                     // Detalle Pedido
 
+                    this.listadetallespedidos = new List<DetallePedidoBLL>();
+
                     foreach (DetallePedidoBLL detallepedidolocal in this.ListaDeDetallesPedidos.Items)
                     {
 
@@ -825,25 +835,36 @@ namespace SeccionesFormularios
 
                     this.ListaDeProductos.Items.Clear();
 
-                    this.ListaDeDetallesPedidos.Items.Clear();
-
                     this.comboBoxClientes.SelectedItem = null;
 
                     this.comboBoxClientes.Text = "";
-
-                    this.comboBoxFormasDePago.SelectedItem = null;
-
+    
                     this.comboBoxClientes.Text = "";
 
                     this.Observaciones.Text = "";
 
                     this.Total.Text = "0";
 
-                    //this.ConfigurarComanda();
+                    foreach (DetallePedidoBLL detallepedido in this.ListaDeDetallesPedidos.Items)
+                    {
 
+                        this.listadetallespedidos.Add(detallepedido);
 
+                    }
 
                     MessageBox.Show("Se ha creado el pedido", "Crear Pedido");
+
+                    this.ConfigurarComanda();
+
+                    this.ConfigurarTicketOriginal();
+
+                    this.ConfigurarTicketDuplicado();
+
+                    this.ListaDeDetallesPedidos.Items.Clear();
+
+                    this.comboBoxFormasDePago.SelectedItem = null;
+
+                    this.Total.Text = "0";
 
                 }
 
@@ -855,11 +876,9 @@ namespace SeccionesFormularios
 
             }
 
-            this.ConfigurarDocumento();
-
         }
 
-        private void ConfigurarDocumento()
+        private void ConfigurarComanda()
         {
 
             Comanda = new System.Drawing.Printing.PrintDocument();
@@ -870,35 +889,213 @@ namespace SeccionesFormularios
 
             Comanda.DefaultPageSettings.PaperSize = new System.Drawing.Printing.PaperSize("pprnm", 100, 100);
 
-            Comanda.PrintPage += Imprimir;
+            Comanda.PrintPage += ImprimirComanda;
 
             Comanda.Print();
 
         }
 
-        private void Imprimir(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        public void ConfigurarTicketOriginal ()
         {
 
-            // Fuentes
+            TicketOriginal = new System.Drawing.Printing.PrintDocument();
 
-            Font primerfuente = new Font("Bell MT", 16, FontStyle.Bold);
+            PrinterSettings printersettings = new PrinterSettings();
 
-            Font segundafuente = new Font("Arial", 30, FontStyle.Regular);
+            TicketOriginal.PrinterSettings = printersettings;
 
-            Font tercerafuente = new Font("Arial", 18, FontStyle.Regular);
+            TicketOriginal.DefaultPageSettings.PaperSize = new System.Drawing.Printing.PaperSize("pprnm", 100, 100);
 
-            e.Graphics.DrawString("Comandas - Guilerova Solutions", primerfuente, Brushes.CadetBlue, new PointF(0, 0));
+            TicketOriginal.PrintPage += ImprimirTicketOriginal;
 
-            e.Graphics.DrawString("Che Miranda", segundafuente, Brushes.Black, new PointF(0, 50));
+            TicketOriginal.Print();
 
-            e.Graphics.DrawString("Comanda", tercerafuente, Brushes.Black, new PointF(0, 120));
+        }
 
-            e.Graphics.DrawString("______________________________", primerfuente, Brushes.Black, new PointF(0, 120));
+        public void ConfigurarTicketDuplicado ()
+        {
+
+            TicketDuplicado = new System.Drawing.Printing.PrintDocument();
+
+            PrinterSettings printersettings = new PrinterSettings();
+
+            TicketDuplicado.PrinterSettings = printersettings;
+
+            TicketDuplicado.DefaultPageSettings.PaperSize = new System.Drawing.Printing.PaperSize("pprnm", 100, 100);
+
+            TicketDuplicado.PrintPage += ImprimirTicketDuplicado;
+
+            TicketDuplicado.Print();
+
+        }
+
+        private void ImprimirComanda(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+
+            DetallePedidoBLL objetodetallepedido = new DetallePedidoBLL();
+
+            // Comanda
+
+            e.Graphics.DrawString("Comandas - Guilerova Solutions", new Font("Bell MT", 16, FontStyle.Bold),
+                Brushes.CadetBlue, new PointF(0, 0));
+
+            e.Graphics.DrawString("Che Miranda", new Font("Arial", 30, FontStyle.Regular),
+                Brushes.Black, new PointF(0, 50));
+
+            e.Graphics.DrawString("Comanda N° " + int.Parse(objetodetallepedido.getReferenciaIdPedido().Rows[0][0].ToString()), new Font("Arial", 18, FontStyle.Regular),
+                Brushes.Black, new PointF(0, 120));
+
+            e.Graphics.DrawString("______________________________", new Font("Arial", 18, FontStyle.Regular),
+                Brushes.Black, new PointF(0, 150));
+
+            e.Graphics.DrawString("Fecha: " + DateTime.Now.Date.ToString(), new Font("Arial", 16, FontStyle.Regular),
+                Brushes.Black, new PointF(0, 180));
+
+            e.Graphics.DrawString("Hora: " + DateTime.Now.Hour.ToString() + ":" + DateTime.Now.Minute.ToString() + ":" + DateTime.Now.Second.ToString(), new Font("Arial", 16, FontStyle.Regular),
+                Brushes.Black, new PointF(0, 220));
+
+            e.Graphics.DrawString("______________________________", new Font("Arial", 18, FontStyle.Regular),
+                Brushes.Black, new PointF(0, 250));
+
+            e.Graphics.DrawString("Detalle Pedido", new Font("Arial", 18, FontStyle.Regular),
+                Brushes.Black, new PointF(0, 280));
+
+            int y = 320;
+
+            foreach (DetallePedidoBLL detallepedido in this.listadetallespedidos)
+            {
+
+                e.Graphics.DrawString(detallepedido.Informacion,
+                    new Font("Arial", 18, FontStyle.Regular),
+                Brushes.Black, new PointF(0, y));
+
+                y = y + 30;
+
+            }
+ 
+        }
+
+        private void ImprimirTicketOriginal(object sender, PrintPageEventArgs e)
+        {
+ 
+            // Ticket Original
+
+            e.Graphics.DrawString("Comandas - Guilerova Solutions", new Font("Bell MT", 16, FontStyle.Bold),
+                Brushes.CadetBlue, new PointF(0, 0));
+
+            e.Graphics.DrawString("Che Miranda", new Font("Arial", 30, FontStyle.Regular),
+                Brushes.Black, new PointF(0, 50));
+
+            e.Graphics.DrawString("Dirección: Av. Avellaneda 4199 - Teléfono: 011-4671-8718", new Font("Arial", 18, FontStyle.Regular),
+                Brushes.Black, new PointF(0, 120));
+
+            e.Graphics.DrawString("Ticket N° "+this.contadorticket+" CUIT: XX-XXXXXXXX-X Original", new Font("Arial", 16, FontStyle.Regular),
+                Brushes.Black, new PointF(0, 150));
+
+            e.Graphics.DrawString("______________________________", new Font("Arial", 18, FontStyle.Regular),
+                Brushes.Black, new PointF(0, 190));
+
+            e.Graphics.DrawString("Fecha: " + DateTime.Now.Date.ToString(),new Font("Arial", 16, FontStyle.Regular),
+                Brushes.Black, new PointF(0, 220));
+
+            e.Graphics.DrawString("Hora: " + DateTime.Now.Hour.ToString()+":"+ DateTime.Now.Minute.ToString() + ":"+DateTime.Now.Second.ToString(), new Font("Arial", 16, FontStyle.Regular),
+                Brushes.Black, new PointF(0, 260));
+
+            e.Graphics.DrawString("______________________________", new Font("Arial", 18, FontStyle.Regular),
+                Brushes.Black, new PointF(0, 300));
+
+            e.Graphics.DrawString("Pedido", new Font("Arial", 18, FontStyle.Regular),
+                Brushes.Black, new PointF(0, 330));
+
+            e.Graphics.DrawString("Num. Pedido          Detalle Pedido         Cantidad         Importe", new Font("Arial", 18, FontStyle.Regular),
+                Brushes.Black, new PointF(0, 370));
+
+            int y = 410;
+
+            foreach (DetallePedidoBLL detallepedido in this.listadetallespedidos)
+            {
+
+                e.Graphics.DrawString(detallepedido.Idpedido +"         "+detallepedido.Informacion, new Font("Arial", 18, FontStyle.Regular),
+                Brushes.Black, new PointF(0, y));
+
+                y = y + 30;
+
+            }
+
+            e.Graphics.DrawString("______________________________", new Font("Arial", 18, FontStyle.Regular),
+                Brushes.Black, new PointF(0, y));
+
+            e.Graphics.DrawString("MED. PAGO: " + this.comboBoxFormasDePago.Text + "         IMPORTE TOTAL: " + this.Total, new Font("Arial", 16, FontStyle.Regular),
+                Brushes.Black, new PointF(0, y + 30));
+
+            e.Graphics.DrawString("Gracias por su pedido", new Font("Arial", 16, FontStyle.Regular),
+                Brushes.Black, new PointF(0, y + 30));
+
+        }
+
+        private void ImprimirTicketDuplicado(object sender, PrintPageEventArgs e)
+        {
+
+            // Ticket Duplicado
+
+            e.Graphics.DrawString("Comandas - Guilerova Solutions", new Font("Bell MT", 16, FontStyle.Bold),
+                Brushes.CadetBlue, new PointF(0, 0));
+
+            e.Graphics.DrawString("Che Miranda", new Font("Arial", 30, FontStyle.Regular),
+                Brushes.Black, new PointF(0, 50));
+
+            e.Graphics.DrawString("Dirección: Av. Avellaneda 4199 - Teléfono: 011-4671-8718", new Font("Arial", 18, FontStyle.Regular),
+                Brushes.Black, new PointF(0, 120));
+
+            e.Graphics.DrawString("Ticket N° " + this.contadorticket + " CUIT: XX-XXXXXXXX-X Duplicado", new Font("Arial", 16, FontStyle.Regular),
+                Brushes.Black, new PointF(0, 150));
+
+            e.Graphics.DrawString("______________________________", new Font("Arial", 18, FontStyle.Regular),
+                Brushes.Black, new PointF(0, 190));
+
+            e.Graphics.DrawString("Fecha: " + DateTime.Now.Date.ToString(), new Font("Arial", 16, FontStyle.Regular),
+                Brushes.Black, new PointF(0, 220));
+
+            e.Graphics.DrawString("Hora: " + DateTime.Now.Hour.ToString() + ":" + DateTime.Now.Minute.ToString() + ":" + DateTime.Now.Second.ToString(), new Font("Arial", 16, FontStyle.Regular),
+                Brushes.Black, new PointF(0, 260));
+
+            e.Graphics.DrawString("______________________________", new Font("Arial", 18, FontStyle.Regular),
+                Brushes.Black, new PointF(0, 300));
+
+            e.Graphics.DrawString("Pedido", new Font("Arial", 18, FontStyle.Regular),
+                Brushes.Black, new PointF(0, 330));
+
+            e.Graphics.DrawString("Num. Pedido          Detalle Pedido         Cantidad         Importe", new Font("Arial", 18, FontStyle.Regular),
+                Brushes.Black, new PointF(0, 370));
+
+            int y = 410;
+
+            foreach (DetallePedidoBLL detallepedido in this.listadetallespedidos)
+            {
+
+                e.Graphics.DrawString(detallepedido.Idpedido + "         " + detallepedido.Informacion, new Font("Arial", 18, FontStyle.Regular),
+                Brushes.Black, new PointF(0, 370));
+
+                y = y + 30;
+
+            }
+
+            e.Graphics.DrawString("______________________________", new Font("Arial", 18, FontStyle.Regular),
+                Brushes.Black, new PointF(0, y));
+
+            e.Graphics.DrawString("MED. PAGO: " + this.comboBoxFormasDePago.Text + "         IMPORTE TOTAL: " + this.Total, new Font("Arial", 16, FontStyle.Regular),
+                Brushes.Black, new PointF(0, y + 30));
+
+            e.Graphics.DrawString("Gracias por su pedido", new Font("Arial", 16, FontStyle.Regular),
+                Brushes.Black, new PointF(0, y + 30));
+
+            this.contadorticket = this.contadorticket + 1;
 
         }
 
     }
-    }
+
+}
 
 
 
