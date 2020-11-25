@@ -1087,6 +1087,28 @@ namespace CapaDeNegocios
 
         }
 
+        public DataTable CargarProductoMasVendidoDia()
+        {
+
+            CapaDeDatos.ProductoDAL productodal = new CapaDeDatos.ProductoDAL();
+
+            DataTable tablaproductos = productodal.BuscarProductoMasVendidodia();
+
+            return tablaproductos;
+
+        }
+
+        public DataTable CargarProductoMasVendidoMesAño(int mes, int año)
+        {
+
+            CapaDeDatos.ProductoDAL productodal = new CapaDeDatos.ProductoDAL();
+
+            DataTable tablaproductos = productodal.BuscarProductoMasVendidoMesAño(mes, año);
+
+            return tablaproductos;
+
+        }
+
     }
 
 

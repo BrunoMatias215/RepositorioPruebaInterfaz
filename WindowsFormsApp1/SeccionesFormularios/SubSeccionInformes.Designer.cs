@@ -34,7 +34,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.gridProductos = new System.Windows.Forms.DataGridView();
             this.BotonVerProductos = new System.Windows.Forms.Button();
-            this.BotonGenerarReporte = new System.Windows.Forms.Button();
             this.comboBoxAño2 = new System.Windows.Forms.ComboBox();
             this.radioButtonDiario = new System.Windows.Forms.RadioButton();
             this.label4 = new System.Windows.Forms.Label();
@@ -62,7 +61,6 @@
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.gridProductos);
             this.panel2.Controls.Add(this.BotonVerProductos);
-            this.panel2.Controls.Add(this.BotonGenerarReporte);
             this.panel2.Controls.Add(this.comboBoxAño2);
             this.panel2.Controls.Add(this.radioButtonDiario);
             this.panel2.Controls.Add(this.label4);
@@ -87,7 +85,7 @@
             // 
             this.labeltotal.AutoSize = true;
             this.labeltotal.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labeltotal.Location = new System.Drawing.Point(709, 66);
+            this.labeltotal.Location = new System.Drawing.Point(687, 66);
             this.labeltotal.Name = "labeltotal";
             this.labeltotal.Size = new System.Drawing.Size(15, 17);
             this.labeltotal.TabIndex = 21;
@@ -132,18 +130,7 @@
             this.BotonVerProductos.TabIndex = 17;
             this.BotonVerProductos.Text = "Ver Productos";
             this.BotonVerProductos.UseVisualStyleBackColor = true;
-            // 
-            // BotonGenerarReporte
-            // 
-            this.BotonGenerarReporte.FlatAppearance.BorderSize = 0;
-            this.BotonGenerarReporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BotonGenerarReporte.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BotonGenerarReporte.Location = new System.Drawing.Point(551, 52);
-            this.BotonGenerarReporte.Name = "BotonGenerarReporte";
-            this.BotonGenerarReporte.Size = new System.Drawing.Size(114, 41);
-            this.BotonGenerarReporte.TabIndex = 19;
-            this.BotonGenerarReporte.Text = "Generar Reporte";
-            this.BotonGenerarReporte.UseVisualStyleBackColor = true;
+            this.BotonVerProductos.Click += new System.EventHandler(this.BotonVerProductos_Click);
             // 
             // comboBoxAño2
             // 
@@ -170,7 +157,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(671, 66);
+            this.label4.Location = new System.Drawing.Point(611, 66);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(36, 17);
             this.label4.TabIndex = 15;
@@ -203,9 +190,9 @@
             this.label5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(21, 279);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(67, 17);
+            this.label5.Size = new System.Drawing.Size(125, 17);
             this.label5.TabIndex = 13;
-            this.label5.Text = "Productos";
+            this.label5.Text = "Productos Vendidos";
             // 
             // label2
             // 
@@ -228,6 +215,7 @@
             this.radioMensual2.TabStop = true;
             this.radioMensual2.Text = "Mensual";
             this.radioMensual2.UseVisualStyleBackColor = true;
+            this.radioMensual2.CheckedChanged += new System.EventHandler(this.radioMensual2_CheckedChanged);
             // 
             // comboBoxMes
             // 
@@ -325,7 +313,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView gridProductos;
         private System.Windows.Forms.Button BotonVerProductos;
-        private System.Windows.Forms.Button BotonGenerarReporte;
         private System.Windows.Forms.ComboBox comboBoxAño2;
         private System.Windows.Forms.RadioButton radioButtonDiario;
         private System.Windows.Forms.Label label4;

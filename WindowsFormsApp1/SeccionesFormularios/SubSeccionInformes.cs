@@ -166,6 +166,60 @@ namespace SeccionesFormularios
 
             }
         }
+
+        private void BotonVerProductos_Click(object sender, EventArgs e)
+        {
+            //Diario
+            if (radioDiaro2.Checked)
+            {
+
+                ProductoBLL producto = new ProductoBLL();
+                gridProductos.DataSource = producto.CargarProductoMasVendidoDia();
+
+               
+
+
+
+            }
+            //Mensual
+
+            if (radioMensual2.Checked)
+            {
+                if (comboBoxMes2.SelectedItem == null || comboBoxAño2.SelectedItem == null)
+                {
+
+                    MessageBox.Show("Seleccione una fecha correcta");
+
+                }
+                else
+                {
+                    int mes = comboBoxMes2.SelectedIndex + 1;
+                    int año = int.Parse(comboBoxAño2.SelectedItem.ToString());
+
+
+
+                    ProductoBLL producto = new ProductoBLL();
+
+                    gridProductos.DataSource = producto.CargarProductoMasVendidoMesAño(mes, año);
+
+                    int total = 0;
+                    foreach (DataGridViewRow fila in gridPedidos.Rows)
+                    {
+
+
+
+                        total = total + int.Parse(fila.Cells[8].Value.ToString());
+                    }
+                    labeltotal.Text = total.ToString();
+
+                }
+            }
     }
 
+        private void radioMensual2_CheckedChanged(object sender, EventArgs e)
+        {
+            comboBoxMes2.Enabled = true;
+            comboBoxAño2.Enabled = true;
+        }
+    }
 }

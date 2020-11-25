@@ -502,6 +502,41 @@ namespace CapaDeDatos
 
         }
 
+
+        public DataTable BuscarProductoMasVendidodia()
+        {
+
+            Conexion objetoconexion = new Conexion();
+
+            objetoconexion.Conectar();
+
+            DataTable objetotabla = objetoconexion.LeerPorStoreProcedure("SPBuscarProductoMasVendidodia");
+
+            objetoconexion.Desconectar();
+
+            return objetotabla;
+
+        }
+
+        public DataTable BuscarProductoMasVendidoMesAño(int mes, int año)
+        {
+
+            SqlParameter[] parametros = new SqlParameter[2];
+
+            Conexion objetoconexion = new Conexion();
+            parametros[0] = objetoconexion.CrearParametro("@mes", mes.ToString());
+            parametros[1] = objetoconexion.CrearParametro("@año", año.ToString());
+
+            objetoconexion.Conectar();
+
+            DataTable objetotabla = objetoconexion.LeerPorStoreProcedureConParametros("SPBuscarProductoMasVendidoMesAño", parametros);
+
+            objetoconexion.Desconectar();
+
+            return objetotabla;
+
+        }
+
     }
 
 }
