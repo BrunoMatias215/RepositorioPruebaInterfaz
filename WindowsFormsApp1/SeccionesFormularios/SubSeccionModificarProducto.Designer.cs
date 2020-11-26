@@ -43,40 +43,40 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(68, 92);
+            this.label1.Location = new System.Drawing.Point(26, 84);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 15);
+            this.label1.Size = new System.Drawing.Size(47, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nombre:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(78, 164);
+            this.label2.Location = new System.Drawing.Point(26, 169);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 15);
+            this.label2.Size = new System.Drawing.Size(40, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "Precio:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(60, 121);
+            this.label3.Location = new System.Drawing.Point(26, 128);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 15);
+            this.label3.Size = new System.Drawing.Size(55, 13);
             this.label3.TabIndex = 2;
             this.label3.Text = "Categoria:";
             // 
             // textnombre
             // 
-            this.textnombre.Location = new System.Drawing.Point(136, 92);
+            this.textnombre.Location = new System.Drawing.Point(127, 77);
             this.textnombre.Name = "textnombre";
             this.textnombre.Size = new System.Drawing.Size(138, 20);
             this.textnombre.TabIndex = 3;
             // 
             // textprecio
             // 
-            this.textprecio.Location = new System.Drawing.Point(136, 164);
+            this.textprecio.Location = new System.Drawing.Point(127, 162);
             this.textprecio.Name = "textprecio";
             this.textprecio.Size = new System.Drawing.Size(138, 20);
             this.textprecio.TabIndex = 4;
@@ -84,16 +84,16 @@
             // combocategoria
             // 
             this.combocategoria.FormattingEnabled = true;
-            this.combocategoria.Location = new System.Drawing.Point(136, 121);
+            this.combocategoria.Location = new System.Drawing.Point(127, 120);
             this.combocategoria.Name = "combocategoria";
             this.combocategoria.Size = new System.Drawing.Size(138, 21);
             this.combocategoria.TabIndex = 5;
             // 
             // BotonAceptar
             // 
-            this.BotonAceptar.Location = new System.Drawing.Point(38, 243);
+            this.BotonAceptar.Location = new System.Drawing.Point(63, 219);
             this.BotonAceptar.Name = "BotonAceptar";
-            this.BotonAceptar.Size = new System.Drawing.Size(127, 46);
+            this.BotonAceptar.Size = new System.Drawing.Size(85, 32);
             this.BotonAceptar.TabIndex = 6;
             this.BotonAceptar.Text = "Aceptar";
             this.BotonAceptar.UseVisualStyleBackColor = true;
@@ -101,9 +101,9 @@
             // 
             // botonCancelar
             // 
-            this.botonCancelar.Location = new System.Drawing.Point(201, 243);
+            this.botonCancelar.Location = new System.Drawing.Point(154, 219);
             this.botonCancelar.Name = "botonCancelar";
-            this.botonCancelar.Size = new System.Drawing.Size(127, 46);
+            this.botonCancelar.Size = new System.Drawing.Size(85, 32);
             this.botonCancelar.TabIndex = 7;
             this.botonCancelar.Text = "Cancelar";
             this.botonCancelar.UseVisualStyleBackColor = true;
@@ -112,18 +112,18 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(33, 68);
+            this.label4.Location = new System.Drawing.Point(26, 40);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(90, 15);
+            this.label4.Size = new System.Drawing.Size(80, 13);
             this.label4.TabIndex = 8;
             this.label4.Text = "ID del producto";
             // 
             // labelid
             // 
             this.labelid.AutoSize = true;
-            this.labelid.Location = new System.Drawing.Point(133, 68);
+            this.labelid.Location = new System.Drawing.Point(124, 40);
             this.labelid.Name = "labelid";
-            this.labelid.Size = new System.Drawing.Size(14, 15);
+            this.labelid.Size = new System.Drawing.Size(13, 13);
             this.labelid.TabIndex = 9;
             this.labelid.Text = "0";
             // 
@@ -131,7 +131,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(550, 492);
+            this.ClientSize = new System.Drawing.Size(296, 278);
             this.Controls.Add(this.labelid);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.botonCancelar);
@@ -142,8 +142,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "SubSeccionModificarProducto";
-            this.Text = "SubSeccionModificarProducto";
+            this.Text = "Modificar Producto";
             this.Load += new System.EventHandler(this.SubSeccionModificarProducto_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

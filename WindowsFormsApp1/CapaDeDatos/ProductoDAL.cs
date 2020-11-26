@@ -453,8 +453,6 @@ namespace CapaDeDatos
 
             parametros[2] = objetoconexion.CrearParametro("@precio", pprecio.ToString());
 
-          
-
             objetoconexion.EscribirPorStoreProcedure("SPCrearProducto", parametros);
 
             objetoconexion.Desconectar();
@@ -494,7 +492,6 @@ namespace CapaDeDatos
             objetoconexion.Conectar();
 
             parametros[0] = objetoconexion.CrearParametro("@idproducto", pidproducto.ToString());
-
 
             objetoconexion.EscribirPorStoreProcedure("SPEliminarProducto", parametros);
 

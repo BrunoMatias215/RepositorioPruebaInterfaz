@@ -28,25 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.BarraSuperior = new System.Windows.Forms.Panel();
             this.BotonPersonal = new System.Windows.Forms.Button();
             this.BotonProductos = new System.Windows.Forms.Button();
             this.BotonInformes = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1.SuspendLayout();
+            this.BarraSuperior.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // BarraSuperior
             // 
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel1.Controls.Add(this.BotonPersonal);
-            this.panel1.Controls.Add(this.BotonProductos);
-            this.panel1.Controls.Add(this.BotonInformes);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1067, 52);
-            this.panel1.TabIndex = 20;
+            this.BarraSuperior.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BarraSuperior.Controls.Add(this.BotonPersonal);
+            this.BarraSuperior.Controls.Add(this.BotonProductos);
+            this.BarraSuperior.Controls.Add(this.BotonInformes);
+            this.BarraSuperior.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BarraSuperior.Location = new System.Drawing.Point(0, 0);
+            this.BarraSuperior.Name = "BarraSuperior";
+            this.BarraSuperior.Size = new System.Drawing.Size(1067, 52);
+            this.BarraSuperior.TabIndex = 20;
             // 
             // BotonPersonal
             // 
@@ -100,18 +100,18 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 644);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.BarraSuperior);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormularioGestion";
             this.Text = "FormularioGestion";
             this.Load += new System.EventHandler(this.FormularioGestion_Load);
-            this.panel1.ResumeLayout(false);
+            this.BarraSuperior.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel BarraSuperior;
         private System.Windows.Forms.Button BotonProductos;
         private System.Windows.Forms.Button BotonInformes;
         private System.Windows.Forms.Button BotonPersonal;

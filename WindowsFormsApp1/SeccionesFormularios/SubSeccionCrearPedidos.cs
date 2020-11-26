@@ -20,7 +20,7 @@ namespace SeccionesFormularios
 
         private List<DetallePedidoBLL> listadetallespedidos;
 
-        private int contadorticket = 0;
+        private int contadorticket = 1;
 
         public SubSeccionCrearPedidos(int pidusuario)
         {
@@ -838,22 +838,13 @@ namespace SeccionesFormularios
                     this.comboBoxClientes.SelectedItem = null;
 
                     this.comboBoxClientes.Text = "";
-    
+
                     this.comboBoxClientes.Text = "";
 
                     this.Observaciones.Text = "";
 
-                    this.Total.Text = "0";
-
-                    foreach (DetallePedidoBLL detallepedido in this.ListaDeDetallesPedidos.Items)
-                    {
-
-                        this.listadetallespedidos.Add(detallepedido);
-
-                    }
-
                     MessageBox.Show("Se ha creado el pedido", "Crear Pedido");
-
+ 
                     this.ConfigurarComanda();
 
                     this.ConfigurarTicketOriginal();
@@ -948,7 +939,7 @@ namespace SeccionesFormularios
             e.Graphics.DrawString("______________________________", new Font("Arial", 18, FontStyle.Regular),
                 Brushes.Black, new PointF(0, 150));
 
-            e.Graphics.DrawString("Fecha: " + DateTime.Now.Date.ToString(), new Font("Arial", 16, FontStyle.Regular),
+            e.Graphics.DrawString("Fecha: " + DateTime.Now.Date.ToShortDateString(), new Font("Arial", 16, FontStyle.Regular),
                 Brushes.Black, new PointF(0, 180));
 
             e.Graphics.DrawString("Hora: " + DateTime.Now.Hour.ToString() + ":" + DateTime.Now.Minute.ToString() + ":" + DateTime.Now.Second.ToString(), new Font("Arial", 16, FontStyle.Regular),
@@ -962,7 +953,7 @@ namespace SeccionesFormularios
 
             int y = 320;
 
-            foreach (DetallePedidoBLL detallepedido in this.listadetallespedidos)
+            foreach (DetallePedidoBLL detallepedido in this.ListaDeDetallesPedidos.Items)
             {
 
                 e.Graphics.DrawString(detallepedido.Informacion,
@@ -995,7 +986,7 @@ namespace SeccionesFormularios
             e.Graphics.DrawString("______________________________", new Font("Arial", 18, FontStyle.Regular),
                 Brushes.Black, new PointF(0, 190));
 
-            e.Graphics.DrawString("Fecha: " + DateTime.Now.Date.ToString(),new Font("Arial", 16, FontStyle.Regular),
+            e.Graphics.DrawString("Fecha: " + DateTime.Now.Date.ToShortDateString(),new Font("Arial", 16, FontStyle.Regular),
                 Brushes.Black, new PointF(0, 220));
 
             e.Graphics.DrawString("Hora: " + DateTime.Now.Hour.ToString()+":"+ DateTime.Now.Minute.ToString() + ":"+DateTime.Now.Second.ToString(), new Font("Arial", 16, FontStyle.Regular),
@@ -1007,15 +998,12 @@ namespace SeccionesFormularios
             e.Graphics.DrawString("Pedido", new Font("Arial", 18, FontStyle.Regular),
                 Brushes.Black, new PointF(0, 330));
 
-            e.Graphics.DrawString("Num. Pedido          Detalle Pedido         Cantidad         Importe", new Font("Arial", 18, FontStyle.Regular),
-                Brushes.Black, new PointF(0, 370));
+            int y = 360;
 
-            int y = 410;
-
-            foreach (DetallePedidoBLL detallepedido in this.listadetallespedidos)
+            foreach (DetallePedidoBLL detallepedido in this.ListaDeDetallesPedidos.Items)
             {
 
-                e.Graphics.DrawString(detallepedido.Idpedido +"         "+detallepedido.Informacion, new Font("Arial", 18, FontStyle.Regular),
+                e.Graphics.DrawString(int.Parse(detallepedido.getReferenciaIdPedido().Rows[0][0].ToString()) +"         "+detallepedido.Informacion, new Font("Arial", 18, FontStyle.Regular),
                 Brushes.Black, new PointF(0, y));
 
                 y = y + 30;
@@ -1023,13 +1011,13 @@ namespace SeccionesFormularios
             }
 
             e.Graphics.DrawString("______________________________", new Font("Arial", 18, FontStyle.Regular),
-                Brushes.Black, new PointF(0, y));
-
-            e.Graphics.DrawString("MED. PAGO: " + this.comboBoxFormasDePago.Text + "         IMPORTE TOTAL: " + this.Total, new Font("Arial", 16, FontStyle.Regular),
                 Brushes.Black, new PointF(0, y + 30));
+
+            e.Graphics.DrawString("MED. PAGO: " + this.comboBoxFormasDePago.Text + "         IMPORTE TOTAL: " + this.Total.Text, new Font("Arial", 16, FontStyle.Regular),
+                Brushes.Black, new PointF(0, y + 70));
 
             e.Graphics.DrawString("Gracias por su pedido", new Font("Arial", 16, FontStyle.Regular),
-                Brushes.Black, new PointF(0, y + 30));
+                Brushes.Black, new PointF(0, y + 110));
 
         }
 
@@ -1053,7 +1041,7 @@ namespace SeccionesFormularios
             e.Graphics.DrawString("______________________________", new Font("Arial", 18, FontStyle.Regular),
                 Brushes.Black, new PointF(0, 190));
 
-            e.Graphics.DrawString("Fecha: " + DateTime.Now.Date.ToString(), new Font("Arial", 16, FontStyle.Regular),
+            e.Graphics.DrawString("Fecha: " + DateTime.Now.Date.ToShortDateString(), new Font("Arial", 16, FontStyle.Regular),
                 Brushes.Black, new PointF(0, 220));
 
             e.Graphics.DrawString("Hora: " + DateTime.Now.Hour.ToString() + ":" + DateTime.Now.Minute.ToString() + ":" + DateTime.Now.Second.ToString(), new Font("Arial", 16, FontStyle.Regular),
@@ -1065,29 +1053,26 @@ namespace SeccionesFormularios
             e.Graphics.DrawString("Pedido", new Font("Arial", 18, FontStyle.Regular),
                 Brushes.Black, new PointF(0, 330));
 
-            e.Graphics.DrawString("Num. Pedido          Detalle Pedido         Cantidad         Importe", new Font("Arial", 18, FontStyle.Regular),
-                Brushes.Black, new PointF(0, 370));
+            int y = 360;
 
-            int y = 410;
-
-            foreach (DetallePedidoBLL detallepedido in this.listadetallespedidos)
+            foreach (DetallePedidoBLL detallepedido in this.ListaDeDetallesPedidos.Items)
             {
 
-                e.Graphics.DrawString(detallepedido.Idpedido + "         " + detallepedido.Informacion, new Font("Arial", 18, FontStyle.Regular),
-                Brushes.Black, new PointF(0, 370));
+                e.Graphics.DrawString(int.Parse(detallepedido.getReferenciaIdPedido().Rows[0][0].ToString()) + "         " + detallepedido.Informacion, new Font("Arial", 18, FontStyle.Regular),
+                Brushes.Black, new PointF(0, y));
 
                 y = y + 30;
 
             }
 
             e.Graphics.DrawString("______________________________", new Font("Arial", 18, FontStyle.Regular),
-                Brushes.Black, new PointF(0, y));
-
-            e.Graphics.DrawString("MED. PAGO: " + this.comboBoxFormasDePago.Text + "         IMPORTE TOTAL: " + this.Total, new Font("Arial", 16, FontStyle.Regular),
                 Brushes.Black, new PointF(0, y + 30));
+
+            e.Graphics.DrawString("MED. PAGO: " + this.comboBoxFormasDePago.Text + "         IMPORTE TOTAL: " + this.Total.Text, new Font("Arial", 16, FontStyle.Regular),
+                Brushes.Black, new PointF(0, y + 70));
 
             e.Graphics.DrawString("Gracias por su pedido", new Font("Arial", 16, FontStyle.Regular),
-                Brushes.Black, new PointF(0, y + 30));
+                Brushes.Black, new PointF(0, y + 110));
 
             this.contadorticket = this.contadorticket + 1;
 

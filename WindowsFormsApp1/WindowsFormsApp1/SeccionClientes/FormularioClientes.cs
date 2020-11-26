@@ -192,62 +192,62 @@ namespace WindowsFormsApp1.SeccionClientes
                 // Pedidos
 
                 int idcliente;
-                if (dataGridView1.Rows.Count==0)
+
+                if (dataGridView1.Rows.Count == 0)
                 {
+
+
 
                 }
                 else
                 {
                         
-               
+                    idcliente = int.Parse(this.dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
 
-                idcliente = int.Parse(this.dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
+                    PedidoBLL pedido = new PedidoBLL();
 
-                PedidoBLL pedido = new PedidoBLL();
+                    this.dataGridView2.DataSource = pedido.CargarPedidosSegunCliente(idcliente);
 
-                this.dataGridView2.DataSource = pedido.CargarPedidosSegunCliente(idcliente);
-
-                // Detalle Pedido
+                    // Detalle Pedido
 
                     if (this.dataGridView2.Rows.Count > 0)
                     {
 
-                    int idpedido = int.Parse(this.dataGridView2.SelectedRows[0].Cells[0].Value.ToString());
+                        int idpedido = int.Parse(this.dataGridView2.SelectedRows[0].Cells[0].Value.ToString());
 
-                    DetallePedidoBLL detallepedido = new DetallePedidoBLL();
+                        DetallePedidoBLL detallepedido = new DetallePedidoBLL();
 
-                    this.dataGridView3.DataSource = detallepedido.CargarTablaDetallePedidoSegunPedido(idpedido);
+                        this.dataGridView3.DataSource = detallepedido.CargarTablaDetallePedidoSegunPedido(idpedido);
 
                     }
                     else if(this.dataGridView2.Rows.Count == 0)
-                     {
+                    {
 
-                    this.dataGridView2.DataSource = null;
+                        this.dataGridView2.DataSource = null;
 
-                    this.dataGridView3.DataSource = null;
+                        this.dataGridView3.DataSource = null;
 
-                     }
-
-            
+                    }
                     else 
                     {
 
-                this.dataGridView1.DataSource = cliente.CargarClientesDataTable();
+                        this.dataGridView1.DataSource = cliente.CargarClientesDataTable();
 
-                this.dataGridView2.DataSource = null;
+                        this.dataGridView2.DataSource = null;
 
-                this.dataGridView3.DataSource = null;
+                        this.dataGridView3.DataSource = null;
 
                      }
-                 }
-            }
 
-            if (textBox1.Text == "")
+                }
+
+            }
+            else
             {
-                dataGridView1.DataSource = cliente.CargarClientes();
-                
-            }
 
+                dataGridView1.DataSource = cliente.CargarClientes();
+
+            }
 
         }
 
@@ -275,16 +275,6 @@ namespace WindowsFormsApp1.SeccionClientes
             formulariomodificarcliente.ShowDialog();
 
             this.dataGridView1.DataSource = cliente.CargarClientesDataTable();
-
-            int idclientedatagridview;
-
-            idclientedatagridview = int.Parse(this.dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
-
-            PedidoBLL pedido = new PedidoBLL();
-
-            this.dataGridView2.DataSource = pedido.CargarPedidosSegunCliente(idclientedatagridview);
-
-            this.dataGridView3.DataSource = null;
 
         }
 
@@ -349,7 +339,9 @@ namespace WindowsFormsApp1.SeccionClientes
                 this.dataGridView3.DataSource = detallepedido.CargarTablaDetallePedidoSegunPedido(idpedido);
 
             }
+
         }
+
     }
 
 }

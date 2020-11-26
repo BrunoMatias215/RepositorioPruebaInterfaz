@@ -34,6 +34,20 @@ namespace WindowsFormsApp1.SeccionGestión
 
             this.panel2.Tag = this.subseccioninformes;
 
+            this.BarraSuperior.BackColor = Color.FromArgb(20, 34, 56);
+
+            this.BotonInformes.ForeColor = Color.White;
+
+            this.BotonInformes.BackColor = Color.FromArgb(53, 64, 97);
+
+            this.BotonProductos.ForeColor = Color.White;
+
+            this.BotonProductos.BackColor = Color.FromArgb(53, 64, 97);
+
+            this.BotonPersonal.ForeColor = Color.White;
+
+            this.BotonPersonal.BackColor = Color.FromArgb(53, 64, 97);
+
             this.subseccioninformes.Show();
 
         }

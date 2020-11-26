@@ -68,11 +68,15 @@ namespace CapaDeDatos
         public DataTable BuscarClientePorNombre (string pnombre)
         {
 
+            SqlParameter[] parametros = new SqlParameter[1];
+
             Conexion objetoconexion = new Conexion();
 
             objetoconexion.Conectar();
 
-            DataTable tablacliente = objetoconexion.LecturaPorComando("SELECT * FROM Cliente WHERE nombre LIKE '"+pnombre+"%'");
+            parametros[0] = objetoconexion.CrearParametro("@nombre", pnombre.ToString());
+
+            DataTable tablacliente = objetoconexion.LeerPorStoreProcedureConParametros("SPBuscarClientePorNombre", parametros);
 
             objetoconexion.Desconectar();
 

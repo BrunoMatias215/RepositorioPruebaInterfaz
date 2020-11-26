@@ -47,7 +47,107 @@ namespace SeccionesFormularios
 
             gridcadete.DataSource = cadete.CargartablaCadetes ();
 
+            this.BackColor = Color.FromArgb(20, 34, 56);
 
+            this.label2.ForeColor = Color.White;
+
+            this.label3.ForeColor = Color.White;
+
+            this.label4.ForeColor = Color.White;
+
+            this.label6.ForeColor = Color.White;
+
+            this.label7.ForeColor = Color.White;
+
+            this.label8.ForeColor = Color.White;
+
+            this.BotonCrearUsuario.ForeColor = Color.White;
+
+            this.BotonCrearUsuario.BackColor = Color.FromArgb(98, 104, 140);
+
+            this.botonactulizar.ForeColor = Color.White;
+
+            this.botonactulizar.BackColor = Color.FromArgb(98, 104, 140);
+
+            this.botonModificarUsuario.ForeColor = Color.White;
+
+            this.botonModificarUsuario.BackColor = Color.FromArgb(98, 104, 140);
+
+            this.botonEliminarUsuario.ForeColor = Color.White;
+
+            this.botonEliminarUsuario.BackColor = Color.FromArgb(98, 104, 140);
+
+            this.label12.ForeColor = Color.White;
+
+            this.label11.ForeColor = Color.White;
+
+            this.label10.ForeColor = Color.White;
+
+            this.label9.ForeColor = Color.White;
+
+            this.button4.ForeColor = Color.White;
+
+            this.button4.BackColor = Color.FromArgb(98, 104, 140);
+
+            this.actulizarcadete.ForeColor = Color.White;
+
+            this.actulizarcadete.BackColor = Color.FromArgb(98, 104, 140);
+
+            this.motonmodicadete.ForeColor = Color.White;
+
+            this.motonmodicadete.BackColor = Color.FromArgb(98, 104, 140);
+
+            this.botoneliminarcadete.ForeColor = Color.White;
+
+            this.botoneliminarcadete.BackColor = Color.FromArgb(98, 104, 140);
+
+            // Personal
+
+            this.GridPersonal.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+
+            this.GridPersonal.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+            this.GridPersonal.AllowUserToAddRows = false;
+
+            this.GridPersonal.AllowUserToDeleteRows = false;
+
+            this.GridPersonal.AllowUserToResizeRows = false;
+
+            this.GridPersonal.AllowUserToOrderColumns = false;
+
+            this.GridPersonal.AllowUserToResizeColumns = false;
+
+            this.GridPersonal.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
+            this.GridPersonal.RowsDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
+            this.GridPersonal.ReadOnly = true;
+
+            this.GridPersonal.BackgroundColor = Color.Lavender;
+
+            // Cadete
+
+            this.gridcadete.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+
+            this.gridcadete.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+            this.gridcadete.AllowUserToAddRows = false;
+
+            this.gridcadete.AllowUserToDeleteRows = false;
+
+            this.gridcadete.AllowUserToResizeRows = false;
+
+            this.gridcadete.AllowUserToOrderColumns = false;
+
+            this.gridcadete.AllowUserToResizeColumns = false;
+
+            this.gridcadete.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
+            this.gridcadete.RowsDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
+            this.gridcadete.ReadOnly = true;
+
+            this.gridcadete.BackgroundColor = Color.Lavender;
 
         }
 

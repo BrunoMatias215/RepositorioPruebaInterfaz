@@ -13,30 +13,16 @@ namespace SeccionesFormularios
 
     public partial class SubSeccionInformes : Form
     {
-      
-           
-
+        
         public SubSeccionInformes()
         {
 
             InitializeComponent();
 
-          
-           
-
-
         }
 
         private void SubSeccionInformes_Load(object sender, EventArgs e)
         {
-            this.gridPedidos.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            this.gridPedidos.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            this.gridProductos.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            this.gridProductos.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-
-            gridProductos.AllowUserToAddRows = false;
-
-            gridPedidos.AllowUserToAddRows = false;
 
             List<string> mes = new List<string>();
             mes.Add("Enero");
@@ -63,9 +49,91 @@ namespace SeccionesFormularios
 
             }
 
-
+            this.BackColor = Color.FromArgb(20, 34, 56);
 
             this.CentrarElemento(this, this.panel2);
+
+            this.label1.ForeColor = Color.White;
+
+            this.BotonVerPedidos.ForeColor = Color.White;
+
+            this.BotonVerPedidos.BackColor = Color.FromArgb(98, 104, 140);
+
+            this.BotonVerProductos.ForeColor = Color.White;
+
+            this.BotonVerProductos.BackColor = Color.FromArgb(98, 104, 140);
+
+            this.label1.ForeColor = Color.White;
+
+            this.radioButtonDiario.ForeColor = Color.White;
+
+            this.radioButtonMensual.ForeColor = Color.White;
+
+            this.label2.ForeColor = Color.White;
+
+            this.label3.ForeColor = Color.White;
+
+            this.label4.ForeColor = Color.White;
+
+            this.labeltotal.ForeColor = Color.White;
+
+            this.label5.ForeColor = Color.White;
+
+            this.radioDiaro2.ForeColor = Color.White;
+
+            this.radioMensual2.ForeColor = Color.White;
+
+            this.label6.ForeColor = Color.White;
+
+            this.label7.ForeColor = Color.White;
+
+            // Pedidos
+
+            this.gridPedidos.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+
+            this.gridPedidos.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+            this.gridPedidos.AllowUserToAddRows = false;
+
+            this.gridPedidos.AllowUserToDeleteRows = false;
+
+            this.gridPedidos.AllowUserToResizeRows = false;
+
+            this.gridPedidos.AllowUserToOrderColumns = false;
+
+            this.gridPedidos.AllowUserToResizeColumns = false;
+
+            this.gridPedidos.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
+            this.gridPedidos.RowsDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
+            this.gridPedidos.ReadOnly = true;
+
+            this.gridPedidos.BackgroundColor = Color.Lavender;
+
+            // Productos
+
+            this.gridProductos.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+
+            this.gridProductos.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+            this.gridProductos.AllowUserToAddRows = false;
+
+            this.gridProductos.AllowUserToDeleteRows = false;
+
+            this.gridProductos.AllowUserToResizeRows = false;
+
+            this.gridProductos.AllowUserToOrderColumns = false;
+
+            this.gridProductos.AllowUserToResizeColumns = false;
+
+            this.gridProductos.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
+            this.gridProductos.RowsDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
+            this.gridProductos.ReadOnly = true;
+
+            this.gridProductos.BackgroundColor = Color.Lavender;
 
         }
 

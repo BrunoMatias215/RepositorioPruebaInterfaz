@@ -50,9 +50,9 @@
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(162, 23);
+            this.textBox1.Location = new System.Drawing.Point(145, 21);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(206, 17);
+            this.textBox1.Size = new System.Drawing.Size(206, 15);
             this.textBox1.TabIndex = 0;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -72,7 +72,7 @@
             this.labelBúsquedaClientes.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelBúsquedaClientes.Location = new System.Drawing.Point(16, 23);
             this.labelBúsquedaClientes.Name = "labelBúsquedaClientes";
-            this.labelBúsquedaClientes.Size = new System.Drawing.Size(140, 17);
+            this.labelBúsquedaClientes.Size = new System.Drawing.Size(119, 13);
             this.labelBúsquedaClientes.TabIndex = 2;
             this.labelBúsquedaClientes.Text = "Búsqueda de Clientes";
             // 
@@ -127,7 +127,7 @@
             this.labelPedido.Font = new System.Drawing.Font("Segoe UI Emoji", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPedido.Location = new System.Drawing.Point(16, 275);
             this.labelPedido.Name = "labelPedido";
-            this.labelPedido.Size = new System.Drawing.Size(49, 17);
+            this.labelPedido.Size = new System.Drawing.Size(43, 15);
             this.labelPedido.TabIndex = 8;
             this.labelPedido.Text = "Pedido";
             // 
@@ -137,7 +137,7 @@
             this.labelDetallePedido.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDetallePedido.Location = new System.Drawing.Point(16, 452);
             this.labelDetallePedido.Name = "labelDetallePedido";
-            this.labelDetallePedido.Size = new System.Drawing.Size(93, 17);
+            this.labelDetallePedido.Size = new System.Drawing.Size(82, 13);
             this.labelDetallePedido.TabIndex = 9;
             this.labelDetallePedido.Text = "Detalle Pedido";
             // 

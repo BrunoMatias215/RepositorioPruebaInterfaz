@@ -87,6 +87,8 @@ namespace SeccionesFormularios
 
             }
 
+            // Pedidos
+
             this.dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
 
             this.dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;

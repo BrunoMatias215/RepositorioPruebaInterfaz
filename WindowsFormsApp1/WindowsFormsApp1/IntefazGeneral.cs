@@ -57,13 +57,13 @@ namespace WindowsFormsApp1
 
             this.label1.ForeColor = Color.White;
 
-            this.label1.Text = "Nombre " + this.usuario.Nombre;
+            this.label1.Text = "Nombre: " + this.usuario.Nombre;
 
             this.CentrarElemento(this.MenuOpciones, this.label1);
 
             this.label2.ForeColor = Color.White;
 
-            this.label2.Text = "Legajo "+ this.usuario.Legajo;
+            this.label2.Text = "Legajo: "+ this.usuario.Legajo;
 
             this.CentrarElemento(this.MenuOpciones, this.label2);
 

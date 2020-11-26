@@ -78,7 +78,7 @@
             this.panel2.Controls.Add(this.BotonVerPedidos);
             this.panel2.Location = new System.Drawing.Point(12, 12);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(771, 543);
+            this.panel2.Size = new System.Drawing.Size(771, 559);
             this.panel2.TabIndex = 22;
             // 
             // labeltotal
@@ -87,7 +87,7 @@
             this.labeltotal.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labeltotal.Location = new System.Drawing.Point(687, 66);
             this.labeltotal.Name = "labeltotal";
-            this.labeltotal.Size = new System.Drawing.Size(15, 17);
+            this.labeltotal.Size = new System.Drawing.Size(13, 13);
             this.labeltotal.TabIndex = 21;
             this.labeltotal.Text = "0";
             // 
@@ -96,24 +96,24 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(412, 334);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(28, 15);
+            this.label7.Size = new System.Drawing.Size(26, 13);
             this.label7.TabIndex = 20;
             this.label7.Text = "Año";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(21, 9);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(21, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 17);
+            this.label1.Size = new System.Drawing.Size(49, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Pedidos";
             // 
             // gridProductos
             // 
             this.gridProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridProductos.Location = new System.Drawing.Point(13, 390);
+            this.gridProductos.Location = new System.Drawing.Point(24, 390);
             this.gridProductos.Name = "gridProductos";
             this.gridProductos.RowHeadersWidth = 45;
             this.gridProductos.Size = new System.Drawing.Size(721, 150);
@@ -123,8 +123,8 @@
             // 
             this.BotonVerProductos.FlatAppearance.BorderSize = 0;
             this.BotonVerProductos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BotonVerProductos.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BotonVerProductos.Location = new System.Drawing.Point(631, 330);
+            this.BotonVerProductos.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BotonVerProductos.Location = new System.Drawing.Point(631, 334);
             this.BotonVerProductos.Name = "BotonVerProductos";
             this.BotonVerProductos.Size = new System.Drawing.Size(114, 41);
             this.BotonVerProductos.TabIndex = 17;
@@ -135,7 +135,7 @@
             // comboBoxAño2
             // 
             this.comboBoxAño2.FormattingEnabled = true;
-            this.comboBoxAño2.Location = new System.Drawing.Point(415, 350);
+            this.comboBoxAño2.Location = new System.Drawing.Point(415, 354);
             this.comboBoxAño2.Name = "comboBoxAño2";
             this.comboBoxAño2.Size = new System.Drawing.Size(121, 21);
             this.comboBoxAño2.TabIndex = 16;
@@ -144,9 +144,9 @@
             // 
             this.radioButtonDiario.AutoSize = true;
             this.radioButtonDiario.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDiario.Location = new System.Drawing.Point(24, 46);
+            this.radioButtonDiario.Location = new System.Drawing.Point(24, 53);
             this.radioButtonDiario.Name = "radioButtonDiario";
-            this.radioButtonDiario.Size = new System.Drawing.Size(61, 21);
+            this.radioButtonDiario.Size = new System.Drawing.Size(56, 17);
             this.radioButtonDiario.TabIndex = 2;
             this.radioButtonDiario.TabStop = true;
             this.radioButtonDiario.Text = "Diario";
@@ -159,14 +159,14 @@
             this.label4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(611, 66);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(36, 17);
+            this.label4.Size = new System.Drawing.Size(32, 13);
             this.label4.TabIndex = 15;
             this.label4.Text = "Total";
             // 
             // comboBoxMes2
             // 
             this.comboBoxMes2.FormattingEnabled = true;
-            this.comboBoxMes2.Location = new System.Drawing.Point(181, 350);
+            this.comboBoxMes2.Location = new System.Drawing.Point(181, 354);
             this.comboBoxMes2.Name = "comboBoxMes2";
             this.comboBoxMes2.Size = new System.Drawing.Size(121, 21);
             this.comboBoxMes2.TabIndex = 14;
@@ -175,9 +175,9 @@
             // 
             this.radioButtonMensual.AutoSize = true;
             this.radioButtonMensual.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonMensual.Location = new System.Drawing.Point(24, 73);
+            this.radioButtonMensual.Location = new System.Drawing.Point(24, 76);
             this.radioButtonMensual.Name = "radioButtonMensual";
-            this.radioButtonMensual.Size = new System.Drawing.Size(75, 21);
+            this.radioButtonMensual.Size = new System.Drawing.Size(69, 17);
             this.radioButtonMensual.TabIndex = 3;
             this.radioButtonMensual.TabStop = true;
             this.radioButtonMensual.Text = "Mensual";
@@ -187,10 +187,10 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(21, 279);
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(21, 289);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(125, 17);
+            this.label5.Size = new System.Drawing.Size(111, 13);
             this.label5.TabIndex = 13;
             this.label5.Text = "Productos Vendidos";
             // 
@@ -198,9 +198,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(115, 54);
+            this.label2.Location = new System.Drawing.Point(115, 47);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(33, 17);
+            this.label2.Size = new System.Drawing.Size(28, 13);
             this.label2.TabIndex = 4;
             this.label2.Text = "Mes";
             // 
@@ -208,9 +208,9 @@
             // 
             this.radioMensual2.AutoSize = true;
             this.radioMensual2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioMensual2.Location = new System.Drawing.Point(24, 355);
+            this.radioMensual2.Location = new System.Drawing.Point(24, 358);
             this.radioMensual2.Name = "radioMensual2";
-            this.radioMensual2.Size = new System.Drawing.Size(75, 21);
+            this.radioMensual2.Size = new System.Drawing.Size(69, 17);
             this.radioMensual2.TabIndex = 12;
             this.radioMensual2.TabStop = true;
             this.radioMensual2.Text = "Mensual";
@@ -220,7 +220,7 @@
             // comboBoxMes
             // 
             this.comboBoxMes.FormattingEnabled = true;
-            this.comboBoxMes.Location = new System.Drawing.Point(118, 72);
+            this.comboBoxMes.Location = new System.Drawing.Point(118, 67);
             this.comboBoxMes.Name = "comboBoxMes";
             this.comboBoxMes.Size = new System.Drawing.Size(121, 21);
             this.comboBoxMes.TabIndex = 5;
@@ -229,9 +229,9 @@
             // 
             this.radioDiaro2.AutoSize = true;
             this.radioDiaro2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioDiaro2.Location = new System.Drawing.Point(24, 312);
+            this.radioDiaro2.Location = new System.Drawing.Point(24, 335);
             this.radioDiaro2.Name = "radioDiaro2";
-            this.radioDiaro2.Size = new System.Drawing.Size(61, 21);
+            this.radioDiaro2.Size = new System.Drawing.Size(56, 17);
             this.radioDiaro2.TabIndex = 11;
             this.radioDiaro2.TabStop = true;
             this.radioDiaro2.Text = "Diario";
@@ -242,9 +242,9 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(262, 54);
+            this.label3.Location = new System.Drawing.Point(262, 47);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(31, 17);
+            this.label3.Size = new System.Drawing.Size(28, 13);
             this.label3.TabIndex = 6;
             this.label3.Text = "Año";
             // 
@@ -260,7 +260,7 @@
             // comboBoxAño
             // 
             this.comboBoxAño.FormattingEnabled = true;
-            this.comboBoxAño.Location = new System.Drawing.Point(265, 72);
+            this.comboBoxAño.Location = new System.Drawing.Point(265, 67);
             this.comboBoxAño.Name = "comboBoxAño";
             this.comboBoxAño.Size = new System.Drawing.Size(121, 21);
             this.comboBoxAño.TabIndex = 7;
@@ -269,9 +269,9 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(180, 334);
+            this.label6.Location = new System.Drawing.Point(178, 334);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(33, 17);
+            this.label6.Size = new System.Drawing.Size(28, 13);
             this.label6.TabIndex = 9;
             this.label6.Text = "Mes";
             // 
@@ -279,8 +279,8 @@
             // 
             this.BotonVerPedidos.FlatAppearance.BorderSize = 0;
             this.BotonVerPedidos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BotonVerPedidos.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BotonVerPedidos.Location = new System.Drawing.Point(415, 53);
+            this.BotonVerPedidos.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BotonVerPedidos.Location = new System.Drawing.Point(438, 47);
             this.BotonVerPedidos.Name = "BotonVerPedidos";
             this.BotonVerPedidos.Size = new System.Drawing.Size(114, 41);
             this.BotonVerPedidos.TabIndex = 8;
