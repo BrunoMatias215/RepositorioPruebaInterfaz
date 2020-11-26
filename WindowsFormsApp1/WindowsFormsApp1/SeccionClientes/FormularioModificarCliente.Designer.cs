@@ -48,7 +48,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(22, 33);
+            this.label1.Location = new System.Drawing.Point(25, 33);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(48, 13);
             this.label1.TabIndex = 0;
@@ -58,7 +58,7 @@
             // 
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(25, 49);
+            this.textBox1.Location = new System.Drawing.Point(28, 49);
             this.textBox1.MaxLength = 20;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(186, 13);
@@ -68,7 +68,7 @@
             // 
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.ForeColor = System.Drawing.Color.White;
-            this.textBox2.Location = new System.Drawing.Point(25, 114);
+            this.textBox2.Location = new System.Drawing.Point(28, 114);
             this.textBox2.MaxLength = 20;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(186, 13);
@@ -78,7 +78,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(22, 98);
+            this.label2.Location = new System.Drawing.Point(25, 98);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(50, 13);
             this.label2.TabIndex = 2;
@@ -88,7 +88,7 @@
             // 
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox3.ForeColor = System.Drawing.Color.White;
-            this.textBox3.Location = new System.Drawing.Point(25, 177);
+            this.textBox3.Location = new System.Drawing.Point(28, 177);
             this.textBox3.MaxLength = 20;
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(186, 13);
@@ -98,7 +98,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(22, 161);
+            this.label3.Location = new System.Drawing.Point(25, 161);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(52, 13);
             this.label3.TabIndex = 4;
@@ -108,7 +108,7 @@
             // 
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox4.ForeColor = System.Drawing.Color.White;
-            this.textBox4.Location = new System.Drawing.Point(25, 239);
+            this.textBox4.Location = new System.Drawing.Point(28, 239);
             this.textBox4.MaxLength = 50;
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(186, 13);
@@ -118,7 +118,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(22, 223);
+            this.label4.Location = new System.Drawing.Point(25, 223);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(55, 13);
             this.label4.TabIndex = 6;
@@ -129,7 +129,7 @@
             this.BotonGuardarCambios.FlatAppearance.BorderSize = 0;
             this.BotonGuardarCambios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BotonGuardarCambios.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BotonGuardarCambios.Location = new System.Drawing.Point(25, 287);
+            this.BotonGuardarCambios.Location = new System.Drawing.Point(28, 287);
             this.BotonGuardarCambios.Name = "BotonGuardarCambios";
             this.BotonGuardarCambios.Size = new System.Drawing.Size(79, 35);
             this.BotonGuardarCambios.TabIndex = 8;
@@ -142,7 +142,7 @@
             this.BotonCancelar.FlatAppearance.BorderSize = 0;
             this.BotonCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BotonCancelar.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BotonCancelar.Location = new System.Drawing.Point(131, 287);
+            this.BotonCancelar.Location = new System.Drawing.Point(134, 287);
             this.BotonCancelar.Name = "BotonCancelar";
             this.BotonCancelar.Size = new System.Drawing.Size(80, 35);
             this.BotonCancelar.TabIndex = 9;
@@ -153,7 +153,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Location = new System.Drawing.Point(25, 68);
+            this.panel4.Location = new System.Drawing.Point(28, 68);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(186, 1);
             this.panel4.TabIndex = 24;
@@ -161,7 +161,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(25, 133);
+            this.panel1.Location = new System.Drawing.Point(28, 133);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(186, 1);
             this.panel1.TabIndex = 25;
@@ -169,7 +169,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Location = new System.Drawing.Point(25, 196);
+            this.panel2.Location = new System.Drawing.Point(28, 196);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(186, 1);
             this.panel2.TabIndex = 26;
@@ -177,7 +177,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Location = new System.Drawing.Point(25, 258);
+            this.panel3.Location = new System.Drawing.Point(28, 258);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(186, 1);
             this.panel3.TabIndex = 27;
@@ -186,7 +186,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(241, 356);
+            this.ClientSize = new System.Drawing.Size(244, 356);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);

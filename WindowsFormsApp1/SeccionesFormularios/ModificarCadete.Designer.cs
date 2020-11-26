@@ -45,7 +45,7 @@
             // labelid
             // 
             this.labelid.AutoSize = true;
-            this.labelid.Location = new System.Drawing.Point(130, 25);
+            this.labelid.Location = new System.Drawing.Point(89, 33);
             this.labelid.Name = "labelid";
             this.labelid.Size = new System.Drawing.Size(13, 13);
             this.labelid.TabIndex = 62;
@@ -54,17 +54,17 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(52, 25);
+            this.label1.Location = new System.Drawing.Point(28, 33);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(72, 13);
+            this.label1.Size = new System.Drawing.Size(55, 13);
             this.label1.TabIndex = 61;
-            this.label1.Text = "ID del Cadete";
+            this.label1.Text = "ID Cadete";
             // 
             // botonCancelar
             // 
-            this.botonCancelar.Location = new System.Drawing.Point(122, 305);
+            this.botonCancelar.Location = new System.Drawing.Point(138, 313);
             this.botonCancelar.Name = "botonCancelar";
-            this.botonCancelar.Size = new System.Drawing.Size(85, 32);
+            this.botonCancelar.Size = new System.Drawing.Size(79, 35);
             this.botonCancelar.TabIndex = 60;
             this.botonCancelar.Text = "Cancelar";
             this.botonCancelar.UseVisualStyleBackColor = true;
@@ -72,9 +72,9 @@
             // 
             // BotonAceptar
             // 
-            this.BotonAceptar.Location = new System.Drawing.Point(31, 305);
+            this.BotonAceptar.Location = new System.Drawing.Point(31, 313);
             this.BotonAceptar.Name = "BotonAceptar";
-            this.BotonAceptar.Size = new System.Drawing.Size(85, 32);
+            this.BotonAceptar.Size = new System.Drawing.Size(79, 35);
             this.BotonAceptar.TabIndex = 59;
             this.BotonAceptar.Text = "Aceptar";
             this.BotonAceptar.UseVisualStyleBackColor = true;
@@ -82,15 +82,15 @@
             // 
             // textlicencia
             // 
-            this.textlicencia.Location = new System.Drawing.Point(55, 256);
+            this.textlicencia.Location = new System.Drawing.Point(31, 264);
             this.textlicencia.Name = "textlicencia";
-            this.textlicencia.Size = new System.Drawing.Size(129, 20);
+            this.textlicencia.Size = new System.Drawing.Size(186, 20);
             this.textlicencia.TabIndex = 58;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(52, 240);
+            this.label7.Location = new System.Drawing.Point(28, 248);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(47, 13);
             this.label7.TabIndex = 57;
@@ -98,31 +98,31 @@
             // 
             // textApellido
             // 
-            this.textApellido.Location = new System.Drawing.Point(53, 137);
+            this.textApellido.Location = new System.Drawing.Point(31, 145);
             this.textApellido.Name = "textApellido";
-            this.textApellido.Size = new System.Drawing.Size(129, 20);
+            this.textApellido.Size = new System.Drawing.Size(186, 20);
             this.textApellido.TabIndex = 56;
             // 
             // texttelefono
             // 
-            this.texttelefono.Location = new System.Drawing.Point(53, 196);
+            this.texttelefono.Location = new System.Drawing.Point(31, 204);
             this.texttelefono.Name = "texttelefono";
-            this.texttelefono.Size = new System.Drawing.Size(129, 20);
+            this.texttelefono.Size = new System.Drawing.Size(186, 20);
             this.texttelefono.TabIndex = 55;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(50, 180);
+            this.label6.Location = new System.Drawing.Point(28, 188);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(49, 13);
             this.label6.TabIndex = 54;
-            this.label6.Text = "Telefono";
+            this.label6.Text = "Teléfono";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(50, 121);
+            this.label3.Location = new System.Drawing.Point(28, 129);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(44, 13);
             this.label3.TabIndex = 53;
@@ -130,15 +130,15 @@
             // 
             // textNombre
             // 
-            this.textNombre.Location = new System.Drawing.Point(53, 80);
+            this.textNombre.Location = new System.Drawing.Point(31, 88);
             this.textNombre.Name = "textNombre";
-            this.textNombre.Size = new System.Drawing.Size(129, 20);
+            this.textNombre.Size = new System.Drawing.Size(186, 20);
             this.textNombre.TabIndex = 51;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(50, 64);
+            this.label2.Location = new System.Drawing.Point(28, 72);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 13);
             this.label2.TabIndex = 50;
@@ -148,7 +148,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(241, 364);
+            this.ClientSize = new System.Drawing.Size(244, 379);
             this.Controls.Add(this.labelid);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.botonCancelar);
