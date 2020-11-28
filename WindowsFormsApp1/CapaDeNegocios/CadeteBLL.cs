@@ -20,23 +20,6 @@ namespace CapaDeNegocios
 
         private int telefono;
 
-        private RodadoBLL rodado;
-
-        public CadeteBLL(int pidcadete, string pnombre, string papellido, int ptelefono, RodadoBLL prodado)
-        {
-
-            this.Idcadete = pidcadete;
-
-            this.Nombre = pnombre;
-
-            this.Apellido = papellido;
-
-            this.Telefono = ptelefono;
-
-            this.Rodado = prodado;
-
-        }
-
         public CadeteBLL(int pidcadete, string pnombre, string papellido, int ptelefono)
         {
 
@@ -64,8 +47,6 @@ namespace CapaDeNegocios
         public string Apellido { get => apellido; set => apellido = value; }
 
         public int Telefono { get => telefono; set => telefono = value; }
-
-        public RodadoBLL Rodado { get => rodado; set => rodado = value; }
 
         public List<CadeteBLL> CargarCadeteYRodado()
         {
@@ -109,7 +90,7 @@ namespace CapaDeNegocios
 
                 RodadoBLL rodado = new RodadoBLL(idrodado, descripcion, patente);
 
-                CadeteBLL cadete = new CadeteBLL(idcadete, nombre, apellido, telefono, rodado);
+                CadeteBLL cadete = new CadeteBLL(idcadete, nombre, apellido, telefono);
 
                 cadeteyrodadoacargar.Add(cadete);
 

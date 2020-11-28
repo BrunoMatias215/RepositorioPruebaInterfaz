@@ -251,7 +251,6 @@
             this.groupBox1.Size = new System.Drawing.Size(1030, 272);
             this.groupBox1.TabIndex = 34;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Usuario";
             // 
             // textape
             // 
@@ -399,7 +398,6 @@
             this.groupBox2.Size = new System.Drawing.Size(1030, 280);
             this.groupBox2.TabIndex = 48;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Cadete";
             // 
             // SubSeccionPersonal
             // 

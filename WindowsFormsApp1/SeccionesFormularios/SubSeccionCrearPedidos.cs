@@ -968,10 +968,12 @@ namespace SeccionesFormularios
 
         private void ImprimirTicketOriginal(object sender, PrintPageEventArgs e)
         {
- 
+
             // Ticket Original
 
-            e.Graphics.DrawString("Comandas - Guilerova Solutions", new Font("Bell MT", 16, FontStyle.Bold),
+            DetallePedidoBLL detalle = new DetallePedidoBLL();
+
+            e.Graphics.DrawString("Ticket - Guilerova Solutions", new Font("Bell MT", 16, FontStyle.Bold),
                 Brushes.CadetBlue, new PointF(0, 0));
 
             e.Graphics.DrawString("Che Miranda", new Font("Arial", 30, FontStyle.Regular),
@@ -980,7 +982,7 @@ namespace SeccionesFormularios
             e.Graphics.DrawString("Dirección: Av. Avellaneda 4199 - Teléfono: 011-4671-8718", new Font("Arial", 18, FontStyle.Regular),
                 Brushes.Black, new PointF(0, 120));
 
-            e.Graphics.DrawString("Ticket N° "+this.contadorticket+" CUIT: XX-XXXXXXXX-X Original", new Font("Arial", 16, FontStyle.Regular),
+            e.Graphics.DrawString("Ticket N° "+this.contadorticket+ " CUIT: 30-708557483/6 Original", new Font("Arial", 16, FontStyle.Regular),
                 Brushes.Black, new PointF(0, 150));
 
             e.Graphics.DrawString("______________________________", new Font("Arial", 18, FontStyle.Regular),
@@ -995,7 +997,7 @@ namespace SeccionesFormularios
             e.Graphics.DrawString("______________________________", new Font("Arial", 18, FontStyle.Regular),
                 Brushes.Black, new PointF(0, 300));
 
-            e.Graphics.DrawString("Pedido", new Font("Arial", 18, FontStyle.Regular),
+            e.Graphics.DrawString("Pedido "+int.Parse(detalle.getReferenciaIdPedido().Rows[0][0].ToString()), new Font("Arial", 18, FontStyle.Regular),
                 Brushes.Black, new PointF(0, 330));
 
             int y = 360;
@@ -1003,7 +1005,7 @@ namespace SeccionesFormularios
             foreach (DetallePedidoBLL detallepedido in this.ListaDeDetallesPedidos.Items)
             {
 
-                e.Graphics.DrawString(int.Parse(detallepedido.getReferenciaIdPedido().Rows[0][0].ToString()) +"         "+detallepedido.Informacion, new Font("Arial", 18, FontStyle.Regular),
+                e.Graphics.DrawString(detallepedido.Informacion, new Font("Arial", 18, FontStyle.Regular),
                 Brushes.Black, new PointF(0, y));
 
                 y = y + 30;
@@ -1026,7 +1028,9 @@ namespace SeccionesFormularios
 
             // Ticket Duplicado
 
-            e.Graphics.DrawString("Comandas - Guilerova Solutions", new Font("Bell MT", 16, FontStyle.Bold),
+            DetallePedidoBLL detalle = new DetallePedidoBLL();
+
+            e.Graphics.DrawString("Ticket - Guilerova Solutions", new Font("Bell MT", 16, FontStyle.Bold),
                 Brushes.CadetBlue, new PointF(0, 0));
 
             e.Graphics.DrawString("Che Miranda", new Font("Arial", 30, FontStyle.Regular),
@@ -1035,7 +1039,7 @@ namespace SeccionesFormularios
             e.Graphics.DrawString("Dirección: Av. Avellaneda 4199 - Teléfono: 011-4671-8718", new Font("Arial", 18, FontStyle.Regular),
                 Brushes.Black, new PointF(0, 120));
 
-            e.Graphics.DrawString("Ticket N° " + this.contadorticket + " CUIT: XX-XXXXXXXX-X Duplicado", new Font("Arial", 16, FontStyle.Regular),
+            e.Graphics.DrawString("Ticket N° " + this.contadorticket + " CUIT: 30-708557483/6 Duplicado", new Font("Arial", 16, FontStyle.Regular),
                 Brushes.Black, new PointF(0, 150));
 
             e.Graphics.DrawString("______________________________", new Font("Arial", 18, FontStyle.Regular),
@@ -1050,7 +1054,7 @@ namespace SeccionesFormularios
             e.Graphics.DrawString("______________________________", new Font("Arial", 18, FontStyle.Regular),
                 Brushes.Black, new PointF(0, 300));
 
-            e.Graphics.DrawString("Pedido", new Font("Arial", 18, FontStyle.Regular),
+            e.Graphics.DrawString("Pedido "+int.Parse(detalle.getReferenciaIdPedido().Rows[0][0].ToString()), new Font("Arial", 18, FontStyle.Regular),
                 Brushes.Black, new PointF(0, 330));
 
             int y = 360;
@@ -1058,7 +1062,7 @@ namespace SeccionesFormularios
             foreach (DetallePedidoBLL detallepedido in this.ListaDeDetallesPedidos.Items)
             {
 
-                e.Graphics.DrawString(int.Parse(detallepedido.getReferenciaIdPedido().Rows[0][0].ToString()) + "         " + detallepedido.Informacion, new Font("Arial", 18, FontStyle.Regular),
+                e.Graphics.DrawString(detallepedido.Informacion, new Font("Arial", 18, FontStyle.Regular),
                 Brushes.Black, new PointF(0, y));
 
                 y = y + 30;

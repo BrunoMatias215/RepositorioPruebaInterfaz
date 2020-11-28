@@ -19,7 +19,7 @@ namespace CapaDeDatos
 
             objetoconexion.Conectar();
 
-            DataTable objetotabla = objetoconexion.LeerPorStoreProcedure("SPBuscarCadeteS");
+            DataTable objetotabla = objetoconexion.LeerPorStoreProcedure("SPBuscarCadetesReales");
 
             //DataTable objetotabla = objetoconexion.LecturaPorComando("SELECT * FROM Producto WHERE idproductocategoria = 1");
 
@@ -36,7 +36,7 @@ namespace CapaDeDatos
 
             objetoconexion.Conectar();
 
-            DataTable objetotabla = objetoconexion.LeerPorStoreProcedure("SPBuscarCadeteS");
+            DataTable objetotabla = objetoconexion.LeerPorStoreProcedure("SPBuscarCadetesReales");
 
             //DataTable objetotabla = objetoconexion.LecturaPorComando("SELECT * FROM Producto WHERE idproductocategoria = 1");
 
